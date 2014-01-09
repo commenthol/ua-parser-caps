@@ -1,0 +1,686 @@
+#
+# testcases: capabilities search with regexes
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+#
+
+- test: "get capabilities on os.family with ua-string regex OS1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 OS1"
+      os:
+        family: "osfamily4"
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_regexUA_OS1" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family with ua-string regex OS1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 OS1.1"
+      os:
+        family: "osfamily4"
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_regexUA_OS1.1" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family, os.major with ua-string regex OS1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 OS1.1"
+      os:
+        family: "osfamily4"
+        major: "major1"
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_major1_regexUA_OS1.1" 
+      attr_ua: "default"
+      attr_dev: "default"
+      
+- test: "get capabilities on os.family, os.major, os.minor with ua-string regex OS1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 OS1.1"
+      os:
+        family: "osfamily4"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_major1_minor1_regexUA_OS1.1" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family with node regex osfamily6"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily6"
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily5_regexNode" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family, os.major with node regex major6"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily4"
+        major: "major6"
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_major5_regexNode" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family, os.major, os.minor with node regex on minor"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily4"
+        major: "major1"
+        minor: "minor6"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily4_major1_minor5_regexNode" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on os.family, os.major, os.minor with node regex on family, major, minor"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily6"
+        major: "major6"
+        minor: "minor6"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily5_major5_minor5_regexNode" 
+      attr_ua: "default"
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family with ua-string regex UA1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily4_regexUA_UA1" 
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family with ua-string regex UA1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily4_regexUA_UA1.1" 
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family, ua.major with ua-string regex UA1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major: "major1"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_ua: "uafamily4_major1_regexUA_UA1.1" 
+      attr_os: "default"
+      attr_dev: "default"
+      
+- test: "get capabilities on ua.family, ua.major, ua.minor with ua-string regex UA1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily4_major1_minor1_regexUA_UA1.1" 
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family with node regex on family"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily6"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily5_regexNode" 
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family, ua.major with node regex on major"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major: "major6"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily4_major5_regexNode" 
+      attr_dev: "default"
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with node regex on minor"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily4"
+        major: "major1"
+        minor: "minor6"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily4_major1_minor5_regexNode" 
+      attr_dev: "default"
+
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with node regex on family, major, minor"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily6"
+        major: "major6"
+        minor: "minor6"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "uafamily5_major5_minor5_regexNode" 
+      attr_dev: "default"
+
+- test: "get capabilities on dev.family with ua-string regex DEV1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 DEV1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily4"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "devfamily4_regexUA_DEV1" 
+
+- test: "get capabilities on dev.family with ua-string regex DEV1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 DEV1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily4"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "devfamily4_regexUA_DEV1.1" 
+
+- test: "get capabilities on dev.brand with ua-string regex DEV1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 DEV1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily4"
+        brand: "devbrand4"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "devbrand4_regexUA_DEV1" 
+
+- test: "get capabilities on dev.brand with ua-string regex DEV1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 DEV1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily4"
+        brand: "devbrand4"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "devbrand4_regexUA_DEV1.1" 
+
+- test: "get capabilities on dev.brand, dev.model with ua-string regex DEV1.1"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 DEV1.1"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily4"
+        brand: "devbrand4"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "devbrand4_model1_regexUA_DEV1.1" 
+      
+- test: "get capabilities on dev.family with node regex on family"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: 
+        major:
+        minor:
+      device:
+        family: "devfamily6"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default" 
+      attr_dev: "devfamily5_regexNode"
+
+- test: "get capabilities on dev.brand with node regex on brand"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: 
+        major:
+        minor:
+      device:
+        family: "devfamily6"
+        brand: "devbrand6"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default" 
+      attr_dev: "devbrand5_regexNode"
+
+- test: "get capabilities on dev.brand, dev.model with node regex on brand, model"
+  setup:
+    files:
+    - "capstest_regexes.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: 
+        major:
+        minor:
+      device:
+        family: "devfamily6"
+        brand: "devbrand6"
+        model: "model6"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default"
+      attr_ua: "default" 
+      attr_dev: "devbrand5_model5_regexNode"
+
+- test: "get capabilities on ua.family using regex UA1 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily2_regex_UA1'
+      attr2: 'uafamily2_regex_UA1'
+
+- test: "get capabilities on ua.family using regex UA1 UA2 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1 UA2"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily2_regex_UA2'
+
+- test: "get capabilities on ua.family using regex UA1 UA4 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1 UA4"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      # from 1st file
+      attr: 'uafamily2_regex_UA1'
+      # from 2nd file
+      attr2: 'uafamily2_regex_UA4'

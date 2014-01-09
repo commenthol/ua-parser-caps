@@ -1,0 +1,85 @@
+#
+# testcases: capabilities file merging
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+#
+
+- test: "get capabilities on ua.family using regex UA1 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily2_regex_UA1'
+      attr2: 'uafamily2_regex_UA1'
+
+- test: "get capabilities on ua.family using regex UA1 UA2 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1 UA2"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily2_regex_UA2'
+
+- test: "get capabilities on ua.family using regex UA1 UA4 with merged files"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: "Mozilla/0.0 UA1 UA4"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      # from 1st file
+      attr: 'uafamily2_regex_UA1'
+      # from 2nd file
+      attr2: 'uafamily2_regex_UA4'

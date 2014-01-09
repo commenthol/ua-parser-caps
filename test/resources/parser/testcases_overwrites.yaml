@@ -1,0 +1,906 @@
+#
+# testcases: capabilities search with overwrites
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+#
+
+- test: "get capabilities on ua.family with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_overwrite_osfamily2"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1" 
+      attr_ua: "uafamily2_overwrite_osfamily2_major1"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1_minor1" 
+      attr_ua: "uafamily2_overwrite_osfamily2_major1_minor1"
+      attr_dev: "default" 
+- test: "get capabilities on ua.family with os.family, device.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_overwrite_devfamily2"
+      attr_dev: "devfamily2" 
+
+- test: "get capabilities on ua.family with device.family, device.brand overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_overwrite_devbrand2"
+      attr_dev: "devbrand2" 
+
+- test: "get capabilities on ua.family with device.family, device.brand, device.model overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_overwrite_devbrand2_model1"
+      attr_dev: "devbrand2_model1" 
+
+- test: "get capabilities on ua.family, ua.major with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_overwrite_osfamily2"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family, ua.major with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1" 
+      attr_ua: "uafamily2_major1_overwrite_osfamily2_major1"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family, ua.major with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1_minor1" 
+      attr_ua: "uafamily2_major1_overwrite_osfamily2_major1_minor1"
+      attr_dev: "default" 
+- test: "get capabilities on ua.family, ua.major with os.family, device.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_overwrite_devfamily2"
+      attr_dev: "devfamily2" 
+
+- test: "get capabilities on ua.family, ua.major with device.family, device.brand overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_overwrite_devbrand2"
+      attr_dev: "devbrand2" 
+
+- test: "get capabilities on ua.family, ua.major with device.family, device.brand, device.model overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_overwrite_devbrand2_model1"
+      attr_dev: "devbrand2_model1" 
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_osfamily2"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_osfamily2_major1"
+      attr_dev: "default" 
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2_major1_minor1" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_osfamily2_major1_minor1"
+      attr_dev: "default" 
+- test: "get capabilities on ua.family, ua.major, ua.minor with os.family, device.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_devfamily2"
+      attr_dev: "devfamily2" 
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with device.family, device.brand overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_devbrand2"
+      attr_dev: "devbrand2" 
+
+- test: "get capabilities on ua.family, ua.major, ua.minor with device.family, device.brand, device.model overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major: 
+        minor: 
+      ua:
+        family: "uafamily2"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "osfamily2" 
+      attr_ua: "uafamily2_major1_minor1_overwrite_devbrand2_model1"
+      attr_dev: "devbrand2_model1" 
+
+- test: "get capabilities on device.family with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: 
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_osfamily3" 
+
+- test: "get capabilities on device.family with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_osfamily3_major1" 
+
+- test: "get capabilities on device.family with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_osfamily3_major1_minor1" 
+
+- test: "get capabilities on device.family with ua.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_uafamily3" 
+
+- test: "get capabilities on device.family with ua.family, ua.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_uafamily3_major1" 
+
+- test: "get capabilities on device.family with ua.family, ua.major, ua.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devfamily2_overwrite_uafamily3_major1_minor1" 
+
+- test: "get capabilities on device.family, device.brand with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: 
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_osfamily3" 
+
+- test: "get capabilities on device.family, device.brand with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_osfamily3_major1" 
+
+- test: "get capabilities on device.family, device.brand with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_osfamily3_major1_minor1" 
+
+- test: "get capabilities on device.family, device.brand with ua.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_uafamily3" 
+
+- test: "get capabilities on device.family, device.brand with ua.family, ua.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_uafamily3_major1" 
+
+- test: "get capabilities on device.family, device.brand with ua.family, ua.major, ua.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_overwrite_uafamily3_major1_minor1" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with os.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: 
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_osfamily3" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with os.family, os.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_osfamily3_major1" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with os.family, os.major, os.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily3"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_osfamily3_major1_minor1" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with ua.family overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major:
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_uafamily3" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with ua.family, ua.major overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor:
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_uafamily3_major1" 
+
+- test: "get capabilities on device.family, device.brand, device.brand with ua.family, ua.major, ua.minor overwrites"
+  setup:
+    files:
+    - "capstest_overwrites.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family: "uafamily3"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand: "devbrand2"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr_os: "default" 
+      attr_ua: "default"
+      attr_dev: "devbrand2_model1_overwrite_uafamily3_major1_minor1" 

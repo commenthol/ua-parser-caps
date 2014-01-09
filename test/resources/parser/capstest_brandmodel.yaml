@@ -1,0 +1,95 @@
+#
+# testfile: brand model search
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+# 
+
+default:
+  capabilities:
+    group:
+      attr: "default"
+# OS
+os:
+  family:
+    "osfamily1": 
+      capabilities: 
+        group: 
+          attr: "osfamily1"
+      major:
+        "major1":
+          capabilities: 
+            group: 
+              attr: "osfamily1_major1"
+          minor:
+            "minor1":
+              capabilities: 
+                group: 
+                  attr: "osfamily1_major1_minor1"
+# User-Agent
+ua:
+  family:
+    "uafamily1": 
+      capabilities: 
+        group: 
+          attr: "uafamily1"
+      major:
+        "major1":
+          capabilities: 
+            group: 
+              attr: "uafamily1_major1"
+          overwrites:
+            - device:
+                brand: 
+                  "DEVBRAND2":
+                    model:
+                      "model1":
+                        capabilities:
+                          group:
+                            attr: "uafamily1_major1_devbrand2_model1"
+                      "MODEL_2":
+                        capabilities:
+                          group:
+                            attr: "uafamily1_major1_devbrand2_model2_#"
+                      "MODEL 2":
+                        capabilities:
+                          group:
+                            attr: "uafamily1_major1_devbrand2_model2 #"
+          minor:
+            "minor1":
+              capabilities: 
+                group:
+                  attr: "uafamily1_major1_minor1"
+# Device
+device:
+  family:
+    "DEVFAMILY1":
+      capabilities: 
+        group: 
+          attr: "devfamily1"
+  brand:
+    "DEVBRAND1":
+      capabilities: 
+        group: 
+          attr: "devbrand1"
+      model:
+        "MODEL1":
+          capabilities: 
+            group: 
+              attr: "devbrand1_model1"
+        "MODEL2":
+          capabilities: 
+            group: 
+              attr: "devbrand1_model2"
+    "DEV_BRAND2":
+      capabilities: 
+        group: 
+          attr: "devbrand2"
+      model:
+        "MO_DEL_1":
+          capabilities: 
+            group: 
+              attr: "devbrand2_model1"

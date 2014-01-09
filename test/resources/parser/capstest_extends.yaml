@@ -1,0 +1,103 @@
+#
+# capabilities search with extends
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+# 
+
+default:
+  capabilities:
+    group:
+      attr: "default"
+# OS
+os:
+  family:
+    "osfamily10":
+      capabilities: 
+        group: 
+          attr: "osfamily10"
+          attr1: "osfamily10"
+      major:
+        "major1":
+          capabilities: 
+            group: 
+              attr: "osfamily10_major1"
+          minor:
+            "minor1":
+              capabilities: 
+                group: 
+                  attr: "osfamily10_major1_minor1"
+                  attr3: "osfamily10_major1_minor1"
+    "osfamily11":
+      capabilities: 
+        group: 
+          attr2: "osfamily11"
+      extends:
+        - os:
+            family: "osfamily10"
+            major: "major1"
+# User-Agent
+ua:
+  family:
+    "uafamily10": 
+      capabilities: 
+        group: 
+          attr: "uafamily10"
+      extends:
+        - os:
+            family: "osfamily10"
+            major: "major1"
+            minor: "minor1"
+        - os:
+            family: "osfamily11"
+      major:
+        "major1":
+          capabilities: 
+            group: 
+              attr: "uafamily10_major1"
+              attr4: "uafamily10_major1"
+          extends:
+            - ua:
+                family: "uafamily10"
+          minor:
+            "minor1":
+              capabilities: 
+                group:
+                  attr: "uafamily10_major1_minor1"
+              extends:
+                - ua:
+                    family: "uafamily10"
+                    major: "major1"
+    "uafamily11": 
+      capabilities: 
+        group: 
+          attr: "uafamily11"
+      extends:
+        - ua:
+            family: "uafamily11"
+            major: "major1"
+      major:
+        "major1":
+          extends:
+            - ua:
+                family: "uafamily11"
+# Device
+device:
+  family:
+    "devfamily10":
+      capabilities: 
+        group: 
+          attr: "devfamily10"
+  brand:
+    "devbrand10":
+      capabilities: 
+        group: 
+          attr: "devbrand10"
+      model:
+        "model1":
+          capabilities: 
+            group: 
+              attr: "devbrand10_model1"
