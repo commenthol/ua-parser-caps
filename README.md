@@ -3,7 +3,7 @@ ua-parser-caps [![Build Status](https://secure.travis-ci.org/commenthol/ua-parse
 
 Adding capabilities to *ua-parser*
 
-`ua-parser-caps` is a parser build upon the extracted data provided by [ua-parser][1].
+`ua-parser-caps` is a parser build upon the extracted data provided by [ua-parser][ua-parser].
 It adds capabilities to User-Agent String(s) with the following features:
 
 * Capabilities can be added using the dimensions OS, User-Agent and device.
@@ -26,7 +26,7 @@ Details of the capabilities can be found within the files.
 The set of capability files you want to use in your project can be changed within the file `js/config.js`.
 
 
-## Usage [node.js][1]
+## Usage [node.js][nodejs]
 
 A sample usage is provided using the file `js/test/sample.js`.
 
@@ -79,7 +79,7 @@ outputs:
 
 ## Specification
 
-If you are interested to contribute data or even write your own capability files then please take a look into the [specification][4].
+If you are interested to contribute data or even write your own capability files then please take a look into the [specification][spec].
 
 
 ## Files 
@@ -111,18 +111,19 @@ If you contribute code to this project, you are implicitly allowing your code to
 
 If you contribute data to this project, you are implicitly allowing your code to be distributed under the CC-BY-4.0 license. You are also implicitly verifying that all data is your original work.
 
-Please read the [contributors' guide][3].
+Please read the [contributors' guide][contribute].
 
 
 ## License
 
 Copyright (c) 2013 commenthol 
 
-Software is released under [MIT][2]. <br>
-Data provided within Yaml-Files is released under [CC-BY-4.0][2].
+Software is released under [MIT][license]. <br>
+Data provided within Yaml-Files is released under [CC-BY-4.0][license].
 
 
-[1]: https://github.com/tobie/ua-parser
-[2]: ./LICENSE
-[3]: ./CONTRIBUTING.md
-[4]: ./doc/specification.md
+[nodejs]: http://nodejs.org
+[ua-parser]: https://github.com/tobie/ua-parser
+[license]: ./LICENSE
+[contribute]: ./CONTRIBUTING.md
+[spec]: ./doc/specification.md
