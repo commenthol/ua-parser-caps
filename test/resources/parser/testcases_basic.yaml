@@ -1,0 +1,448 @@
+#
+# testcases: basic capabilities search
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+#
+
+- test: "get default capabilities"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family:
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "default"
+
+- test: "get capabilities on os.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1"
+
+- test: "get capabilities on os.family, os.major"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1_major1"
+
+- test: "get capabilities on os.family, os.major, os.minor"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1_major1_minor1"
+
+- test: "get capabilities on ua.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1"
+
+- test: "get capabilities on ua.family, ua.major"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1_major1"
+
+- test: "get capabilities on ua.family, ua.major, ua.minor"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1_major1_minor1"
+
+- test: "get capabilities on device.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily1"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "devfamily1"
+      
+- test: "get capabilities on device.family, device.brand"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily1"
+        brand: "devbrand1"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "devbrand1"
+
+- test: "get capabilities on device.family, device.brand, device.model"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily1"
+        brand: "devbrand1"
+        model: "model1"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "devbrand1_model1"
+
+- test: "get capabilities on unknown os.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily2"
+        major:
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "default"
+
+- test: "get capabilities on os.family, unknown os.major"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major2"
+        minor:
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1"
+
+- test: "get capabilities on os.family, os.major, unknown os.minor"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor2"
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1_major1"
+
+- test: "get capabilities on unknown ua.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily2"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "osfamily1_major1_minor1"
+
+- test: "get capabilities on ua.family, unknown ua.major"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major2"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1"
+
+- test: "get capabilities on ua.family, ua.major, unknown ua.minor"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor2"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1_major1"
+
+- test: "get capabilities on unknown device.family"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily2"
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "uafamily1_major1_minor1"
+      
+- test: "get capabilities on device.family, unknown device.brand"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily1"
+        brand: "devbrand2"
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "devfamily1"
+
+- test: "get capabilities on device.family, device.brand, unknown device.model"
+  setup:
+    files:
+    - "capstest_basic.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily1"
+        major: "major1"
+        minor: "minor1"
+      ua:
+        family: "uafamily1"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family: "devfamily1"
+        brand: "devbrand1"
+        model: "model2"
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: "devbrand1"
+
+

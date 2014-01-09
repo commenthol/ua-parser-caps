@@ -1,0 +1,198 @@
+#
+# testfile: capabilities search with regexes
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+# 
+
+default:
+  capabilities:
+    group:
+      attr_os: "default"
+      attr_ua: "default"
+      attr_dev: "default"
+# OS
+os:
+  family:
+    regexes:
+      - regex: "osfamily[56]"
+        capabilities:
+          group:
+            attr_os: "osfamily5_regexNode"
+        major:
+          regexes: 
+            - regex: "major[56]"
+              capabilities:
+                group:
+                  attr_os: "osfamily5_major5_regexNode"
+              minor:
+                regexes: 
+                  - regex: "minor[56]"
+                    capabilities:
+                      group:
+                        attr_os: "osfamily5_major5_minor5_regexNode"
+    "osfamily4": 
+      capabilities: 
+        group: 
+          attr_os: "osfamily4"
+      regexes:
+        - regex: "OS1.1"
+          capabilities:
+            group:
+              attr_os: "osfamily4_regexUA_OS1.1"
+        - regex: "OS1"
+          capabilities:
+            group:
+              attr_os: "osfamily4_regexUA_OS1"
+      major:
+        regexes:
+          - regex: "major[56]"
+            capabilities:
+              group:
+                attr_os: "osfamily4_major5_regexNode"
+        "major1":
+          capabilities: 
+            group: 
+              attr_os: "osfamily4_major1"
+          regexes:
+            - regex: "OS1.1"
+              capabilities:
+                group:
+                  attr_os: "osfamily4_major1_regexUA_OS1.1"
+          minor:
+            regexes:
+              - regex: "minor[56]"
+                capabilities:
+                  group:
+                    attr_os: "osfamily4_major1_minor5_regexNode"
+            "minor1":
+              capabilities: 
+                group: 
+                  attr_os: "osfamily4_major1_minor1"
+              regexes:
+                - regex: "OS1.1"
+                  capabilities:
+                    group:
+                      attr_os: "osfamily4_major1_minor1_regexUA_OS1.1"
+# User-Agent
+ua:
+  family:
+    regexes:
+      - regex: "uafamily[56]"
+        capabilities:
+          group:
+            attr_ua: "uafamily5_regexNode"
+        major:
+          regexes: 
+            - regex: "major[56]"
+              capabilities:
+                group:
+                  attr_ua: "uafamily5_major5_regexNode"
+              minor:
+                regexes: 
+                  - regex: "minor[56]"
+                    capabilities:
+                      group:
+                        attr_ua: "uafamily5_major5_minor5_regexNode"
+    "uafamily4": 
+      capabilities: 
+        group: 
+          attr_ua: "uafamily4"
+      regexes:
+        - regex: "UA1.1"
+          capabilities:
+            group:
+              attr_ua: "uafamily4_regexUA_UA1.1"
+        - regex: "UA1"
+          capabilities:
+            group:
+              attr_ua: "uafamily4_regexUA_UA1"
+      major:
+        regexes:
+          - regex: "major[56]"
+            capabilities:
+              group:
+                attr_ua: "uafamily4_major5_regexNode"
+        "major1":
+          capabilities: 
+            group: 
+              attr_ua: "uafamily4_major1"
+          regexes:
+            - regex: "UA1.1"
+              capabilities:
+                group:
+                  attr_ua: "uafamily4_major1_regexUA_UA1.1"
+          minor:
+            regexes:
+              - regex: "minor[56]"
+                capabilities:
+                  group:
+                    attr_ua: "uafamily4_major1_minor5_regexNode"
+            "minor1":
+              capabilities: 
+                group:
+                  attr_ua: "uafamily4_major1_minor1"
+              regexes:
+                - regex: "UA1.1"
+                  capabilities:
+                    group:
+                      attr_ua: "uafamily4_major1_minor1_regexUA_UA1.1"
+# Device
+device:
+  family:
+    regexes:
+      - regex: "devfamily[56]"
+        capabilities:
+          group:
+            attr_dev: "devfamily5_regexNode"
+    "devfamily4":
+      capabilities: 
+        group: 
+          attr_dev: "devfamily4"
+      regexes:
+        - regex: "DEV1.1"
+          capabilities:
+            group:
+              attr_dev: "devfamily4_regexUA_DEV1.1"
+        - regex: "DEV1"
+          capabilities:
+            group:
+              attr_dev: "devfamily4_regexUA_DEV1"
+  brand:
+    regexes:
+      - regex: "devbrand[56]"
+        capabilities:
+          group:
+            attr_dev: "devbrand5_regexNode"
+        model:
+          regexes: 
+            - regex: "model[56]"
+              capabilities:
+                group:
+                  attr_dev: "devbrand5_model5_regexNode"
+    "devbrand4":
+      capabilities: 
+        group: 
+          attr_dev: "devbrand4"
+      regexes:
+        - regex: "DEV1.1"
+          capabilities:
+            group:
+              attr_dev: "devbrand4_regexUA_DEV1.1"
+        - regex: "DEV1"
+          capabilities:
+            group:
+              attr_dev: "devbrand4_regexUA_DEV1"
+      model:
+        "model1":
+          capabilities: 
+            group: 
+              attr_dev: "devbrand4_model1"
+          regexes:
+            - regex: "DEV1.1"
+              capabilities:
+                group:
+                  attr_dev: "devbrand4_model1_regexUA_DEV1.1"

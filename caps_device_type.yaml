@@ -1,0 +1,7337 @@
+# 
+# ua-parser capabilities files for device type
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+
+# ----
+# This capabilities file includes data to obtain a device-type 
+# classification based on a User-Agent String.
+# 
+
+# ----
+# device.type attributes 
+#
+# tv         - large screen use (includes video game consoles for tv sets)
+# desktop    - desktop/ laptop use
+# bigtablet  - tablets with screen sizes larger >= 11.5"
+# tablet     - tablet use (screen larger >= 7")
+# phablet    - smartphones with screen sizes greater 5" and smaller 7"
+# smartphone - mobile use case (screen smaller < 7")
+# player     - multimedia player (screen smaller < 7") e.g. iPod
+# console    - handheld game console
+# phone      - mobile phones which are not considered smartphones
+# watch      - smartwatch 
+# glass      - data-glasses (e.g. Google Glass)
+# camera     - camera (e.g. Samsung EK-GC100)
+# whitegoods - whitegoods e.g. freezers...
+# car        - car entertainment systems
+# evalboard  - evaluation board
+#
+
+# ----
+# device.screen attributes
+# size       - diagonal screen size in inch
+# width      - width in pixels (prefered use - e.g. tablet landscape, smartphone portrait)
+# height     - height in pixels 
+# size_dist  - size equivalent; specify screen size in inch per distance in cm, e.g. 25"/ 100cm
+#
+
+# defaults for all
+default:
+  capabilities:
+    device:
+      type: "desktop"
+
+# os specific types
+os:
+  family:
+    "Android":
+      capabilities:
+        device:
+          type: "tablet"
+      regexes:
+        - regex: 'Mobile Safari'
+          capabilities:
+            device:
+              type: "smartphone"
+      major:
+        "3":
+          capabilities:
+            device:
+              type: "tablet"
+    "iOs":
+      capabilities:
+        device:
+          type: "tablet"
+      regexes:
+        - regex: 'Mobile'
+          capabilities:
+            device:
+              type: "smartphone"
+    "GoogleTV":
+      capabilities:
+        device:
+          type: "tv"
+    "Windows CE":
+      capabilities:
+        device:
+          type: "smartphone"
+    "Windows Phone":
+      capabilities:
+        device:
+          type: "smartphone"
+
+# ua
+ua:
+  family:
+
+# device specific types
+device:
+  family:
+    "HbbTV":
+      capabilities:
+        device:
+          type: "tv"
+    "WebTV":
+      capabilities:
+        device:
+          type: "tv"
+  brand:
+    "3Q":
+      capabilities:
+        info:
+          href:
+            1: "http://www.3q-int.com/"
+        device:
+          type: "tablet"
+      model:
+        "BC9710AM":
+        "ER71B":
+          capabilities:
+            device:
+              type: smartphone
+        "LC0720C":
+        "LC0723B":
+        "LC0725B":
+        "LC0810C":
+        "LC0816C":
+        "RC0709B":
+        "RC0718C":
+        "RC0721B":
+        "RC0722C":
+        "RC0817C":
+        "RC7802F":
+        "RC9712C":
+        "RC9716B":
+        "RC9724C":
+        "RC9730C":
+        "RC9731C":
+    "Acer":
+      capabilities:
+        info:
+          href:
+            1: "http://us.acer.com/ac/en/US/content/group/tablets"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^(Z1[123]0|E320[^/]*|S500|Liquid[^;/]*)'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Advent":
+      capabilities:
+        info:
+          href:
+            1: "https://en.wikipedia.org/wiki/Advent_Vega"
+          note: "VegaBean and VegaComb (names derived from jellybean, honeycomb) are custom ROM builds for Vega"
+        device:
+          type: "tablet"
+    "Ainol":
+      # TODO Ainol also offers players!
+      capabilities:
+        info:
+          href:
+            1: "http://www.ainol.com/plugin.php?identifier=ainol&module=product"
+        device:
+          type: "tablet"
+    "Airis":
+      capabilities:
+        info:
+          href:
+            1: "http://airis.es/Tienda/Default.aspx?idG=001"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^TM'
+            capabilities:
+              device:
+                type: "smartphone"
+        OnePAD:
+        OnePAD 725:
+        OnePAD 730:
+        OnePad1000:
+        OnePAD700:
+        TM350:
+        TM400:
+        TM500:
+        TM530:
+          capabilities:
+            info:
+              note: "TODO useragent missing"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        TM570:
+          capabilities:
+            info:
+              note: "TODO useragent missing"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.72
+              width: 720
+              height: 1280
+    "Airpad":
+      capabilities:
+        info:
+          href:
+            1: "http://www.airpad.welltechgroup.co.th/"
+        device:
+          type: "tablet"
+      model:
+        DS101M:
+        DS820M:
+        XL:
+    "Alcatel":
+      capabilities:
+        info:
+          href:
+            1: "http://www.alcatelonetouch.com/global-en/products/smartphones.html"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: 'One Touch (6040X|8000D|8008D)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: 'One Touch (EVO7|T10|T20)'
+            capabilities:
+              device:
+                type: "tablet"
+    "Allfine":
+      capabilities:
+        info:
+          href:
+            1: "http://www.myallfine.com/Products.asp"
+        device:
+          type: "tablet"
+    "Allview":
+      capabilities:
+        info:
+          href:
+            1: "http://www.allview.ro/produse/droseries/lista-tablete-pc/"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^(P|A4ALL)'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Allwinner":
+      capabilities:
+        info:
+          href:
+            1: "http://www.allwinner.com/"
+        device:
+          type: "tablet"
+    "Amaway":
+      capabilities:
+        info:
+          href:
+            1: "http://www.amaway.cn/"
+        device:
+          type: "tablet"
+    "Amazon":
+      capabilities:
+        info:
+          href:
+            1: "https://developer.amazon.com/sdk/fire/specifications.html"
+            2: "http://amazonsilk.wordpress.com/useful-bits/silk-user-agent/"
+        device:
+          type: "tablet"
+      regexes:
+        - regex: 'Kindle\/.*\(screen '
+          capabilities:
+            device:
+              type: "reader"
+      model:
+        "Kindle":
+        "Kindle 1.0":
+        "Kindle 2.0":
+        "Kindle 2.5":
+        "Kindle 3.0":
+        "Kindle Fire":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire 2":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HD":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HD 7\"":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HD 7\" WiFi":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HD 8.9\" 4G":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HD 8.9\" WiFi":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HDX 7\" 4G":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HDX 7\" WiFi":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HDX 8.9\" 4G":
+          capabilities:
+            device:
+              type: "tablet"
+        "Kindle Fire HDX 8.9\" WiFi":
+          capabilities:
+            device:
+              type: "tablet"
+    "Amoi":
+      capabilities:
+        info:
+          href:
+            1: "http://www.amoi.com/en/prd/prd_index.jspx"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '^[MN]\d{2,}'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Aoc":
+      capabilities:
+        info:
+          href:
+            1: "http://latin.aoc.com/media_tablet"
+        device:
+          type: "tablet"
+    "Aoson":
+      capabilities:
+        info:
+          href:
+            1: "http://www.luckystar.com.cn/en/mid.aspx?page=1"
+            2: "http://www.luckystar.com.cn/en/mobiletel.aspx?page=1"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^S\d{3}'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Apanda":
+      capabilities:
+        info:
+          href:
+            1: "http://www.apanda.com.cn/"
+        device:
+          type: "smartphone"
+    "Apple":
+      capabilities:
+        info:
+          href:
+            1: "http://www.apple.com"
+      model:
+        "AppleTV":
+          capabilities:
+            device:
+              type: "tv"
+        "iPad":
+          capabilities:
+            device:
+              type: "tablet"
+        "iPhone":
+          capabilities:
+            device:
+              type: "smartphone"
+        "iPod":
+          capabilities:
+            device:
+              type: "player"
+    "Archos":
+      capabilities:
+        info:
+          href:
+            1: "http://www.archos.com/de/products/tablets.html"
+            2: "http://www.archos.com/de/products/smartphones/index.html"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^53'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^([45]\d|A28|A32|A43)'
+            capabilities:
+              device:
+                type: "smartphone"
+        "GAMEPAD":
+          capabilities:
+            device:
+              type: "player"
+    "Arival":
+      capabilities:
+        info:
+          href:
+            1: "http://www.a-rival.de/de/"
+        device:
+          type: "tablet"
+    "Arnova":
+      capabilities:
+        info:
+          href:
+            1: "http://arnovatech.com/"
+        device:
+          type: "tablet"
+      model:
+        101 G4:
+        10G2:
+        7G2:
+        8G2:
+        90 G4:
+        97G4:
+    "Assistant":
+      capabilities:
+        info:
+          href:
+            1: "http://www.assistant.ua"
+        device:
+          type: "tablet"
+    "Asus":
+      capabilities:
+        info:
+          href:
+            1: "http://www.asus.com/uk/Tablets_Mobile/"
+        device:
+          type: "tablet"
+      regexes:
+        - regex: 'PadFone.*Mobile Safari'
+          capabilities:
+            device:
+              type: "phablet"
+        - regex: 'PadFone'
+          capabilities:
+            device:
+              type: "tablet"
+      overwrites:
+        - os:
+            family: 
+              "Windows Phone":
+                capabilities:
+                  device:
+                    type: "smartphone"
+        - os:
+            family: 
+              "Windows CE":
+                capabilities:
+                  device:
+                    type: "smartphone"
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        "eeepc":
+          capabilities:
+            info:
+              note: "netbook has 10\" == tablet"
+            device:
+              type: "tablet"
+        "GalaxyMini":
+          capabilities:
+            device:
+              type: "smartphone"
+        "P525":
+          capabilities:
+            device:
+              type: "smartphone"
+        "P526":
+          capabilities:
+            device:
+              type: "smartphone"
+        "P527":
+          capabilities:
+            device:
+              type: "smartphone"
+        "P552w":
+          capabilities:
+            device:
+              type: "smartphone"
+        "P565":            
+          capabilities:
+            device:
+              type: "smartphone"
+        "P735":
+          capabilities:
+            device:
+              type: "smartphone"
+    "Attab":
+      capabilities:
+        info:
+          href:
+            1: "http://www.theattab.com/"
+        device:
+          type: "tablet"
+    "Audiosonic":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tablet"
+    "Axioo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.axiooworld.com/ww/index.php"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'picopad'
+            capabilities:
+              device:
+                type: "tablet"
+        "PICOpad GEA":
+        "PICOpad GEW":
+        "PICOpad GFI":
+        "PICOpad GGD":
+        "PICOpad GGG":
+        "PICOpad GHM":
+        "PICOpad GIM":
+        "PICOpad GJT":
+        "PICOpad QGN":
+        "Picopad 7":
+        "VIGO350":
+        "VIGO410":
+    "Azend":
+      capabilities:
+        info:
+          href:
+            1: "http://azendcorp.com/index.php/products/portable-electronics"
+        device:
+          type: "tablet"
+    "Bak":
+      capabilities:
+        info:
+          href:
+            1: "http://www.bakinternational.com/produtos.php?cat=80"
+        device:
+          type: "tablet"
+    "Bedove":
+      capabilities:
+        info:
+          href:
+            1: "http://www.bedove.com/product.html"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^HY65'
+            capabilities:
+              device:
+                type: "phablet"
+    "Benss":
+      capabilities:
+        info:
+          href:
+            1: "http://www.benss.net/"
+        device:
+          type: "tablet"
+      model:
+        "JC-S9220":
+          capabilities:
+            device:
+              type: "phablet"
+    "Bird":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "phone"
+    "Blackberry":
+      capabilities:
+        info:
+          href:
+            1: "http://devblog.blackberry.com/2012/08/blackberry-10-user-agent-string/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "BlackBerry OS":
+                capabilities:
+                  device:
+                    type: "phone"
+                major:
+                  regexes:
+                    - regex: '^[1-5]$'
+                      capabilities:
+                        device:
+                          type: "phone"
+                    - regex_not: "^[1-5]$"
+                      capabilities:
+                        device:
+                          type: "smartphone"
+      model:
+        "Playbook":
+          capabilities:
+            device:
+              type: "tablet"
+    "Blackbird":
+      capabilities:
+        info:
+          href:
+            1: "http://iblackbird.co.kr"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^I8\d'
+            capabilities:
+              device:
+                type: "tablet"
+    "Blaupunkt":
+      capabilities:
+        info:
+          href:
+            1: "http://www.blaupunkt.com"
+        device:
+          type: "tablet"
+    "Blu":
+      capabilities:
+        info:
+          href:
+            1: "http://bluproducts.com/index.php/android-phones"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^STUDIO 5\.3'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^Touch.Book'
+            capabilities:
+              device:
+                type: "tablet"
+    "Blusens":
+      capabilities:
+        device:
+          type: "tablet"
+    "Bmobile":
+      capabilities:
+        info:
+          href:
+            1: "http://bmobile.eu.com/?categoria=smartphones-2"
+        device:
+          type: "smartphone"
+    "bq":
+      capabilities:
+        info:
+          href:
+            1: "http://bqreaders.com"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^Aquaris 5\.7'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^Aquaris'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '^Cervantes'
+            capabilities:
+              device:
+                type: "reader"
+    "Braun":
+      capabilities:
+        info:
+          href:
+            1: "http://www.braun-phototechnik.de/en/products/list/~pcat.250/Tablet-PC.html"
+        device:
+          type: "tablet"
+    "Broncho":
+      capabilities:
+        info:
+          href:
+            1: "http://www.broncho.cn/"
+        device:
+          type: "tablet"
+    "Captiva":
+      capabilities:
+        info:
+          href:
+            1: "http://www.captiva-power.de"
+        device:
+          type: "tablet"
+    "Casio":
+      capabilities:
+        info:
+          href:
+            1: "http://www.casiogzone.com/"
+        device:
+          type: "smartphone"
+      model:
+        "CAL21":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+    "Cat":
+      capabilities:
+        info:
+          href:
+            1: "http://www.cat-sound.com"
+        device:
+          type: "tablet"
+    "Celkon":
+      capabilities:
+        info:
+          href:
+            1: "http://www.celkonmobiles.com/?_a=products"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^CT'
+            capabilities:
+              device:
+                type: "tablet"
+    "ChangJia":
+      capabilities:
+        device:
+          info:
+            href:
+              1: "http://www.cjshowroom.com/eproducts.aspx?classcode=004001001"
+          type: "tablet"
+    "Cloudfone":
+      capabilities:
+        info:
+          href:
+            1: "http://www.cloudfonemobile.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'CloudPad'
+            capabilities:
+              device:
+                type: "tablet"
+        "CloudPad 700d":
+        "CloudPad 700w":
+        "Cloudfone Excite 320e":
+        "Cloudfone Excite 320g":
+        "Cloudfone Excite 350e":
+        "Cloudfone Excite 350g":
+        "Cloudfone Excite 350i":
+        "Cloudfone Excite 400d":
+        "Cloudfone Excite 500d":
+        "Cloudfone ICE 2Gs":
+        "Cloudfone Thrill 400g":
+        "Cloudfone Thrill 430d":
+        "Cloudfone Thrill 430g":
+        "Cloudfone Thrill 500g":
+        "Cloudfone Thrill 530qx":
+          capabilities:
+            screen:
+              size: 5.3
+            device:
+              type: "phablet"
+    "Cmx":
+      capabilities:
+        info:
+          href:
+            1: "http://cmx.at/de/"
+        device:
+          type: "tablet"
+      model:
+        "Aquila 070-0508":
+        "Aquila 080-0508":
+        "AQUILA 080-1008":
+        "AQUILA 097-1006":
+        "AQUILA 097-1016":
+        "AQUILA 097-1016 BT + 3G":
+        "AQUILA 097-1016 BT 3G":
+        "Clanga 097-2016":
+        "RAPAX 070-0508":
+        "RAPAX 070LE":
+        "RAPAX090-0508":
+        "RAPAXSE080-0508":
+    "CobyKyros":
+      capabilities:
+        info:
+          href:
+            1: "http://cobykyros.com"
+        device:
+          type: "tablet"
+    "Coolpad":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tablet"
+    "Cube":
+      capabilities:
+        info:
+          href:
+            1: "http://www.cube-tablet.com/buy-products.html"
+        device:
+          type: "tablet"
+    "Cubot":
+      capabilities:
+        info:
+          href:
+            1: "http://www.cubotmall.com/"
+        device:
+          type: "smartphone"
+    "Danew":
+      capabilities:
+        info:
+          href:
+            1: "http://www.danew.com/produits-tablette.php"
+        device:
+          type: "tablet"
+    "Dell":
+      capabilities:
+        info:
+          href:
+            1: "http://www.dell.com"
+            2: "http://www.softbank.jp/mobile/support/product/101dl/"
+            3: "http://www.softbank.jp/mobile/support/product/001dl/"
+            4: "http://developer.emnet.ne.jp/android.html"
+            5: "http://www.dell.com/in/p/mobile-xcd28/pd"
+            6: "http://www.dell.com/in/p/mobile-xcd35/pd"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'Streak.(7|10|Pro)'
+            capabilities:
+              device:
+                type: tablet
+          - regex: '(Grappa|V04B)'
+            capabilities:
+              device:
+                type: tablet
+        "Streak":
+          capabilities:
+            device:
+              type: phablet
+    "Denver":
+      capabilities:
+        info:
+          href:
+            1: "http://www.denver-electronics.com/tablets1/"
+        device:
+          type: "tablet"
+      model:
+        "TAC-10031 MK2":
+        "TAC-70061":
+        "TAC-70111":
+        "TAC-90011":
+        "TAC-90012":
+        "TAC-97032":
+        "TAD-10021":
+        "TAD-70102G":
+        "TAD-97052":
+        "TAD-97052mk2":
+        "TAD-97072G":
+    "DNS":
+      capabilities:
+        info:
+          href:
+            1: "http://www.dns-shop.ru/"
+        device:
+          type: "tablet"
+      model:
+        AirTab M81w:
+        AirTab M971g:
+        AirTab M975w:
+        AirTab P970g:
+    "DoCoMo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ipentec.com/document/document.aspx?page=android-useragent"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+    "DOOV":
+      capabilities:
+        info:
+          href:
+            1: "http://www.doov.com.cn/"
+        device:
+          type: "smartphone"
+      model:
+        "C1":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "C7":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "D2":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D3":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "D7":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+        "D8":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "D9":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.63
+              width: 480
+              height: 854
+        "D10":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "D30":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 540
+              height: 960
+        "D50":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "D210T":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D300":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "D350":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "D360":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "D500":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "D600":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D700":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D708":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D710":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D720":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "D770":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "D800":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 540
+              height: 960
+        "D900":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "D910":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "D920":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "??i1314":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "??iSuper S2 Lolita":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920
+        "??iSuper S2 Standard":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "iSuper S2 Queen":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920
+        "S1":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+    "Evercoss":
+      capabilities:
+        info:
+          href:
+            1: "http://evercoss.com/android/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^AT'
+            capabilities:
+              device:
+                type: "tablet"
+        "AT1":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480 
+            device:
+              type: "tablet"
+        "AT1G":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480 
+            device:
+              type: "tablet"
+        "AT1G*":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480 
+            device:
+              type: "tablet"
+        "AT8":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768 
+            device:
+              type: "tablet"
+    "Fly":
+      capabilities:
+        info:
+          href:
+            1: "http://www.fly-phone.com/"
+      model:
+        regexes:
+          - regex: '^IQ'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Freescale":
+      capabilities:
+        info:
+          href:
+            1: "http://www.freescale.com/webapp/sps/site/prod_summary.jsp?code=IMX53QSB"
+          note: "development boards"
+        device:
+          type: "tablet"
+    "Fujitsu":
+      capabilities:
+        info:
+          href:
+            1: "http://www.fujitsu.com/global/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '(M532|Q572)'
+            capabilities:
+              device:
+                type: tablet
+        "FJL21":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 720
+              height: 1184 
+    "Galapad":
+      capabilities:
+        info:
+          href:
+            1: "http://en.galapad.net/product.html"
+        device:
+          type: "tablet"
+    "Garmin-Asus":
+      capabilities:
+        info:
+          href:
+            1: "http://www.garminasus.com/en_US/phones/garminfone/"
+        device:
+          type: "smartphone"
+    "Geeksphone":
+      capabilities:
+        info:
+          href:
+            1: "http://www.geeksphone.com/"
+        device:
+          type: "smartphone"
+    "Generic":
+      model:
+        "Feature Phone":
+          capabilities:
+            device:
+              type: "phone"
+        "Smartphone":
+          capabilities:
+            device:
+              type: "smartphone"
+        "Tablet":
+          capabilities:
+            device:
+              type: "tablet"
+    "Generic_Android":
+      capabilities:
+        info:
+          href:
+            1: "https://support.google.com/googleplay/answer/1727131?hl=en"
+      model:
+        regexes:
+          - regex: '(tab|pad)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '[^A-Za-z]tv[^A-Za-z]'
+            capabilities:
+              device:
+                type: "tv"
+    "Generic_Inettv":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tv"
+    "Gigabyte":
+      capabilities:
+        info:
+          href:
+            1: "http://gsmart.gigabytecm.com/en/"
+        device:
+          type: "smartphone"
+    "Gionee":
+      capabilities:
+        info:
+          href:
+            1: "http://www.gionee.com/"
+        device:
+          type: "smartphone"
+      model:
+        "A9":
+        "Ctrl_V1":
+        "Ctrl_V3":
+        "Ctrl_V4":
+        "E3":
+        "E7":
+          capabilities:
+            device:
+              type: "phablet"
+        "GN100":
+        "GN105":
+        "GN106":
+        "GN137":
+        "GN170":
+        "GN181":
+        "GN205":
+        "GN205H":
+        "GN305":
+        "GN380":
+        "GN600":
+        "GN700W":
+        "GN800":
+        "GN810":
+        "GN868H":
+        "Gpad_G1":
+        "Gpad_G2":
+        "Gpad_G3":
+          capabilities:
+            device:
+              type: "phablet"
+        "INFINITY_PASSION":
+        "S101":
+        "V182":
+        "W800":
+    "GoClever":
+      capabilities:
+        info:
+          href:
+            1: "http://www.goclever.com"
+        device:
+          type: "tablet"
+      model:
+        "FONE 500":
+          capabilities:
+            device:
+              type: phablet
+    "Google":
+      capabilities:
+        info:
+          href:
+            1: "http://www.google.com"
+        device:
+          type: "tablet"
+      regexes:
+        - regex: "Glass"
+          capabilities:
+            device:
+              type: "glass"
+      model:
+        "Glass 1":
+          capabilities:
+            device:
+              type: "glass"
+            screen:
+              size:
+              size_dist: '25"/ 64cm'
+              width: 640
+              height: 360 
+    "HP":
+      capabilities:
+        info:
+          href:
+            1: "http://www.shopping.hp.com/en_US/home-office/-/products/Tablets/Tablets"
+      model:
+        regexes:
+          - regex: '^(PlayBook|Slate|Touchpad)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '^iPAQ'
+            capabilities:
+              device:
+                type: "smartphone"
+        "Veer":
+            capabilities:
+              device:
+                type: "smartphone"
+    "Haier":
+      capabilities:
+        info:
+          href:
+            1: "http://www.haier.com/cn/consumer/computers/pbdn/"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: 'Mix X5'
+            # TODO ua missing
+            capabilities:
+              device:
+                type: "phablet"
+    "Haipad":
+      capabilities:
+        info:
+          href:
+            1: "http://www.haipad.net/"
+        device:
+          type: "tablet"
+    "Hannspree":
+      capabilities:
+        info:
+          href:
+            1: "http://www.hannspree.eu/"
+        device:
+          type: "tablet"
+      model:
+        "SN14T71":
+          capabilities:
+            info:
+              href: 
+                1: "http://www.hannspree.eu/products/tablet-pc/pad/10-14/sn14t71"
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800
+    "HCLme":
+      capabilities:
+        info:
+          href:
+            1: "http://www.hclmetablet.com/india/"
+        device:
+          type: "tablet"
+    "Hena":
+      capabilities:
+        info:
+          href:
+            1: "http://www.henadigital.com/en/product/index.asp?id=6"
+        device:
+          type: "tablet"
+    "Hero":
+      capabilities:
+        info:
+          href:
+            1: "http://eshinechina.en.alibaba.com/"
+        device:
+          type: "smartphone"
+      model:
+        "H7100":
+          capabilities:
+            device:
+              type: "phablet"
+        "H7500+":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "H8000":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+        "H8000+":
+          extends:
+            - device:
+                brand: "Hero"
+                model: "H8000"
+        "H9000":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "H9300":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "H9300+":
+          extends:
+            - device:
+                brand: "Hero"
+                model: "H9300"
+        "H9500":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "H9500+":
+          extends:
+            - device:
+                brand: "Hero"
+                model: "H9500"
+        "H9700+":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+    "Hisense":
+      capabilities:
+        info:
+          href:
+            smartphone: "http://www.hisense.com/product/shouji_par/"
+            tablet: "http://www.hisense.com/product/ITV/"
+        device:
+          type: "smartphone"
+      model:
+        "MIRA-2":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+    "hitech":
+      capabilities:
+        info:
+          href:
+            1: "http://www.hitech-mobiles.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: "Tab"
+            capabilities:
+              info:
+                note: "TODO useragent missing"
+              device:
+                type: "tablet"
+    "HP":
+      capabilities:
+        info:
+          href:
+            1: "http://www.hp.com"
+        capabilities:
+          device:
+            type: "tablet"
+      model:
+        635 Notebook PC:
+          capabilities:
+            device:
+              type: "tablet"
+        Compaq 2210b:
+          capabilities:
+            device:
+              type: "tablet"
+        Compaq 2510p Notebook PC:
+          capabilities:
+            device:
+              type: "tablet"
+        iPAQ 510:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ 610:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ 910:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ DataMessenger:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ Glisten:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ hw6900:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ rw6800:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ rw6815:
+          capabilities:
+            device:
+              type: "smartphone"
+        iPAQ VoiceMessenger:
+          capabilities:
+            device:
+              type: "smartphone"
+        PlayBook:
+          capabilities:
+            device:
+              type: "tablet"
+        Slate 10 HD:
+          capabilities:
+            device:
+              type: "tablet"
+        Slate 7:
+          capabilities:
+            device:
+              type: "tablet"
+        Slate 7 Plus:
+          capabilities:
+            device:
+              type: "tablet"
+        Slate 8 Pro:
+          capabilities:
+            device:
+              type: "tablet"
+        SlateBook 10 x2 PC:
+          capabilities:
+            device:
+              type: "tablet"
+        Touchpad:
+          capabilities:
+            device:
+              type: "tablet"
+        TouchPad:
+          capabilities:
+            device:
+              type: "tablet"
+        Veer:
+          capabilities:
+            device:
+              type: "smartphone"
+    "HTC":
+      capabilities:
+        info:
+          href:
+            1: "http://www.htc.com/www/products/"
+            2: "http://en.wikipedia.org/wiki/List_of_HTC_phones"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Android":
+                major:
+                  "3":
+                    capabilities:
+                      device:
+                        type: "tablet"
+      model:
+        regexes:
+          - regex: '^(Butterfly|One[ _]max)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^Flyer'
+            capabilities:
+              device:
+                type: "tablet"
+        "HTL21":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920 
+        "HTX21":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280 
+    "Huawei":
+      capabilities:
+        info:
+          href:
+            1: "http://www.huaweidevice.com"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '(MediaPad|SpringBoard)'
+            capabilities:
+              device:
+                type: "tablet"
+        "G700-U10":
+          capabilities:
+            device:
+              type: "phablet"
+        "IdeosS7":
+          capabilities:
+            device:
+              type: "tablet"
+        "Mate":
+          capabilities:
+            info:
+              note: "TODO useragent missing"
+            device:
+              type: "phablet"
+            screen:
+              size: 6.1
+              width: 720
+              height: 1280
+        "Telpad Dual S":      
+          capabilities:
+            device:
+              type: "tablet"
+        "U8651S":      
+          capabilities:
+            device:
+              type: "smartphone"
+        "Y300":
+          capabilities:
+            device:
+              type: "smartphone"
+    "Hyundai":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tablet"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '^MB-'
+            capabilities:
+              device:
+                type: "phone"
+          - regex: '^H'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '^T'
+            capabilities:
+              device:
+                type: "tablet"
+        "MB-6900":
+          capabilities:
+            device:
+              type: "smartphone"
+        "MB-D6650":
+          capabilities:
+            device:
+              type: "smartphone"
+    "i-mate":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "smartphone"
+    "iBall":
+      capabilities:
+        info:
+          href:
+            1: "http://www.iball.co.in/Category/Mobiles/22"
+        device:
+          type: "smartphone"
+      model:
+        "Andi5.5":
+          capabilities:
+            info:
+              note: "TODO unknown useragent"
+            device:
+              type: "phablet"
+            screen: 
+              size: 5.5
+              width: 720
+              height: 1280
+    "IconBIT":
+      capabilities:
+        info:
+          href:
+            1: "http://www.iconbit.com/catalog/tablets/"
+        device:
+          type: "tablet"
+    "IMO":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ponselimo.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: "TAB"
+            capabilities:
+              device:
+                type: "tablet"
+        "S67":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "S68":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+        "S78":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "S79":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "S79 EXPLORER":
+          extends:
+            - device:
+                brand: "IMO"
+                model: "S79"
+        "S79 MIUI":
+          extends:
+            - device:
+                brand: "IMO"
+                model: "S79"
+        "S88":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "S89":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "S99":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "S900":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "X2":
+          capabilities:
+            info:
+              marketing_name: "Normandy"
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "ICE":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 9.0
+              width: 800
+              height: 480
+        "ORION":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB FLY":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB UNO":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB X9":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 9.7
+              width: 1024
+              height: 724
+        "X6":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Y3":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Y5":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Z6":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Z7":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "Z8":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "Z9":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 9.7
+              width: 1024
+              height: 724
+    "imobile":
+      capabilities:
+        info:
+          href:
+            1: "http://www.i-mobilephone.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^(IQ 5\.|IQ 9)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^(i-style)'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: 'i-note'
+            capabilities:
+              device:
+                type: "tablet"
+    "Impression":
+      capabilities:
+        info:
+          href:
+            1: "http://impression.ua/planshetnye-kompyutery"
+        device:
+          type: "tablet"
+    "Infinix":
+      capabilities:
+        info:
+          href:
+            1: "http://www.infinixmobility.com/en/"
+        device:
+          type: "smartphone"
+      model:
+        "X260":
+          capabilities:
+            info:
+              marketing_name: "Buzz"
+            device:
+              screen:
+                size: 2.6
+                width: 480
+                height: 320
+              keyboard: "qwerty"
+              type: "smartphone"
+        "X350":
+          capabilities:
+            info:
+              marketing_name: "Surf Smart"
+            device:
+              screen:
+                size: 3.5
+                width: 320
+                height: 480
+              type: "smartphone"
+        "X351":
+          capabilities:
+            info:
+              marketing_name: "Surf Smart 3G"
+            device:
+              screen:
+                size: 3.5
+                width: 320
+                height: 480
+              type: "smartphone"
+        "X400":
+          capabilities:
+            info:
+              marketing_name: "Race"
+            device:
+              screen:
+                size: 4.0
+                width: 480
+                height: 800
+              type: "smartphone"
+        "X401":
+          capabilities:
+            info:
+              marketing_name: "Race Lite"
+            device:
+              screen:
+                size: 4.0
+                width: 480
+                height: 800
+              type: "smartphone"
+        "X402":
+          capabilities:
+            info:
+              marketing_name: "Diamond"
+            device:
+              screen:
+                size: 4.0
+                width: 480
+                height: 800
+              type: "smartphone"
+
+        "??X??SurfSpice":
+          capabilities:
+            info:
+              marketing_name: "Surf Spice"
+            device:
+              screen:
+                size: 4.0
+                width: 480
+                height: 800
+              type: "smartphone"
+        "X450":
+          capabilities:
+            info:
+              marketing_name: "Race Bolt"
+            device:
+              screen:
+                size: 4.5
+                width: 540
+                height: 960
+              type: "smartphone"
+        "X500":
+          capabilities:
+            info:
+              marketing_name: "Race Eagle"
+            device:
+              screen:
+                size: 5.0
+                width: 480
+                height: 854
+              type: "smartphone"
+        "X502":
+          capabilities:
+            info:
+              marketing_name: "Alpha Marvel"
+            device:
+              screen:
+                size: 5.0
+                width: 720
+                height: 1280
+              type: "smartphone"
+        "X530":
+          capabilities:
+            info:
+              marketing_name: "Race Max Q"
+            device:
+              screen:
+                size: 5.3
+                width: 480
+                height: 854
+              type: "phablet"
+        "X570":
+          capabilities:
+            info:
+              marketing_name: "Alpha"
+            device:
+              screen:
+                size: 5.7
+                width: 720
+                height: 1280
+              type: "phablet"
+        "X700":
+          capabilities:
+            info:
+              marketing_name: "Joypad 7"
+            device:
+              screen:
+                size: 7.0
+                width: 1024
+                height: 600
+              type: "tablet"
+        "X800":
+          capabilities:
+            info:
+              marketing_name: "Joypad 8"
+            device:
+              screen:
+                size: 8.0
+                width: 1024
+                height: 768
+              type: "tablet"
+        "??X??Joypad10":
+          capabilities:
+            info:
+              marketing_name: "Joypad 10"
+            device:
+              screen:
+                size: 10.0
+                width: 1280
+                height: 800
+              type: "tablet"
+    "Informer":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tablet"
+    "Intenso":
+      capabilities:
+        info:
+          href:
+            1: "http://www.intenso.de"
+        device:
+          type: "tablet"
+    "Intex":
+      capabilities:
+        info:
+          href:
+            1: "http://intexmobile.in/index.aspx"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '(Aqua|Cloud)'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: "(Connect|Buddy)"
+            capabilities:
+              device:
+                type: "tablet"
+        "IT-M709MR":
+          capabilities:
+            info:
+              marketing_name: "Envy"
+              href:
+                1: "http://itnetwork.rs/Predstavljanje-Intex-Envy-IT-M709MR-article-1381.htm"
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+    "iOCEAN":
+      capabilities:
+        info:
+          href:
+            1: "http://www.iocean.cc/"
+        device:
+          type: "smartphone"
+    "ionik":
+      capabilities:
+        info:
+          href:
+            1: "http://www.i-onik.de/"
+        device:
+          type: "tablet"
+    "Iru":
+      capabilities:
+        info:
+          href:
+            1: "http://www.iru.ru/catalog/soho/planetable/"
+        device:
+          type: "tablet"
+    "Ivio":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ivio.com/mobile.php"
+        device:
+          type: "smartphone"
+      model:
+        "MD70":
+          capabilities:
+            device:
+              type: "tablet"
+    "Jaytech":
+      capabilities:
+        info:
+          href:
+            1: "http://www.jay-tech.de/jaytech/servlet/frontend/"
+        device:
+          type: "tablet"
+    "Jiayu":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ejiayu.com/en/Product.html"
+        device:
+          type: "smartphone"
+    "JXD":
+      capabilities:
+        info:
+          href:
+            1: "http://www.jxd.hk/"
+        device:
+          type: "tablet"
+      model:
+        "S601":
+          device:
+            type: "console"
+        "S602":
+          device:
+            type: "console"
+        "S602b":
+          device:
+            type: "console"
+        "S603":
+          device:
+            type: "console"
+        "S5100":
+          device:
+            type: "console"
+        "S5110":
+          device:
+            type: "console"
+        "S5110b":
+          device:
+            type: "console"
+        "S5300":
+          device:
+            type: "console"
+        "S7300":
+          device:
+            type: "console"
+        "S7800":
+          device:
+            type: "console"
+        "S7100a":
+          device:
+            type: "console"
+    "Karbonn":
+      capabilities:
+        info:
+          href:
+            1: "http://www.karbonnmobiles.com/products_tablet.php"
+        device:
+          type: "tablet"
+    "KDDI":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ipentec.com/document/document.aspx?page=android-useragent"
+            2: "http://www.au.kddi.com"
+        device:
+          type: "smartphone"
+      model:
+        "INFOBAR A01":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.7
+              width: 540
+              height: 960 
+        "INFOBAR A02":
+          extends:
+            - device:
+                brand: "HTC"
+                model: "HTX21"
+          capabilities:
+            info:
+              href:
+                1: "http://www.au.kddi.com/english/mobile/product/smartphone/a02/spec/"
+    "Kingcom":
+      capabilities:
+        info:
+          href:
+            1: "http://www.e-kingcom.com"
+        device:
+          type: "tablet"
+      model:
+        "351":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+        "401":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+        "501":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+        "902":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+        "902C":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Note 903":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+        "904":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.2
+              width: 480
+              height: 800
+        "Padphone 61":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 480
+              height: 854
+        "Padphone 71":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+        "Padphone 72":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+    "Kobo":
+      capabilities:
+        info:
+          href:
+            1: "https://en.wikipedia.org/wiki/Kobo_Inc."
+            2: "http://www.kobo.com/devices#tablets"
+        device:
+          type: "tablet"
+    "Ktouch":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "smartphone"
+    "KTtech":
+      capabilities:
+        info:
+          href:
+            1: "http://www.kttech.co.kr"
+        device:
+          type: "smartphone"
+    "Kyocera":
+      capabilities:
+        info:
+          href:
+            1: "http://www.android.com/devices/?country=all&m=kyocera"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+    "Lava":
+      capabilities:
+        info:
+          href:
+            1: "http://www.lavamobiles.com/"
+        device:
+          type: "smartphone"
+      model:
+        Iris 349:
+        Iris 349+:
+        Iris 351:
+        Iris 355:
+        Iris 356:
+        Iris 401e:
+        Iris 402:
+        Iris 402P:
+        Iris 405:
+        Iris 430:
+        Iris 430_Android:
+        Iris 454:
+        Iris 455:
+        Iris 458Q:
+        Iris 501:
+        Iris 502:
+        Iris 504q:
+        Iris 504Q:
+        Iris 505:
+        S12:
+    "Lemon":
+      capabilities:
+        info:
+          href:
+            1: "http://www.lemonmobiles.com/products.php?type=1"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '(Tab|LT\d)'
+            capabilities:
+              device:
+                type: "tablet"
+        "Aspire A1":
+          capabilities:
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+            device:
+              type: "phablet"
+        "LT9":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "Tab LT29":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+              3D: true
+            device:
+              type: "tablet"
+    "Lenco":
+      capabilities:
+        info:
+          href:
+            1: "http://www.lenco.com/c/tablets/"
+        device:
+          type: "tablet"
+    "Lenovo":
+      capabilities:
+        info:
+          href:
+            1: "http://support.lenovo.com/en_GB/downloads/default.page"
+            2: "http://shop.lenovo.com/sa/en/smartphones"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Android":
+                major:
+                  "3":
+                    capabilities:
+                      device:
+                        type: "tablet"
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '(IdeaTab|SmartTab|Tablet)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '3GW10[01]'
+            capabilities:
+              device:
+                type: "smartphone"
+        "K900":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920 
+        "K900_ROW":
+          extends:
+            - device:
+                brand: "Lenovo"
+                model: "K900"
+        "S920":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 720
+              height: 1280 
+        "S930":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 720
+              height: 1280               
+    "LG":
+      capabilities:
+        info:
+          href:
+            1: "http://www.lg.com/uk/mobile"
+            2: "http://www.lg.com/us/"
+            3: "https://support.google.com/googleplay/answer/1727131?hl=en#L"
+        device:
+          type: "smartphone"
+      regexes:
+        - regex: 'Firefox'
+          capabilities:
+            device:
+              type: "smartphone"
+        - regex: 'NetCast'
+          capabilities:
+            device:
+              type: "tv"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+        - ua:
+            family:
+              "HbbTV":
+                capabilities:
+                  device:
+                    type: "tv"
+      model:
+        "Optimus G Pro":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920
+        "L-04E":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E980":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E980h":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E981h":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E986":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E988":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "E989":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "F240K":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "F240L":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "F240S":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus G Pro"
+        "G2":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.2
+              width: 1080
+              height: 1920
+        "D800":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D801":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D802":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D802T":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D802TR":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D803":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D805":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "D806":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "F320K":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "F320L":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "F320S":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "LS980":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "VS980 4G":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G2"
+        "G Flex":
+          capabilities:
+            info:
+              href: 
+                1: "http://www.mylgphones.com/lg-d958-spotted-in-user-agent-profile.html"
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 720
+              height: 1280
+        "D950":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "D955":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "D958":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "D959":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "F340K":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "F340L":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "F340S":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "LS995":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Flex"
+        "Optimus Pad":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8.9
+              width: 1280
+              height: 768
+        "L-06C":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "V900":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "V901":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "V905R":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "V909":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "LU8300":
+          extends:
+            - device:
+                brand: "LG"
+                model: "Optimus Pad"
+        "G Pad":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8.3
+        "V500":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Pad"
+        
+        "V507L":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Pad"
+        "V510":
+          extends:
+            - device:
+                brand: "LG"
+                model: "G Pad"
+    "Malata":
+      capabilities:
+        info:
+          href:
+            1: "http://www.malata.com/en/products.aspx?classid=680"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^[ZI]\d'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Manta":
+      capabilities:
+        info:
+          href:
+            1: "http://www.manta.com.pl/en"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^MS'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '^MID'
+            capabilities:
+              device:
+                type: "tablet"
+    "Match":
+      capabilities:
+        info:
+          href:
+            1: "http://www.match.net.cn/products.asp"
+        device:
+          type: "tablet"
+    "Maxx":
+      capabilities:
+        info:
+          href:
+            1: "http://www.maxxmobile.in/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^Tab'
+            capabilities:
+              device:
+                type: "tablet"
+    "Mediacom":
+      capabilities:
+        info:
+          href:
+            1: "http://www.mediacomeurope.it/"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '(M-PP|PhonePad)'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '(M-MP5303G)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '(M-MP|SmartPad)'
+            capabilities:
+              device:
+                type: "tablet"
+    "Medion":
+      capabilities:
+        info:
+          href:
+            1: "http://www.medion.com/en/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - ua:
+            family: 
+              "HbbTV":
+                capabilities:
+                  device:
+                    type: "tv"
+      model:
+        regexes:
+          - regex: 'Lifetab'
+            capabilities:
+              device:
+                type: "tablet"
+    "Meizu":
+      capabilities:
+        info:
+          href:
+            1: "http://www.meizu.com"
+        device:
+          type: "smartphone"
+    "Micromax":
+      capabilities:
+        info:
+          href:
+            1: "http://www.micromaxinfo.com"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^(A111|A240)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^A'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '^P'
+            capabilities:
+              device:
+                type: "tablet"
+    "Mito":
+      capabilities:
+        info:
+          href:
+            1: "http://new.mitomobile.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^t\d+'
+            capabilities:
+              device:
+                type: "tablet"
+        "T100":
+          capabilities:
+            screen:
+              size: 5.2
+              width: 320
+              height: 480
+            device:
+              type: "phablet"
+        "t300":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"
+        "t520":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "t550":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "t660":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "t700":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "t720":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+        "t970i":
+          capabilities:
+            screen:
+              size: 9.0
+              width: 800
+              height: 480
+            device:
+              type: "tablet"
+    "Mobistel":
+      capabilities:
+        info:
+          href:
+            1: "http://www.mobistel.com/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '(Cynus F5|Cynus T[257])'
+            capabilities:
+              device:
+                type: "phablet"
+    "Modecom":
+      capabilities:
+        info:
+          href:
+            1: "http://www.modecom.eu/tablets/portal/"
+        device:
+          type: "tablet"
+      model:
+        "XINO Z46 X4": 
+          capabilities:
+            info:
+              note: "TODO useragent missing"
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.6
+              width: 540
+              height: 960
+        "FreeTAB 1331 HD X2":
+          capabilities:
+            info:
+              note: "TODO useragent missing"
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800
+    "Motorola":
+      capabilities:
+        info:
+          href:
+            1: "http://www.motorola.com/us/shop-all-mobile-phones/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+              "Android":
+                capabilities:
+                  device:
+                    type: "smartphone"
+                major:
+                  "3":
+                    capabilities:
+                      device:
+                        type: "tablet"
+      model:
+        regexes: 
+          - regex: '^(MZ|Xoom)'
+            capabilities:
+              device:
+                type: "tablet"
+    "MpMan":
+      capabilities:
+        info:
+          href:
+            1: "http://www.mpmaneurope.com"
+        device:
+          type: "tablet"
+    "Msi":
+      capabilities:
+        info:
+          href:
+            1: "http://www.msi.com/product/windpad/"
+        device:
+          type: "tablet"
+    "MyPhone":
+      capabilities:
+        info:
+          href:
+            1: "http://myphone.com.ph/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'MyPad'
+            capabilities:
+              device:
+                type: "tablet"
+        "MyPad 2":
+          capabilities:
+            device:
+              type: "tablet"
+        "MyPhone A848 Duo":
+        "MyPhone A848i Duo":
+        "MyPhone A888 Duo":
+        "MyPhone A919 Duo":
+        "MyPhone A919i Duo":
+    "Mytab":
+      capabilities:
+        info:
+          href:
+            1: "http://www.mytab.eu/en/category/mytab-products/"
+        device:
+          type: "tablet"
+    "Nabi":
+      capabilities:
+        info:
+          href:
+            1: "https://www.nabitablet.com"
+        device:
+          type: "tablet"
+    "Nec":
+      capabilities:
+        info:
+          href:
+            1: "http://www.n-keitai.com/"
+            2: "http://jpn.nec.com/lt/ltn/"
+        device:
+          type: "smartphone"
+    "Nextbook":
+      capabilities:
+        info:
+          href:
+            1: "http://nextbookusa.com"
+        device:
+          type: "tablet"
+    "Nintendo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.nintendo.co.jp/"
+        device:
+          type: "console"
+      model:
+        regexes:
+          - regex: 'DS'
+            capabilities:
+              device:
+                type: "console"
+          - regex: 'Wii'
+            capabilities:
+              device:
+                type: "tv"
+    "Nokia":
+      capabilities:
+        info:
+          href:
+            1: "http://www.nokia.com"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family: 
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+              "Nokia Series 40":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        "Lumia 1320":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 720
+              height: 1280 
+        "Lumia 1520":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 1080
+              height: 1920
+    "Nook":
+      capabilities:
+        info:
+          href:
+            1: "http://www.barnesandnoble.com/u/Compare-NOOKs/379003181"
+            2: "https://nookdeveloper.zendesk.com/entries/22006856-NOOK-Developer-Reference-Guide"
+        device:
+          type: "tablet"
+      model:
+        "BNRV300":
+          capabilities:
+            device:
+              type: "reader"
+        "BNRV350":
+          capabilities:
+            device:
+              type: "reader"
+    "Odys":
+      capabilities:
+        info:
+          href:
+            1: "http://odys.de"
+        device:
+          type: "tablet"
+      model:
+        "AEON":
+          capabilities:
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800 
+    "Olivetti":
+      capabilities:
+        info:
+          href:
+            1: "http://www.olivetti.de/EN/Page/t02/view_html?idp=348"
+        device:
+          type: "tablet"
+    "Oppo":
+      capabilities:
+        info:
+          href:
+            1: "http://en.oppo.com/products/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'Find ?5'
+            capabilities:
+              device:
+                type: "phablet"
+    "OpenPeak":
+      capabilities:
+        info:
+          href:
+            1: "https://support.google.com/googleplay/answer/1727131?hl=en"
+        device:
+          type: "tablet"
+    "Orion":
+      capabilities:
+        info:
+          href:
+            1: "http://www.orion.ua/en/products/computer-products/tablet-pcs.html"
+        device:
+          type: "tablet"
+    "PackardBell":
+      capabilities:
+        info:
+          href:
+            1: "http://www.packardbell.com/pb/en/AE/content/productgroup/tablets"
+        device:
+          type: "tablet"
+    "Palm":
+      capabilities:
+        info:
+          href:
+            1: "http://kb.hpwebos.com/wps/portal/kb/common/article/10714_en.html"
+        device:
+          type: smartphone
+      model:
+        "500":
+        "680":
+        "750":
+        "850":
+        "Pixi":
+        "Pre":
+        "Treo 800w":
+        "Treo 850e":
+    "Panasonic":
+      capabilities:
+        info:
+          href:
+            1: "http://panasonic.jp/mobile/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - ua:
+            family:
+              "HbbTV":
+                capabilities:
+                  device:
+                    type: "tv"
+      model:
+        regexes:
+          - regex: '(FZ-A1|JT-B1)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: 'VIERA'
+            capabilities:
+              device:
+                type: "tv"
+      "003P":
+      "101P":
+      "101P11C":
+      "102P":
+      "DL1":
+      "dL1":
+      "FZ-A1B":
+      "JT-B1":
+      "KX-PRXA15":
+      "P-01D":
+      "P-02D":
+      "P-02E":
+      "P-04D":
+      "P-05D":
+      "P-06D":
+      "P-07C":
+      "P-07D":
+      "P-701":
+      "P51":
+      "SV-MV100":
+      "UN-W700":
+      "UT-PB1":
+      "VIERA 2011":
+      "VIERA 2012":
+      "VIERA 2013":
+    "Pantech":
+      capabilities:
+        info:
+          href:
+            1: "http://www.pantech.co.kr/en/prod/prodList.do?gbrand=PANTECH"
+            2: "http://www.pantech.co.kr/en/prod/prodList.do?gbrand=VEGA"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '(FZ-A1|JT-B1)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: 'VIERA'
+            capabilities:
+              device:
+                type: "tv"
+        "ADR8995":
+        "ADR8995 4G":
+        "ADR910L":
+        "ADR910L 4G":
+        "ADR930L":
+        "ADR930L 4G":
+        "C180":
+        "C320":
+        "C510":
+        "C520":
+        "C530":
+        "C570":
+        "C610":
+        "C630":
+        "C740":
+        "C790":
+        "C810":
+        "C820":
+        "CDM8992":
+        "CDM89920":
+        "CDM8992060":
+        "CDM8992080":
+        "CDM8992085":
+        "CDM89920csson":
+        "CDM8992380":
+        "CDM8992485":
+        "CDM899248500":
+        "CDM8992485son":
+        "CDM89925":
+        "CDM8992660":
+        "CDM8992680":
+        "CDM8992d":
+        "CDM8999":
+        "CDM89990":
+        "EUROPA-U4000-orange":
+        "G200":
+        "G300":
+        "G500":
+        "GF500":
+        "IM-A690L":
+        "IM-A690S":
+        "IM-A690s":
+        "IM-A710K":
+        "IM-A720L":
+        "IM-A725L":
+        "IM-A730S":
+        "IM-A730s":
+        "IM-A730S Pro":
+        "IM-A730S(SUPER PRO)":
+        "IM-A740S":
+        "IM-A750K":
+        "IM-A760S":
+        "IM-A760s":
+        "IM-A760S_Optimus":
+        "IM-A770k":
+        "IM-A770K":
+        "IM-A775C":
+        "IM-A780L":
+        "IM-A800S":
+        "IM-A810K":
+        "IM-A810k":
+        "IM-A810S":
+        "IM-A810S&K":
+        "IM-A810SK":
+        "IM-A820L":
+        "IM-A830K":
+        "IM-A830KE":
+        "IM-A830L":
+        "IM-A830S":
+        "IM-A840S":
+        "IM-A840SP":
+        "IM-A850 S":
+        "IM-A850K":
+        "IM-A850L":
+        "IM-A850l":
+        "IM-A850S":
+        "IM-A850SLK":
+        "IM-A850SP":
+        "IM-A860K":
+        "IM-A860L":
+        "IM-A860S":
+        "IM-A870L":
+        "IM-A870S":
+        "IM-A890K":
+        "IM-A890L":
+        "IM-A890S":
+        "IM-A990$":
+        "IM-T100K":
+        "IS06":
+        "IS11PT":
+        "P1010":
+        "P2000":
+        "P2020":
+        "P2030":
+        "P4000":
+        "P4100":
+        "P5000":
+        "P6010":
+        "P6020":
+        "P6030":
+        "P7000":
+        "P7040":
+        "P7050":
+        "P8000":
+        "P8010":
+        "P9020":
+        "P9050":
+        "P9060":
+        "P9070":
+        "P9090":
+        "PG-1200":
+        "PG-1400":
+        "PG-3000":
+        "PG-6100":
+        "PG-8000":
+        "PG-C300":
+        "PG-C610":
+        "PG-C820":
+        "PTL21":
+        "SKY IM-A600S":
+        "SKY IM-A630K":
+        "SKY IM-A650S":
+        "SKY_IM-A630K":
+        "SKY_IM-A820L":
+        "TXT8045":
+        "TXT80450":
+        "TXT804502":
+        "TXT8045060":
+        "TXT8045080":
+        "TXT8045085":
+        "TXT8045380":
+        "TXT804545":
+        "TXT8045485":
+        "TXT80455":
+        "TXT8045660":
+        "TXT8045d":
+    "Papyre":
+      capabilities:
+        info:
+          href:
+            1: "http://grammata.es/"
+        device:
+          type: "tablet"
+      model:
+        "Pad 712":
+        "Pad 715":
+        "pad 711":
+        "pad 712":
+        "pad 713":
+        "pad 715":
+        "pad 970":
+        "pad-970":
+        "pad_7.1":
+    "Pearl":
+      capabilities:
+        info:
+          href:
+            1: "http://www.pearl.de/c-1540.shtml"
+        device:
+          type: "tablet"
+    "Phicomm":
+      capabilities:
+        info:
+          href:
+            1: "http://www.phicomm.com.cn/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '(i800)'
+            capabilities:
+              device:
+                type: "phablet"
+    "Philips":
+      capabilities:
+        info:
+          href:
+            1: "http://www.support.philips.com/support/catalog/products.jsp?_dyncharset=UTF-8&country=&categoryid=MOBILE_PHONES_SMART_SU_CN_CARE&userLanguage=en&navCount=2&groupId=PC_PRODUCTS_AND_PHONES_GR_CN_CARE&catalogType=&navAction=push&userCountry=cn&title=Smartphones&cateId=MOBILE_PHONES_CA_CN_CARE"
+        device:
+          type: "smartphone"
+    "Pipo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.pipo.cn/En/index.php?m=Product&a=index&type=2"
+        device:
+          type: "tablet"
+    "Ployer":
+      capabilities:
+        info:
+          href:
+            1: "http://en.ployer.cn/"
+        device:
+          type: "tablet"
+      model:
+        "MOMO23":
+          capabilities:
+            info:
+              href:
+                1: "http://en.ployer.cn/mid_detail.php?id=41"
+              note: "TODO useragent missing"
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800
+    "Polaroid":
+      capabilities:
+        info:
+          href:
+            1: "http://polaroidstore.com/store/start.asp?category_id=382&category_id2=0&order=title&filter1=&filter2=&filter3=&view=all"
+        device:
+          type: "tablet"
+    "Pomp":
+      capabilities:
+        info:
+          href:
+            1: "http://pompmobileshop.com/"
+        device:
+          type: "smartphone"
+      model:
+        "C6":
+          capabilities:
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920
+            device:
+              type: "phablet"
+        "W88":
+        "W88S":
+        "W89":
+        "W99":
+        "W99A":
+    "Positivo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.positivoinformatica.com.br/www/pessoal/tablet-ypy/"
+        device:
+          type: "tablet"
+    "POV":
+      capabilities:
+        info:
+          href:
+            1: "http://www.pointofview-online.com/default2.php"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^(MOB-5045)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^MOB'
+            capabilities:
+              device:
+                type: "smartphone"
+        "TAB-P1325":
+          capabilities:
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800
+    "Prestigio":
+      capabilities:
+        info:
+          href:
+            1: "http://www.prestigio.com/catalogue/MultiPhones"
+            2: "http://www.prestigio.com/catalogue/MultiPads"
+      model:
+        regexes:
+          - regex: '^PAP5\d{3}'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^PAP'
+            capabilities:
+              device:
+                type: "smartphone"
+          - regex: '^PMP'
+            capabilities:
+              device:
+                type: "tablet"
+    "Proscan":
+      capabilities:
+        info:
+          href:
+            1: "http://www.proscanvideo.com/products-search.asp?itemClass=TABLET&itemnmbr="
+        device:
+          type: "tablet"
+    "QMobile":
+      capabilities:
+        info:
+          href:
+            1: "http://www.qmobile.com.pk/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: 'A11Note'
+            capabilities:
+              device:
+                type: "phablet"
+    "Qmobilevn":
+      capabilities:
+        info:
+          href:
+            1: "http://qmobile.vn/san-pham.html"
+        device:
+          type: "smartphone"
+    "Rockchip":
+      capabilities:
+        info:
+          href:
+            1: "http://www.rock-chips.com/a/cn/product/index.html"
+          note: "manufacturer sells chipsets - I assume that these UAs are dev-boards"
+        device:
+          type: "tablet"
+    "Samsung":
+      capabilities:
+        info:
+          href:
+            1: "http://www.samsung.com/us/mobile/cell-phones/all-products"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+              "Android":
+                capabilities:
+                  device:
+                    type: "smartphone"
+                major:
+                  "3":
+                    capabilities:
+                      device:
+                        type: "tablet"
+      model:
+        regexes:
+          - regex: '^(Galaxy Note II|GT-I9082|GT-I9205|GT-N[79]|SM-N|SCH-R9)'
+            capabilities:
+              device:
+                type: "phablet"
+          - regex: '^(Galaxy Tab|GT-P|GT-N[58]|SM-[PT]|SHW-M)'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '^(YP\-G)'
+            capabilities:
+              device:
+                type: "player"
+          - regex: '^(EK-GC100)'
+            capabilities:
+              device:
+                type: "camera"
+        "EK-GC100":
+          capabilities:
+            device:
+              type: "camera"
+            screen:
+              size: 4.8
+              width: 1280
+              height: 720
+        "SGH-I467":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8
+        "SGH-I497":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 10.1
+        "SCL21":
+          capabilities:
+            info:
+              marketing_name: "GALAXY S III Progre SCL21"
+              href:
+                1: "http://www.samsung.com/jp/consumer/mobilephone/smartphone/au/SCH-J021ZBJKDI-spec"
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.8
+              width: 720
+              height: 1280
+    "Siemens":
+      capabilities:
+        device:
+          type: "phone"
+    "Sega":
+      capabilities:
+        info:
+          href:
+            1: "http://www.sega.com"
+      model:
+        "Dreamcast":
+          capabilities:
+            device:
+              type: "tv"
+    "Sharp":
+      capabilities:
+        info:
+          href:
+            1: "http://www.sharp-phone.com/en/index.html"
+            2: "http://www.android.com/devices/?country=all&m=sharp"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+    "Simvalley":
+      capabilities:
+        info:
+          href:
+            1: "http://www.simvalley-mobile.de/"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^SPX'
+            capabilities:
+              device:
+                type: "phablet"
+    "SKtelesys":
+      capabilities:
+        info:
+          href:
+            1: "http://www.sk-w.com/phone/phone_list.jsp"
+            2: "http://www.android.com/devices/?country=all&m=sk-telesys"
+        device:
+          type: "smartphone"
+      model:
+        "SK-700":
+          capabilities:
+            screen:
+              size: 3
+              width: 240
+              height: 400
+        "SK-800":
+          capabilities:
+            screen:
+              size: 3
+        "SK-900":
+          capabilities:
+            screen:
+              size: 3.2
+        "SK-S100":
+          capabilities:
+            screen:
+              size: 3.2
+        "SK-S150":
+          capabilities:
+            screen:
+              size: 4
+        "SK-T100":
+          capabilities:
+            screen:
+              size: 3.2
+    "Skytex":
+      capabilities:
+        info:
+          href:
+            1: "http://skytex.com/android"
+        device:
+          type: "tablet"
+    "Smartbitt":
+      capabilities:
+        info:
+          href:
+            1: "http://www.smartbitt.com/tablets.html"
+        device:
+          type: "tablet"
+    "Sony":
+      capabilities:
+        info:
+          href:
+            1: "http://www.sonymobile.co.jp/index.html"
+            2: "http://www.sonymobile.com/global-en/products/phones/"
+            3: "http://www.sony.jp/tablet/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - ua:
+            family:
+              "HbbTV":
+                capabilities:
+                  device:
+                    type: "tv"
+      model:
+        regexes:
+          - regex: 'Tablet'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '^KDL'
+            capabilities:
+              device:
+                type: "tv"
+          - regex: 'PalmOS'
+            capabilities:
+              device:
+                type: "phone"
+        "PlayStation 3":
+          capabilities:
+            device:
+              type: "tv"
+        "PlayStation Portable":
+          capabilities:
+            device:
+              type: "console"
+        "PlayStation Vita":
+          capabilities:
+            device:
+              type: "console"
+        "Tablet P":
+          capabilities:
+            device:
+              type: "tablet"
+        "Tablet S":
+          capabilities:
+            device:
+              type: "tablet"
+        "SOL22":
+          capabilities:
+            info:
+              href:
+                1: "http://www.sonymobile.co.jp/xperia/au/sol22/"
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1776
+    "SonyEricsson":
+      capabilities:
+        info:
+          href:
+            1: "http://www.android.com/devices/?country=all&m=sony-ericssons"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        "Xperia Tablet S":
+          capabilities:
+            device:
+              type: "tablet"
+    "Spice":
+      capabilities:
+        info:
+          href:
+            1: "http://www.spicemobilephones.co.in/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        regexes:
+          - regex: '^Mi(?:7|1\d)\d{2}'
+            capabilities:
+              device:
+                type: "tablet"
+          - regex: '^Mi53\d'
+            capabilities:
+              device:
+                type: "phablet"
+    "Tagi":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "tablet"
+      model:
+        "MID140":
+        "MID950":
+    "Tecmobile":
+      capabilities:
+        info:
+          href:
+            1: "http://www.tecmobile.com/"
+        device:
+          type: "smartphone"
+      overwrites:
+        - os:
+            family:
+              "Other":
+                capabilities:
+                  device:
+                    type: "phone"
+      model:
+        "R30":
+        "R50":
+        "Q50":
+        "HANDY 100":
+        "HANDY 150":
+        "Opal 800":
+          capabilities:
+            device:
+              type: "smartphone"
+        "Oyster500":
+          capabilities:
+            device:
+              type: "smartphone"
+        "TITAN 500":
+        "TOUCH 200":
+          capabilities:
+            device:
+              type: "smartphone"
+        "YOU 25":
+          capabilities:
+            device:
+              type: "smartphone"
+        "YOU 40":
+          capabilities:
+            device:
+              type: "smartphone"
+    "Techvision":
+      capabilities:
+        device:
+          type: "evalboard"
+      model:
+        TV1T808:
+    "Tecno":
+      capabilities:
+        info:
+          href:
+            1: "http://www.tecno-mobile.com/product?filterby=smart&list_order=latest"
+        device:
+          type: "smartphone"
+      model:
+        "A2":
+          capabilities:
+            info:
+              marketing_name: "Phantom AII"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+        "B3":
+        "D1":
+          capabilities:
+            screen:
+              size: 2.6
+              width: 480
+              height: 320
+        "D3":
+        "D5":
+        "D7":
+        "F7":
+        "M3":
+        "M4":
+        "N3":
+        "N3S":
+        "N7":
+        "N9":
+          capabilities:
+            info:
+              marketing_name: "Phantom PAD"
+            device:
+              type: "tablet"
+            screen:
+              size: 8
+              width:
+              height:
+        "P3":
+        "P5":
+        "Q1":
+        "T3":
+        "S3":
+    "Telechips":
+      capabilities:
+        device:
+          type: "evalboard"
+      model:
+        M801:
+        TCC8800:
+        TCC8900:
+        TCC8902:
+        TCC9300:
+    "Telstra":
+      capabilities:
+        info:
+          href:
+            1: "https://support.google.com/googleplay/answer/1727131?hl=en"
+            2: "http://www.telstra.com.au/home-phone/thub/"
+        device:
+          type: "tablet"
+      model:
+        "T-Hub2":
+          capabilities:
+            device:
+              type: "tablet"
+    "Terra":
+      capabilities:
+        info:
+          href:
+            1: "http://www.wortmann.de/"
+        device:
+          type: "tablet"
+      model:
+        "PAD1001":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "PAD1002":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+    "Tesla":
+      capabilities:
+        info:
+          href:
+            1: "http://www.teslamotors.com/models"
+        device:
+          type: "car"
+      model:
+        "Model S":
+    "Texet":
+      capabilities:
+        info:
+          href:
+            1: "http://www.texet.ru/tablet/"
+        device:
+          type: "tablet"
+      model:
+        "TM-5200":
+        "TM-7021":
+        "TM-7037W":
+        "TM-7043XD":
+        "TM-9743W":
+    "Thalia":
+      capabilities:
+        info:
+          href:
+            1: "http://www.thalia.de/shop/tolino-shine-ereader/show/"
+        device:
+          type: "tablet"
+      model:
+        "Tolino Shine":
+          capabilities:
+            device:
+              type: "reader"
+    "Thl":
+      capabilities:
+        info:
+          href:
+            1: "http://en.thl.com.cn/products.html"
+            2: "http://www.thlworld.com/"
+            3: "http://thlmobilestore.com"
+        device:
+          type: "smartphone"
+      model:
+        "A1":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "A2":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "i95":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 540
+              height: 960
+        "T100":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "T200":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 1080
+              height: 1920
+        "T5":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+        "V11":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "V12":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+        "V7":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "V8":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "V9":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "W1":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "W2":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "W3":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "W5":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "W6":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "W7":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 1080
+              height: 1920
+        "W7s":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+        "W8":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "W8e":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "W8s":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "W9":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 1080
+              height: 1920
+        "W11":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "W100":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "W100s":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "W200":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "W300":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 6.5
+              width: 1080
+              height: 1920
+    "Tomtec":
+      capabilities:
+        info:
+          href:
+            1: "http://www.tom-tec.eu/pages/tablets.php"
+        device:
+          type: "tablet"
+      model:
+        "ATP7483":
+        "ATP7683":
+        "ATP7717":
+    "Tooky":
+      capabilities:
+        info:
+          href:
+            1: "http://www.tookymobile.com/"
+        device:
+          type: "smartphone"
+    "Toshiba":
+      capabilities:
+        info:
+          href:
+            1: "http://www.toshiba.co.jp/"
+            2: "http://www.toshiba.com/us/toshiba-tablets"
+        device:
+          type: "tablet"
+      overwrites:
+        - ua:
+            family:
+              "HbbTV":
+                capabilities:
+                  device:
+                    type: "tv"
+      model:
+        "AT10-A":
+        "AT100":
+        "AT10LE-A":
+        "AT200":
+        "AT270":
+        "AT300":
+        "AT300SE":
+        "AT500":
+        "Folio 100":
+        "T-01C":
+          capabilities:
+            device:
+              type: "smartphone"
+        "T-01D":
+          capabilities:
+            device:
+              type: "smartphone"
+        "RL858":
+          capabilities:
+            device:
+              type: "tv"
+        "TSUNAGI":
+        "LT170":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "Thrive":
+    "Trekstor":
+      capabilities:
+        info:
+          href:
+            1: "http://www.trekstor.co.uk/surftabs-en.html"
+        device:
+          type: "tablet"
+      model:
+        "ST10216-1":
+        "ST10216-2":
+        "ST70104-1":
+        "ST70104-2":
+        "ST70208-1":
+        "ST70208-2":
+        "ST70216-1":
+        "ST8000":
+        "ST8002":
+        "ST80208-1":
+        "ST80208-2":
+        "ST80216-1":
+        "ST80216-2":
+        "ST97216-1":
+    "Touchmate":
+      capabilities:
+        info:
+          href:
+            1: "http://touchmatepc.com/new/"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: '^TM-SM'
+            capabilities:
+              device:
+                type: "smartphone"
+        "TM-MID101N":
+        "TM-MID710":
+        "TM-MID720":
+        "TM-MID730":
+        "TM-MID730D":
+        "TM-MID732":
+        "TM-MID780":
+        "TM-MID790":
+        "TM-MID880":
+    "Treq":
+      capabilities:
+        info:
+          href:
+            1: "http://www.treq.co.id/product"
+        device:
+          type: "tablet"
+      model:
+        regexes:
+          - regex: 'tune|x1|pocket'
+            capabilities:
+              device:
+                type: "smartphone"
+    "Umeox":
+      capabilities:
+        info:
+          href:
+            1: "http://umeox.com/"
+        device:
+          type: "smartphone"
+      model:
+        "A502":
+        "A502+":
+        "A603":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "A936":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "X1":
+        "X2":
+        "X3":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 480
+              height: 800
+        "X5":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "X-5":
+          extends:
+            - device:
+                brand: "Umeox"
+                model: "X5"
+    "Versus":
+      capabilities:
+        info:
+          href:
+            1: "http://versusuk.com/support.html"
+        device:
+          type: "tablet"
+      model:
+        "TOUCHPAD 7":
+        "TOUCHPAD 9":
+        "TOUCHPAD7":
+        "TOUCHTAB 7DC":
+        "TOUCHTAB 8DC":
+        "TouchPad 10.1DC":
+        "TouchPad 7DC":
+        "Touchpad 9.7":
+    "Vertu":
+      capabilities:
+        info:
+          href:
+            1: "http://www.vertu.com/"
+        device:
+          type: "smartphone"
+      model:
+        "Ti":
+          capabilities:
+            device:
+              type: "smartphone"
+    "Videocon":
+      capabilities:
+        info:
+          href:
+            1: "http://www.videoconmobiles.com"
+        device:
+          type: "smartphone"
+      model:
+        regexes:
+          - regex: '^VT\d'
+            capabilities:
+              device:
+                type: "tablet"
+    "Viewsonic":
+      capabilities:
+        info:
+          href:
+            1: "http://www.viewsonic.com.cn/"
+        device:
+          type: "tablet"
+      model:
+        "GTablet":
+        "GTablet-TnT-Lite":
+        "ViewPad 10S":
+        "ViewPad 10e":
+        "ViewPad 7D":
+        "ViewPad7":
+        "ViewPad7X":
+        "ViewPhone3":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "V350":
+          extends:
+            - device:
+                brand: "Viewsonic"
+                model: "ViewPhone3"
+    "vivo":
+      capabilities:
+        info:
+          href:
+            1: "http://vivo.cn/"
+        device:
+          type: "smartphone"
+      model:
+        "E1":
+          capabilities:
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"        
+        "E1t":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "E1"
+        "E3":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "E5":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"
+        "S1":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "S3":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"        
+        "S3+":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "S3"
+        "S6":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "S6T":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "S6"
+        "S7":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "S7i(t)":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "S7"
+        "S7t":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "S7"
+        "S7w":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "S7"
+        "S9":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+            device:
+              type: "smartphone"        
+        "S11t":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "S12":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"        
+        "V1":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"
+        "V2":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"
+        "X1":
+          capabilities:
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+            device:
+              type: "smartphone"
+        "X1S":
+          capabilities:
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+            device:
+              type: "smartphone"
+        "X3":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+            device:
+              type: "smartphone"
+        "X3t":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+            device:
+              type: "smartphone"
+        "X510t":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "Xplay"
+        "Xplay":
+          capabilities:
+            screen:
+              size: 5.7
+              width: 1080
+              height: 1920
+            device:
+              type: "phablet"
+        "Xplay3S":
+          capabilities:
+            screen:
+              size: 6.0
+              width: 1440
+              height: 2560
+            device:
+              type: "phablet"
+        "Y1":
+          capabilities:
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"
+        "Y3t":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+            device:
+              type: "smartphone"
+        "Y11":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+            device:
+              type: "smartphone"
+        "Y11i T":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "Y11"
+        "Y11t":
+          extends:
+            - device:
+              brand: "vivo"
+              model: "Y11"
+        "Y15":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+            device:
+              type: "smartphone"
+        "Y19t":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+            device:
+              type: "smartphone"
+        "Y20":
+          capabilities:
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+            device:
+              type: "phablet"
+    "Vodafone":
+      capabilities:
+        info:
+          href:
+            1: "??"
+        device:
+          type: "smartphone"
+      model:
+        "845":
+        "858":
+        "861":
+        "875":
+        "945":
+        "958":
+        "975":
+        "975N":
+        "Smart 4G":
+        "Smart Tab III 10":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 10.0
+        "Smart Tab III 7":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+    "Walton":
+      capabilities:
+        info:
+          href:
+            1: "http://www.waltonbd.com/"
+        device:
+          type: "smartphone"
+    "Wellcom":
+      capabilities:
+        info:
+          href:
+            1: "http://www.wellcommobile.com/"
+        device:
+          type: "smartphone"
+      model:
+        "A86":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+        "A88":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+        "A89":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+        "A99":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "A100":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+        "A800":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 480
+              height: 800
+    "Wiko":
+      capabilities:
+        info:
+          href:
+            1: "http://fr.wikomobile.com/collection.php?s=Smartphones"
+        device:
+          type: "smartphone"
+      model:
+        "CINK":
+        "CINK FIVE":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "CINK KING":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 480
+              height: 854
+        "CINK PEAX":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "CINK PEAX 2":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "CINK SLIM":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "CINK+":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "DARKFULL":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "DARKMOON":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "DARKNIGHT":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "DARKSIDE":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+        "OZZY":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "STAIRWAY":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "SUBLIM":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+    "Wolfgang":
+      capabilities:
+        info:
+          href:
+            1: "http://wolfgangmobile.com/"
+        device:
+          type: "smartphone"
+      model:
+        "AT-AQ28D":
+          capabilities:
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "AT-AS28D":
+          capabilities:
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "AT-AS35D":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "AT-AS40D":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "AT-AS40D2":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "AT-AS40SE":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "AT-AS43D":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "AT-AS43D2":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "AT-AS43D3":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "AT-AS45IPS":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "AT-AS45qHD":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "AT-AS50SE":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "AT-AS53N":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+    "Woxter":
+      capabilities:
+        info:
+          href:
+            1: "http://www.woxter.es/es-es/categories/index"
+        device:
+          type: "tablet"
+      model:
+        "97 IPS DUAL 3G":
+        "Android TV BOX 600":
+          capabilities:
+            device:
+              type: "tv"
+        "Tablet PC 100CX":
+        "Tablet PC 101 IPS DUAL":
+        "Tablet PC 101IPS DUAL":
+        "Tablet PC 50BL":
+        "Tablet PC 50BL DUAL":
+        "Tablet PC 75CXi":
+        "Tablet PC 76CXi":
+        "Tablet PC 85CXi":
+        "Tablet PC 90BL":
+        "Tablet PC 97IPS":
+        "Tablet PC 97IPS DUAL":
+        "Tab PC 65CXi":
+    "Yarvik":
+      capabilities:
+        info:
+          href:
+            1: "http://yarvik.com"
+        device:
+          type: "tablet"
+      model:
+        "SMP35-100":
+          capabilities:
+            info:
+              marketing_name: "Novo Compact"
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "SMP35-200":
+          capabilities:
+            info:
+              marketing_name: "Ingenia Compact"
+            device:
+              type: "smartphone"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "SMP40-200":
+          capabilities:
+            info:
+              marketing_name: "Ingenia Nimity"
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 360
+              height: 640
+        "SMP45-210":
+          capabilities:
+            info:
+              marketing_name: "Ingenia Synchro"
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "SMP50-200":
+          capabilities:
+            info:
+              marketing_name: "Ingenia Horizon"
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+        "SMP50-201":
+          capabilities:
+            info:
+              marketing_name: "Ingenia Horizon"
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+        "SMP53-210":
+          capabilities:
+            info:
+              marketing_name: "Ingenia X1"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "TAB210":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB274":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB275":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB374":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 800
+              height: 600
+        "TAB462":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "TAB464":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1024
+              height: 600
+        "TAB469":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "TAB474":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1024
+              height: 600
+        "TAB07-100":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB07-101":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB07-150":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB07-151":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB07-152":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "TAB07-200":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-201":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-210":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-211":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-212":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-400":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "TAB07-485":
+          capabilities:
+            screen:
+              size: 7.85
+              width: 1024
+              height: 768
+        "TAB08-150":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "TAB08-200":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "TAB08-201":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "TAB09-100":
+          capabilities:
+            screen:
+              size: 9.0
+              width: 800
+              height: 480
+        "TAB9-200":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "TAB09-211":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "TAB09-410":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "TAB10-150":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1024
+              height: 600
+        "TAB10-201":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "TAB10-211":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "TAB10-400":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1024
+              height: 600
+        "TAB10-410":
+          capabilities:
+            screen:
+              size: 10.1
+              width: 1280
+              height: 800
+        "TAB13-201":
+          capabilities:
+            device:
+              type: "bigtablet"
+            screen:
+              size: 13.3
+              width: 1280
+              height: 800
+    "Yifang":
+      capabilities:
+        info:
+          href:
+            1: "http://www.yifangdigital.com/"
+        device:
+          type: "tablet"
+      model:
+        "M712":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "M712HC":
+        "M712KC":
+        "M712MC":
+        "M722HC":
+        "M722HZ":
+        "M723":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "M723HR":
+        "M726HN":
+        "M727":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "M727HC":
+        "M727KC":
+        "M727MC":
+        "M729":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M739":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M752":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "M752HC":
+        "M752MC":
+        "M752NC":
+        "M753":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M755":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M757":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M767ND":
+        "M769":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M780LPW":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "M778":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "M777":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "M767":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M789":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "M799":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7000":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7000AD":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7000NBD":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7000KD":
+        "M7001KD":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7002KD":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M7002KBD":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "M803HC":
+        "M805":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M805HC":
+        "M805ND":
+        "M815":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M816":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 800
+              height: 600
+        "M816HC":
+        "M816KC":
+        "M819HD":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M849":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8.0
+              width: 800
+              height: 600
+        "M878":
+          capabilities:
+            screen:
+              size: 7.85
+              width: 1024
+              height: 768
+        "M899":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M899LP":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M8000":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M8000KP":
+        "M8001":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M8002":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M8003":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M900HC":
+        "M900HZ":
+        "M908HC":
+        "M909":
+          capabilities:
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "M1005":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "M1006HD":
+        "M1007":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "M1008":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "M1010":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "M1011":
+          capabilities:
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+    "XiaoMi":
+      capabilities:
+        info:
+          href:
+            1: "http://www.xiaomi.com/event/buyphone"
+        device:
+          type: "smartphone"
+      model:
+        "Hongmi":
+          capabilities:
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "MI 1S":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "MI 1SC":
+        "MI 2":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+        "MI 2A":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "MI 2C":
+        "MI 2S":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+        "MI 2SC":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+        "MI 3":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "MI-ONE Plus":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+    "Xolo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.xolo.in/"
+        device:
+          type: "smartphone"
+      model:
+        "A500":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "A500L":
+          extends:
+            - device:
+                brand: "Xolo"
+                model: "A500"
+        "A500S":
+          extends:
+            - device:
+                brand: "Xolo"
+                model: "A500"
+        "A600":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "A700":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "A800":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "A1000":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "B700":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "PLAY":
+          capabilities:
+            device:
+              type: "player"
+            screen:
+              size: 4.7
+              width: 1280
+              height: 720
+        "Q1000":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "Q1000S":
+          extends:
+            - device:
+                brand: "Xolo"
+                model: "Q1000"
+        "Q2000":
+          extends:
+            - device:
+                brand: "Xolo"
+                model: "Q1000"
+        "Q500":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Q600":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Q700":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "Q700i":
+          extends:
+            - device:
+                brand: "Xolo"
+                model: "Q700"
+        "Q800":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        "Q900":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "X500":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "X900":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.03
+              width: 600
+              height: 1024
+        "X910":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "X1000":
+          capabilities:
+            device:
+              type: "smartphone"
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        "PLAY TAB 7.0":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "TAB":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+    "Xoro":
+      capabilities:
+        info:
+          href:
+            1: "http://www.xoro.de/produkte/"
+        device:
+          type: "tablet"
+      model:
+        "PAD 712":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "PAD 714":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "PAD 716":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "PAD 717":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "PAD 718":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "PAD 721":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "PAD 722":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "PAD 9715D":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+        "PAD 9716DR":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "PAD 9718DR":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "PAD 9719QR":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "PAD 9720QR":
+          capabilities:
+            screen:
+              size: 9.7
+              width: 2048
+              height: 1536
+        "PAD730":
+          capabilities:
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "PAD732":
+          extends:
+            - device:
+                brand: "Xoro"
+                model: "PAD730"
+        "TelePAD1030":
+          capabilities:
+            screen:
+              size: 10.1
+              width: 1280
+              height: 800
+        "TelePAD1032":
+          extends:
+            - device:
+                brand: "Xoro"
+                model: "TelePAD1030"
+    "ZiiLabs":
+      capabilities:
+        info:
+          href:
+            1: "http://www.ziilabs.com/products/platforms/androidreferencetablets.php"
+        device:
+          type: "tablet"
+      model:
+        "EGG":
+        "ZiiO7":
+        "ZiiO10":
+    "Zopo":
+      capabilities:
+        info:
+          href:
+            1: "http://www.zopomobiles.com/products.html"
+        device:
+          type: "smartphone"
+      model:
+        "ZP100":
+          capabilities:
+            info:
+              marketing_name: "ZP100 Pilot"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "ZP100+":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP100"
+          capabilities:
+            info:
+              marketing_name: "ZP100 Pilot+"
+        "ZP200":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP100"
+          capabilities:
+            info:
+              marketing_name: "ZP200 Shining"
+        "ZP200+":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP100"
+          capabilities:
+            info:
+              marketing_name: "ZP200 Shining+"
+        "ZP300":
+          capabilities:
+            info:
+              marketing_name: "ZP300 Field"
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "ZP300+":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP300"
+          capabilities:
+            info:
+              marketing_name: "ZP300 Field+"
+        "ZP500":
+          capabilities:
+            info:
+              marketing_name: "ZP500 Libero"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "ZP500+":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP500"
+          capabilities:
+            info:
+              marketing_name: "ZP500 Libero+"
+        "ZP800H":
+          capabilities:
+            screen:
+              size:
+              width:
+              height:
+        "ZP810":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "ZP810H DUAL SIM":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP810"
+        "ZP900":
+          capabilities:
+            info:
+              marketing_name: "ZP900 Leader"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "ZP900H":
+          capabilities:
+            info:
+              marketing_name: "ZP900S (Lite)"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "ZP900S":
+          capabilities:
+            info:
+              marketing_name: "ZP900S (Lite)"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "ZP910":
+          capabilities:
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
+        "ZP950":
+          capabilities:
+            info:
+              marketing_name: "ZP Tablet"
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 1280
+              height: 720
+        "ZP950+":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP950"
+        "ZP950H":
+          extends:
+            - device:
+                brand: "Zopo"
+                model: "ZP950"
+        "ZP980":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "ZP990":
+          capabilities:
+            info:
+              marketing_name: "Zopo Captain S"
+            device:
+              type: "phablet"
+            screen:
+              size: 6.0
+              width: 1080
+              height: 1920
+    "ZTE":
+      capabilities :
+        info:
+          href:
+            1: "http://www.ztedevices.com/"
+        device:
+          type: "smartphone"
+      model:
+        "003Z":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+          capabilities:
+            info:
+              note: "Softbank"
+        "008Z":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "V881"
+          capabilities:
+            info:
+              note: "Softbank"
+        "ARIZONA":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer II"
+        "ATLAS W":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "Avea InTouch 2":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III"
+        "BASE Lutea":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "BASE Lutea 2":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Skate"
+        "BASE Tab":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light"
+        "BASE Tab 7.1":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light Tab 2"
+        "Blade":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "BladeII":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "Blade III":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Blade III_IL":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III"
+        "Blade III Pro":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III"
+        "Blade_N880":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "Blade C":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Blade C2":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Blade E":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Blade G":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Blade L":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+        "Blade Q":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Blade S":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "Blade V":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "D930":
+          capabilities:
+            info:
+              marketing_name: "Cricket Chorus"
+              href:
+                1: "http://www.zteusa.com/phones/cricket-chorus-tm.html"
+            screen:
+              size: 3.2
+              width: 240
+              height: 400
+        "Grand Era":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "Grand S Flex":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "Grand Memo LTE":
+          capabilities:
+            device:
+              type: "phablet"
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+        "Grand S":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+        "Grand X":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "Grand X In":
+          capabilities:
+            cpu:
+              type: "Intel Medfield"
+              core: 1
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "Grand X Pro":
+          capabilities:
+            screen:
+              size: 4.5
+              width:
+              height:
+        "JOE":
+          capabilities:
+            info:
+              note: "same as vodafone 945"
+            screen:
+              size: 3.2
+              width: 240
+              height: 400
+        "Kis":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Kis Lite":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "KIS PLUS":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Kis II":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Kis III":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Kis Flex":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Libra":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "Light":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Light Pro":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "Light Tab 2":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+        "LINK":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer"
+        "Mimosa X":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+        "N5":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand S"
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/nubia5.html"
+        "N600":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer"
+        "N600+":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer"
+        "N800":
+          capabilities:
+            info:
+              marketing_name: "Virgin Mobile Awe"
+              href:
+                1: "http://www.zteusa.com/phones/virginmobile-awe.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N810":
+          capabilities:
+            info:
+              marketing_name: "Virgin Reef"
+              href:
+                1: "http://www.zteusa.com/phones/virginmobile-reef.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N850":
+          capabilities:
+            info:
+              marketing_name: "Fury"
+              href:
+                1: "http://www.zteusa.com/phones/zte-fury.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "N850L":
+          capabilities:
+            info:
+              marketing_name: "Director"
+              href:
+                1: "http://www.zteusa.com/phones/zte-director.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "N860":
+          capabilities:
+            info:
+              marketing_name: "Warp"
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "N861":
+          capabilities:
+            info:
+              marketing_name: "Warp Sequent"
+              href:
+                1: "http://www.zteusa.com/phones/zte-warp-sequent.html"
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        "N880e_Dawoer_Fulllock":
+        "N910":
+          info:
+            marketing_name: "Anthem"
+            href:
+              1: "http://www.zteusa.com/phones/zte-anthem-4g.html"
+          screen:
+            size: 4.3
+            width: 480
+            height: 800
+        "N8000":
+          capabilities:
+            info:
+              marketing_name: "Cricket Engage LT"
+              href:
+                1: "http://www.zteusa.com/phones/cricket-engage-lt.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N9100":
+          capabilities:
+            info:
+              marketing_name: "Force"
+              href:
+                1: "http://www.zteusa.com/phones/sprint-force.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N9101":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/zte-imperial.html"
+              marketing_name: "Imperial"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N9120":
+          capabilities:
+            info:
+              marketing_name: "Avid"
+              href:
+                1: "http://www.zteusa.com/zte-avid.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "N9500":
+          capabilities:
+            info:
+              marketing_name: "Sprint Flash"
+              href:
+                1: "http://www.zteusa.com/phones/sprint-flash.html"
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "N9510":
+          capabilities:
+            info:
+              href: "http://www.zteusa.com/boost-warp4g.html"
+              marketing_name: "Boost Warp"
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        "N9511":
+          capabilities:
+            info:
+              href: "http://www.zteusa.com/phones/zte-source.html"
+              marketing_name: "Source"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "N9810":
+          capabilities:
+            info:
+              marketing_name: "Vital"
+              href:
+                1: "http://www.zteusa.com/sprint-vital.html"
+                2: "http://www.zteusa.com/phones/virginmobile-supreme.html"
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+        "NX501":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "N5"
+        "OPEN":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Optik":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "Optimus Monte Carlo":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Skate"
+        "Optimus San Francisco":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "Orange Dublin":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Kis"
+        "Orange Monte Carlo":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Skate"
+        "Orange San Francisco":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "Racer":
+          capabilities:
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "RACERII":
+          capabilities:
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "Vip Racer III":
+          capabilities:
+            info:
+              note: "Branded by Croatian Operator Vip"
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III"
+        "San Francisco":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "San Francisco II":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade S"
+        "Skate":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "Skate Pro":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "SmartTab7": # regexes
+          capabilities:
+            info:
+              note: "Vodafone SmartTab7"
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+        "SmartTab10": # regexes
+          capabilities:
+            info:
+              note: "Vodafone SmartTab10"
+            device:
+              type: "tablet"
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "soft stone": # regexes
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer"
+        "T28":
+          capabilities:
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        "T82":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+
+        "Tania":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "tmn smart a7":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "V875"
+        "Tureis":
+          capabilities:
+            screen:
+              size: 2.6
+              width: 320
+              height: 240
+        "U790":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Kis III"
+        "U930":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+        "USCCN859":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Tania"
+        "V9":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light"
+        "V9A":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light Tab 2"
+        "V9C":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light Pro"
+        "v9plus":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Light Tab 2"
+        "V55":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Optik"
+        "V70":
+          capabilities:
+            device:
+              type: "tablet"
+            screen:
+              size: 7.0
+              width: 800
+              height: 480
+        "V81":
+          capabilities:
+            info:
+              note: "TODO ua missing!"
+            device:
+              type: "tablet"
+            screen:
+              size: 8.0
+              width: 1024
+              height: 768
+        "V96A":
+          capabilities:
+            info:
+              note: "TODO ua missing!"
+            device:
+              type: "tablet"
+            screen:
+              size: 10.0
+              width: 1280
+              height: 800
+        "V768":
+          info:
+            marketing_name: "Concord"
+            href:
+              1: "http://www.zteusa.com/t-mobile-concord.html"
+          capabilities:
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "V788D":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Kis"
+        "V790":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Kis III"
+        "V793":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Kis Flex"
+        "V807":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade C"
+        "V809":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade C2"
+        "V857":
+          capabilities:
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "V875":
+          capabilities:
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+        "V880":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade"
+        "V880E":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "V880G":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade G"
+        "V881": # regexes
+          capabilities:
+            info:
+              marketing_name: "Aglaia"
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+        "V882":
+          capabilities:
+            info:
+              marketing_name: "Lord"
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+        "V887":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade L"
+        "V889D":
+          capabilities:
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "V889F":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III Pro"
+        "V889M":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade III Pro"
+        "V889S":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade C"
+        "V955":
+          capabilities:
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "V956":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Blade E"
+        "V961":
+          capabilities:
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+        "V965W":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Tania"
+        "V967S":
+          capabilities:
+            screen:
+              size: 5.0
+              width: 540
+              height: 960
+        "V970":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+        "V970M":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+        "V970-orange":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "V970"
+        "V983":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X Pro"
+        "V985":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand Era"
+        "V987":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand X"
+        "V988":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand S"
+        "V6700":
+          capabilities:
+            screen:
+              size: 3.5
+        "V9800":
+          capabilities:
+            info:
+              marketing_name: "Cricket Engage"
+              href:
+                1: "http://www.zteusa.com/phones/cricket-engage.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "X500":
+          capabilities:
+            info:
+              marketing_name: "Score"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "X500M":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "X500"
+        "X501":
+          capabilities:
+            info:
+              marketing_name: "Cricket Groove"
+              href:
+                1: "http://www.zteusa.com/phones/cricket-groove.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "X850":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Racer"
+        "X876":
+        "X950":
+          capabilities:
+            info:
+              marketing_name: "Smooth"
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        "Z660G":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-whirl.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Z665C":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-valet.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Z740":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/att-radiant.html"
+              marketing_name: "AT&T Radiant"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Z750C":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-savvy.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Z753":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Grand S"
+        "Z788G":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-illustra.html"
+              marketing_name: "Illustra"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Z795G":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-solar.html"
+              marketing_name: "Solar"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Z796C":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-majesty.html"
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+        "Z990":
+          capabilities:
+            info:
+              marketing_name: "Merit"
+            screen:
+              size: 3.5
+        "Z990G":
+          extends:
+            - device:
+                brand: "ZTE"
+                model: "Z990"
+        "Z992":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/att-avail2.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Z993":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-prelude.html"
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        "Z995":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/zte-overture.html"
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+        "Z998":
+          capabilities:
+            info:
+              href:
+                1: "http://www.zteusa.com/phones/att-z998.html"
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+
+    "Zync":
+      capabilities:
+        info:
+          href:
+            1: "http://www.zync.in/index.php/our-products/tablet-phablets"
+        device:
+          type: "tablet"
+      model:

@@ -1,0 +1,53 @@
+#
+# testfile: basic capabilities merge
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+# 
+
+default:
+  capabilities:
+    group:
+      attr: "default"
+# OS
+os:
+  family:
+    "osfamily1": 
+      capabilities: 
+        group: 
+          attr: "osfamily1"
+      major:
+        "major1":
+          capabilities: 
+            group: 
+              attr: "osfamily1_major1"
+          minor:
+            "minor1":
+              capabilities: 
+                group: 
+                  attr: "osfamily1_major1_minor1"
+# User-Agent
+ua:
+  family:
+    "uafamily1":
+      capabilities:
+        group:
+          attr: "uafamily1"
+      overwrites:
+        - os:
+          family: 
+            "osfamily1":
+              capabilities:
+                group:
+                  attr: "uafamily1_overwrite_osfamily1"
+    "uafamily2":
+      regexes:
+        - regex: "UA1"
+          capabilities:
+            group:
+              attr: "uafamily2_regex_UA1"
+# Device
+device:

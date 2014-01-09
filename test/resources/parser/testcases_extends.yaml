@@ -1,0 +1,110 @@
+#
+# testcases: capabilities search with extends
+# 
+# Copyright (c) 2013 commenthol
+#
+# This data is available for use under a CC BY 4.0 license 
+# (http://creativecommons.org/licenses/by/4.0/). 
+# For attribution mention https://github.com/commenthol/ua-parser-caps
+#
+
+- test: "get capabilities on os.family with one extend"
+  setup:
+    files:
+    - "capstest_extends.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: "osfamily11" 
+        major: 
+        minor: 
+      ua:
+        family:
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'osfamily10_major1' 
+      attr1: 'osfamily10'
+      attr2: 'osfamily11' 
+
+- test: "get capabilities on ua.family with two extends"
+  setup:
+    files:
+    - "capstest_extends.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily10"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily10'
+      attr1: 'osfamily10' 
+      attr2: 'osfamily11'
+      attr3: 'osfamily10_major1_minor1'
+
+- test: "get capabilities on ua.family with multiple extends"
+  setup:
+    files:
+    - "capstest_extends.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily10"
+        major: "major1"
+        minor: "minor1"
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily10_major1_minor1' 
+      attr1: 'osfamily10' 
+      attr2: 'osfamily11' 
+      attr3: 'osfamily10_major1_minor1' 
+      attr4: 'uafamily10_major1' 
+
+- test: "get capabilities on ua.family with multiple extends causing infinite loop"
+  setup:
+    files:
+    - "capstest_extends.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily11"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily11' 
