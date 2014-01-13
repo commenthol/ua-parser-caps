@@ -13,7 +13,7 @@ var
   assert = require('assert'),
   fs     = require('fs'),
   jsyaml = require('js-yaml'),
-  caps   = require('../index'),
+  capsparserF = require('../index'),
   extend = require('../util/extend').extend;
 
 // directory of test resources
@@ -27,7 +27,7 @@ var resourcesDir = __dirname + "/../../test/resources/parser/";
  */
 function batch(file) {
   var i, j;
-  var batch = {};
+  var _batch = {};
   var content = fs.readFileSync(resourcesDir + file, 'utf8');
   var testcases = jsyaml.safeLoad(content);
 
@@ -40,23 +40,23 @@ function batch(file) {
       tc.setup.files[j] = resourcesDir + tc.setup.files[j];
     }
 
-    batch[tc.test] = (function(tc){
+    _batch[tc.test] = (function(tc){
       var test = {};
       test.topic = function() {
-        var capsf = caps(tc.setup.files);
-        //~ capsf.printCaps();
-        var c = capsf.caps(tc.setup.uaparsed).parse();
+        var capsparser = capsparserF(tc.setup.files);
+        //~ capsparser.printCaps();
+        var c = capsparser.caps(tc.setup.uaparsed).parse();
         //~ console.log(c);
         return c;
-      }
+      };
       test[tc.resultmsg] = function (result) {
         assert.deepEqual(result, tc.result);
-      }
+      };
       return test;
     })(tc);
 
   }
-  return batch;
+  return _batch;
 }
 
 vows.describe('capabilities tests')

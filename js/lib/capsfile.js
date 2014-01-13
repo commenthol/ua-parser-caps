@@ -50,30 +50,21 @@ M.loadSync = function loadSync (files) {
   }
   
   for (i=0; i<files.length; i+=1) {
-    //~ try {
-      content = fs.readFileSync(files[i], 'utf8');
-      content = jsyaml.safeLoad(content);
-      
-      // test if content is a capabilities file
-      // TODO: make a test to verify the structure of the file.
-      if (content.os || content.ua || content.device ) {
-        caps = merge (caps, moveIntoArray(content));
-      }
-      else {
-        caps = { error: files[i] + ' is not a valid capabilities file.' };
-        break;
-      }
-    //~ }
-    //~ catch(e) {
-      //~ console.log(e);
-      //~ debugger;
-      //~ caps = { error: 'parsing ' + files[i] + ' failed with ' + e.name + ' ' + JSON.stringify(e)}; 
-      //~ break;
-    //~ }
+    content = fs.readFileSync(files[i], 'utf8');
+    content = jsyaml.safeLoad(content);
+    
+    // test if content is a capabilities file
+    // TODO: make a test to verify the structure of the file.
+    if (content.os || content.ua || content.device ) {
+      caps = merge (caps, moveIntoArray(content));
+    }
+    else {
+      caps = { error: files[i] + ' is not a valid capabilities file.' };
+      break;
+    }
   }
   
   return caps;
-}
-
+};
 
 module.exports = M;

@@ -121,7 +121,7 @@ vows.describe('extend merged')
       return merge (source1, source2, source3);
     },
     'merged result': function(result) {
-      assert.deepEqual(result, { a: 1, b: 3, c: 2, d: 3 });5
+      assert.deepEqual(result, { a: 1, b: 3, c: 2, d: 3 });
     },
   },
   'merging objects': {

@@ -13,8 +13,8 @@
 # preference classification based on a User-Agent String.
 # Motivation: In most modern mobile browsers the user can change the the 
 # User-Agent such to signal their preference of the default use case.
-# On choosing "desktop" they prefer to obtain a bigscreen view over 
-# the a possible default "mobile" view. 
+# On choosing 'desktop' they prefer to obtain a bigscreen view over 
+# the a possible default 'mobile' view. 
 # The capabilities provided here try to take this into account.
 #
 
@@ -23,13 +23,15 @@
 #
 # tv      - large screen use
 # desktop - desktop/ laptop use
-# tablet  - tablet use (screen larger >= 7")
-# mobile  - mobile use (screen smaller < 7")
+# tablet  - tablet use (screen larger >= 7')
+# mobile  - mobile use (screen smaller < 7')
 #
 
 # defaults for all
 default:
   capabilities:
+    user:
+      view:
 
 # os specific types
 os:
@@ -37,326 +39,382 @@ os:
     Android:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
       regexes:
         - regex: 'Large.Screen'
           capabilities:
             user:
-              view: "tv"
+              view: 'tv'
         - regex: 'Mobile.Safari'
           capabilities:
             user:
-              view: "mobile"
+              view: 'mobile'
         - regex: 'Safari'
           capabilities:
             user:
-              view: "tablet"
+              view: 'tablet'
       major:
-        "3":
+        '3':
           capabilities:
             user:
-              view: "tablet"
+              view: 'tablet'
     Arch Linux:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     ATV OS X:
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
     BackTrack:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Bada:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     BlackBerry OS:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     BlackBerry Tablet OS:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
     BREW:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Brew MP:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     BSD:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     CentOS:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Chrome OS:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Debian:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Fedora:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     FireHbbTV:
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
     Firefox OS:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     FreeBSD:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Gentoo:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     GoogleTV:
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
     iOs:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
       regexes:
         - regex: 'Mobile'
           capabilities:
             user:
-              view: "mobile"
+              view: 'mobile'
     Kindle:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
     Kubuntu:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Linux:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Linux Mint:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Lubuntu:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Mac OS:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Mac OS X:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Mageia:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Mandriva:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     MeeGo:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     NetBSD:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Nokia Series 40:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     OpenBSD:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     openSUSE:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Other:
       capabilities:
-        user:
-          view: "mobile"
+        #~ user:
+          #~ view: 'mobile'
       regexes:
-        - regex: "AppleTV"
+        - regex: 'AppleTV'
           capabilities:
             user:
-              view: "tv"
+              view: 'tv'
     PCLinuxOS:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Puppy:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Red Hat:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     SUSE:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Slackware:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Solaris:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Symbian OS:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Symbian^3:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Symbian^3 Anna:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Symbian^3 Belle:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Ubuntu:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     VRE:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     webOS:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     WeTab:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
     WebTV:
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
     Windows:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 2000:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 3.1:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 7:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 8:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 8.1:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 95:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows 98:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows CE:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Windows ME:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows Mobile:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
     Windows NT:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows NT 4.0:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows Phone:
       capabilities:
         user:
-          view: "mobile"
+          view: 'mobile'
+      regexes:
+        - regex: 'XBLWP7'
+          capabilities:
+            user:
+              view: 'desktop'
     Windows RT:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
     Windows RT 8.1:
       capabilities:
         user:
-          view: "tablet"
+          view: 'tablet'
     Windows Vista:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Windows XP:
       capabilities:
         user:
-          view: "desktop"
+          view: 'desktop'
     Xbox:
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
 
 # ua
 ua:
   family:
-  
+    'Firefox Mobile':
+      capabilities:
+        user:
+          view: 'mobile'
+    'IE Large Screen':
+      capabilities:
+        user:
+          view: 'desktop'
+
 # device specific types
 device:
   family:
-    "HbbTV":
+    'HbbTV':
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
   brand:
     regexes:
       - regex: 'NetCast'
         capabilities:
-          device:
-            type: "tv"
-    "Generic_Inettv":
+          user:
+            view: 'tv'
+    'Generic':
+      model:
+        'Feature Phone':
+          capabilities:
+            user:
+              view: 'mobile'
+        'Smartphone':
+          capabilities:
+            user:
+              view: 'mobile'
+        'Tablet':
+          capabilities:
+            user:
+              view: 'tablet'
+    'Generic_Inettv':
       capabilities:
         user:
-          view: "tv"
+          view: 'tv'
+    'LG':
+      regexes:
+        - regex: 'NetCast'
+          capabilities:
+            user:
+              view: 'tv'
+    'Nokia':
+      capabilities:
+        user:
+          view: 'mobile'
+    'Motorola':
+      regexes:
+        - regex: '\bMIDP\b'
+          capabilities:
+            user:
+              view: 'mobile'        
+    'Samsung':
+      regexes:
+        - regex: '\bMIDP\b'
+          capabilities:
+            user:
+              view: 'mobile'
+    'Woxter':
+      model:
+        'Android TV BOX 600':
+          capabilities:
+            user:
+              view: 'tv'
+          

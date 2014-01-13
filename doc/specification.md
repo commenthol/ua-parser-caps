@@ -332,9 +332,9 @@ In the example above the "Gumsang Communicator" devices capabilities get extende
 
 1. extends
    from last to first in tree traversal
-2. regexes
+2. capabilities
+3. regexes
    from first to last in Array
-3. capabilities
 4. overwrites
    from first to last in Array
 
