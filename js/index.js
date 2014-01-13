@@ -132,7 +132,7 @@ module.exports = function(files) {
    */
   F.printCaps = function printCaps() {
     console.log(JSON.stringify(capabilities, null, ' '));
-  }
+  };
 
   /**
    * prepare parser with a parsed user-agent-string from ua-parser
@@ -219,7 +219,7 @@ module.exports = function(files) {
                 else {
                   arr = ['major', 'minor'];
                 }
-                arr.map(function(p){
+                arr.forEach(function(p){
                   if (tmp[p]) {
                     getCap(tmp[p], type, self.uaparsed[type][p]);
                   }
@@ -371,7 +371,7 @@ module.exports = function(files) {
     self.parseOs = function parseOs() {
       defaultCaps();
       osuaCaps(self.uaparsed.os, 'os');
-    }
+    };
 
     /**
      * parse capabilities on "ua"
@@ -379,7 +379,7 @@ module.exports = function(files) {
     self.parseUa = function parseUa() {
       defaultCaps();
       osuaCaps(self.uaparsed.ua, 'ua');
-    }
+    };
     
     /**
      * parse capabilities on "device"
@@ -387,7 +387,7 @@ module.exports = function(files) {
     self.parseDevice = function parseDevice() {
       defaultCaps();
       deviceCaps(self.uaparsed.device);
-    }
+    };
 
     /**
      * parse capabilities for "os", "ua", "device"
@@ -398,12 +398,12 @@ module.exports = function(files) {
       self.parseUa();
       self.parseDevice();
       return self.cap;
-    }
+    };
 
     // return the methods for parsing
     return self;
-  }
+  };
 
   // return the methods of module
   return F;
-}
+};

@@ -20,7 +20,7 @@ vows.describe('capsfile tests')
 .addBatch({
   'loading one file': {
     topic: function() {
-      return file.loadSync(resourcesDir + 'capstest_file1.yaml')
+      return file.loadSync(resourcesDir + 'capstest_file1.yaml');
     },
     'shall contain os capabilities': function(result) {
       assert.notEqual(result.os, null);
@@ -32,7 +32,7 @@ vows.describe('capsfile tests')
   },
   'loading two files': {
     topic: function() {
-      return file.loadSync([resourcesDir + 'capstest_file1.yaml',resourcesDir + 'capstest_file2.yaml'])
+      return file.loadSync([resourcesDir + 'capstest_file1.yaml',resourcesDir + 'capstest_file2.yaml']);
     },
     'shall contain os capabilities': function(result) {
       assert.notEqual(result.os, null);
