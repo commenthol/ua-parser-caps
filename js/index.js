@@ -140,7 +140,7 @@ module.exports = function(files) {
    * @param {Object} uaparsed
    * @return methods offered
    */
-  F.caps = function caps(uaparsed) {
+  F.parser = function parser(uaparsed) {
     var applyDefaultCaps = true;  
     var recursion = {};
     var self = { cap: {} };
