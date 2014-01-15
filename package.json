@@ -22,11 +22,10 @@
     "ua-parser": "git://github.com/commenthol/ua-parser.git#master"
   },
   "devDependencies": {
-    "vows": "~0.7.0",
     "mocha": ">=0.17.0"
   },
   "scripts": {
-    "test": "vows ./js/test/*.test.js && vows ./js/util/test/*.test.js && mocha -u tdd -R min ./js/test/*.mocha.js"
+    "test": "node ./js/test/run.test.js"
   },
   "licenses": [
     {
