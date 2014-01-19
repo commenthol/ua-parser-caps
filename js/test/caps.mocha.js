@@ -12,12 +12,12 @@
 "use strict";
 
 // module dependencies
-var assert = require('assert'),
-	fs = require('fs'),
-	path = require('path'),
-	jsyaml = require('js-yaml'),
-	capsParser = require('../index'),
-	extend = require('../util/extend').extend;
+var assert = require('assert');
+var fs = require('fs');
+var path = require('path');
+var jsyaml = require('js-yaml');
+var capsParser = require('../index');
+var extend = require('../lib/util/extend').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/",
@@ -34,11 +34,11 @@ capsFiles = capsFiles.map(function(file) {
 });
 
 suite('device type tests', function() {
-	var capsparser = capsParser(capsFiles).parser;
+	var capsparser = capsParser(capsFiles);
 
 	testcases.forEach(function(tc) {
 		suite(tc.string, function() {
-			var capabilities = capsparser(tc).parse();
+			var capabilities = capsparser.parse(tc);
 			test('shall return device type', function() {
 				assert.equal(tc.capabilities.device.type, capabilities.device.type);
 			});

@@ -2061,6 +2061,17 @@ device:
             1: 'http://www.iconbit.com/catalog/tablets/'
         device:
           type: 'tablet'
+      model:
+        'NT-1501C':
+          capabilities:
+            info:
+              marketing_name: 'Callisto 100'
+            device:
+              type: 'smartwatch'
+            screen:
+              size: 1.54
+              width: 240
+              height: 240
     'IMO':
       capabilities:
         info:
@@ -4271,6 +4282,17 @@ device:
             capabilities:
               device:
                 type: 'phone'
+        'MN2SW':
+          capabilities:
+            info:
+              href:
+                1: 'http://www.sonymobile.com/global-en/products/accessories/smartwatch/'
+            device:
+              type: 'watch'
+            screen:
+              size: 1.42
+              width: 128
+              height: 128
         'PlayStation 3':
           capabilities:
             device:
@@ -4283,14 +4305,6 @@ device:
           capabilities:
             device:
               type: 'console'
-        'Tablet P':
-          capabilities:
-            device:
-              type: 'tablet'
-        'Tablet S':
-          capabilities:
-            device:
-              type: 'tablet'
         'SOL22':
           capabilities:
             info:
@@ -4302,6 +4316,25 @@ device:
               size: 5.0
               width: 1080
               height: 1776
+        'SW2':
+          capabilities:
+            info:
+              href:
+                1: 'http://www.sonymobile.com/gb/products/accessories/smartwatch-2-sw2/'
+            device:
+              type: 'watch'
+            screen:
+              size: 1.6
+              width: 220
+              height: 176
+        'Tablet P':
+          capabilities:
+            device:
+              type: 'tablet'
+        'Tablet S':
+          capabilities:
+            device:
+              type: 'tablet'
     'SonyEricsson':
       capabilities:
         info:
@@ -5352,6 +5385,19 @@ device:
               size: 7.0
               width: 480
               height: 800
+    'WeTab':
+      capabilities:
+        device:
+          type: tablet
+      model:
+        'WeTab':
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 11.6
+              width: 1366
+              height: 768
     'Wiko':
       capabilities:
         info:

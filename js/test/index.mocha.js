@@ -10,15 +10,17 @@
 "use strict";
 
 // module dependencies
-var assert = require('assert'),
-	fs = require('fs'),
-	path = require('path'),
-	jsyaml = require('js-yaml'),
-	capsparserM = require('../index'),
-	extend = require('../util/extend').extend;
+var assert = require('assert');
+var fs = require('fs');
+var path = require('path');
+var jsyaml = require('js-yaml');
+var capsparserM = require('../index');
+var extend = require('../lib/util/extend').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/parser/";
+
+var _debug = 0;
 
 /**
  * generate the test batches from the testcases.yaml file
@@ -38,10 +40,11 @@ function batch(file) {
 			return path.normalize(resourcesDir + file);
 		});
 
-		test(tc.test, function() {
+		test('- ' + tc.test, function() {
 			var capsparser = capsparserM(tc.setup.files);
-			//~ capsparser.printCaps();
-			var result = capsparser.parser(tc.setup.uaparsed).parse();
+			_debug && capsparser.printTree();
+			var result = capsparser.parse(tc.setup.uaparsed);
+			_debug && console.log('>>result:', JSON.stringify(result, null, ' '));
 			assert.deepEqual(result, tc.result);
 		});
 	});

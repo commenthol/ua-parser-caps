@@ -83,3 +83,55 @@
       attr: 'uafamily2_regex_UA1'
       # from 2nd file
       attr2: 'uafamily2_regex_UA4'
+- test: "get capabilities on ua.family using extends"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: ""
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily3"
+        major: "major2"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      "attr": "uafamily3_major1"
+      "attr1": "uafamily3_major2"
+      "attr_file1": "uafamily3_major2"
+      "attr_file2": "uafamily3_major2"
+- test: "get capabilities on ua.family using different extends"
+  setup:
+    files:
+    - "capstest_file1.yaml"
+    - "capstest_file2.yaml"
+    uaparsed:
+      string: ""
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily3"
+        major: "major3"
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      "attr": "uafamily1"
+      "attr1": "uafamily3_major2"
+      "attr_file1": "uafamily3_major3"
+      "attr_file2": "uafamily3_major3"
