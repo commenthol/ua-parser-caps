@@ -6,15 +6,16 @@ var Mocha = require('mocha'),
 
 var mocha = new Mocha({
 	ui: 'tdd',
-	reporter: 'dot'
+	reporter: 'dot',
 });
 
-var dirs = [ '.', '../util/test' ];
+var dirs = [ '/.', '/../lib/util/test' ];
+var fileMatch = /\.mocha\.js$/;
 
 dirs.forEach(function(dir){
-	dir = __dirname + '/' + dir;
+	dir = __dirname + dir;
 	fs.readdirSync(dir).filter(function(file){
-		return /\.mocha\.js$/.test(file);
+		return fileMatch.test(file);
 	}).forEach(function(file){
 		mocha.addFile(
 			path.join(dir, file)

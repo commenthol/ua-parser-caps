@@ -32,41 +32,18 @@ A sample usage is provided using the file `js/test/sample.js`.
 
 ````js
 var uaparser = require('ua-parser');
-var capsparser = require('ua-parser-caps')().parser;
+var capsparser = require('ua-parser-caps')();
 var userAgent = 'Mozilla/5.0 (Linux; Android 4.3.1; LG-E980 Build/JLS36I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36';
 
 var uaparsed = uaparser.parse(userAgent);
-console.log(uaparsed);
 
-var capabilities = capsparser(uaparsed).parse();
+var capabilities = capsparser.parse(uaparsed);
 console.log(capabilities);
 ````
 
 outputs:
 
 ````json
-{ string: 'Mozilla/5.0 (Linux; Android 4.3.1; LG-E980 Build/JLS36I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36',
-  ua: 
-   { family: 'Chrome Mobile',
-     major: '31',
-     minor: '0',
-     patch: '1650' },
-  userAgent: 
-   { family: 'Chrome Mobile',
-     major: '31',
-     minor: '0',
-     patch: '1650' },
-  os: 
-   { family: 'Android',
-     major: '4',
-     minor: '3',
-     patch: '1',
-     patchMinor: null },
-  device: { family: 'LG-E980', brand: 'LG', model: 'E980' },
-  family: 'Chrome Mobile',
-  major: 31,
-  minor: 0,
-  patch: 1650 }
 { device: { type: 'phablet' },
   user: { view: 'mobile' },
   info: 
