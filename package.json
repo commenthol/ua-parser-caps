@@ -1,13 +1,13 @@
 {
   "name": "ua-parser-caps",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "capabilities for ua-parser",
   "main": "js/index.js",
   "author": "Commenthol",
   "maintainers": [
     {
       "name": "Commenthol",
-      "email": "commenthol@prrtr.de"
+      "email": "commenthol@gmail.com"
     }
   ],
   "contributors": [
