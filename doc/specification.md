@@ -5,16 +5,16 @@ This specification shall provide information to understand how `ua-parser-caps` 
 
 ### Table of Contents
 
-* [Specifying capabilities](#Specifying capabilities) 
-* [Discovering capabilities](#Discovering capabilities) 
-  * [Regular Expressions](#Regular Expressions) 
-  * [Overwrites](#Overwrites)
-  * [Extends](#Extends)
-  * [Order of capabilities application](#Order of capabilities application)
-* [Merging Capability Files](#Merging Capability Files)
+* [Specifying capabilities](#specifying-capabilities) 
+* [Discovering capabilities](#discovering-capabilities) 
+  * [Regular Expressions](#regular-expressions) 
+  * [Overwrites](#overwrites)
+  * [Extends](#extends)
+  * [Order of capabilities application](#order-of-capabilities-application)
+* [Merging Capability Files](#merging-capability-files)
 
 
-<a id="Specifying capabilities" href="#">^Top</a>
+<a id="specifying-capabilities" href="#">^Top</a>
 ## Specifying capabilities
 
 All capabilities are added to a capabilities tree as "leaves" using the keyword `capabilities` .
@@ -154,7 +154,7 @@ capabilities:
     html: '4'
 ````
 
-<a id="Discovering capabilities" href="#">^Top</a>
+<a id="discovering-capabilities" href="#">^Top</a>
 ## Discovering capabilities
 
 ````
@@ -183,7 +183,7 @@ The last stage extends the collected capabilities by `device.family` or `device.
 Any stage is optional, i.e. if any of the keys `default`, `os`, `ua` or `device` are missing, the next branch is choosen.
 
 
-<a id="Regular Expressions" href="#">^Top</a>
+<a id="regular-expressions" href="#">^Top</a>
 ### Regular Expressions
 
 Capabilities can also be added depended of regular expressions which are applied to the full user-agent string. 
@@ -227,7 +227,7 @@ If the value of `device.model` contains "cool" then the "device.type" gets repla
 Note: `regex` or `regex_not` applied to `device.brand` or `device.brand` shall **NOT** contain the character "\_" but instead use " ". In order to obtain better matching results for devices, all nodes for "device.brand" and "device.brand.model" get extended by a lower-case version of the values and all "\_" chars get replaced by " ".
 
 
-<a id="Overwrites" href="#">^Top</a>
+<a id="overwrites" href="#">^Top</a>
 ### Overwrites
 
 `ua` capabilities can have overwrites per `os` or `device`. This is useful if for example a user-agent behaves strange on a specific `os` or `device`.
@@ -282,7 +282,7 @@ E.g. you experience styling problems on legacy "Gamsung" Android 4 devices, but 
 In the later you discover that on the model "Cooler" the problem observed was fixed. Revert Cap #No3 then for the model "Cooler".
 
 
-<a id="Extends" href="#">^Top</a>
+<a id="extends" href="#">^Top</a>
 ### Extends
 
 In order of not repeating always the same capability-sets, "extends" can be used to reference to an already given set of capabilities. Extends can be traversed over various capability sets. Extends are always applied before "regexes" any "capabilities".
@@ -327,7 +327,7 @@ In the example above the "Gumsang Communicator" devices capabilities get extende
 ````
 
 
-<a id="Order of capabilities application" href="#">^Top</a>
+<a id="order-of-capabilities-application" href="#">^Top</a>
 ### Order of capabilities application
 
 1. extends
@@ -348,16 +348,16 @@ os:
     "os.family":
       extends:
         ...
-      regexes:
-        ...
       capabilities:
+        ...
+      regexes:
         ...
       overwrites:
         ...
 ````
 
 
-<a id="Merging Capability Files" href="#">^Top</a>
+<a id="merging-capability-files" href="#">^Top</a>
 ## Merging Capability Files
 
 Various capability-files can be named to get loaded. All files are then merged into the other, starting from first to last.
