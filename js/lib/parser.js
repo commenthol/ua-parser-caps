@@ -41,6 +41,13 @@ M.parser = function (tree) {
 	};
 
 	/**
+	 * get capabilities tree
+	 */
+	F.getTree = function () {
+		return tree;
+	};
+
+	/**
 	 * initialization
 	 */
 	var init = function (uaparsed) {

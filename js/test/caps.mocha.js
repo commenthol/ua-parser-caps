@@ -27,7 +27,11 @@ var resourcesDir = __dirname + "/../../test/resources/",
 	testcases = JSON.parse(content);
 
 // capability files under test
-var capsFiles = ['caps_device_type.yaml', 'caps_user_view.yaml'];
+var capsFiles = [
+	'caps_device_type.yaml', 
+	'caps_user_view.yaml',
+	'caps_ie_compatibility.yaml'
+];
 
 capsFiles = capsFiles.map(function(file) {
 	return path.normalize(capsDir + file);
@@ -39,11 +43,16 @@ suite('device type tests', function() {
 	testcases.forEach(function(tc) {
 		suite(tc.string, function() {
 			var capabilities = capsparser.parse(tc);
-			test('shall return device type', function() {
-				assert.equal(tc.capabilities.device.type, capabilities.device.type);
+			test('- device type', function() {
+				assert.equal(capabilities.device.type, tc.capabilities.device.type);
 			});
-			test('shall return user view', function() {
-				assert.equal(tc.capabilities.user.view, capabilities.user.view);
+			test('- user view', function() {
+				assert.equal(capabilities.user.view, tc.capabilities.user.view);
+			});
+			test('- ie compatibility mode', function() {
+				if (tc.capabilities.browser && tc.capabilities.browser.ie_compatibility_mode) {
+					assert.deepEqual(capabilities.browser, tc.capabilities.browser);
+				}
 			});
 		});
 	});
