@@ -84,6 +84,13 @@ ua:
           extends:
             - ua:
                 family: "uafamily11"
+    "uafamily12": 
+      capabilities: 
+        group: 
+          attr: "uafamily12"
+      extends:
+        - ua:
+            family: "uafamily12_not_exists"
 # Device
 device:
   family:

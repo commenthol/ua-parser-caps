@@ -108,3 +108,25 @@
   result:
     group:
       attr: 'uafamily11' 
+- test: "get capabilities on ua.family for extend which does not exist"
+  setup:
+    files:
+    - "capstest_extends.yaml"
+    uaparsed:
+      string: "Mozilla/0.0"
+      os:
+        family: 
+        major: 
+        minor: 
+      ua:
+        family: "uafamily12"
+        major:
+        minor:
+      device:
+        family:
+        brand:
+        model:
+  resultmsg: "shall return"
+  result:
+    group:
+      attr: 'uafamily12' 
