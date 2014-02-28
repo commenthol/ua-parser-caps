@@ -14,15 +14,27 @@ var Tree   = require('./tree.js');
 var parser = require('./parser.js');
 var config = require('../config.js');
 
-var M = module.exports = function (files) {
+var M = module.exports = function (options) {
 	var tree;
 	var capsparser;
-	
-	files = files || config.files || [],
+
+	switch (typeof(options)) {
+		case "object":
+			if (typeof(options.length) === 'number') {
+				options = { files: options };
+			}
+			break;
+		case "string":
+			options = { files: [ options ] };
+			break;
+		default:
+			options = { files: config.files }
+			break;
+	}
 	
 	tree = new Tree();
 	
-	tree.loadSync(files);
+	tree.loadSync(options.files);
 
 	capsparser = parser.parser(tree.get());
 

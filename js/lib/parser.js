@@ -298,6 +298,7 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		osuaCaps(self.uaparsed.os, 'os');
+		return self.cap;
 	};
 
 	/**
@@ -309,6 +310,7 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		osuaCaps(self.uaparsed.ua, 'ua');
+		return self.cap;
 	};
 
 	/**
@@ -320,6 +322,7 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		deviceCaps(self.uaparsed.device);
+		return self.cap;
 	};
 
 	/**
