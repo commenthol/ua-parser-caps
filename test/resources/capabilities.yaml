@@ -1,12 +1,7 @@
 info:
-  processed_user_agents: '62368'
+  processed_user_agents: '62338'
 os:
   family:
-    ATV OS X:
-      major:
-        "5":
-          minor:
-            "3": 
     Android:
       major:
         "0":
@@ -54,18 +49,11 @@ os:
         "13":
           minor:
             "04": 
-    BREW:
+    ATV OS X:
       major:
-        "3":
-          minor:
-            "1": 
         "5":
           minor:
-            "0": 
-        "05":
-          minor:
-            "01": 
-    BSD: 
+            "3": 
     Bada:
       major:
         "1":
@@ -126,11 +114,23 @@ os:
           minor:
             "0": 
             "1": 
+    BREW:
+      major:
+        "3":
+          minor:
+            "1": 
+        "5":
+          minor:
+            "0": 
+        "05":
+          minor:
+            "01": 
     Brew MP:
       major:
         "1":
           minor:
             "0": 
+    BSD: 
     CentOS: 
     Chrome OS:
       major:
@@ -139,12 +139,6 @@ os:
             "587": 
     Debian: 
     Fedora: 
-    FireHbbTV:
-      major:
-        "1":
-          minor:
-            "1": 
-            "3": 
     Firefox OS:
       major:
         "15":
@@ -160,6 +154,12 @@ os:
         "29":
           minor:
             "0": 
+    FireHbbTV:
+      major:
+        "1":
+          minor:
+            "1": 
+            "3": 
     FreeBSD: 
     Gentoo:
       major:
@@ -176,6 +176,35 @@ os:
           minor:
             "2": 
         "4":
+          minor:
+            "0": 
+    iOS:
+      major:
+        "2":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+        "3":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+        "4":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+            "3": 
+        "5":
+          minor:
+            "0": 
+            "1": 
+        "6":
+          minor:
+            "0": 
+            "1": 
+        "7":
           minor:
             "0": 
     Kindle:
@@ -248,16 +277,16 @@ os:
     Nokia Series 40: 
     OpenBSD: 
     Other: 
-    PCLinuxOS:
-      major:
-        "1":
-          minor:
-            "9": 
     Panasonic:
       major:
         "2011": 
         "2012": 
         "2013": 
+    PCLinuxOS:
+      major:
+        "1":
+          minor:
+            "9": 
     Philips:
       major:
         "2012": 
@@ -320,7 +349,21 @@ os:
             "10": 
             "04": 
     VRE: 
-    WeTab: 
+    webOS:
+      major:
+        "1":
+          minor:
+            "1": 
+            "2": 
+            "4": 
+        "2":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+        "3":
+          minor:
+            "0": 
     WebTV:
       major:
         "1":
@@ -329,6 +372,7 @@ os:
         "2":
           minor:
             "6": 
+    WeTab: 
     Windows: 
     Windows 2000: 
     Windows 3.1: 
@@ -358,57 +402,8 @@ os:
     Windows Vista: 
     Windows XP: 
     Xbox: 
-    iOS:
-      major:
-        "2":
-          minor:
-            "0": 
-            "1": 
-            "2": 
-        "3":
-          minor:
-            "0": 
-            "1": 
-            "2": 
-        "4":
-          minor:
-            "0": 
-            "1": 
-            "2": 
-            "3": 
-        "5":
-          minor:
-            "0": 
-            "1": 
-        "6":
-          minor:
-            "0": 
-            "1": 
-        "7":
-          minor:
-            "0": 
-    webOS:
-      major:
-        "1":
-          minor:
-            "1": 
-            "2": 
-            "4": 
-        "2":
-          minor:
-            "0": 
-            "1": 
-            "2": 
-        "3":
-          minor:
-            "0": 
 ua:
   family:
-    AOL:
-      major:
-        "9":
-          minor:
-            "7": 
     AdobeAIR:
       major:
         "2":
@@ -482,6 +477,11 @@ ua:
         "13":
           minor:
             "04": 
+    AOL:
+      major:
+        "9":
+          minor:
+            "7": 
     AppleMail:
       major:
         "525":
@@ -501,12 +501,6 @@ ua:
         "6":
           minor:
             "0": 
-    BOLT:
-      major:
-        "2":
-          minor:
-            "101": 
-            "340": 
     Baidu Browser:
       major:
         "1": 
@@ -533,6 +527,11 @@ ua:
             "3": 
             "4": 
         "3":
+          minor:
+            "0": 
+    bingbot:
+      major:
+        "2":
           minor:
             "0": 
     BlackBerry:
@@ -634,12 +633,18 @@ ua:
         "0":
           minor:
             "862": 
+    BOLT:
+      major:
+        "2":
+          minor:
+            "101": 
+            "340": 
+    BrowserMob: 
     BrowseX:
       major:
         "2":
           minor:
             "0": 
-    BrowserMob: 
     Bunjalloo:
       major:
         "0":
@@ -829,11 +834,6 @@ ua:
         "1":
           minor:
             "1": 
-    FireWeb:
-      major:
-        "1":
-          minor:
-            "0": 
     Firefox:
       major:
         "0":
@@ -929,6 +929,11 @@ ua:
         "26":
           minor:
             "0": 
+    FireWeb:
+      major:
+        "1":
+          minor:
+            "0": 
     Galeon:
       major:
         "1":
@@ -949,6 +954,7 @@ ua:
         "5":
           minor:
             "0": 
+    GooglePlusBot: 
     HbbTV:
       major:
         "1":
@@ -964,11 +970,38 @@ ua:
           minor:
             "2": 
             "3": 
+    iBrowser:
+      major:
+        "2":
+          minor:
+            "5": 
+    iBrowser Mini:
+      major:
+        "2":
+          minor:
+            "2": 
+            "4": 
+            "5": 
+            "7": 
+            "8": 
+    iCab:
+      major:
+        "2":
+          minor:
+            "9": 
+        "3":
+          minor:
+            "0": 
     ICE Browser:
       major:
         "5":
           minor:
             "05": 
+    IceCat:
+      major:
+        "4":
+          minor:
+            "0": 
     IE:
       major:
         "1":
@@ -1067,11 +1100,14 @@ ua:
         "9":
           minor:
             "0": 
-    IceCat:
+    iRider:
       major:
-        "4":
+        "2":
           minor:
-            "0": 
+            "10": 
+            "20": 
+            "21": 
+            "07": 
     Iris:
       major:
         "1":
@@ -1242,6 +1278,11 @@ ua:
             "6": 
             "7": 
             "8": 
+    Netfront:
+      major:
+        "3":
+          minor:
+            "2": 
     NetFront:
       major:
         "3":
@@ -1266,11 +1307,6 @@ ua:
         "2":
           minor:
             "0": 
-    Netfront:
-      major:
-        "3":
-          minor:
-            "2": 
     Netscape:
       major:
         "4":
@@ -1296,36 +1332,6 @@ ua:
         "8":
           minor:
             "0": 
-    Nokia:
-      major:
-        "6": 
-        "7": 
-        "8": 
-        "52": 
-        "71": 
-        "73": 
-        "95": 
-        "700": 
-        "701": 
-        "808": 
-        "3110": 
-        "5230": 
-        "5233": 
-        "5310": 
-        "5330": 
-        "5730": 
-        "5800": 
-        "7110": 
-        "7210": 
-        "7230": 
-        "7510": 
-        "7650": 
-        "7700": 
-        "7710": 
-        "8910": 
-        "9300": 
-        "9500": 
-        "9999": 
     Nokia Browser:
       major:
         "7":
@@ -1342,6 +1348,30 @@ ua:
             "5": 
     Nokia OSS Browser:
       major:
+        "3":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+        "5":
+          minor:
+            "2": 
+    Nokia Series80 Browser:
+      major:
+        "2":
+          minor:
+            "0": 
+    Nokia Series90 Browser:
+      major:
+        "1":
+          minor:
+            "0": 
+            "1": 
+    Nokia Services (WAP) Browser:
+      major:
+        "0":
+          minor:
+            "9": 
         "1":
           minor:
             "2": 
@@ -1358,15 +1388,11 @@ ua:
             "2": 
         "5":
           minor:
-            "2": 
-    Nokia Services (WAP) Browser: 
-    ONE Browser:
-      major:
-        "3":
-          minor:
             "0": 
-            "1": 
             "2": 
+            "3": 
+            "4": 
+            "5": 
     Obigo:
       major:
         "1":
@@ -1410,6 +1436,13 @@ ua:
             "29": 
             "33": 
             "34": 
+    ONE Browser:
+      major:
+        "3":
+          minor:
+            "0": 
+            "1": 
+            "2": 
     OpenWave:
       major:
         "1":
@@ -1553,6 +1586,9 @@ ua:
             "1": 
     Opera Mobile:
       major:
+        "9":
+          minor:
+            "5": 
         "10":
           minor:
             "1": 
@@ -1588,6 +1624,9 @@ ua:
         "2013": 
     Ovi Browser:
       major:
+        "0":
+          minor:
+            "8": 
         "1":
           minor:
             "0": 
@@ -1689,13 +1728,6 @@ ua:
         "0":
           minor:
             "8": 
-    "SEMC-Browser":
-      major:
-        "4":
-          minor:
-            "0": 
-            "1": 
-            "2": 
     Safari:
       major:
         "0":
@@ -1706,7 +1738,6 @@ ua:
             "0": 
         "3":
           minor:
-            "1": 
             "2": 
         "4":
           minor:
@@ -1714,6 +1745,13 @@ ua:
         "5":
           minor:
             "0": 
+    "SEMC-Browser":
+      major:
+        "4":
+          minor:
+            "0": 
+            "1": 
+            "2": 
     Shiira:
       major:
         "0":
@@ -1755,16 +1793,16 @@ ua:
             "0": 
     Teleca Browser: 
     ThumbShotsBot: 
-    ThunderBrowse:
-      major:
-        "3":
-          minor:
-            "3": 
     Thunderbird:
       major:
         "24":
           minor:
             "2": 
+    ThunderBrowse:
+      major:
+        "3":
+          minor:
+            "3": 
     TwitterBot:
       major:
         "0":
@@ -1843,9 +1881,9 @@ ua:
             "0": 
             "1": 
             "2": 
-    WeTab: 
     WebKit Nightly:
       major:
+        "420": 
         "525":
           minor:
             "1": 
@@ -1865,6 +1903,22 @@ ua:
           minor:
             "1": 
             "8": 
+    webOS Browser:
+      major:
+        "1":
+          minor:
+            "1": 
+            "2": 
+            "4": 
+        "2":
+          minor:
+            "0": 
+            "1": 
+            "2": 
+        "3":
+          minor:
+            "0": 
+    WeTab: 
     Willow Internet Crawler: 
     XBMC:
       major:
@@ -1890,51 +1944,6 @@ ua:
             "9": 
     YandexBot: 
     YottaaMonitor: 
-    bingbot:
-      major:
-        "2":
-          minor:
-            "0": 
-    iBrowser Mini:
-      major:
-        "2":
-          minor:
-            "2": 
-            "4": 
-            "5": 
-            "7": 
-            "8": 
-    iCab:
-      major:
-        "2":
-          minor:
-            "9": 
-        "3":
-          minor:
-            "0": 
-    iRider:
-      major:
-        "2":
-          minor:
-            "10": 
-            "20": 
-            "21": 
-            "07": 
-    webOS Browser:
-      major:
-        "1":
-          minor:
-            "1": 
-            "2": 
-            "4": 
-        "2":
-          minor:
-            "0": 
-            "1": 
-            "2": 
-        "3":
-          minor:
-            "0": 
 device:
   family:
     007HW: 
@@ -1956,12 +1965,13 @@ device:
     "GT-I9100": 
     "GT-i9505": 
     "GT-l9100": 
-    "HT-03A": 
     HbbTV: 
+    "HT-03A": 
     "I-Buddy 3": 
     "I-Buddy 7.0": 
     "I-Buddy 7.2": 
     IDEOS X5: 
+    Inettv: 
     IS11S: 
     IS12F: 
     IS12M: 
@@ -1973,7 +1983,6 @@ device:
     ISW11SC: 
     ISW12HT: 
     ISW13HT: 
-    Inettv: 
     Kindle: 
     Kindle Fire HD: 
     Kyivstar Terra: 
@@ -1981,11 +1990,11 @@ device:
     Lucky Ultra Sonic U8650: 
     Lugyan lay: 
     "MOT-GT-I9300": 
+    Moto Droid Ultra: 
     MOVITEL M8402: 
     MT15i: 
     MTC Bravo: 
     "MTS-SP101": 
-    Moto Droid Ultra: 
     NATCOM N8302: 
     NetCast.Media: 
     NetCast.TV: 
@@ -2008,11 +2017,11 @@ device:
     TOLINO_BROWSER: 
     TURKCELL MaxiPRO5: 
     Turkcell T20: 
+    unknown: 
     USCCADR3305: 
     USCCADR3310: 
     VIETTEL V8404: 
     VIETTEL V8404 Unlock: 
-    unknown: 
   brand:
     3Q:
       model:
@@ -2042,9 +2051,6 @@ device:
     "?bG":
       model:
         MB70: 
-    ARM:
-      model:
-        Touch: 
     Acer:
       model:
         "A1-810": 
@@ -2074,11 +2080,11 @@ device:
         E330: 
         Iconia A500: 
         Iconia A501: 
-        LIQUID E2: 
         Liquid: 
+        LIQUID E2: 
         Liquid E2: 
-        Liquid MT: 
         Liquid Metal: 
+        Liquid MT: 
         Liquid Mt: 
         "Liquid-Metal-S120": 
         S500: 
@@ -2094,51 +2100,52 @@ device:
         Vega: 
         VegaBean: 
         VegaComb: 
+    "aG(?k":
+      model:
+        MB70: 
     Ainol:
       model:
-        NOVO7 Advanced: 
-        NOVO7 Mars: 
-        NOVO7 Tornados: 
-        NOVO7PALADIN: 
-        NOVO7_Mars: 
-        NOVO7_Tornados: 
         Novo 10 Hero QuadCore: 
         Novo 7 Aurora: 
         Novo 7 Aurora (TabletWarehouseUSA.com): 
         Novo 7 Crystal: 
         Novo Captain: 
+        Novo10 captain QuadCore: 
         Novo10 Catpain QuadCore: 
         Novo10 Hero: 
         Novo10 Hero QuadCore: 
-        Novo10 captain QuadCore: 
+        NOVO7 Advanced: 
         Novo7 Advanced: 
         Novo7 Aurora: 
         Novo7 ELF: 
         Novo7 Flame: 
+        NOVO7 Mars: 
+        NOVO7 Tornados: 
         Novo7 Venus: 
         "Novo7-Aurora": 
+        novo7_Advanced2: 
+        Novo7_Advanced2: 
+        novo7_Aurora: 
+        Novo7_Aurora: 
+        novo7_ELF: 
+        Novo7_ELF: 
+        NOVO7_Mars: 
+        NOVO7_Tornados: 
         Novo7Advanced: 
         "Novo7Advanced(Century@HK)": 
         Novo7Aurora: 
         Novo7Basic: 
         Novo7Fire: 
         Novo7Flame: 
-        Novo7_Advanced2: 
-        Novo7_Aurora: 
-        Novo7_ELF: 
-        Novo8 Advanced: 
-        Novo8 Discover Quadcore: 
-        NovoCrystal: 
         novo7Legend: 
         novo7Legend (Sinar timur services) by Renzo: 
-        novo7_Advanced2: 
-        novo7_Aurora: 
-        novo7_ELF: 
+        NOVO7PALADIN: 
+        Novo8 Advanced: 
+        Novo8 Discover Quadcore: 
         "novo9-Spark": 
+        NovoCrystal: 
     Airis:
       model:
-        ONEPAD 940: 
-        ONEPAD940: 
         OnePAD: 
         OnePAD 1050: 
         OnePAD 1100: 
@@ -2156,9 +2163,11 @@ device:
         OnePAD 90: 
         OnePAD 900HD: 
         OnePAD 900x2: 
+        ONEPAD 940: 
         OnePAD 970: 
-        OnePAD700: 
         OnePad1000: 
+        OnePAD700: 
+        ONEPAD940: 
         TM350: 
         TM400: 
         TM500: 
@@ -2179,8 +2188,8 @@ device:
         "BG3-color": 
         BH4: 
         BH4R: 
-        CTH3: 
         Crystal: 
+        CTH3: 
         E5: 
         "ELLE-N1": 
         "ELLE-N3": 
@@ -2189,16 +2198,147 @@ device:
         Lucent: 
         M5: 
         "MANDARINA-DUCK": 
-        "MISS-SIXTY-MSX-10": 
-        MISSSIXTY: 
         "Mandarina-Duck": 
         "Mandarina-Duck-MOON": 
+        "MISS-SIXTY-MSX-10": 
+        MISSSIXTY: 
         MissSixty: 
         OH1: 
         OH1C: 
         OH2: 
         OH5: 
+        One Touch 4007D: 
+        One Touch 4007X: 
+        One Touch 4010A: 
+        One Touch 4010D: 
+        One Touch 4010X: 
+        One Touch 4011X: 
+        One Touch 4012X: 
+        One Touch 4012X/SVN 01012P: 
+        One Touch 4030A: 
+        One Touch 4030D: 
+        One Touch 4030E: 
+        One Touch 4030X: 
+        One Touch 4033A: 
+        One Touch 4033D: 
+        One Touch 5020A: 
+        One Touch 5020D: 
+        One Touch 5020E: 
+        One Touch 5020T: 
+        One Touch 5020W: 
+        One Touch 5020X: 
+        One Touch 5020X_Orange: 
+        One Touch 5021E: 
+        One Touch 5035a: 
+        One Touch 5035A: 
+        One Touch 5035D: 
+        One Touch 5035E: 
+        One Touch 5035X: 
         ONE TOUCH 5040X: 
+        One Touch 6010D: 
+        One Touch 6010X: 
+        One Touch 6010X_Orange: 
+        One Touch 6012D: 
+        One Touch 6012X: 
+        One Touch 6030A: 
+        One Touch 6030D: 
+        One Touch 6030X: 
+        One Touch 6030X_Orange: 
+        One Touch 6033A: 
+        One Touch 6033M: 
+        One Touch 6033X: 
+        One Touch 6040D: 
+        One Touch 6040X: 
+        One Touch 7024W: 
+        One Touch 8000A: 
+        One Touch 8000D: 
+        One Touch 8008D: 
+        One Touch 8008W: 
+        One Touch 8008X: 
+        One Touch 890: 
+        One Touch 890D: 
+        One Touch 891: 
+        One Touch 903: 
+        One Touch 903A: 
+        One Touch 903D: 
+        One Touch 906: 
+        One Touch 906Y: 
+        One Touch 908: 
+        One Touch 908A: 
+        One Touch 908F: 
+        One Touch 908F Orange: 
+        One Touch 908F_Orange: 
+        One Touch 908M: 
+        One Touch 908S: 
+        One Touch 909A: 
+        One Touch 909B: 
+        One Touch 909S: 
+        One Touch 910: 
+        One Touch 910A: 
+        One Touch 916: 
+        One Touch 916_Helsinki: 
+        One Touch 916_Orange: 
+        One Touch 916A: 
+        One Touch 916D: 
+        One Touch 918: 
+        One Touch 918_Orange: 
+        One Touch 918A: 
+        One Touch 918D: 
+        One Touch 918M: 
+        One Touch 918N: 
+        One Touch 918S: 
+        One Touch 919: 
+        One Touch 919 HelloKitty: 
+        One Touch 922: 
+        One Touch 927: 
+        One Touch 930D: 
+        One Touch 960C: 
+        One Touch 980: 
+        One Touch 980A: 
+        One Touch 981A: 
+        One Touch 983: 
+        One Touch 983A: 
+        One Touch 985: 
+        One Touch 985A: 
+        One Touch 985D: 
+        One Touch 985N: 
+        One Touch 986: 
+        One Touch 986+: 
+        One Touch 988: 
+        One Touch 990: 
+        One Touch 990A: 
+        One Touch 990M: 
+        One Touch 990S: 
+        One Touch 991: 
+        One Touch 991_Orange: 
+        One Touch 991A: 
+        One Touch 991D: 
+        One Touch 991S: 
+        One Touch 991T: 
+        One Touch 992D: 
+        One Touch 993: 
+        One Touch 993D: 
+        One Touch 995: 
+        One Touch 995A: 
+        One Touch 995S: 
+        One Touch 997: 
+        One Touch 997A: 
+        One Touch 997D: 
+        One Touch 997d: 
+        One Touch 998: 
+        One Touch EVO 7HD: 
+        One Touch EVO7: 
+        One Touch EVO7HD: 
+        One Touch EVO8HD: 
+        One Touch Fierce: 
+        One Touch T10: 
+        One Touch T20: 
+        One Touch T60: 
+        One Touch TAB 7: 
+        One Touch TAB 7HD: 
+        One Touch TAB 8HD: 
+        One Touch TAB_7HD: 
+        Optimus_Madrid: 
         "OT-216": 
         "OT-255": 
         "OT-255A": 
@@ -2226,8 +2366,8 @@ device:
         "OT-600A": 
         "OT-606": 
         "OT-606A": 
-        "OT-606X": 
         "OT-606a": 
+        "OT-606X": 
         "OT-660": 
         "OT-660A": 
         "OT-706": 
@@ -2247,6 +2387,7 @@ device:
         "OT-802Y": 
         "OT-806": 
         "OT-806A": 
+        "ot-806d": 
         "OT-806D": 
         "OT-807A": 
         "OT-807D": 
@@ -2293,147 +2434,14 @@ device:
         "OT-V670": 
         "OT-V670A": 
         "OT-V770": 
-        "OT-V770A": 
         "OT-v770": 
         "OT-v770A": 
+        "OT-V770A": 
         OT153: 
         OT510A: 
-        One Touch 4007D: 
-        One Touch 4007X: 
-        One Touch 4010A: 
-        One Touch 4010D: 
-        One Touch 4010X: 
-        One Touch 4011X: 
-        One Touch 4012X: 
-        One Touch 4012X/SVN 01012P: 
-        One Touch 4030A: 
-        One Touch 4030D: 
-        One Touch 4030E: 
-        One Touch 4030X: 
-        One Touch 4033A: 
-        One Touch 4033D: 
-        One Touch 5020A: 
-        One Touch 5020D: 
-        One Touch 5020E: 
-        One Touch 5020T: 
-        One Touch 5020W: 
-        One Touch 5020X: 
-        One Touch 5020X_Orange: 
-        One Touch 5021E: 
-        One Touch 5035A: 
-        One Touch 5035D: 
-        One Touch 5035E: 
-        One Touch 5035X: 
-        One Touch 5035a: 
-        One Touch 6010D: 
-        One Touch 6010X: 
-        One Touch 6010X_Orange: 
-        One Touch 6012D: 
-        One Touch 6012X: 
-        One Touch 6030A: 
-        One Touch 6030D: 
-        One Touch 6030X: 
-        One Touch 6030X_Orange: 
-        One Touch 6033A: 
-        One Touch 6033M: 
-        One Touch 6033X: 
-        One Touch 6040D: 
-        One Touch 6040X: 
-        One Touch 7024W: 
-        One Touch 8000A: 
-        One Touch 8000D: 
-        One Touch 8008D: 
-        One Touch 8008W: 
-        One Touch 8008X: 
-        One Touch 890: 
-        One Touch 890D: 
-        One Touch 891: 
-        One Touch 903: 
-        One Touch 903A: 
-        One Touch 903D: 
-        One Touch 906: 
-        One Touch 906Y: 
-        One Touch 908: 
-        One Touch 908A: 
-        One Touch 908F: 
-        One Touch 908F Orange: 
-        One Touch 908F_Orange: 
-        One Touch 908M: 
-        One Touch 908S: 
-        One Touch 909A: 
-        One Touch 909B: 
-        One Touch 909S: 
-        One Touch 910: 
-        One Touch 910A: 
-        One Touch 916: 
-        One Touch 916A: 
-        One Touch 916D: 
-        One Touch 916_Helsinki: 
-        One Touch 916_Orange: 
-        One Touch 918: 
-        One Touch 918A: 
-        One Touch 918D: 
-        One Touch 918M: 
-        One Touch 918N: 
-        One Touch 918S: 
-        One Touch 918_Orange: 
-        One Touch 919: 
-        One Touch 919 HelloKitty: 
-        One Touch 922: 
-        One Touch 927: 
-        One Touch 930D: 
-        One Touch 960C: 
-        One Touch 980: 
-        One Touch 980A: 
-        One Touch 981A: 
-        One Touch 983: 
-        One Touch 983A: 
-        One Touch 985: 
-        One Touch 985A: 
-        One Touch 985D: 
-        One Touch 985N: 
-        One Touch 986: 
-        One Touch 986+: 
-        One Touch 988: 
-        One Touch 990: 
-        One Touch 990A: 
-        One Touch 990M: 
-        One Touch 990S: 
-        One Touch 991: 
-        One Touch 991A: 
-        One Touch 991D: 
-        One Touch 991S: 
-        One Touch 991T: 
-        One Touch 991_Orange: 
-        One Touch 992D: 
-        One Touch 993: 
-        One Touch 993D: 
-        One Touch 995: 
-        One Touch 995A: 
-        One Touch 995S: 
-        One Touch 997: 
-        One Touch 997A: 
-        One Touch 997D: 
-        One Touch 997d: 
-        One Touch 998: 
-        One Touch EVO 7HD: 
-        One Touch EVO7: 
-        One Touch EVO7HD: 
-        One Touch EVO8HD: 
-        One Touch Fierce: 
-        One Touch T10: 
-        One Touch T20: 
-        One Touch T60: 
-        One Touch TAB 7: 
-        One Touch TAB 7HD: 
-        One Touch TAB 8HD: 
-        One Touch TAB_7HD: 
-        Optimus_Madrid: 
         TH3: 
         TH4: 
         Vodafone Smart II: 
-        "one-touch-988": 
-        "ot-806d": 
     Allfine:
       model:
         FINE7 GENIUS: 
@@ -2456,7 +2464,6 @@ device:
         P6: 
         P6_Quad: 
         SPEED: 
-        SPEEDI: 
         Speed: 
         Speed2+: 
         Speed3: 
@@ -2465,9 +2472,10 @@ device:
         Speed3T: 
         SpeedDuo: 
         SpeedEco: 
+        Speedi: 
+        SPEEDI: 
         SpeedSatelite: 
         SpeedSatellite: 
-        Speedi: 
         TX1_Quasar: 
     Allwinner:
       model:
@@ -2572,6 +2580,7 @@ device:
         M12: 
         M12B: 
         M19: 
+        m33: 
         M33 3G: 
         M713: 
         M71G: 
@@ -2579,7 +2588,6 @@ device:
         M72: 
         M721: 
         M73: 
-        m33: 
     Apanda:
       model:
         A60: 
@@ -2623,8 +2631,8 @@ device:
         97 Platinum: 
         97 TITANIUMHD: 
         97 XENON: 
-        97B TITANIUM: 
         97_CARBON: 
+        97B TITANIUM: 
         A101IT: 
         A28: 
         A32: 
@@ -2647,6 +2655,9 @@ device:
         BioniQ 8008: 
         "PAD-FMD700HD": 
         "PAD-FMD700P": 
+    ARM:
+      model:
+        Touch: 
     Arnova:
       model:
         101 G4: 
@@ -2704,6 +2715,7 @@ device:
         "AP-703": 
         "AP-704": 
         "AP-705": 
+        "AP-712": 
         "AP-713": 
         "AP-715": 
         "AP-803": 
@@ -2711,11 +2723,13 @@ device:
     Asus:
       model:
         "- Nvidia Tegra3": 
+        _T00E: 
         A80: 
         E600: 
         Eee Pad Transformer Prime TF201: 
-        GALAXYII: 
+        eeepc: 
         Galaxy6: 
+        GALAXYII: 
         GalaxyII: 
         GalaxyMini: 
         J100: 
@@ -2758,11 +2772,11 @@ device:
         PadFone Infinity: 
         PadFone Infinity A86: 
         PadFone T004: 
+        "Tablet P1801-T": 
         TF101: 
         "TF101-WiMAX": 
         TF201: 
         TF300T: 
-        "Tablet P1801-T": 
         Transformer: 
         Transformer Pad: 
         Transformer Pad Infinity TF700T: 
@@ -2783,8 +2797,6 @@ device:
         V66: 
         V75: 
         Z801: 
-        _T00E: 
-        eeepc: 
     Attab:
       model:
         "@TAB-NINE-X2-B": 
@@ -2806,8 +2818,10 @@ device:
         "T-909": 
     Axioo:
       model:
+        Picopad 7: 
         PICOpad GEA: 
         PICOpad GEW: 
+        Picopad GFI: 
         PICOpad GFI: 
         PICOpad GGD: 
         PICOpad GGG: 
@@ -2816,8 +2830,6 @@ device:
         PICOpad GJT: 
         PICOpad QGN: 
         PICOpad_GIM: 
-        Picopad 7: 
-        Picopad GFI: 
         VIGO350: 
         VIGO410: 
     Azend:
@@ -2825,12 +2837,12 @@ device:
         V700B: 
         V8000_USA_Cricket: 
         V800H: 
-    BANGOLUFSEN:
-      model:
-        A3: 
     Bak:
       model:
         "IBAK-796CAP": 
+    BANGOLUFSEN:
+      model:
+        A3: 
     Bedove:
       model:
         HY5001: 
@@ -2873,6 +2885,14 @@ device:
         V750: 
         V780: 
         V788: 
+    Blackberry:
+      model:
+        EH7: 
+        EH7LE: 
+        Q10: 
+        Q5: 
+        Z10: 
+        Z30: 
     BlackBerry:
       model:
         "2": 
@@ -2961,14 +2981,6 @@ device:
     BlackBird:
       model:
         I7000: 
-    Blackberry:
-      model:
-        EH7: 
-        EH7LE: 
-        Q10: 
-        Q5: 
-        Z10: 
-        Z30: 
     Blaupunkt:
       model:
         10BPE0: 
@@ -2982,11 +2994,12 @@ device:
     Blu:
       model:
         AMOUR: 
-        BLU: 
         Blu: 
+        BLU: 
         DASH: 
         DASH 3.2: 
         DASH 3.5: 
+        Dash 3.5: 
         DASH 3.5 VIVA: 
         DASH 4.0: 
         DASH 4.5: 
@@ -2994,7 +3007,6 @@ device:
         DASH_3.5: 
         DASH_4.0: 
         DASH_JR: 
-        Dash 3.5: 
         Elite 3.8: 
         Elite_3.8: 
         P100: 
@@ -3003,11 +3015,11 @@ device:
         Quattro 4.5 HD: 
         Rave: 
         STUDIO 5.0: 
-        STUDIO 5.3 II: 
         Studio 5.3: 
-        TOUCH BOOK 7.0: 
+        STUDIO 5.3 II: 
         Tank4.5: 
         Tigo: 
+        TOUCH BOOK 7.0: 
         Touch Book 7.0 LITE: 
         Touch_Book_7.0_LITE: 
         VIVO 4.3: 
@@ -3024,6 +3036,31 @@ device:
         AX515: 
         AX525: 
         AX540: 
+    bq:
+      model:
+        Aquaris: 
+        Aquaris 3.5: 
+        Aquaris 5: 
+        Aquaris 5 HD: 
+        Aquaris 5.7: 
+        Curie: 
+        Curie 2: 
+        Curie 2 3G: 
+        Darwin: 
+        DaVinci: 
+        Edison: 
+        edison: 
+        Edison 2: 
+        Edison 2 3G: 
+        Edison 2 Quad Core 3G: 
+        Edison 3G: 
+        Elcano: 
+        Livingstone 2: 
+        Maxwell Lite: 
+        Maxwell Plus: 
+        Verne Plus: 
+        Verne Plus 3G: 
+        Voltaire: 
     Braun:
       model:
         "B-Tab 1005": 
@@ -3122,6 +3159,16 @@ device:
         CT9706: 
         CT_888: 
         CT_910+: 
+    Cellular:
+      model:
+        ADR6275US: 
+        ADR6325US: 
+        "ALCATEL-one-touch-988": 
+        "HTC-PC93100": 
+        HTC6175: 
+        HTC6850: 
+        HTC6875: 
+        N859: 
     ChangJia:
       model:
         TPC7102: 
@@ -3129,8 +3176,6 @@ device:
         TPC97113: 
     Cloudfone:
       model:
-        CloudPad 700d: 
-        CloudPad 700w: 
         Cloudfone Excite 320e: 
         Cloudfone Excite 320g: 
         Cloudfone Excite 350e: 
@@ -3147,15 +3192,17 @@ device:
         Cloudfone Thrill 500g: 
         Cloudfone Thrill_430d: 
         Cloudfone Thrill_430g: 
+        CloudPad 700d: 
+        CloudPad 700w: 
     Cmx:
       model:
+        "Aquila 070-0508": 
+        "Aquila 080-0508": 
         "AQUILA 080-1008": 
+        "Aquila 097-0508": 
         "AQUILA 097-1006": 
         "AQUILA 097-1016": 
         "AQUILA 097-1016 BT + 3G": 
-        "Aquila 070-0508": 
-        "Aquila 080-0508": 
-        "Aquila 097-0508": 
         "Aquila_SE_090-0508": 
         "Clanga 097-2016": 
         "RAPAX 070-0508": 
@@ -3265,6 +3312,8 @@ device:
         7295+: 
         7295A: 
         "Coolpad-5820": 
+        "coolpad-W706": 
+        "coolpad-W706+": 
         W706: 
         W706+: 
         "YL-5210S": 
@@ -3272,8 +3321,6 @@ device:
         "YL-7230-B": 
         "YL-7260": 
         "YL-7260A": 
-        "coolpad-W706": 
-        "coolpad-W706+": 
     CreNova:
       model:
         CNV001: 
@@ -3321,16 +3368,16 @@ device:
         U9GT V_Core 4: 
         "U9GT-2": 
         U9GT2: 
-        U9GT2 From Moage.com: 
         U9GT2 From moage.com: 
+        U9GT2 From Moage.com: 
         U9GT2 from moage.com: 
         U9GT2_from_moage.com: 
         U9GT3: 
         U9GT4: 
-        U9GTS_A: 
         U9GT_2: 
         U9GT_S: 
         U9GT_S_A: 
+        U9GTS_A: 
     Cubot:
       model:
         C11: 
@@ -3341,25 +3388,6 @@ device:
         GT99: 
         ONE: 
         P9: 
-    DNS:
-      model:
-        AirTab M81w: 
-        AirTab M971g: 
-        AirTab M975w: 
-        AirTab P970g: 
-    DOOV:
-      model:
-        D2: 
-        D3: 
-        D30: 
-        D300: 
-        D360: 
-        D7: 
-        D700: 
-        D708: 
-        D710: 
-        D720: 
-        D770: 
     Danew:
       model:
         Dslide 700: 
@@ -3376,13 +3404,15 @@ device:
         Mini Duo: 
         "Mini-3iX": 
         Streak: 
+        streak 10 Pro: 
         Streak 10 Pro: 
+        streak 10 Pro 940: 
         Streak 7: 
+        Streak mini5: 
         Streak Pro: 
         Streak Pro (D43): 
         Streak Pro (GS01): 
         Streak Pro D43: 
-        Streak mini5: 
         Streak_10_Pro: 
         Streak_Pro: 
         Thunder: 
@@ -3391,8 +3421,6 @@ device:
         Venue Pro: 
         XCD28: 
         XCD35: 
-        streak 10 Pro: 
-        streak 10 Pro 940: 
     Denver:
       model:
         "TAC-10031 MK2": 
@@ -3411,6 +3439,12 @@ device:
         "TAD-97052": 
         "TAD-97052mk2": 
         "TAD-97072G": 
+    DNS:
+      model:
+        AirTab M81w: 
+        AirTab M971g: 
+        AirTab M975w: 
+        AirTab P970g: 
     DoCoMo:
       model:
         CA01C: 
@@ -3485,6 +3519,7 @@ device:
         F904i: 
         F905i: 
         F906i: 
+        frontbed: 
         ISIM0101: 
         L01A: 
         L03A: 
@@ -3540,8 +3575,8 @@ device:
         N905imyu: 
         N906i: 
         N906imyu: 
-        NM705i: 
         NetFront3: 
+        NM705i: 
         P01A: 
         P01B: 
         P01C: 
@@ -3637,7 +3672,19 @@ device:
         SO905i: 
         SO905iCS: 
         SO906i: 
-        frontbed: 
+    DOOV:
+      model:
+        D2: 
+        D3: 
+        D30: 
+        D300: 
+        D360: 
+        D7: 
+        D700: 
+        D708: 
+        D710: 
+        D720: 
+        D770: 
     Evercoss:
       model:
         Cross A1: 
@@ -3650,8 +3697,8 @@ device:
         Cross A28: 
         Cross A5: 
         Cross A5B: 
-        Cross A7S: 
         Cross A7s: 
+        Cross A7S: 
         Cross AT1G: 
         "Cross AT1G*": 
     Fly:
@@ -3757,35 +3804,37 @@ device:
         A777: 
         A880: 
         America: 
-        C5120: 
-        C5121: 
-        C5155: 
-        C5170: 
-        C5215: 
-        C8500: 
-        C8600: 
-        C8650: 
-        C8660: 
+        Android on HTC Kaiser: 
         C9300: 
         C9660: 
+        "De-Sensed HTC Vivid": 
+        Evolio Quadra: 
+        EVOLVE_FX520: 
+        "EvoPad-R1020": 
+        EVOPad_R8010: 
+        EVOTAB: 
         Light: 
         Mobiistar Touch Kem 432m: 
-        Mobiistar Touch LAI 504: 
         Mobiistar Touch Lai 5.0: 
         Mobiistar Touch Lai 502: 
         Mobiistar Touch Lai 502 HD: 
+        Mobiistar Touch LAI 504: 
+        Mobiistar touch LAI 504: 
         Mobiistar Touch Lai 504: 
+        Mobiistar touch s01: 
         Mobiistar Touch S01: 
         Mobiistar Touch S02: 
         Mobiistar Touch S02i: 
-        Mobiistar touch LAI 504: 
-        Mobiistar touch s01: 
         "Mobiistar-Touch-S02": 
         Mobiistar_Touch_Lai_5.0: 
         Mobiistar_Touch_S01: 
         Mobiistar_Touch_S02: 
         Mobiistar_Touch_S02i: 
+        One M7: 
+        One Pad: 
+        Onepad: 
         PJ83100/2.20.502.7: 
+        VitMod_ExtraLite 1.6.5.fullodex for HTC HD7 Pro: 
     Generic_Inettv:
       model:
         DTV03VSFC: 
@@ -3890,681 +3939,6 @@ device:
     Google:
       model:
         Glass 1: 
-    HCLme:
-      model:
-        CONNECT 2G: 
-        "Connect-2G-2.0": 
-        "Connect-3G": 
-        "Connect-3G-2.0": 
-        U1: 
-        V1: 
-        V2: 
-        X1: 
-        Y2: 
-        Y3: 
-    HP:
-      model:
-        635 Notebook PC: 
-        Compaq 2210b: 
-        Compaq 2510p Notebook PC: 
-        PlayBook: 
-        Slate 10 HD: 
-        Slate 7: 
-        Slate 7 Plus: 
-        Slate 8 Pro: 
-        SlateBook 10 x2 PC: 
-        TouchPad: 
-        Touchpad: 
-        Veer: 
-        iPAQ 510: 
-        iPAQ 610: 
-        iPAQ 910: 
-        iPAQ DataMessenger: 
-        iPAQ Glisten: 
-        iPAQ VoiceMessenger: 
-        iPAQ hw6900: 
-        iPAQ rw6800: 
-        iPAQ rw6815: 
-    HTC:
-      model:
-        "7": 
-        "85": 
-        "2125": 
-        "3100": 
-        "3650": 
-        "6175": 
-        "6850": 
-        "6875": 
-        "6900": 
-        "8100": 
-        "8500": 
-        "8900": 
-        "9060": 
-        "9066": 
-        "0002": 
-        0P3P5: 
-        0P3Z11: 
-        0P6A1: 
-        0P6B: 
-        0P6B120: 
-        606w: 
-        608t: 
-        609d: 
-        6435LRA: 
-        6435LVW: 
-        6435LVW 4G: 
-        6500LVW: 
-        6500LVW 4G: 
-        6600LVW: 
-        6600LVW 4G: 
-        6990LVW: 
-        7 HTC MOZART: 
-        7 Mondrian T8788: 
-        7 Mozart: 
-        7 Mozart T8698: 
-        7 Pro: 
-        7 Pro T7576: 
-        7 Schubert T9292: 
-        7 Surround: 
-        7 Trophy: 
-        7 Trophy T8: 
-        7 Trophy T8686: 
-        801e: 
-        802d: 
-        802t: 
-        802w: 
-        A310e: 
-        A315c: 
-        A320E DESIRE C: 
-        A320e: 
-        A3335: 
-        A3366: 
-        A510a: 
-        A510b: 
-        A510c: 
-        A510e: 
-        A5253: 
-        A620b: 
-        A620d: 
-        A620e: 
-        A620m: 
-        A620t: 
-        A6366: 
-        A7275: 
-        A810e: 
-        A8180: 
-        A9188: 
-        A9188_TD: 
-        A9191: 
-        A9192: 
-        ACD_U: 
-        ADR6290US: 
-        APACHE: 
-        ARIA: 
-        Accord: 
-        Acquire: 
-        Agent: 
-        Amaze: 
-        Amaze 4G: 
-        Android: 
-        Aria: 
-        "Aria\"": 
-        Artist: 
-        Bee: 
-        BlueAngel: 
-        Bravo: 
-        Bravo C: 
-        Butterfly: 
-        Butterfly s: 
-        Buzz: 
-        C510e: 
-        C51qc: 
-        C525c: 
-        C525u: 
-        "C525u-orange-LS": 
-        C620d: 
-        C620e: 
-        C620t: 
-        C625a: 
-        C625b: 
-        C715c: 
-        CLEOPATRA: 
-        COUNTRY: 
-        ChaCha: 
-        ChaChaCha: 
-        Chacha: 
-        Click: 
-        DASH: 
-        DESIRE HD: 
-        DESIRE Z: 
-        Desire: 
-        Desire 200: 
-        Desire 300: 
-        Desire 400 dual sim: 
-        Desire 500: 
-        Desire 500 dual sim: 
-        Desire 500_dual_sim: 
-        Desire 600 dual sim: 
-        Desire 600_dual_sim: 
-        Desire 601: 
-        Desire C: 
-        Desire CDMA: 
-        Desire HD: 
-        Desire L: 
-        Desire P: 
-        Desire S: 
-        Desire SMS: 
-        Desire SV: 
-        Desire Saga: 
-        Desire U: 
-        Desire V: 
-        Desire VC: 
-        Desire VersionCode: 
-        Desire X: 
-        Desire XS: 
-        Desire Z: 
-        Desire s: 
-        Desire v: 
-        DesireHD: 
-        DesireHDA9191: 
-        DesireS: 
-        Diamond: 
-        Dream: 
-        Dream BiohzR: 
-        Dream G1: 
-        Dream SparksMod: 
-        Droid DNA: 
-        Droid Incredible: 
-        ENR U: 
-        ENRC2B: 
-        ERIS: 
-        EVA UL: 
-        EVA UTL: 
-        EVO: 
-        EVO 3D: 
-        EVO 4G: 
-        EVO 4GS: 
-        EVO Design: 
-        EVO LTE: 
-        EVO LVE: 
-        EVO Pad: 
-        EVO TAB: 
-        EVO Tab: 
-        "EVO-4G": 
-        EVO3D: 
-        EVODesign4G: 
-        EVOV4G: 
-        Elf: 
-        Eris: 
-        Espresso: 
-        Eternity: 
-        Evo 3D: 
-        Evo 4G: 
-        Evo Design 4G: 
-        Evo Hd2: 
-        Evo Pad: 
-        Evo Shift 4G: 
-        Evo View 4G: 
-        Evo lio: 
-        Evo lm736c: 
-        Excalibur: 
-        Explorer: 
-        F5151: 
-        FLYER: 
-        Flyer: 
-        Flyer P510e: 
-        Flyer P512: 
-        Flyer by: 
-        G1: 
-        G2: 
-        G20: 
-        G20 FOR SPRINT: 
-        G21: 
-        GOF U: 
-        Gemini: 
-        Glacier: 
-        Gold: 
-        Gratia: 
-        H1000C: 
-        H2000C: 
-        H3000C: 
-        HD: 
-        HD MINI: 
-        HD Mini: 
-        HD mini: 
-        HD2: 
-        HD2 LEO: 
-        HD2x: 
-        HD7: 
-        HD7 Infinity: 
-        HD7 T9292: 
-        HD7S: 
-        HERALD: 
-        HERO: 
-        HERO200: 
-        HTC: 
-        HTC Desire: 
-        HTC Explorer: 
-        HTC HD2: 
-        HTC Kaiser: 
-        HTC Mozart: 
-        HTC One: 
-        HTC Radar 4G: 
-        HTC Rhyme: 
-        HTC Sensation: 
-        HTC Touch: 
-        HTC Trophy: 
-        HTC Vision: 
-        HTC Wildfire: 
-        HTC6990LVW: 
-        HTC6990LVW 4G: 
-        HTL21: 
-        HTTP Service: 
-        HURRICANE: 
-        Hermes: 
-        Hero: 
-        Hero CDMA: 
-        Hero200: 
-        Holiday: 
-        Holiday MIUI: 
-        Incredible: 
-        Incredible 2: 
-        Incredible ALPHA: 
-        Incredible C: 
-        Incredible S: 
-        Inspire: 
-        Inspire 3D: 
-        Inspire 4G: 
-        Inspire 4g: 
-        Inspire HD: 
-        J: 
-        J Butterfly: 
-        J butterfly: 
-        Jade: 
-        K2: 
-        KAISER: 
-        KAISER PROFILE: 
-        KINGDOM: 
-        Kaiser: 
-        Kaiser Kaiser: 
-        Kaiser Vogue: 
-        Kingdom: 
-        LEO: 
-        LTE 4G: 
-        Legend: 
-        Leo: 
-        Lexikon: 
-        Lexikon C: 
-        Liberty: 
-        Liberty S: 
-        Linux: 
-        Lumia 900: 
-        MAGICIAN: 
-        MAX 4G: 
-        MERCURY: 
-        MSM7x30: 
-        MSM8x55: 
-        MTeoR: 
-        MWP6885: 
-        MWP6985: 
-        Magic: 
-        Magic Dream: 
-        Magic G1: 
-        Magic MR: 
-        Maple: 
-        Marshall: 
-        Marvel: 
-        Mazaa: 
-        Mecha: 
-        Mega: 
-        Mercury: 
-        Merge: 
-        Mersad 7 Mozart T8698: 
-        Mersad 7 Pro T7576: 
-        Mersad 7 Trophy T8686: 
-        Mersad HTC Surround T8788: 
-        Mondrian: 
-        Mozart: 
-        Mozart T8698: 
-        Mwp6985: 
-        My Touch: 
-        MyTouch 4G: 
-        MyTouch 4g: 
-        Mytouch 4g: 
-        Nexus One: 
-        NexusHD2: 
-        ONE: 
-        ONE S: 
-        ONE X: 
-        OPAL100: 
-        Omega: 
-        One: 
-        One ANDROID: 
-        One M7: 
-        One Pad: 
-        One S: 
-        One SV: 
-        One V: 
-        One X: 
-        One XL: 
-        One Xplus: 
-        One dual: 
-        One htc: 
-        One max: 
-        One mini: 
-        One pad: 
-        One with: 
-        One xs: 
-        OneX: 
-        OneXplus: 
-        One_max: 
-        P3300: 
-        P3301: 
-        P3350: 
-        P3400: 
-        P3400i: 
-        P3450: 
-        P3451: 
-        P3452: 
-        P3470: 
-        P3490: 
-        P3600: 
-        P3600i: 
-        P3650: 
-        P3650t: 
-        P3651: 
-        P3700: 
-        P3701: 
-        P3702: 
-        P4300: 
-        P4350: 
-        P4351: 
-        P4550: 
-        P4600: 
-        P510e: 
-        P515E: 
-        P5310: 
-        P5500: 
-        P5520: 
-        P5530: 
-        P6300: 
-        P6500: 
-        P715: 
-        P715a: 
-        PC40100: 
-        PC40200: 
-        PC93100: 
-        PD67100: 
-        PG09410: 
-        PG762: 
-        PG86100: 
-        PH06130: 
-        PH39100: 
-        PI39100: 
-        PI86100: 
-        PLS7373ADR: 
-        PM23300: 
-        PM36100: 
-        PN071: 
-        "PN071-orange-LS": 
-        PN07120: 
-        PO582: 
-        "PO582-orange-LS": 
-        POLARIS: 
-        PPC6800: 
-        PPC6850: 
-        PURE: 
-        Panache: 
-        Passion: 
-        Pico: 
-        Polaris: 
-        Prophet: 
-        PucciniLte: 
-        Pyramid: 
-        QSD8x50: 
-        RAPHAEL: 
-        RIO_U: 
-        Radar: 
-        Radar 4G: 
-        Radar C110e: 
-        Radiant: 
-        Raider: 
-        Raider 4G: 
-        Raphael: 
-        Rezound: 
-        Rezound 4G: 
-        Rhyme: 
-        Ruby: 
-        RubyUIX: 
-        Runnymede: 
-        S310: 
-        S410: 
-        S411: 
-        S510b: 
-        S510e: 
-        S610d: 
-        S620: 
-        S621: 
-        S630: 
-        S710: 
-        S710E: 
-        S710d: 
-        S710e: 
-        S720e: 
-        S720t: 
-        S720t 16GB: 
-        S730: 
-        S740: 
-        S910m: 
-        SMART: 
-        ST6356: 
-        ST7377: 
-        Saga: 
-        Salsa: 
-        Sapphire: 
-        Schuber: 
-        Schubert: 
-        Schubert T9292: 
-        Sensation: 
-        Sensation 4G: 
-        Sensation 4g: 
-        Sensation MIUI: 
-        Sensation XE: 
-        Sensation XL: 
-        SensationXE: 
-        SensationXL Beats: 
-        Shooter U: 
-        ShooterU: 
-        Smart: 
-        Snap: 
-        Spark: 
-        Status: 
-        Streaming Player: 
-        Surround: 
-        Surround T8788: 
-        SurroundT8788: 
-        Sync: 
-        T120C: 
-        T320e: 
-        T327t: 
-        T328W: 
-        T328d: 
-        T328t: 
-        T328w: 
-        T329d: 
-        T329t: 
-        T329w: 
-        T528d: 
-        T528t: 
-        T528w: 
-        T5555: 
-        T7272: 
-        T7373: 
-        T7380: 
-        T7575: 
-        T8290: 
-        T8585: 
-        T8697: 
-        T8698: 
-        T8788: 
-        T9199 For Vodafone: 
-        T9295: 
-        T9296: 
-        T9299: 
-        "T9299 For AT&T": 
-        T9299+: 
-        "T9299+ For AT&T": 
-        TATTOO: 
-        TD2: 
-        TITAN: 
-        TITAN X310e: 
-        TOUCH 3G: 
-        TOUCH DIAMOND2: 
-        TOUCH DUAL: 
-        TOUCH PRO: 
-        TOUCH VIVA: 
-        TOUCH2: 
-        TYTN: 
-        TYTN II: 
-        TYTN MOZILLA: 
-        TYTNII: 
-        Tattoo: 
-        ThunderBolt: 
-        ThunderBolt 4G: 
-        Thunderbolt: 
-        Titan: 
-        Torphy T8686: 
-        Touch: 
-        Touch 3G: 
-        Touch Cruise: 
-        Touch Diamond: 
-        Touch Diamond2: 
-        Touch HD: 
-        Touch HD2: 
-        Touch Pro: 
-        Touch Pro2: 
-        Touch Viva: 
-        Touch diamond: 
-        "Touch-IT HD7": 
-        "Touch-IT Trophy": 
-        Touch2: 
-        TouchDiamond2: 
-        TouchDual: 
-        Trinity: 
-        Trophy: 
-        Trophy T8686: 
-        TyTN: 
-        TyTN II: 
-        UNIVERSAL: 
-        "USCCHTC-PC93100": 
-        Ultimate: 
-        Universal: 
-        V9: 
-        VDA V: 
-        VISION: 
-        VLE: 
-        VLE U: 
-        VPACompactIV: 
-        Velocity 4G: 
-        Ville: 
-        Vision: 
-        Vivid: 
-        Vivo: 
-        Vogue: 
-        WIZARD: 
-        Weather: 
-        Wildfire: 
-        Wildfire Firmware: 
-        Wildfire S: 
-        Windows: 
-        Windows Phone: 
-        Windows Phone 8 / HTC Mozart: 
-        Windows Phone 8S By HTC: 
-        Windows Phone 8S by HTC: 
-        Windows Phone 8X by HTC: 
-        Windows Phone 8Xby HTC: 
-        WindowsPhone8Xby: 
-        X06HT: 
-        X310e: 
-        X315E: 
-        X315e: 
-        X515C: 
-        X515E: 
-        X515E 4GS: 
-        X515a: 
-        X515d: 
-        X515e: 
-        X515m: 
-        X710a: 
-        X7500: 
-        X7510: 
-        X920e: 
-        XV: 
-        Xperia: 
-        Xplorer: 
-        YouTube: 
-        Z520e: 
-        Z560e: 
-        Z710a: 
-        Z710e: 
-        Z710t: 
-        Z715e: 
-        ace: 
-        bahamas: 
-        bliss: 
-        bravo: 
-        bravo HTC: 
-        buzz: 
-        click: 
-        dream: 
-        europe: 
-        first: 
-        flyer: 
-        glacier: 
-        golfu: 
-        htc europe: 
-        htc mpw6958: 
-        htc wwe: 
-        iPad 3: 
-        inspire 4G: 
-        jewel: 
-        legend: 
-        metropcs us: 
-        mwp6985: 
-        myTouch 3G: 
-        myTouch 3G Slide: 
-        myTouch 4G: 
-        myTouch 4G Slide: 
-        myTouch 4g: 
-        myTouch4G: 
-        mytouch 4g: 
-        one: 
-        one S: 
-        passion: 
-        pico HTC: 
-        primou: 
-        prophet: 
-        pyramid: 
-        pyramid HTC: 
-        radar: 
-        runnymede: 
-        s710: 
-        saga: 
-        saga HTC: 
-        shooteru: 
-        sprint wwe: 
-        supersonic: 
-        v1510: 
-        v3600: 
-        verizon wwe: 
-        vfpioneer: 
-        virgin mobile: 
-        vision: 
-        vision HTC: 
-        vodafone de: 
-        wizard: 
-        x515e: 
-        x710d: 
     Haier:
       model:
         "HW-W718": 
@@ -4585,6 +3959,18 @@ device:
         SN70T31: 
         SN70T32: 
         SN97T41W: 
+    HCLme:
+      model:
+        CONNECT 2G: 
+        "Connect-2G-2.0": 
+        "Connect-3G": 
+        "Connect-3G-2.0": 
+        U1: 
+        V1: 
+        V2: 
+        X1: 
+        Y2: 
+        Y3: 
     Hena:
       model:
         MID7117CM: 
@@ -4609,13 +3995,13 @@ device:
         H9500+: 
     Hisense:
       model:
-        AndroMAXI AD683G: 
         Andromax C Sulthan Rafi XPERIA Mod: 
         Andromax U: 
         "Andromax-C": 
+        "Andromax-c": 
         "Andromax-C.purwanto": 
         "Andromax-U": 
-        "Andromax-c": 
+        AndroMAXI AD683G: 
         EG98: 
         "HS-10DTB2": 
         "HS-7DTB2": 
@@ -4626,6 +4012,7 @@ device:
         "HS-9DTB4-4GB": 
         "HS-E820": 
         "HS-E860": 
+        "HS-e910": 
         "HS-E910": 
         "HS-E912": 
         "HS-E912S": 
@@ -4652,8 +4039,694 @@ device:
         "HS-U950": 
         "HS-U960Q": 
         "HS-U970": 
-        "HS-e910": 
         "MIRA-2": 
+    hitech:
+      model:
+        AMAZE S100: 
+        AMAZE S200: 
+    HP:
+      model:
+        635 Notebook PC: 
+        Compaq 2210b: 
+        Compaq 2510p Notebook PC: 
+        iPAQ 510: 
+        iPAQ 610: 
+        iPAQ 910: 
+        iPAQ DataMessenger: 
+        iPAQ Glisten: 
+        iPAQ hw6900: 
+        iPAQ rw6800: 
+        iPAQ rw6815: 
+        iPAQ VoiceMessenger: 
+        PlayBook: 
+        Slate 10 HD: 
+        Slate 7: 
+        Slate 7 Plus: 
+        Slate 8 Pro: 
+        SlateBook 10 x2 PC: 
+        Touchpad: 
+        TouchPad: 
+        Veer: 
+    HTC:
+      model:
+        "85": 
+        "2125": 
+        "3100": 
+        "3650": 
+        "6900": 
+        "8100": 
+        "8500": 
+        "8900": 
+        "9060": 
+        "9066": 
+        "0002": 
+        001HT: 
+        0P3P5: 
+        0P3Z11: 
+        0P6A1: 
+        0P6B: 
+        0P6B120: 
+        606w: 
+        608t: 
+        609d: 
+        6435LRA: 
+        6435LVW: 
+        6435LVW 4G: 
+        6500LVW: 
+        6500LVW 4G: 
+        6600LVW: 
+        6600LVW 4G: 
+        6990LVW: 
+        6990LVW 4G: 
+        7 HTC MOZART: 
+        7 Mondrian T8788: 
+        7 Mozart: 
+        7 Mozart T8698: 
+        7 Pro: 
+        7 Pro T7576: 
+        7 Schubert T9292: 
+        7 Surround: 
+        7 Trophy: 
+        7 Trophy T8: 
+        7 Trophy T8686: 
+        801e: 
+        802d: 
+        802d_4.2.2_weibo_3.3.5_htc_new: 
+        802t: 
+        802t_TD: 
+        802w: 
+        A310e: 
+        A315c: 
+        A320e: 
+        A320E DESIRE C: 
+        A3335: 
+        A3366: 
+        A510a: 
+        A510b: 
+        A510c: 
+        A510e: 
+        A5253: 
+        A620b: 
+        A620d: 
+        A620e: 
+        A620m: 
+        A620t: 
+        A6277: 
+        A6366: 
+        A7275: 
+        A810e: 
+        A8180: 
+        A9188: 
+        A9188_TD: 
+        A9191: 
+        A9192: 
+        Accord: 
+        ACD U: 
+        ace: 
+        Acquire: 
+        ADR6200: 
+        ADR6290US: 
+        ADR6300: 
+        ADR6350: 
+        ADR6400L 4G: 
+        ADR6425LVW: 
+        Agent: 
+        Amaze: 
+        Amaze 4G: 
+        Aria: 
+        ARIA: 
+        Aria A6380: 
+        "Aria\"": 
+        Artist: 
+        bahamas: 
+        Bee: 
+        bliss: 
+        BlueAngel: 
+        Bravo: 
+        bravo: 
+        Bravo C: 
+        Butterfly: 
+        Butterfly s: 
+        Buzz: 
+        buzz: 
+        C510e: 
+        C525c: 
+        C525u: 
+        "C525u-orange-LS": 
+        C620d: 
+        C620e: 
+        C620t: 
+        C625a: 
+        C625b: 
+        C715c: 
+        Chacha A810: 
+        ChaCha A810e: 
+        ChaChaCha A810e: 
+        CLEOPATRA: 
+        click: 
+        "Click-Orange": 
+        DASH 3G: 
+        Desire: 
+        Desire 200: 
+        Desire 300: 
+        Desire 400 dual sim: 
+        Desire 500: 
+        Desire 500 dual sim: 
+        Desire 600 dual sim: 
+        Desire 601: 
+        Desire A8181: 
+        Desire C: 
+        Desire CDMA: 
+        Desire HD: 
+        DESIRE HD: 
+        Desire HD A9191: 
+        Desire L by HTC: 
+        Desire P: 
+        Desire s: 
+        Desire S: 
+        Desire Saga: 
+        Desire SMS: 
+        Desire SV: 
+        Desire U: 
+        Desire V: 
+        Desire VC: 
+        Desire VersionCode: 
+        Desire X: 
+        Desire XS: 
+        DESIRE Z: 
+        Desire Z: 
+        DesireHD: 
+        DesireHD A9191: 
+        DesireHD_A9191: 
+        DesireHDA9191: 
+        DesireS S510e: 
+        DesireSV: 
+        DesireU: 
+        DesireZ A7272: 
+        Diamond: 
+        Dream: 
+        dream: 
+        Dream BiohzR Mod: 
+        Dream G1: 
+        Dream SparksMod: 
+        Droid DNA: 
+        Droid Incredible ADR6300: 
+        Elf: 
+        EndeavorU: 
+        ENR U: 
+        ENRC2B: 
+        Eris: 
+        ERIS: 
+        Espresso: 
+        Eternity: 
+        europe: 
+        EVA UL: 
+        EVA UTL: 
+        EVO: 
+        EVO 3D: 
+        Evo 3D GSM: 
+        EVO 3D GSM: 
+        EVO 3D GSM X515m: 
+        EVO 3D X515m: 
+        Evo 4G: 
+        EVO 4G: 
+        EVO 4G LTE: 
+        EVO 4G+: 
+        EVO 4G+ For Sprint: 
+        EVO 4G++ For Sprint: 
+        EVO 4GS: 
+        EVO Design 4G: 
+        EVO Design C715e: 
+        Evo Hd2: 
+        EVO LTE: 
+        EVO Tab: 
+        "EVO-4G": 
+        EVO3D: 
+        EVO3D X515m: 
+        EVO4G: 
+        EVODesign4G: 
+        EVOV4G: 
+        Excalibur: 
+        Explorer: 
+        Explorer A310e: 
+        F5151: 
+        first: 
+        Flyer: 
+        flyer: 
+        FLYER: 
+        Flyer P510e: 
+        Flyer P512: 
+        G1 Dream: 
+        G20: 
+        G20 FOR SPRINT: 
+        G21: 
+        Gemini: 
+        glacier: 
+        Glacier: 
+        GOF U: 
+        Gold: 
+        golfu: 
+        Gratia A6380: 
+        H1000C: 
+        H2000C: 
+        H3000C: 
+        HD Mini: 
+        HD2: 
+        HD2 LEO: 
+        "HD2 T8585-Orange": 
+        HD2_T8585: 
+        HD2x: 
+        HD7: 
+        "HD7 4G T9399+ For_AT&T": 
+        HD7 Infinity: 
+        HD7 Pro +: 
+        HD7 Pro H7300: 
+        HD7 T9292: 
+        "HD7S T9399+ FOR AT&T": 
+        "HD7S T9399+ TV FOR AT&T": 
+        "HD7S T9899pro For AT&T": 
+        HD_MINI: 
+        HD_mini: 
+        HD_T8585: 
+        HERALD: 
+        HERO: 
+        Hero: 
+        Hero CDMA: 
+        Hero200: 
+        HERO200: 
+        Holiday: 
+        HTC6990LVW: 
+        HTC_HD2: 
+        HTC_Tattoo: 
+        HTL21: 
+        HTTP Service: 
+        HURRICANE: 
+        Incredible: 
+        Incredible 2: 
+        Incredible ALPHA: 
+        Incredible S: 
+        IncredibleC: 
+        IncredibleS S710e: 
+        Inspire: 
+        Inspire 3D: 
+        Inspire 4G: 
+        Inspire 4g: 
+        "inspire 4G For at&t": 
+        inspire 4G LTE: 
+        Inspire HD: 
+        iPad 3: 
+        J: 
+        J Butterfly: 
+        J butterfly: 
+        J Z321e: 
+        "J-One-mini": 
+        Jade: 
+        jewel: 
+        K2 U: 
+        K2 UL: 
+        Kaiser: 
+        KAISER: 
+        Kaiser Kaiser: 
+        Kaiser Touch: 
+        Kaiser Vogue: 
+        KINGDOM: 
+        Kingdom: 
+        legend: 
+        Legend: 
+        Leo: 
+        LEO: 
+        Lexikon: 
+        Lexikon C: 
+        Liberty: 
+        Liberty S: 
+        Linux: 
+        LTE 4G: 
+        Lumia 900: 
+        Magic: 
+        Magic Dream: 
+        Magic G1: 
+        Magic MR: 
+        MAGICIAN: 
+        Maple_S520: 
+        Marshall: 
+        Marvel: 
+        MAX 4G: 
+        Mazaa: 
+        Mecha: 
+        Mega: 
+        "Mega-T3333-Orange": 
+        Mercury: 
+        MERCURY: 
+        Mersad 7 Mozart T8698: 
+        Mersad 7 Pro T7576: 
+        Mersad 7 Trophy T8686: 
+        Mersad HTC Surround T8788: 
+        metropcs us: 
+        Mondrian: 
+        Mozart: 
+        Mozart T8698: 
+        mpw6958: 
+        MSM7x30: 
+        MSM8x55: 
+        MTeoR: 
+        MWP6885: 
+        MWP6985: 
+        mwp6985: 
+        Mwp6985: 
+        My Touch 4G: 
+        myTouch 3G: 
+        myTouch 3G Slide: 
+        MyTouch 4g: 
+        myTouch 4g: 
+        Mytouch 4g: 
+        mytouch 4g: 
+        myTouch 4G: 
+        myTouch 4G slide: 
+        MyTouch 4G Slide: 
+        myTouch 4G Slide: 
+        myTouch4G: 
+        Nexus One: 
+        NexusHD2: 
+        NexusOne: 
+        Omega: 
+        one: 
+        ONE: 
+        One: 
+        One 801e: 
+        One dual sim: 
+        One max: 
+        One mini: 
+        ONE S: 
+        One S: 
+        one S: 
+        ONE S_4.1.8_weibo_3.0.1_: 
+        One SV: 
+        One V: 
+        One with MoDaCo.SWITCH Beta 13: 
+        One with MoDaCo.SWITCH Beta 8: 
+        One X: 
+        ONE X: 
+        One X+: 
+        One XL: 
+        One xs: 
+        OneSV: 
+        OneX+ android 17 de DE normal long high 720 1280: 
+        OneXplus: 
+        P3300: 
+        P3301: 
+        P3350: 
+        P3400: 
+        P3400i: 
+        P3450: 
+        P3451: 
+        P3452: 
+        P3470: 
+        P3490: 
+        P3600: 
+        P3600i: 
+        P3650: 
+        P3650t: 
+        P3651: 
+        P3700: 
+        P3701: 
+        P3702: 
+        P4300: 
+        P4350: 
+        P4351: 
+        P4550: 
+        P4600: 
+        P510e: 
+        P515E: 
+        P5310 BM: 
+        P5500: 
+        P5520: 
+        P5530: 
+        P6300: 
+        P6500: 
+        P715: 
+        P715a: 
+        Panache: 
+        passion: 
+        Passion S510e: 
+        PC36100: 
+        PC40100: 
+        PC40200: 
+        PC93100: 
+        PD67100: 
+        PG06100: 
+        PG09410: 
+        "PG09410 %ROM VERSION%": 
+        PG762: 
+        PG86100: 
+        PH06130: 
+        PH39100: 
+        "PH39100 %ROM VERSION%": 
+        PI39100: 
+        PI86100: 
+        pico: 
+        Pico A310e: 
+        PLS7373ADR: 
+        PM23300: 
+        PM36100: 
+        PN071: 
+        "PN071-orange-LS": 
+        PN07120: 
+        PO582: 
+        "PO582-orange-LS": 
+        Polaris: 
+        POLARIS: 
+        PPC6800: 
+        PPC6850 BM: 
+        primou: 
+        prophet: 
+        Prophet: 
+        PucciniLte: 
+        PURE: 
+        pyramid: 
+        Pyramid: 
+        radar: 
+        Radar: 
+        Radar 4G: 
+        Radar C110e: 
+        Radar+C110e: 
+        Radiant: 
+        Raider: 
+        Raider 4G with Beats Audio: 
+        Raider X710e: 
+        Raphael: 
+        RAPHAEL_DO_NOT_MATCH: 
+        Rezound: 
+        Rhyme S510b: 
+        RIO U: 
+        Ruby: 
+        RubyUIX: 
+        Runnymede: 
+        runnymede: 
+        S310: 
+        S31HT: 
+        S410: 
+        S411: 
+        S510b: 
+        S510e: 
+        S610d: 
+        S620: 
+        S621: 
+        S630: 
+        s710: 
+        S710: 
+        S710d: 
+        S710E: 
+        S710e: 
+        S720e: 
+        S720t: 
+        S720t 16GB: 
+        S730: 
+        S740: 
+        S910m: 
+        Saga: 
+        saga: 
+        Salsa: 
+        Salsa C510e: 
+        Sapphire: 
+        Schuber: 
+        Schubert: 
+        Schubert T9292: 
+        Sensation: 
+        Sensation 4g: 
+        Sensation 4G: 
+        Sensation XE: 
+        Sensation XE with Beats Audio Z715e: 
+        Sensation XL: 
+        Sensation XL with Beats: 
+        Sensation XL with Beats Audio X315e: 
+        Sensation Z710e: 
+        SensationXE Beats: 
+        SensationXE Beats Z715e: 
+        SensationXL Beats: 
+        SensationXL Beats X315e: 
+        SensationXL_Beats: 
+        Shooter U: 
+        shooteru: 
+        ShooterU: 
+        Smart_F3188: 
+        SMART_F3188: 
+        Snap: 
+        Spark: 
+        sprint wwe: 
+        ST6356: 
+        ST7377: 
+        Status: 
+        supersonic: 
+        Surround: 
+        Surround T8788: 
+        SurroundT8788: 
+        "Sync V2: '9.8.5027.1005": {}'
+        T120C: 
+        T320e: 
+        T327t_TD: 
+        T328d: 
+        T328t: 
+        T328t_TD: 
+        T328w: 
+        T328W: 
+        T328w_4.0.3_weibo_3.0.0_htc_new: 
+        T329d: 
+        T329t: 
+        T329w: 
+        T528d: 
+        T528t: 
+        T528t_TD: 
+        T528w: 
+        T5555: 
+        T7272: 
+        T7373: 
+        T7380: 
+        T7575: 
+        T8290: 
+        T8585: 
+        T8697: 
+        T8698 Mozart: 
+        T8788: 
+        T9199 For Vodafone: 
+        T9295: 
+        T9296: 
+        T9299: 
+        "T9299 For AT&T": 
+        T9299+: 
+        "T9299+ For AT&T": 
+        Tattoo: 
+        TATTOO A3288: 
+        TD2 T5353: 
+        Thunderbolt: 
+        ThunderBolt: 
+        Titan: 
+        TITAN X310e: 
+        Torphy T8686: 
+        Touch: 
+        TOUCH 3G T3232: 
+        Touch Cruise: 
+        Touch Diamond: 
+        TOUCH DIAMOND2 2.0: 
+        TOUCH DUAL: 
+        Touch HD T8282: 
+        TOUCH PRO 2: 
+        Touch Pro T7272: 
+        Touch Pro2 T7373: 
+        Touch S01: 
+        TOUCH VIVA T2223: 
+        Touch Viva T2223: 
+        "Touch-IT HD7": 
+        "Touch-IT Trophy": 
+        Touch2: 
+        Touch2 T3320: 
+        TOUCH2_T3333: 
+        Touch_3G_T3232: 
+        Touch_Cruise_T4242: 
+        Touch_Diamond2: 
+        Touch_diamond_P3700: 
+        Touch_HD2_T8585: 
+        Touch_HD_T8282: 
+        Touch_Pro: 
+        Touch_Pro2: 
+        Touch_Viva_T2223: 
+        TouchDiamond2: 
+        TouchDual: 
+        Trinity: 
+        Trophy: 
+        Trophy T8686: 
+        TyTN: 
+        TYTN: 
+        "TyTN1.0 ProfileMIDP-2.0 ConfigurationCLDC-1.1": 
+        TYTN_II: 
+        TyTN_II: 
+        TYTNII: 
+        Ultimate: 
+        UNIVERSAL: 
+        Universal: 
+        v1510: 
+        v3600: 
+        V9: 
+        VDA_V: 
+        Velocity 4G: 
+        Velocity 4G X710s: 
+        verizon wwe: 
+        vfpioneer: 
+        "Ville-orange-LS": 
+        virgin mobile: 
+        vision: 
+        Vision: 
+        VISION: 
+        Vivid: 
+        Vivo: 
+        VLE U: 
+        "VLE_U-4.0.3-43074": 
+        vodafone de: 
+        Vogue: 
+        VPACompactIV: 
+        Weather: 
+        Wildfire: 
+        Wildfire A3333: 
+        "Wildfire Firmware version: '2.2.1": {}'
+        Wildfire S: 
+        Wildfire S A510e: 
+        WildfireS: 
+        WildfireS A510e: 
+        Windows Phone: 
+        Windows Phone 8: 
+        Windows Phone 8S by HTC: 
+        Windows Phone 8S By HTC: 
+        Windows Phone 8X by HTC: 
+        Windows Phone 8Xby HTC: 
+        WindowsPhone8Xby: 
+        wizard: 
+        WIZARD: 
+        X06HT: 
+        X310e: 
+        X315e: 
+        X315E: 
+        X515a: 
+        X515C: 
+        X515d: 
+        X515e: 
+        x515e: 
+        X515E: 
+        X515E 4GS: 
+        X515m: 
+        X710a: 
+        x710d: 
+        X7500: 
+        X7510: 
+        X920e: 
+        Xperia: 
+        Xplorer A310e: 
+        XV 6975 Imagio Whitestone: 
+        YouTube: 
+        Z520e: 
+        Z560e: 
+        Z710a: 
+        Z710e: 
+        Z710t: 
+        Z715e: 
     Huawei:
       model:
         4Afrika: 
@@ -4668,15 +4741,18 @@ device:
         C8600: 
         C8650: 
         C8650+: 
+        C8660: 
         C8800: 
+        c8810: 
         C8810: 
+        c8810 C8650: 
         C8810_c8650: 
         C8812: 
         C8812E: 
         C8813: 
         C8813D: 
-        C8813Q: 
         C8813d: 
+        C8813Q: 
         C8825D: 
         C8860E: 
         C8950D: 
@@ -4688,6 +4764,7 @@ device:
         G3610: 
         G3620: 
         G5010: 
+        g510: 
         G510: 
         "G510-0010": 
         "G510-0100": 
@@ -4723,12 +4800,12 @@ device:
         "HN3-U00": 
         "HN3-U01": 
         HUAWEI: 
-        IDEOS U8500: 
-        IDEOS_U8500: 
         Ideos: 
+        IDEOS U8500: 
         Ideos X3: 
         Ideos X5: 
         Ideos X5 1.12.9(ret4rt): 
+        IDEOS_U8500: 
         IdeosS7: 
         IdeosS7 Slim: 
         IdeosX5: 
@@ -4752,11 +4829,6 @@ device:
         M886: 
         M920: 
         M931: 
-        "MT1-T00": 
-        "MT1-U06": 
-        MTC 950: 
-        MTC Mini: 
-        "MTS-SP101": 
         MediaPad: 
         MediaPad 10 FHD: 
         MediaPad 10 LINK: 
@@ -4765,6 +4837,11 @@ device:
         MediaPad 7 Vogue: 
         MediaPad 7 Youth: 
         MediaPad_10_FHD: 
+        "MT1-T00": 
+        "MT1-U06": 
+        MTC 950: 
+        MTC Mini: 
+        "MTS-SP101": 
         Orange Daytona: 
         OsiMood MediaPad: 
         "P2-6011": 
@@ -4781,10 +4858,11 @@ device:
         S7: 
         "S7-312uB021": 
         S8600: 
-        STARTRAIL II: 
         Samsung Galaxy Tab: 
         SpringBoard: 
+        STARTRAIL II: 
         SymantecSpider: 
+        symantecspider: 
         T102: 
         T7200: 
         T8100: 
@@ -4853,6 +4931,7 @@ device:
         U8350: 
         "U8350-51": 
         U8500: 
+        u8500: 
         U8510: 
         U8510 mit EclipseROM: 
         U8510 w/ D.M.R.: 
@@ -4860,8 +4939,10 @@ device:
         U8510 w/ M.E.R.: 
         "U8510-1": 
         U8520: 
+        u8600: 
         U8600: 
         U8650: 
+        u8650: 
         "U8650-1": 
         U8650B836: 
         U8651: 
@@ -4890,15 +4971,15 @@ device:
         U8687: 
         U8730: 
         U8800: 
+        u8800: 
         U8800 Pro: 
         U8800+: 
         "U8800-51": 
-        U8800Pro: 
         U8800pro: 
+        U8800Pro: 
         U8812D: 
         U8815: 
         U8815N: 
-        U8815NC02B891: 
         U8818: 
         U8820: 
         U8825: 
@@ -4917,6 +4998,7 @@ device:
         "U8950N-1": 
         "U8950N-51": 
         U8951: 
+        u8951: 
         "U8951-1": 
         U8951D Anzhi: 
         "U8951N-1": 
@@ -4935,8 +5017,8 @@ device:
         U9510: 
         U9510E: 
         U9700L: 
-        UM840: 
         Ucell: 
+        UM840: 
         V736: 
         V840: 
         Vodafone: 
@@ -4966,15 +5048,9 @@ device:
         "Y320-U30": 
         "Y511-U00": 
         "Y530-U00": 
-        c8810: 
-        c8810 C8650: 
-        g510: 
-        symantecspider: 
-        u8500: 
-        u8600: 
-        u8650: 
-        u8800: 
-        u8951: 
+    HUAWEI:
+      model:
+        U8850: 
     Humax:
       model:
         "HD-FOX C": 
@@ -4993,6 +5069,78 @@ device:
         T7: 
         T7S: 
         X700: 
+    "i-mate":
+      model:
+        "6150": 
+        "8150": 
+        "8502": 
+        "9502": 
+        JAMA: 
+        JAMAQ: 
+        JAMin: 
+        JAQ: 
+        JAQ3: 
+        JASJAM: 
+        JASJAR: 
+        K: 
+        PDAL: 
+    iBall:
+      model:
+        3G 7316: 
+        Andi 107: 
+        Andi 2: 
+        Andi 3.5: 
+        Andi 3.5i: 
+        Andi 3.5KKe: 
+        Andi 3.5r: 
+        Andi 3e: 
+        Andi 3n: 
+        Andi 4.3a: 
+        Andi 4.3J: 
+        Andi 4.3J+: 
+        Andi 4.5d quadro: 
+        Andi 4.5h: 
+        Andi 4.5q: 
+        Andi 4d: 
+        Andi 4v: 
+        I6012: 
+        i6012: 
+        Slide 3G 7307: 
+        Slide 3G 7316: 
+        Slide 3G 7334: 
+        Slide 3G7271: 
+        Slide i6516: 
+        Slide I7011: 
+        Slide i7011: 
+        Slide i7119: 
+        Slide_3G7271: 
+        Slide_3G_7334: 
+        Slide_i6516: 
+        Slide_i7011: 
+    IconBIT:
+      model:
+        iconBIT: 
+        Mercury X: 
+        NetTAB Matrix: 
+        NetTAB MATRIX HD: 
+        NetTAB Pocket: 
+        NetTAB PRIDE: 
+        NetTAB SPACE III: 
+        NetTAB THOR: 
+        NetTAB THOR mini: 
+        NetTAB THOR V4.10: 
+        "NetTAB THOR-LE": 
+        "NT-0701S": 
+        "NT-0709M": 
+        "NT-0801C": 
+        "NT-0907S": 
+        "NT-1005T": 
+        "NT-1006T": 
+        "NT-1710": 
+        "NT-3702M": 
+        "NT-3801P": 
+        "NT-3803C": 
+        "NT-3902S": 
     IKEA:
       model:
         LF1V365: 
@@ -5006,9 +5154,11 @@ device:
         S79 EXPLORER: 
         S79 MIUI: 
         S79_EXPLORER: 
+        s88: 
         S88: 
         S89: 
         S900: 
+        s99: 
         S99: 
         TAB X9: 
         TAB_X9: 
@@ -5018,36 +5168,111 @@ device:
         Y5: 
         Z6: 
         Z7: 
-        s88: 
-        s99: 
-    INTEK:
+    imobile:
       model:
-        "VANTAGE-ibox": 
-        Vantage Full HD Model: 
-    IconBIT:
-      model:
-        Mercury X: 
-        "NT-0701S": 
-        "NT-0709M": 
-        "NT-0801C": 
-        "NT-0907S": 
-        "NT-1005T": 
-        "NT-1006T": 
-        "NT-1710": 
-        "NT-3702M": 
-        "NT-3801P": 
-        "NT-3803C": 
-        "NT-3902S": 
-        NetTAB MATRIX HD: 
-        NetTAB Matrix: 
-        NetTAB PRIDE: 
-        NetTAB Pocket: 
-        NetTAB SPACE III: 
-        NetTAB THOR: 
-        NetTAB THOR V4.10: 
-        NetTAB THOR mini: 
-        "NetTAB THOR-LE": 
-        iconBIT: 
+        "697": 
+        3G 8500: 
+        "I-Note": 
+        "i-note 2": 
+        "i-note 3": 
+        "i-note S": 
+        "I-note S": 
+        "i-note WiFi": 
+        "i-note WiFi 1.1": 
+        "I-note WiFi 1.1": 
+        "i-NOTE WIFI 2": 
+        "i-note WiFi 7": 
+        "I-note WiFi 9": 
+        "i-note WiFi 9": 
+        "i-note WIFI3": 
+        "i-STYLE 1": 
+        "I-STYLE 1 I": 
+        "i-STYLE 1 i": 
+        "i-STYLE 2": 
+        "i-STYLE 2i": 
+        "i-style 3": 
+        "i-style 3i": 
+        "i-STYLE 4": 
+        "i-style 4": 
+        "i-STYLE 4i": 
+        "I-STYLE 4i": 
+        "i-STYLE 5": 
+        "i-STYLE 5i": 
+        "i-STYLE 6": 
+        "I-STYLE 6": 
+        "i-STYLE 6A": 
+        "i-STYLE 7": 
+        "i-style 7.1": 
+        "I-style 7.1": 
+        "I-STYLE 7.2": 
+        "i-STYLE 7.2": 
+        "i-STYLE 7.3": 
+        "i-STYLE 7.3A": 
+        "i-STYLE 7.5": 
+        "i-STYLE 7A": 
+        "I-STYLE 7A": 
+        "i-style 8": 
+        "I-STYLE 8.1": 
+        "i-STYLE 8.1": 
+        "i-STYLE 8.2": 
+        "i-STYLE 8.2A": 
+        "i-STYLE Q 5": 
+        "i-STYLE Q 5A": 
+        "i-style Q1": 
+        "I-style Q1i": 
+        "i-style Q1i": 
+        "i-STYLE Q2": 
+        "i-style Q2": 
+        "i-STYLE Q2 DUO": 
+        "i-style Q3": 
+        "I-style Q3i": 
+        "i-style Q3i": 
+        "i-STYLE Q4": 
+        "I-STYLE Q4": 
+        "i-STYLE Q4A": 
+        "i-STYLE Q6": 
+        "I-STYLE Q6": 
+        "i-STYLE Q6A": 
+        "i-STYLE2.1": 
+        "i-STYLE_7.3A": 
+        i651: 
+        i680: 
+        I691: 
+        i691: 
+        i692: 
+        i693: 
+        i695: 
+        i698: 
+        I698: 
+        i810: 
+        i858: 
+        i858 Plus: 
+        IE 6010: 
+        IQ 1: 
+        IQ 2: 
+        IQ 2A: 
+        iQ 2A: 
+        IQ 3: 
+        IQ 4: 
+        IQ 5: 
+        IQ 5.1: 
+        IQ 5.1A: 
+        IQ 5.3: 
+        IQ 5A: 
+        IQ 6: 
+        IQ 6.1: 
+        IQ 6A: 
+        IQ 9: 
+        IQ 9.2: 
+        IQ X: 
+        IQ X2: 
+        IQ X3: 
+        IQ XA: 
+        "IQ1-1": 
+        "IQ1-1A": 
+        IQ5.1 Pro: 
+        IQ5.1A Pro: 
+        IQ_2: 
     Impression:
       model:
         ImPAD 3113: 
@@ -5071,15 +5296,20 @@ device:
         "901": 
         "920": 
         "921": 
+    INTEK:
+      model:
+        Vantage Full HD Model: 
+        "VANTAGE-ibox": 
     Intenso:
       model:
         TAB 714: 
     Intex:
       model:
+        Aqua 3.2: 
         AQUA 4.0: 
         AQUA 5.0: 
-        Aqua 3.2: 
         Aqua Active: 
+        Aqua flash: 
         Aqua Glow: 
         "Aqua I-5": 
         Aqua Marvel: 
@@ -5093,15 +5323,45 @@ device:
         Aqua Wonder: 
         Aqua Wonder Quad Core: 
         Aqua Wonder_Quad_Core: 
-        Aqua flash: 
         CLOUD X1: 
-        "IT-M709MR": 
         iBuddy 3: 
         iBuddy 7.0: 
         iBuddy 7.2: 
         iBuddy Connect: 
         iBuddy Connect 3G: 
         iBuddy Connect u2161_3G: 
+        "IT-M709MR": 
+    inverto:
+      model:
+        "IDL-6640N Volksbox Essential": 
+        "IDL-6650N Volksbox": 
+        "IDL-6651N Volksbox Web Edition": 
+    iOCEAN:
+      model:
+        X7: 
+        x7: 
+    ionik:
+      model:
+        "TP10.1-1500DC Dark grey metal": 
+        "TP10.1-1500DC kb": 
+        "TP10.1-1500DC-metal": 
+        "TP7-1000": 
+        "TP7-1000-metal": 
+        "TP7-1000DC": 
+        "TP7-1000DC light": 
+        "TP7-1200 BT": 
+        "TP7-1200QC": 
+        "TP7-1500DC-metal": 
+        "TP7.85-1200QC-3G": 
+        "TP8-1000": 
+        "TP8-1200-metal": 
+        "TP8-1500DC": 
+        "TP9.7-1200": 
+        "TP9.7-1200QC Retina": 
+        "TP9.7-1500 DC": 
+        "TP9.7-1500DC": 
+        "TP9.7-1500DC Retina": 
+        "TP97.1-500DC": 
     Iru:
       model:
         M702pro: 
@@ -5111,18 +5371,6 @@ device:
         DE88Plus: 
         DG20: 
         MD70: 
-    JXD:
-      model:
-        P1000: 
-        P1000(): 
-        P200: 
-        S6600: 
-        "S6600-M6": 
-        S6600b: 
-        S8000: 
-        S9000: 
-        S9100: 
-        V5200: 
     Jaytech:
       model:
         "JAY-TECH": 
@@ -5151,27 +5399,21 @@ device:
     Juggernaut:
       model:
         Semaphore: 
-    KDDI:
+    JXD:
       model:
-        INFOBAR A01: 
-        INFOBAR C01: 
-        IS11T: 
-        ISW13F: 
-        ISW16SH: 
-    KTtech:
-      model:
-        "EV-S100": 
-        "EV-S110": 
-        "KM-S120": 
-        "KM-S200": 
-        "KM-S220": 
-        "KM-S220H": 
-        "KM-S300": 
-        "KM-S330": 
-        "km-S220": 
-        "km-s220": 
+        P1000: 
+        P1000(): 
+        P200: 
+        S6600: 
+        "S6600-M6": 
+        S6600b: 
+        S8000: 
+        S9000: 
+        S9100: 
+        V5200: 
     Karbonn:
       model:
+        a1: 
         A1: 
         "A1 X-Tream Edition": 
         A11: 
@@ -5196,17 +5438,23 @@ device:
         ST8: 
         Titanium S1: 
         Titanium S5: 
-        a1: 
+    KDDI:
+      model:
+        INFOBAR A01: 
+        INFOBAR C01: 
+        IS11T: 
+        ISW13F: 
+        ISW16SH: 
     Kingcom:
       model:
+        Joypad C102: 
         JOYPAD C71: 
         JOYPAD C72: 
         JOYPAD C73: 
+        Joypad C74: 
         JOYPAD C75: 
         JOYPAD C81: 
         JOYPAD C82: 
-        Joypad C102: 
-        Joypad C74: 
     Kobo:
       model:
         Arc: 
@@ -5226,19 +5474,36 @@ device:
         W610: 
         W610D: 
         W619: 
+        w650: 
         W650: 
+        w650_592zn: 
         W68: 
         W700+: 
         W710: 
         W780: 
         W806: 
         W806+: 
-        w650: 
-        w650_592zn: 
+    KTtech:
+      model:
+        "EV-S100": 
+        "EV-S110": 
+        "KM-S120": 
+        "KM-S200": 
+        "KM-S220": 
+        "km-S220": 
+        "km-s220": 
+        "KM-S220H": 
+        "KM-S300": 
+        "KM-S330": 
     Kyocera:
       model:
         101K: 
         Buckle: 
+        C5120: 
+        C5121: 
+        C5155: 
+        C5170: 
+        C5215: 
         DIGNO: 
         E1000: 
         E2000: 
@@ -5271,6 +5536,7 @@ device:
         KX5B: 
         KX9: 
         KYL21: 
+        laylo: 
         Lightpipe: 
         M1000: 
         M1400: 
@@ -5289,7 +5555,272 @@ device:
         URBANO PROGRESSO: 
         WX04K: 
         Zio: 
-        laylo: 
+    Lava:
+      model:
+        Iris 349: 
+        Iris 349+: 
+        Iris 351: 
+        Iris 355: 
+        Iris 356: 
+        Iris 401e: 
+        Iris 402: 
+        Iris 402P: 
+        Iris 405: 
+        Iris 430: 
+        Iris 430_Android: 
+        Iris 454: 
+        Iris 455: 
+        Iris 458Q: 
+        Iris 501: 
+        Iris 502: 
+        Iris 504q: 
+        Iris 504Q: 
+        Iris 505: 
+        Iris Xtreme V2 By Manik: 
+        S12: 
+    Lemon:
+      model:
+        Aspire A1: 
+        LT9: 
+        P1: 
+        P100: 
+        P101: 
+        P2: 
+        P2_: 
+        P3: 
+        P7: 
+        P7_: 
+        P9: 
+        Tab LT29: 
+        Tab_LT29: 
+    Lenco:
+      model:
+        "CARTAB-920": 
+        "CoolTab-70": 
+        "CoolTAB-72": 
+        "CoolTab-80": 
+        "KidzTab-70": 
+        "TAB-1012": 
+        "TAB-1014": 
+        "TAB-1030": 
+        "TAB-704": 
+        "TAB-712": 
+        "TAB-813": 
+        "TAB-832": 
+        "TAB-900": 
+    Lenovo:
+      model:
+        3GC101: 
+        3GW100: 
+        3GW101: 
+        A1: 
+        A1 pad: 
+        "A1-32AB0": 
+        "A1-32AJ0": 
+        A1_07: 
+        A210: 
+        A2105: 
+        A2107: 
+        "A2107A-H": 
+        A269: 
+        A278t: 
+        A278t_TD: 
+        A288t: 
+        A288t_TD: 
+        A300: 
+        "A3000-H": 
+        A318t: 
+        A360: 
+        A366t: 
+        A366t_TD: 
+        A369: 
+        A369i: 
+        A390: 
+        A390_ROW: 
+        A390e: 
+        A390t: 
+        A390t_TD: 
+        A500: 
+        A516: 
+        A520: 
+        A520GRAY: 
+        A560e: 
+        A580: 
+        A590: 
+        a60: 
+        A60: 
+        A60+: 
+        A610: 
+        A630: 
+        A630t: 
+        A65: 
+        A656: 
+        A656_TD: 
+        A658t: 
+        A658t_TD: 
+        A66: 
+        A660: 
+        A668t: 
+        A668t_TD: 
+        A66t: 
+        A66t_TD: 
+        A68e: 
+        A690: 
+        A690 DEODEX: 
+        A698t: 
+        A698t_TD: 
+        A706_ROW: 
+        A710e: 
+        A750: 
+        A750 ICS: 
+        A760: 
+        A780: 
+        A789: 
+        A789 by KeDou: 
+        "A789-orange": 
+        A789_by_KeDou: 
+        A790e: 
+        A798t: 
+        A798t_TD: 
+        A800: 
+        a800: 
+        A820: 
+        A820_4.1.2_weibo_3.5.2_android: 
+        A820t: 
+        A820t (14.05.2013 by linerty: 
+        "A820t-(14.05.2013-by-linerty)_TD": 
+        A820t_TD: 
+        A830: 
+        A850: 
+        amazon_w: 
+        "B6000-F": 
+        "B6000-H": 
+        "B6000-HV": 
+        "B8000-F": 
+        "B8000-H": 
+        E228: 
+        E303: 
+        E307: 
+        E307_ENG_FRE: 
+        E307_ENG_FRE_A: 
+        E368: 
+        E700: 
+        ET860: 
+        ET980: 
+        G900: 
+        GYM: 
+        i300_VN: 
+        i360: 
+        I660: 
+        I720: 
+        I817: 
+        I906: 
+        i908: 
+        I908: 
+        I908_CMCC: 
+        I909: 
+        I919: 
+        i919: 
+        I921: 
+        i921: 
+        Ideapad K1: 
+        "Ideapad S10-3T": 
+        IdeaTab: 
+        "IdeaTab A1000-F": 
+        "IdeaTab A1000-G": 
+        "IdeaTab A1000L-F": 
+        IdeaTab A1107: 
+        "IdeaTab A2107A-F": 
+        "IdeaTab A2107A-H": 
+        IdeaTab A2109A: 
+        "IdeaTab A2207A-H": 
+        "IdeaTab A3000-F": 
+        "IdeaTab A3000-H": 
+        "IdeaTab S2007A-D": 
+        "IdeaTab S2007A-F": 
+        "IdeaTab S2010A-D": 
+        "IdeaTab S2109A-F": 
+        IdeaTab S2110AF: 
+        IdeaTab S2110AH: 
+        "IdeaTab S6000-F": 
+        "IdeaTab S6000-H": 
+        IdeaTab V2010A: 
+        "IdeaTab_A2107A-H": 
+        "IdeaTab_A3000-H": 
+        K1: 
+        K2: 
+        K800: 
+        k860: 
+        K860: 
+        K860i: 
+        K900: 
+        K900_ROW: 
+        "Lenovo-A288t": 
+        lephone_sdk: 
+        Micromax A800: 
+        O3_TD: 
+        p50: 
+        P50: 
+        "P50-VN": 
+        P70: 
+        p700: 
+        P700: 
+        P700i: 
+        p700i: 
+        "P700iLenovo-P700i": 
+        P708: 
+        P708_ENG_FRE_A: 
+        P708_ENG_RUS_S280: 
+        P768: 
+        P770: 
+        P770_ROW: 
+        P780: 
+        P780_ROW: 
+        P902: 
+        "S1-37AH0": 
+        "S2-38AH0": 
+        "S2005A-H": 
+        S5: 
+        S50: 
+        S5000: 
+        "S5000-F": 
+        S520: 
+        S560: 
+        "S6000L-F": 
+        S680: 
+        S686: 
+        S696: 
+        S720: 
+        S720i: 
+        S750: 
+        S760: 
+        S820: 
+        S820_ROW: 
+        S850e: 
+        S868t: 
+        S868t_TD: 
+        S870e: 
+        s880: 
+        S880: 
+        S880 Maryanto: 
+        S880i: 
+        s890: 
+        S890: 
+        S9: 
+        S920: 
+        S920_ROW: 
+        SmartTab II 10: 
+        SmartTab II 7: 
+        SmartTabII10: 
+        ThinkPad Tablet: 
+        V800: 
+        V806: 
+    Lexibook:
+      model:
+        MFC155: 
+        MFC180: 
+        MFC270: 
+        MFC270_09: 
     LG:
       model:
         "225": 
@@ -5371,15 +5902,21 @@ device:
         800G: 
         840G: 
         900G: 
+        _KH5200: 
+        _Optimus_L3: 
+        a130: 
         A130: 
         A133: 
+        a133: 
         A140: 
         A155: 
         A165: 
         A200: 
         A225: 
+        a230: 
         A230: 
         A250: 
+        a255: 
         A255: 
         A258: 
         A290: 
@@ -5390,6 +5927,9 @@ device:
         AN270: 
         AN430: 
         AN510: 
+        Android: 
+        Apex: 
+        AppAdvisor: 
         AS680: 
         AS695: 
         AS730: 
@@ -5409,9 +5949,6 @@ device:
         AX830: 
         AX840: 
         AX8600: 
-        Android: 
-        Apex: 
-        AppAdvisor: 
         B2000: 
         B2050: 
         B2060: 
@@ -5425,14 +5962,14 @@ device:
         BL20: 
         BL20f: 
         BL40: 
-        BL40G: 
         BL40f: 
+        BL40G: 
         BL40g: 
         BL42k: 
         BP520: 
+        Browser: 
         BX4170: 
         BX6170: 
-        Browser: 
         C100: 
         C105: 
         C1100: 
@@ -5440,8 +5977,8 @@ device:
         C1200: 
         C130: 
         C1300: 
-        C1300I: 
         C1300i: 
+        C1300I: 
         C1500: 
         C195: 
         C199: 
@@ -5452,10 +5989,13 @@ device:
         C2500: 
         C2600: 
         C300: 
+        c300: 
+        c305: 
         C305: 
         C310: 
         C3100: 
         C320: 
+        c330: 
         C330: 
         C3300: 
         C3310: 
@@ -5468,13 +6008,14 @@ device:
         C370: 
         C375: 
         C395: 
+        c395: 
         C510: 
         C550: 
         C555: 
         "C555-parrot": 
         C660: 
-        C660R: 
         C660h: 
+        C660R: 
         C710: 
         C710h: 
         C729: 
@@ -5528,21 +6069,21 @@ device:
         D802T: 
         D803: 
         D955: 
+        Dez51: 
         DG200: 
         DM120: 
-        Dez51: 
         "E-900": 
         E310: 
         E330: 
         E350: 
         E400: 
         "E400-Orange": 
-        E400R: 
         E400b: 
         "E400b-parrot": 
         E400de_DE: 
         E400f: 
         E400g: 
+        E400R: 
         E405: 
         E405f: 
         E410g: 
@@ -5642,6 +6183,7 @@ device:
         F180K: 
         F180L: 
         F180S: 
+        f180s: 
         F200K: 
         F200L: 
         F200S: 
@@ -5653,8 +6195,8 @@ device:
         F2400: 
         F240K: 
         F240L: 
-        F240S: 
         F240s: 
+        F240S: 
         F2410: 
         F260S: 
         F3000: 
@@ -5709,17 +6251,23 @@ device:
         G920: 
         G922: 
         G933: 
+        Gang: 
         GB160: 
         GB170: 
+        gb175: 
         GB175: 
         GB190: 
         GB210: 
+        gb220: 
         GB220: 
         GB230: 
+        gb230: 
         GB250: 
         GB255: 
+        gb270: 
         GB270: 
         GB280: 
+        gb280: 
         GC900: 
         GC900F: 
         GD310: 
@@ -5732,15 +6280,21 @@ device:
         GD580: 
         GD710: 
         GD880: 
+        gd880: 
         GD900: 
         GD900 Obigo: 
+        Genesis: 
+        Ggex: 
         "GLOBAL-PLAT3": 
         GLOBAL_PLAT3: 
         GM200: 
+        gm205: 
         GM205: 
         GM205Obigo: 
         GM210: 
+        gm210: 
         GM310: 
+        gm360: 
         GM360: 
         GM360i: 
         GM600: 
@@ -5748,29 +6302,39 @@ device:
         GM730E: 
         GM730F: 
         GM730f: 
+        gm750: 
         GM750: 
         GM750H: 
-        GM750Q: 
         GM750h: 
+        GM750Q: 
+        Google TV: 
+        Google TV G3: 
         GP4: 
         GR500: 
         GR500F: 
         GR500FD: 
         GR500R: 
         GR501: 
+        gr700: 
         GR700: 
+        gs170: 
         GS170: 
         GS190: 
         GS200: 
         GS290: 
         GS390: 
+        gs390: 
         GS500: 
         GS505: 
+        gs505: 
+        gt350: 
         GT350: 
         GT350F: 
         GT350i: 
         GT360: 
+        gt360: 
         GT365: 
+        gt365: 
         GT400: 
         GT405: 
         GT500: 
@@ -5783,8 +6347,11 @@ device:
         GT550: 
         GT810H: 
         GT950: 
+        gt950: 
         GU220: 
+        gu220: 
         GU230: 
+        gu230: 
         GU280: 
         GU280f: 
         GU282: 
@@ -5793,6 +6360,7 @@ device:
         GU285g: 
         GU290f: 
         GU295: 
+        gu295: 
         GU295f: 
         GU295g: 
         GU297: 
@@ -5808,22 +6376,19 @@ device:
         GW525: 
         GW525g: 
         GW550: 
+        gw550: 
         GW620: 
         "GW620-Bouygues": 
         GW620F: 
-        GW620R: 
         GW620g: 
+        GW620R: 
         GW820: 
         GW825: 
         GW910: 
         GX200: 
+        gx200: 
         GX300: 
         GX500: 
-        Gang: 
-        Genesis: 
-        Ggex: 
-        Google TV: 
-        Google TV G3: 
         HB620T: 
         HB906: 
         HttpClient: 
@@ -5831,14 +6396,16 @@ device:
         KB770: 
         KB775F: 
         KC550: 
+        kc550: 
         KC560: 
         KC780: 
         KC910: 
+        KC910e: 
+        KC910i: 
         KC910I: 
         KC910Q: 
         KC910Qa: 
-        KC910e: 
-        KC910i: 
+        kd876: 
         KD876: 
         KE260: 
         KE500: 
@@ -5852,8 +6419,8 @@ device:
         KE970: 
         KE970s: 
         KE990: 
-        KE990D: 
         KE990c: 
+        KE990D: 
         KE990d: 
         KE998: 
         KF240: 
@@ -5867,17 +6434,20 @@ device:
         KF350 Teleca: 
         KF390: 
         KF390Q: 
+        kf510: 
         KF510: 
         KF510 Obigo: 
         KF600: 
-        KF600D: 
+        kf600: 
         KF600c: 
         KF600d: 
+        KF600D: 
         KF690: 
         KF700: 
         "KF700-Orange": 
         KF700Q: 
         KF750: 
+        kf750: 
         KF755: 
         KF757: 
         KF900: 
@@ -5896,8 +6466,8 @@ device:
         KG290: 
         KG290UAE: 
         KG300: 
-        KG300J: 
         KG300j: 
+        KG300J: 
         KG320: 
         KG70: 
         KG77: 
@@ -5913,6 +6483,7 @@ device:
         KM500: 
         KM501: 
         KM555: 
+        km555: 
         KM570: 
         KM710: 
         KM900: 
@@ -5931,10 +6502,12 @@ device:
         KP233: 
         KP235: 
         KP260: 
+        kp260: 
         KP265: 
         KP270: 
         KP270V: 
         KP320: 
+        kp320: 
         KP330: 
         KP500: 
         KP500 Teleca: 
@@ -5947,12 +6520,14 @@ device:
         KS10: 
         KS20: 
         KS360: 
+        ks360: 
         KS360v: 
         KS365: 
         KS500: 
         KS660: 
         KT520: 
         KT525: 
+        kt610: 
         KT610: 
         KT615: 
         KT770: 
@@ -5964,6 +6539,7 @@ device:
         KU450: 
         KU5400: 
         KU580: 
+        ku580: 
         KU5900: 
         KU6900: 
         KU730: 
@@ -5994,20 +6570,27 @@ device:
         L38C: 
         L40G: 
         L5100: 
+        l5100: 
         L55c: 
         L600V: 
         LG: 
+        "lg-e900": 
+        lg420g: 
         LG700: 
         LG730: 
         LG800G: 
+        lg800g: 
         LG840: 
+        lg840g: 
         LG840G: 
         LG855: 
         LG8575: 
         LG870: 
         LG8700: 
         LG900G: 
+        lg900g: 
         LG9600: 
+        lgc300: 
         LGL21: 
         LGL35G: 
         LGL38C: 
@@ -6035,6 +6618,7 @@ device:
         LU4500: 
         LU5400: 
         LU6200: 
+        lu6200: 
         LU6500: 
         LU6800: 
         LU6900: 
@@ -6061,6 +6645,8 @@ device:
         M4300: 
         M4410: 
         M6100: 
+        Maka: 
+        Mako: 
         ME240Q: 
         ME500c: 
         ME550: 
@@ -6071,9 +6657,9 @@ device:
         ME850c: 
         ME850d: 
         ME970: 
-        ME970D: 
         ME970c: 
         ME970d: 
+        ME970D: 
         MG100a: 
         MG1010: 
         MG105: 
@@ -6085,24 +6671,24 @@ device:
         MG185: 
         MG191a: 
         MG200: 
-        MG200D: 
         MG200c: 
+        MG200D: 
         MG200d: 
         MG220: 
         MG230: 
-        MG230D: 
         MG230d: 
+        MG230D: 
         MG270: 
         MG280: 
         MG280c: 
         MG280d: 
         MG295: 
         MG296: 
-        MG300D: 
         MG300d: 
+        MG300D: 
         MG320: 
-        MG320D: 
         MG320c: 
+        MG320D: 
         MG320d: 
         MG530: 
         MG610c: 
@@ -6147,16 +6733,13 @@ device:
         MX8500: 
         MX8700: 
         MX9700: 
-        Maka: 
-        Mako: 
-        NX550: 
         NetCast 3.0: 
         NetCast 4.0: 
         NetFront: 
         Nexus: 
         Nexus 4: 
         Nexus 5: 
-        "OPTIMUS-L3": 
+        NX550: 
         Optimus: 
         Optimus 2X: 
         Optimus 4X HD: 
@@ -6168,10 +6751,11 @@ device:
         "Optimus Pad L-06C": 
         Optimus V: 
         Optimus X: 
+        "OPTIMUS-L3": 
         OptimusX4HD: 
         P350: 
-        P350 Optimus ME: 
         P350 Optimus Me: 
+        P350 Optimus ME: 
         "P350-Orange": 
         P350f: 
         P350g: 
@@ -6179,18 +6763,21 @@ device:
         P500: 
         "P500-Bouygues": 
         P500.RU: 
-        P500H: 
         P500h: 
+        P500H: 
         "P500h-parrot": 
         P503: 
         P504: 
         P505: 
+        p505: 
         P505CH: 
         P505R: 
         P506: 
         P509: 
+        p520: 
         P520: 
         P525: 
+        p525: 
         P659: 
         P690: 
         P690b: 
@@ -6203,6 +6790,7 @@ device:
         "P700-Orange": 
         P705: 
         P705f: 
+        p705f: 
         P705g: 
         P708g: 
         P710: 
@@ -6246,6 +6834,7 @@ device:
         P929: 
         P930: 
         P935: 
+        p936: 
         P936: 
         P940: 
         "P940-Orange": 
@@ -6257,19 +6846,20 @@ device:
         P970g: 
         P970h: 
         P990: 
-        P990H: 
         P990h: 
+        P990H: 
         P990hN: 
         P993: 
         P999: 
         PAPAYA: 
+        Player: 
         PLS225: 
         PLUM: 
         PM: 
         PM225: 
         PM325: 
-        Player: 
         RGSC1500: 
+        s310: 
         S310: 
         S365: 
         S367: 
@@ -6280,6 +6870,7 @@ device:
         ST600: 
         "SU-760": 
         SU370: 
+        su370: 
         SU540: 
         SU640: 
         SU660: 
@@ -6289,17 +6880,24 @@ device:
         SU880: 
         SyncML: 
         T300: 
+        t300: 
         T310: 
+        t310: 
         T310i: 
+        t310i: 
         T320: 
+        t325: 
         T325: 
         T370: 
+        t375: 
         T375: 
         T385: 
         T385b: 
         T395: 
         T500: 
+        t500: 
         T505: 
+        t505: 
         T510: 
         T5100: 
         T515: 
@@ -6309,6 +6907,7 @@ device:
         T580: 
         TD7130: 
         TE365: 
+        te365: 
         TE365 Teleca: 
         TG800: 
         TM240: 
@@ -6377,10 +6976,10 @@ device:
         VN150: 
         VN250: 
         VN250271: 
+        VN250g: 
         VN250L: 
         VN250P: 
         VN250SCH: 
-        VN250g: 
         VN251P: 
         VN270: 
         VN270L: 
@@ -6401,20 +7000,22 @@ device:
         VN27181T8045380: 
         VN271C781: 
         VN271C7819920: 
-        VN271C781U38085: 
         VN271C781roid: 
+        VN271C781U38085: 
         VN271CDM8992: 
         VN271CDM89920: 
         VN271CDM8992380: 
         VN271CDM8992485: 
         VN271CDM8992d: 
-        VN271SCH: 
-        VN271TXT8045: 
         VN271g: 
         VN271id: 
         VN271roid: 
+        VN271SCH: 
+        VN271TXT8045: 
         VN530: 
         VN530SCH: 
+        vortex: 
+        Vortex: 
         VS410PP: 
         VS660: 
         VS700: 
@@ -6470,347 +7071,13 @@ device:
         VX9700: 
         VX9800: 
         VX9900: 
-        Vortex: 
         W800: 
         "WM760-Prism": 
         X330T: 
         X335: 
-        _KH5200: 
-        _Optimus_L3: 
-        a130: 
-        a133: 
-        a230: 
-        a255: 
-        c300: 
-        c305: 
-        c330: 
-        c395: 
-        f180s: 
-        gb175: 
-        gb220: 
-        gb230: 
-        gb270: 
-        gb280: 
-        gd880: 
-        gm205: 
-        gm210: 
-        gm360: 
-        gm750: 
-        gr700: 
-        gs170: 
-        gs390: 
-        gs505: 
-        gt350: 
-        gt360: 
-        gt365: 
-        gt950: 
-        gu220: 
-        gu230: 
-        gu295: 
-        gw550: 
-        gx200: 
-        kc550: 
-        kd876: 
-        kf510: 
-        kf600: 
-        kf750: 
-        km555: 
-        kp260: 
-        kp320: 
-        ks360: 
-        kt610: 
-        ku580: 
-        l5100: 
-        "lg-e900": 
-        lg420g: 
-        lg800g: 
-        lg840g: 
-        lg900g: 
-        lgc300: 
-        lu6200: 
-        p505: 
-        p520: 
-        p525: 
-        p705f: 
-        p936: 
-        s310: 
-        su370: 
-        t300: 
-        t310: 
-        t310i: 
-        t325: 
-        t375: 
-        t500: 
-        t505: 
-        te365: 
-        vortex: 
-    Lava:
+    LGE:
       model:
-        Iris 349: 
-        Iris 349+: 
-        Iris 351: 
-        Iris 355: 
-        Iris 356: 
-        Iris 401e: 
-        Iris 402: 
-        Iris 402P: 
-        Iris 405: 
-        Iris 430: 
-        Iris 430_Android: 
-        Iris 454: 
-        Iris 455: 
-        Iris 458Q: 
-        Iris 501: 
-        Iris 502: 
-        Iris 504Q: 
-        Iris 504q: 
-        Iris 505: 
-        Iris Xtreme V2 By Manik: 
-        S12: 
-    Lemon:
-      model:
-        Aspire A1: 
-        LT9: 
-        P1: 
-        P100: 
-        P101: 
-        P2: 
-        P2_: 
-        P3: 
-        P7: 
-        P7_: 
-        P9: 
-        Tab LT29: 
-        Tab_LT29: 
-    Lenco:
-      model:
-        "CARTAB-920": 
-        "CoolTAB-72": 
-        "CoolTab-70": 
-        "CoolTab-80": 
-        "KidzTab-70": 
-        "TAB-1012": 
-        "TAB-1014": 
-        "TAB-1030": 
-        "TAB-704": 
-        "TAB-712": 
-        "TAB-813": 
-        "TAB-832": 
-        "TAB-900": 
-    Lenovo:
-      model:
-        3GC101: 
-        3GW100: 
-        3GW101: 
-        A1: 
-        A1 pad: 
-        "A1-32AB0": 
-        "A1-32AJ0": 
-        A1_07: 
-        A210: 
-        A2105: 
-        A2107: 
-        "A2107A-H": 
-        A269: 
-        A278t: 
-        A278t_TD: 
-        A288t: 
-        A288t_TD: 
-        A300: 
-        "A3000-H": 
-        A318t: 
-        A360: 
-        A366t: 
-        A366t_TD: 
-        A369: 
-        A369i: 
-        A390: 
-        A390_ROW: 
-        A390e: 
-        A390t: 
-        A390t_TD: 
-        A500: 
-        A516: 
-        A520: 
-        A520GRAY: 
-        A560e: 
-        A580: 
-        A590: 
-        A60: 
-        A60+: 
-        A610: 
-        A630: 
-        A630t: 
-        A65: 
-        A656: 
-        A656_TD: 
-        A658t: 
-        A658t_TD: 
-        A66: 
-        A660: 
-        A668t: 
-        A668t_TD: 
-        A66t: 
-        A66t_TD: 
-        A68e: 
-        A690: 
-        A690 DEODEX: 
-        A698t: 
-        A698t_TD: 
-        A706_ROW: 
-        A710e: 
-        A750: 
-        A750 ICS: 
-        A760: 
-        A780: 
-        A789: 
-        A789 by KeDou: 
-        "A789-orange": 
-        A789_by_KeDou: 
-        A790e: 
-        A798t: 
-        A798t_TD: 
-        A800: 
-        A820: 
-        A820_4.1.2_weibo_3.5.2_android: 
-        A820t: 
-        A820t (14.05.2013 by linerty: 
-        "A820t-(14.05.2013-by-linerty)_TD": 
-        A820t_TD: 
-        A830: 
-        A850: 
-        "B6000-F": 
-        "B6000-H": 
-        "B6000-HV": 
-        "B8000-F": 
-        "B8000-H": 
-        E228: 
-        E303: 
-        E307: 
-        E307_ENG_FRE: 
-        E307_ENG_FRE_A: 
-        E368: 
-        E700: 
-        ET860: 
-        ET980: 
-        G900: 
-        GYM: 
-        I660: 
-        I720: 
-        I817: 
-        I906: 
-        I908: 
-        I908_CMCC: 
-        I909: 
-        I919: 
-        I921: 
-        IdeaTab: 
-        "IdeaTab A1000-F": 
-        "IdeaTab A1000-G": 
-        "IdeaTab A1000L-F": 
-        IdeaTab A1107: 
-        "IdeaTab A2107A-F": 
-        "IdeaTab A2107A-H": 
-        IdeaTab A2109A: 
-        "IdeaTab A2207A-H": 
-        "IdeaTab A3000-F": 
-        "IdeaTab A3000-H": 
-        "IdeaTab S2007A-D": 
-        "IdeaTab S2007A-F": 
-        "IdeaTab S2010A-D": 
-        "IdeaTab S2109A-F": 
-        IdeaTab S2110AF: 
-        IdeaTab S2110AH: 
-        "IdeaTab S6000-F": 
-        "IdeaTab S6000-H": 
-        IdeaTab V2010A: 
-        "IdeaTab_A2107A-H": 
-        "IdeaTab_A3000-H": 
-        Ideapad K1: 
-        "Ideapad S10-3T": 
-        K1: 
-        K2: 
-        K800: 
-        K860: 
-        K860i: 
-        K900: 
-        K900_ROW: 
-        Lenovo: 
-        "Lenovo-A288t": 
-        Micromax A800: 
-        O3_TD: 
-        P50: 
-        "P50-VN": 
-        P70: 
-        P700: 
-        P700i: 
-        "P700iLenovo-P700i": 
-        P708: 
-        P708_ENG_FRE_A: 
-        P708_ENG_RUS_S280: 
-        P768: 
-        P770: 
-        P770_ROW: 
-        P780: 
-        P780_ROW: 
-        P902: 
-        "S1-37AH0": 
-        "S2-38AH0": 
-        "S2005A-H": 
-        S5: 
-        S50: 
-        S5000: 
-        "S5000-F": 
-        S520: 
-        S560: 
-        "S6000L-F": 
-        S680: 
-        S686: 
-        S696: 
-        S720: 
-        S720i: 
-        S750: 
-        S760: 
-        S820: 
-        S820_ROW: 
-        S850e: 
-        S868t: 
-        S868t_TD: 
-        S870e: 
-        S880: 
-        S880 Maryanto: 
-        S880i: 
-        S890: 
-        S9: 
-        S920: 
-        S920_ROW: 
-        SmartTab II 10: 
-        SmartTab II 7: 
-        SmartTabII10: 
-        ThinkPad Tablet: 
-        V800: 
-        V806: 
-        a60: 
-        a800: 
-        amazon_w: 
-        i300_VN: 
-        i360: 
-        i908: 
-        i919: 
-        i921: 
-        k860: 
-        lephone_sdk: 
-        p50: 
-        p700: 
-        p700i: 
-        s880: 
-        s890: 
-    Lexibook:
-      model:
-        MFC155: 
-        MFC180: 
-        MFC270: 
-        MFC270_09: 
+        Nexus 4: 
     Loewe:
       model:
         SL121: 
@@ -6819,17 +7086,14 @@ device:
       model:
         N880E: 
         N880e WP7.8 V1 Plus: 
-    MEDION:
-      model:
-        MB70: 
     Malata:
       model:
         Eva: 
         I60: 
         I8: 
         SMBA1002: 
-        Z100A: 
         smba1002: 
+        Z100A: 
     Manta:
       model:
         MID06N: 
@@ -6865,8 +7129,8 @@ device:
         "M-MP5303G": 
         "M-MP706I": 
         "M-MP706i": 
-        "M-MP707I": 
         "M-MP707i": 
+        "M-MP707I": 
         "M-MP711i": 
         "M-MP715I": 
         "M-MP720GO": 
@@ -6910,23 +7174,28 @@ device:
         P4013: 
         Smartphone LIFE E3501: 
         X4701: 
+    MEDION:
+      model:
+        MB70: 
     Meizu:
       model:
         M030: 
         M031: 
         M040: 
+        m9: 
         M9: 
         MX: 
-        m9: 
     Micromax:
       model:
         A01: 
         A07: 
         A08: 
         A10: 
+        a100: 
         A100: 
         A101: 
         A106: 
+        a107: 
         A109: 
         A110: 
         A110 (Canvas 2): 
@@ -6939,6 +7208,7 @@ device:
         A13: 
         A15: 
         A18: 
+        a200: 
         A209: 
         A21: 
         A210: 
@@ -6961,13 +7231,16 @@ device:
         A56: 
         A57: 
         A57 Pjk612: 
+        a60: 
         A60: 
         A62: 
         A65: 
         A66: 
+        a68: 
         A68: 
         A69: 
         A70: 
+        a71: 
         A72: 
         A73: 
         A75: 
@@ -6995,26 +7268,20 @@ device:
         P200: 
         P250(Funbook): 
         P275: 
+        p275: 
+        p300(funbook): 
         P300(Funbook): 
         P350: 
         P360: 
         P362: 
         P500: 
         P500(Funbook): 
+        p503: 
         P530: 
         P560: 
         P600: 
         P701: 
         P860: 
-        a100: 
-        a107: 
-        a200: 
-        a60: 
-        a68: 
-        a71: 
-        p275: 
-        p300(funbook): 
-        p503: 
     Microsoft:
       model:
         CEPC: 
@@ -7023,8 +7290,8 @@ device:
         OMNIA7: 
         Surface RT: 
         Virtual: 
-        XDeviceEmulator: 
         Xbox: 
+        XDeviceEmulator: 
     Mito:
       model:
         "898": 
@@ -7035,29 +7302,30 @@ device:
         A220: 
         A222: 
         A300: 
+        a322: 
         A322: 
         A355: 
         A78: 
         A800: 
         T100: 
-        T300: 
-        a322: 
         t300: 
+        T300: 
         t510: 
     Mobistel:
       model:
-        CYNUS T1: 
         Cynus E1: 
         Cynus F3: 
         Cynus F4: 
         Cynus F5: 
         Cynus T1: 
+        CYNUS T1: 
         Cynus T2: 
         Cynus T5: 
         Cynus T7: 
     Modecom:
       model:
         FreeTAB 1001: 
+        FreeTab 1002 IPS X2: 
         FreeTAB 1003: 
         FreeTAB 1014 IPS X4+: 
         FreeTAB 9000 IPS IC: 
@@ -7065,7 +7333,6 @@ device:
         FreeTAB 9701 IPS: 
         FreeTAB 9702 IPS X2: 
         FreeTAB 9704 IPS2 X4: 
-        FreeTab 1002 IPS X2: 
     Motorola:
       model:
         "1": 
@@ -7090,6 +7357,7 @@ device:
         "8700_": 
         "8720_": 
         "8800_": 
+        "[Hybrid]": 
         "A-0A": 
         "A-1A": 
         "A-1C": 
@@ -7135,11 +7403,11 @@ device:
         A1000: 
         A1200: 
         A1200E: 
-        A1200EAM: 
-        A1200R: 
         A1200e: 
+        A1200EAM: 
         A1200eam: 
         A1200i: 
+        A1200R: 
         A1200r: 
         A1200w: 
         A1260: 
@@ -7159,8 +7427,8 @@ device:
         A760: 
         A760i: 
         A768: 
-        A768I: 
         A768i: 
+        A768I: 
         A780: 
         A810: 
         A820: 
@@ -7171,18 +7439,21 @@ device:
         A853 Milestone: 
         A854: 
         A910: 
-        A910I: 
         A910i: 
+        A910I: 
         A920: 
         A925: 
         A953: 
         A955: 
         A956: 
+        adimoscaty: 
         AF: 
-        AURA: 
         Atrix 4G MB860: 
+        AURA: 
+        "babyVIPER-E1": 
         BLAZE: 
         C: 
+        c: 
         C155: 
         C168: 
         C168i: 
@@ -7191,8 +7462,12 @@ device:
         C290: 
         C305: 
         C331: 
+        c350: 
         C350: 
+        c350i: 
         C350M: 
+        c350M: 
+        c350V: 
         C357: 
         C364: 
         C375: 
@@ -7216,42 +7491,60 @@ device:
         C975: 
         C980: 
         C980M: 
+        Canary: 
         CB: 
+        CfoneMART: 
         CLIQ: 
         CLIQ XT: 
         CN620: 
         COOL0: 
-        Canary: 
-        CfoneMART: 
         CooL7: 
         D5: 
         D8: 
         DBLDV: 
+        Devour: 
+        Droid: 
         DROID: 
+        Droid (AdamZ Enhanced): 
+        Droid 2 Global: 
+        Droid 3: 
         DROID 3: 
         DROID BIONIC: 
         DROID BIONIC 4G: 
         DROID HD: 
-        DROID PRO: 
+        Droid Incredible: 
+        Droid Incredible 3D: 
         DROID Pro: 
+        DROID PRO: 
         DROID RAZR: 
+        Droid Razr: 
+        Droid RAZR: 
         DROID RAZR 4G: 
+        Droid Razr HD: 
+        Droid RAZR HD: 
         DROID RAZR HD: 
         DROID RAZR HD 4G: 
+        Droid Razr M: 
         DROID RAZR MAXX: 
         DROID RAZR MAXX 4G: 
+        Droid RAZR MAXX HD: 
         DROID SPYDER: 
+        Droid Ultra: 
         DROID X: 
         DROID X2: 
+        "Droid-Bionic": 
+        "Droid-Pro": 
         DROID2: 
+        Droid2: 
         DROID2 GLOBAL: 
-        DROID2 GLOBAL A956: 
         DROID2 Global: 
+        DROID2 GLOBAL A956: 
         DROID2WE: 
         DROID3: 
         DROID3 4G: 
         DROID4: 
         DROID4 4G: 
+        DroidPro: 
         DROIDRAZR: 
         DROIDX 4G: 
         DROIDZ Drive+: 
@@ -7261,24 +7554,6 @@ device:
         DROIDZ Sport: 
         DROIDZ_Force: 
         DROIDZ_Sport: 
-        Devour: 
-        Droid: 
-        Droid (AdamZ Enhanced): 
-        Droid 2 Global: 
-        Droid 3: 
-        Droid Incredible: 
-        Droid Incredible 3D: 
-        Droid RAZR: 
-        Droid RAZR HD: 
-        Droid RAZR MAXX HD: 
-        Droid Razr: 
-        Droid Razr HD: 
-        Droid Razr M: 
-        Droid Ultra: 
-        "Droid-Bionic": 
-        "Droid-Pro": 
-        Droid2: 
-        DroidPro: 
         E: 
         E1: 
         E1000: 
@@ -7291,6 +7566,7 @@ device:
         E375: 
         E380: 
         E398: 
+        e398: 
         E398B: 
         E398E: 
         E398I: 
@@ -7298,14 +7574,14 @@ device:
         E550: 
         E615: 
         E680: 
-        E680I: 
         E680i: 
+        E680I: 
         E685: 
         E690: 
         E770: 
+        E770v: 
         E770V: 
         "E770V-WALLKMAN": 
-        E770v: 
         E770xxxx: 
         E790: 
         E798: 
@@ -7316,6 +7592,7 @@ device:
         E895: 
         ED: 
         EF: 
+        Electrify: 
         EM25: 
         EM28: 
         EM30: 
@@ -7341,7 +7618,6 @@ device:
         EX245: 
         EX300: 
         EX430: 
-        Electrify: 
         F0: 
         F5: 
         F6: 
@@ -7349,41 +7625,46 @@ device:
         GATW2: 
         GATW_: 
         "GT-I9300": 
+        i1: 
         I398: 
+        ic502: 
+        ic602: 
+        ic902: 
         IN A9: 
         JACQU: 
         JFJK0: 
         K1: 
+        K1m: 
         K1T: 
         K1V: 
-        K1m: 
         K1v: 
         K3: 
-        K3M: 
         K3m: 
+        K3M: 
         KLGO: 
         L2: 
         L6: 
-        L6I: 
         L6g: 
         L6i: 
+        L6I: 
         L6w: 
         L7: 
+        l7: 
         L71: 
         L72: 
-        L7E: 
-        L7I: 
-        L7V: 
         L7_MinhThuc: 
         L7_NOOB_VJ: 
         L7_V2: 
         L7_V21: 
+        L7E: 
         L7e: 
         L7i: 
+        L7I: 
+        L7V: 
         L7v: 
         L9: 
-        LT18i: 
         Linux: 
+        LT18i: 
         M930: 
         M990: 
         MB200: 
@@ -7423,27 +7704,33 @@ device:
         ME860: 
         ME863: 
         ME865: 
+        Milestone: 
+        Milestone PLUS: 
+        Milestone X: 
+        Milestone X2: 
+        Milestone Xt720: 
         MILLA: 
         MLNBT: 
         MOTO: 
         MOTOQA1: 
+        MOTORAZRmaxxV3: 
         MOTORAZRV82GB: 
         MOTORAZRV82GB_CMCC: 
         MOTORAZRV8_CMCC: 
         MOTORAZRV9: 
         MOTORAZRV9x: 
-        MOTORAZRmaxxV3: 
         MOTOROKR: 
         MOTOROKRE6: 
         MOTOROKRE6E: 
         MOTOROKRZ6_CMCC: 
+        Motorola: 
         MOTOROLA: 
         MOTOU9_CMCC: 
         MOTOV9: 
         MOTOZ9: 
+        MPx: 
         MPX200: 
         MPX220: 
-        MPx: 
         MPx220: 
         MPx230: 
         MT620_TD: 
@@ -7470,12 +7757,6 @@ device:
         MZ616: 
         MZ617: 
         MZ617 4G: 
-        Milestone: 
-        Milestone PLUS: 
-        Milestone X: 
-        Milestone X2: 
-        Milestone Xt720: 
-        Motorola: 
         NCR_0: 
         NEWC_: 
         OROLA RAZR: 
@@ -7487,11 +7768,11 @@ device:
         PEB: 
         PEBL: 
         PEBL_U3: 
-        PHX4_: 
         Pebl_U3: 
         Photon: 
         Photon 4G: 
         Photon Q LTE: 
+        PHX4_: 
         Poer: 
         "Q-UMTS": 
         Q11: 
@@ -7510,7 +7791,6 @@ device:
         RASPB: 
         RAZR MAXX: 
         RAZR MAXX 4G: 
-        RAZRV3XXR_J: 
         RAZRV3x: 
         RAZRV3xM: 
         RAZRV3xR: 
@@ -7518,36 +7798,41 @@ device:
         RAZRV3xvM: 
         RAZRV3xx: 
         RAZRV3xxR: 
+        RAZRV3XXR_J: 
         RAZRV3xxv: 
         RAZRV6: 
         RAZRV6v: 
         RAZRV6vb: 
         RAZRV6vc: 
+        RazrV8: 
         ROKR: 
         "ROKR-E1": 
-        RazrV8: 
-        SAP4A: 
         SAP4_: 
-        SPARK: 
+        SAP4A: 
         Serias: 
         Sholes: 
         Slash: 
+        SPARK: 
+        stepLer: 
         T33: 
         T720: 
         T720M: 
         T721: 
         T725E: 
         T732: 
+        ta02: 
         TA02: 
         Titanium: 
         Triumph: 
         U15: 
         U9: 
-        US_ENDIVE: 
+        umts_ruth: 
         Unx: 
+        US_ENDIVE: 
         V1050: 
         V1075: 
         V1100: 
+        v150: 
         V171: 
         V173: 
         V175: 
@@ -7563,6 +7848,7 @@ device:
         V195: 
         V197: 
         V198: 
+        v200: 
         V220: 
         V220ENS: 
         V226: 
@@ -7665,6 +7951,7 @@ device:
         W376g: 
         W377: 
         W377g: 
+        w385: 
         W385: 
         W385m: 
         W388: 
@@ -7684,6 +7971,7 @@ device:
         W755: 
         W760r: 
         W766: 
+        w800: 
         W840: 
         W845: 
         WALKMAN: 
@@ -7699,6 +7987,7 @@ device:
         WX445: 
         WX450: 
         XOOM: 
+        Xoom: 
         XOOM 2: 
         XOOM 2 ME: 
         XOOM_2: 
@@ -7789,7 +8078,6 @@ device:
         XT925: 
         XT926: 
         XT928: 
-        Xoom: 
         Z3: 
         Z6: 
         Z6w: 
@@ -7797,27 +8085,6 @@ device:
         ZN300: 
         ZN4: 
         ZN5: 
-        "[Hybrid]": 
-        adimoscaty: 
-        "babyVIPER-E1": 
-        c: 
-        c350: 
-        c350M: 
-        c350V: 
-        c350i: 
-        e398: 
-        i1: 
-        ic502: 
-        ic602: 
-        ic902: 
-        l7: 
-        stepLer: 
-        ta02: 
-        umts_ruth: 
-        v150: 
-        v200: 
-        w385: 
-        w800: 
     Mpman:
       model:
         MID102C: 
@@ -7868,6 +8135,7 @@ device:
     MyPhone:
       model:
         A5 Duo: 
+        a818 duo: 
         A818 Duo: 
         A818 Slim Duo: 
         A818_Slim_Duo: 
@@ -7878,17 +8146,16 @@ device:
         A878 Duo: 
         A888 Duo: 
         A888_Duo: 
-        A898 DUO: 
-        A898 Duo: 
         A898 duo: 
+        A898 Duo: 
+        A898 DUO: 
+        a898 duo: 
         A919 Duo: 
         A919_Duo: 
         A919i Duo: 
         MyPad 103: 
         MyPad 2: 
         MyPad P3: 
-        a818 duo: 
-        a898 duo: 
     Mytab:
       model:
         myTab 10 Dual Core: 
@@ -7926,18 +8193,6 @@ device:
       model:
         DATAM803HC: 
         M805: 
-        NEXT8P: 
-        NEXT8P12: 
-        NXM703U: 
-        NXM726: 
-        NXM726HN: 
-        NXM726HN_C030: 
-        NXM726HN_HASTINGS: 
-        NXM736: 
-        NXM803HC: 
-        NXM805ND_EN: 
-        NXM901: 
-        NXM908HC: 
         Next10P12: 
         Next2: 
         Next7C12F: 
@@ -7948,11 +8203,23 @@ device:
         Next7Q12: 
         Next7S: 
         Next800K: 
+        NEXT8P: 
         Next8P11: 
+        NEXT8P12: 
         Next8P12: 
         Next9P: 
         Nextbook Premium 7: 
         Nextbook Premium 7 SE: 
+        NXM703U: 
+        NXM726: 
+        NXM726HN: 
+        NXM726HN_C030: 
+        NXM726HN_HASTINGS: 
+        NXM736: 
+        NXM803HC: 
+        NXM805ND_EN: 
+        NXM901: 
+        NXM908HC: 
     Nintendo:
       model:
         3DS: 
@@ -8251,31 +8518,31 @@ device:
         "1680c-2b": 
         1681C: 
         1681c: 
-        1682C: 
         1682c: 
+        1682C: 
         210China: 
         2115i: 
         2220s: 
         "2220s-b": 
         2220slider: 
-        "2320C-2": 
-        "2320C-2B": 
         2320c: 
         "2320c-2": 
+        "2320C-2": 
         "2320c-2b": 
+        "2320C-2B": 
         2322c: 
-        "2323C-2": 
         2323c: 
         "2323c-2": 
+        "2323C-2": 
         2330c: 
         "2330c-2": 
         "2330c-2b": 
+        2600c: 
         2600C: 
         "2600C-2": 
-        "2600C-2B": 
-        2600c: 
         "2600c-2": 
         "2600c-2b": 
+        "2600C-2B": 
         2680s: 
         "2680s-2": 
         "2680s-2b": 
@@ -8285,39 +8552,39 @@ device:
         2710c: 
         "2710c-2": 
         2720A: 
-        "2720A-2": 
         2720a: 
         "2720a-2": 
+        "2720A-2": 
         "2720a-2b": 
         2730c: 
         "2730c-1": 
         "2730c-1b": 
-        2855I: 
         2855i: 
+        2855I: 
         2865i: 
         308A: 
-        3100B: 
         3100b: 
-        3109C: 
+        3100B: 
         3109c: 
+        3109C: 
         3110c: 
         3120B: 
-        3120Classic: 
         3120b: 
         3120classic: 
-        3155I: 
+        3120Classic: 
         3155i: 
+        3155I: 
         3205i: 
         3208c: 
         3310i: 
         3500c: 
-        3510I: 
         3510i: 
+        3510I: 
         3510iB: 
         3555B: 
-        3555C: 
         3555b: 
         3555c: 
+        3555C: 
         3587i: 
         3600s: 
         3600slide: 
@@ -8330,9 +8597,9 @@ device:
         3720C: 
         3720c: 
         "500-1": 
-        "5000D-2": 
         5000d: 
         "5000d-2": 
+        "5000D-2": 
         "5000d-2b": 
         501l: 
         501s: 
@@ -8340,8 +8607,8 @@ device:
         5070b: 
         "5130c-2": 
         5140B: 
-        5140I: 
         5140i: 
+        5140I: 
         5220XpressMusic: 
         "5230-1b": 
         "5230-1c": 
@@ -8352,42 +8619,42 @@ device:
         "5235-1b": 
         "5235-1d": 
         5310XpressMusic: 
-        5320XpressMusic: 
         "5320d-1": 
         "5320d-1b": 
         5320di: 
         5320diXpressMusic: 
+        5320XpressMusic: 
         "5330-1d": 
         5330XPRESSMUSIC: 
         5330XpressMusic: 
+        5500d: 
         5500D: 
         5500Sport: 
-        5500d: 
         "5530-C6": 
         "5530c-2": 
         "5610d-1": 
-        5630XpressMusic: 
         5630d: 
         "5630d-1": 
-        "5730S-1": 
-        "5730S-1131": 
+        5630XpressMusic: 
         5730s: 
         "5730s-1": 
+        "5730S-1": 
+        "5730S-1131": 
         "5800-1": 
         "5800-C6": 
-        5800ExpressMusic: 
-        5800XM: 
-        5800XpressMusic: 
         "5800d-1": 
         "5800d-1b": 
+        5800ExpressMusic: 
         5800i: 
         5800iXpressMusic: 
         5800v52: 
         5800w: 
         5800wXpressMusic: 
+        5800XM: 
+        5800XpressMusic: 
         6016i: 
-        6030B: 
         6030b: 
+        6030B: 
         6060v: 
         6080b: 
         6100A: 
@@ -8419,8 +8686,8 @@ device:
         6165I: 
         6165i: 
         6208c: 
-        6210Navigator: 
         6210e: 
+        6210Navigator: 
         "6210s-1": 
         "6210s-1-": 
         6212C: 
@@ -8431,62 +8698,62 @@ device:
         6225i: 
         6230I: 
         6230i: 
-        6235I: 
         6235i: 
+        6235I: 
         6236I: 
         6236i: 
         6255I: 
         6255i: 
         6256I: 
-        "6260S-1": 
         6260s: 
         "6260s-1": 
+        "6260S-1": 
         6265I: 
         6265i: 
-        6275I: 
         6275i: 
+        6275I: 
         "6300-USER": 
-        6300I: 
         6300i: 
-        6303I: 
+        6300I: 
         6303c: 
         6303ci: 
         6303classic: 
         6303i: 
+        6303I: 
         6303iclassic: 
         6305i: 
-        6310I: 
         6310i: 
+        6310I: 
         6315i: 
         6340i: 
-        "6350-1D": 
         "6350-1d": 
+        "6350-1D": 
         6500c: 
         6500s: 
         "6500s-1": 
+        6555b: 
         6555B: 
         6555C: 
-        6555b: 
         6555c: 
         6600F: 
-        6600FOLD: 
-        6600S: 
         6600f: 
+        6600FOLD: 
         6600i: 
         "6600i-1c": 
         6600s: 
+        6600S: 
         6610FFF: 
         6610I: 
-        "6650D-1BH": 
-        "6650D-1C": 
-        6650FOLD: 
-        6650X: 
         6650d: 
-        "6650d-1bH": 
+        "6650D-1BH": 
         "6650d-1bh": 
+        "6650d-1bH": 
+        "6650D-1C": 
         "6650d-1c": 
+        6650FOLD: 
         6650fold: 
         6650x: 
+        6650X: 
         6680I: 
         6680i: 
         6700c: 
@@ -8508,49 +8775,49 @@ device:
         6790s: 
         "6790s-1b": 
         "6790s-1c": 
-        6820B: 
         6820b: 
+        6820B: 
         7 Mozart T8698: 
         7 Pro T7576: 
         702T: 
         7070D: 
-        "7070D-2": 
         7070d: 
+        "7070D-2": 
         "7070d-2": 
         7100S: 
-        "7100S-2": 
         7100s: 
         "7100s-2": 
-        7210Supernova: 
+        "7100S-2": 
         7210c: 
+        7210Supernova: 
         "7230-1c": 
         "7230-1co5": 
-        7250I: 
         7250i: 
+        7250I: 
         7310c: 
+        7510a: 
         7510A: 
         "7510A-B": 
+        "7510a-b": 
         7510SUPERNOVA: 
         7510Supernova: 
-        7510a: 
-        "7510a-b": 
-        7610Supernova: 
         7610s: 
+        7610Supernova: 
         808PureView: 
+        8800a: 
         8800ARTE: 
         8800E: 
         "8800E-1": 
-        8800SI: 
-        8800a: 
         "8800e-1": 
-        8910I: 
+        8800SI: 
         8910ai: 
         8910i: 
+        8910I: 
         9110i: 
         9210I: 
         9210i: 
-        9300I: 
         9300i: 
+        9300I: 
         Asha: 
         B: 
         Bisma: 
@@ -8585,7 +8852,6 @@ device:
         "C6-00": 
         "C6-01": 
         C600: 
-        C7: 
         "C7-00": 
         "C7-00-1": 
         "C7-00s": 
@@ -8610,7 +8876,6 @@ device:
         E55: 
         "E55-1": 
         "E55-2": 
-        E6: 
         "E6-00": 
         "E6-00-1": 
         E60: 
@@ -8622,6 +8887,7 @@ device:
         E62: 
         "E62-1": 
         E63: 
+        "e63-1": 
         "E63-1": 
         "E63-2": 
         "E63-3": 
@@ -8631,7 +8897,6 @@ device:
         "E66-1": 
         "E66-2": 
         "E66-3": 
-        E7: 
         "E7-00": 
         "E7-00-1": 
         E70: 
@@ -8641,8 +8906,8 @@ device:
         "E71-1": 
         "E71-2": 
         "E71-3": 
-        E71X: 
         E71x: 
+        E71X: 
         E72: 
         "E72-1": 
         "E72-2": 
@@ -8653,10 +8918,12 @@ device:
         E90: 
         "E90-1": 
         "Eaa-1": 
-        "GT-I8350": 
-        "GT-I8700": 
-        HD2: 
         HD7 T9292: 
+        id102: 
+        id104: 
+        id201: 
+        id300: 
+        id301: 
         Internal: 
         "LG E-900": 
         LUMIA: 
@@ -8695,15 +8962,16 @@ device:
         Lumia 928: 
         Lumia800: 
         Lumia_920: 
-        "MIT-Browser": 
         MapsWP7: 
         MapsWP8: 
         Mersad Lumia 900: 
+        "MIT-Browser": 
         Mobile: 
-        "N-GAGE": 
-        "N-GAGEQD": 
+        mwp6985: 
         "N-Gage": 
+        "N-GAGE": 
         "N-GageQD": 
+        "N-GAGEQD": 
         N00: 
         N70: 
         "N70-1": 
@@ -8729,7 +8997,6 @@ device:
         N79: 
         "N79-1": 
         "N79-3": 
-        N8: 
         "N8-00": 
         "N8-00-1": 
         "N8-00QtWRT": 
@@ -8769,9 +9036,9 @@ device:
         N93: 
         "N93-1": 
         N93I: 
-        "N93I-1": 
         N93i: 
         "N93i-1": 
+        "N93I-1": 
         N95: 
         "N95-": 
         "N95-3": 
@@ -8782,21 +9049,22 @@ device:
         N96: 
         "N96-1": 
         "N96-3": 
+        n97: 
         N97: 
         "N97-1": 
         "N97-3": 
         "N97-4": 
         "N97-5": 
-        N97I: 
         N97_mini: 
         N97i: 
+        N97I: 
         N97mini: 
         "NHP-2AX": 
-        "NPD-4AW": 
-        NXX: 
         Noja: 
         Nokia: 
+        "NPD-4AW": 
         Nseries: 
+        NXX: 
         OMNIA7: 
         Oro: 
         P4301: 
@@ -8805,6 +9073,7 @@ device:
         Podcasting: 
         Puma: 
         QTShop: 
+        Radar C110e: 
         "RH-17": 
         "RH-27": 
         "RH-34": 
@@ -8828,20 +9097,19 @@ device:
         "RM-910": 
         "RM-914": 
         "RM-941": 
-        Radar C110e: 
         S60 V3: 
         S60 V5: 
+        SeaRay: 
         "SGH-i917": 
         "SGH-i937": 
-        SeaRay: 
         SyncML: 
         "T7-00": 
         T7575: 
         THR880i: 
         TITAN X310e: 
         TP: 
-        "WAP-Toolkit": 
         Wanda: 
+        "WAP-Toolkit": 
         X2: 
         "X2-00": 
         "X2-01": 
@@ -8856,19 +9124,13 @@ device:
         "X6-00": 
         "X6-00m": 
         X600: 
-        X7: 
         "X7-00": 
         "X7-00-1": 
         X700: 
         XXX: 
-        "e63-1": 
-        id102: 
-        id104: 
-        id201: 
-        id300: 
-        id301: 
-        mwp6985: 
-        n97: 
+    nokia:
+      model:
+        lumia 900: 
     Nook:
       model:
         BNRV200: 
@@ -8896,9 +9158,9 @@ device:
         IEOS10: 
         IEOS_QUAD: 
         IRON: 
+        Loox: 
         LOOX: 
         LOOX Plus: 
-        Loox: 
         Motion: 
         NEXT: 
         NOON: 
@@ -8913,39 +9175,39 @@ device:
         PRIME_PLUS_3G: 
         Q: 
         SELECT 7: 
-        STUDYTAB: 
         Space: 
         Space TKI_BRR233v7: 
         Space_TKI_BRR233v9: 
-        TABLO: 
+        STUDYTAB: 
         "Tablet-PC-4": 
+        TABLO: 
         UNO_X8: 
         XELIO: 
+        Xelio 10 Pro: 
+        Xelio 7 pro: 
         XELIO10EXTREME: 
+        Xelio10Pro: 
         XELIO7PHONETAB: 
         XELIO7PRO: 
         XELIO_P900A: 
         XENO10: 
-        XPRESS PRO: 
-        Xelio 10 Pro: 
-        Xelio 7 pro: 
-        Xelio10Pro: 
         Xpress: 
+        XPRESS PRO: 
         Xtreme: 
     Olivetti:
       model:
-        OP110: 
         OliPad 100: 
         OliPad 100G: 
+        OP110: 
     Omega:
       model:
         MID7500: 
         MID9711: 
     Openpeak:
       model:
+        cius: 
         "CIUS-7": 
         "CIUS-7-AT": 
-        cius: 
         cius2_addon: 
     Oppo:
       model:
@@ -8987,70 +9249,6 @@ device:
       model:
         "TP-701": 
         "TP-800": 
-    PEAQ:
-      model:
-        LF1V389: 
-        MB70: 
-    POV:
-      model:
-        "MOB-5045": 
-        Mobii 7: 
-        "Mobii Tablet-10": 
-        "Mobii Tablet-10-2": 
-        "Mobii-7": 
-        "P517-8GB": 
-        PROTAB2XXL: 
-        PlayTabPro: 
-        "PlayTabPro-GZ": 
-        "TAB-NAVI7-3G-M": 
-        "TAB-P1025(v1.0)": 
-        "TAB-P1030S(V1.0)": 
-        "TAB-P1325": 
-        "TAB-P506": 
-        "TAB-P517": 
-        "TAB-P527": 
-        "TAB-P547(v1.0)": 
-        "TAB-P629(v1.0)": 
-        "TAB-P701": 
-        "TAB-P701(V1.0)": 
-        "TAB-P703(V1.0)": 
-        "TAB-P721(V1.0)": 
-        "TAB-P731N(V1.0)": 
-        "TAB-P825": 
-        "TAB-P825D(V1.0)": 
-        "TAB-P925(V1.0)": 
-        "TAB-PI1045": 
-        "TAB-PL1015": 
-        "TAB-PLAYTABPRO": 
-        "TAB-PLAYTABPRO(4R)": 
-        "TAB-PR945": 
-        "TAB-PROTAB2-IPS-16": 
-        "TAB-PROTAB2-IPS-3G": 
-        "TAB-PROTAB2-IPS9": 
-        "TAB-PROTAB2.4": 
-        "TAB-PROTAB2.4XL": 
-        "TAB-PROTAB25": 
-        "TAB-PROTAB25XL": 
-        "TAB-PROTAB25XXL": 
-        "TAB-PROTAB25XXL8": 
-        "TAB-PROTAB26": 
-        "TAB-PROTAB26-IPS10": 
-        "TAB-PROTAB26XL": 
-        "TAB-PROTAB26XL-8": 
-        "TAB-PROTAB27": 
-        "TAB-PROTAB2XL": 
-        "TAB-PROTAB2XXL": 
-        "TAB-PROTAB2XXL(4)": 
-        "TAB-PROTAB30-IPS10": 
-        "TAB-PROTAB30-IPS10(V1.3)": 
-        "TAB-PROTAB30-IPS9": 
-        "TAB-PROTAB30IPS10-3G": 
-        "TAB-PROTAB30IPS10-3G(V1.3)": 
-        "TAB-PROTAB30IPS10-3G_V1": 
-        "TAB-PROTAB30IPS10-3G_V2": 
-        TAB_NAVI7_3G_M: 
-        "TV-HDMI-200BT": 
-        "TV-HDMI-KB-01": 
     PackardBell:
       model:
         G100W: 
@@ -9070,6 +9268,7 @@ device:
         101P: 
         101P11C: 
         102P: 
+        dL1: 
         DL1: 
         "FZ-A1B": 
         "JT-B1": 
@@ -9091,7 +9290,6 @@ device:
         VIERA 2011: 
         VIERA 2012: 
         VIERA 2013: 
-        dL1: 
     Pantech:
       model:
         ADR8995: 
@@ -9140,24 +9338,24 @@ device:
         "IM-A720L": 
         "IM-A725L": 
         "IM-A730S": 
+        "IM-A730s": 
         "IM-A730S Pro": 
         "IM-A730S(SUPER PRO)": 
-        "IM-A730s": 
         "IM-A740S": 
         "IM-A750K": 
         "IM-A760S": 
-        "IM-A760S_Optimus": 
         "IM-A760s": 
+        "IM-A760S_Optimus": 
         "IM-A770K": 
         "IM-A770k": 
         "IM-A775C": 
         "IM-A780L": 
         "IM-A800S": 
         "IM-A810K": 
+        "IM-A810k": 
         "IM-A810S": 
         "IM-A810S&K": 
         "IM-A810SK": 
-        "IM-A810k": 
         "IM-A820L": 
         "IM-A830K": 
         "IM-A830KE": 
@@ -9167,10 +9365,10 @@ device:
         "IM-A840SP": 
         "IM-A850 S": 
         "IM-A850K": 
+        "IM-A850l": 
         "IM-A850L": 
         "IM-A850S": 
         "IM-A850SP": 
-        "IM-A850l": 
         "IM-A860K": 
         "IM-A860L": 
         "IM-A860S": 
@@ -9230,33 +9428,37 @@ device:
         TXT8045d: 
     Papyre:
       model:
-        Pad 712: 
-        Pad 715: 
         pad 711: 
         pad 712: 
+        Pad 712: 
         pad 713: 
         pad 715: 
+        Pad 715: 
         pad 970: 
         "pad-970": 
         pad_7.1: 
+    PEAQ:
+      model:
+        LF1V389: 
+        MB70: 
     Pearl:
       model:
         X10.Dual: 
-        X10.Dual+: 
-        X10.Quad: 
-        X10.Quad+: 
         X10.dual: 
+        X10.Dual+: 
         X10.dual+: 
         X10.mini: 
+        X10.Quad: 
+        X10.Quad+: 
     Phicomm:
       model:
         FWS610_EU: 
         FWS710EU: 
-        X130wEU: 
         i370: 
         i600: 
         i800: 
         i813: 
+        X130wEU: 
     Philips:
       model:
         "9": 
@@ -9312,17 +9514,17 @@ device:
     Ployer:
       model:
         MOMO11: 
+        MOMO11 bird: 
         MOMO11 Bird: 
         MOMO11 Bird3: 
-        MOMO11 III: 
-        MOMO11 bird: 
         MOMO11 bird3: 
+        MOMO11 III: 
         "MOMO11-3": 
-        MOMO11Master: 
-        MOMO11Speed: 
         MOMO11_bird: 
         MOMO11_bird3: 
         MOMO11bird3: 
+        MOMO11Master: 
+        MOMO11Speed: 
         MOMO11speed: 
         MOMO11speed3: 
         MOMO15: 
@@ -9331,18 +9533,18 @@ device:
         MOMO7: 
         MOMO8: 
         MOMO8 Bird: 
+        MOMO8 bird: 
         MOMO8 Star: 
         MOMO8 Xing ji: 
-        MOMO8 bird: 
-        MOMO8A: 
         MOMO8_bird: 
+        MOMO8A: 
         MOMO9 3G: 
-        MOMO9 STAR: 
         MOMO9 plus III: 
+        MOMO9 STAR: 
         "MOMO9-3": 
         "MOMO9-3S": 
-        MOMO9_STAR: 
         MOMO9_plus_III: 
+        MOMO9_STAR: 
         MOMO9star: 
     Polaroid:
       model:
@@ -9390,6 +9592,8 @@ device:
         W99: 
     Positivo:
       model:
+        "Ypy 7 - TB07FTA": 
+        "Ypy 7 - TB07STA": 
         "YPY-72SIM": 
         "YPY-73G": 
         YPY10FTA: 
@@ -9399,8 +9603,66 @@ device:
         YPY_10FTA: 
         YPY_S350: 
         YPY_S350_PLUS: 
-        "Ypy 7 - TB07FTA": 
-        "Ypy 7 - TB07STA": 
+    POV:
+      model:
+        "MOB-5045": 
+        Mobii 7: 
+        "Mobii Tablet-10": 
+        "Mobii Tablet-10-2": 
+        "Mobii-7": 
+        "P517-8GB": 
+        PlayTabPro: 
+        "PlayTabPro-GZ": 
+        PROTAB2XXL: 
+        "TAB-NAVI7-3G-M": 
+        "TAB-P1025(v1.0)": 
+        "TAB-P1030S(V1.0)": 
+        "TAB-P1325": 
+        "TAB-P506": 
+        "TAB-P517": 
+        "TAB-P527": 
+        "TAB-P547(v1.0)": 
+        "TAB-P629(v1.0)": 
+        "TAB-P701": 
+        "TAB-P701(V1.0)": 
+        "TAB-P703(V1.0)": 
+        "TAB-P721(V1.0)": 
+        "TAB-P731N(V1.0)": 
+        "TAB-P825": 
+        "TAB-P825D(V1.0)": 
+        "TAB-P925(V1.0)": 
+        "TAB-PI1045": 
+        "TAB-PL1015": 
+        "TAB-PLAYTABPRO": 
+        "TAB-PLAYTABPRO(4R)": 
+        "TAB-PR945": 
+        "TAB-PROTAB2-IPS-16": 
+        "TAB-PROTAB2-IPS-3G": 
+        "TAB-PROTAB2-IPS9": 
+        "TAB-PROTAB2.4": 
+        "TAB-PROTAB2.4XL": 
+        "TAB-PROTAB25": 
+        "TAB-PROTAB25XL": 
+        "TAB-PROTAB25XXL": 
+        "TAB-PROTAB25XXL8": 
+        "TAB-PROTAB26": 
+        "TAB-PROTAB26-IPS10": 
+        "TAB-PROTAB26XL": 
+        "TAB-PROTAB26XL-8": 
+        "TAB-PROTAB27": 
+        "TAB-PROTAB2XL": 
+        "TAB-PROTAB2XXL": 
+        "TAB-PROTAB2XXL(4)": 
+        "TAB-PROTAB30-IPS10": 
+        "TAB-PROTAB30-IPS10(V1.3)": 
+        "TAB-PROTAB30-IPS9": 
+        "TAB-PROTAB30IPS10-3G": 
+        "TAB-PROTAB30IPS10-3G(V1.3)": 
+        "TAB-PROTAB30IPS10-3G_V1": 
+        "TAB-PROTAB30IPS10-3G_V2": 
+        TAB_NAVI7_3G_M: 
+        "TV-HDMI-200BT": 
+        "TV-HDMI-KB-01": 
     Prestigio:
       model:
         PAP3350DUO: 
@@ -9464,8 +9726,8 @@ device:
         PMP7100D: 
         PMP7100D3G: 
         PMP7170B3G: 
-        PMP7170B3GCE: 
         PMP7170B3G_DUO: 
+        PMP7170B3GCE: 
         PMP7280C: 
         PMP7280C3G: 
         PMP7280C3G_DUO: 
@@ -9523,9 +9785,6 @@ device:
     Quanta:
       model:
         TA1013: 
-    "RT-RK":
-      model:
-        TV: 
     Regza:
       model:
         IS04: 
@@ -9536,17 +9795,9 @@ device:
         RK701: 
         RK702: 
         RK732: 
-    SKtelesys:
+    "RT-RK":
       model:
-        "SK-M88": 
-        "SK-S100": 
-        "SK-S150": 
-    ST:
-      model:
-        FLTk3D: 
-    SUMSUNG:
-      model:
-        OMNIA 7: 
+        TV: 
     Samsung:
       model:
         Android: 
@@ -9575,6 +9826,7 @@ device:
         C5220: 
         C6625: 
         CETUS: 
+        d: 
         D900E: 
         "D900E-Bouygues": 
         E1100C: 
@@ -9594,8 +9846,8 @@ device:
         E2100L: 
         E2210: 
         E2210B: 
-        "E2210B-BOUYGUES": 
         "E2210B-Bouygues": 
+        "E2210B-BOUYGUES": 
         E2210BT: 
         E2210C: 
         E2210L: 
@@ -9603,11 +9855,23 @@ device:
         E2510: 
         "E2510-ORANGE": 
         "EK-GC100": 
-        FOCUS S: 
-        Focus I917 By TC: 
         Focus i917: 
+        Focus I917 By TC: 
+        FOCUS S: 
+        Galaxy: 
+        Galaxy Ace: 
+        Galaxy Mini Plus 4G: 
+        Galaxy Nexus: 
+        Galaxy Note II: 
+        Galaxy S II: 
         GALAXY S II WiMAX: 
+        Galaxy S III: 
+        Galaxy S2: 
         "GALAXY S2GT-I9100": 
+        Galaxy S3: 
+        Galaxy S4: 
+        Galaxy SIII: 
+        Galaxy with MCR 1.2: 
         "GT-19300": 
         "GT-B2100i": 
         "GT-B2710": 
@@ -9622,9 +9886,11 @@ device:
         "GT-B3410": 
         "GT-B3410-Bouygues": 
         "GT-B3410-ORANGE": 
-        "GT-B3410R": 
+        "gt-b3410r": 
         "GT-B3410W": 
         "GT-B5310": 
+        "gt-b5310": 
+        "gt-b5310ddik5": 
         "GT-B5310L": 
         "GT-B5310R": 
         "GT-B5310U": 
@@ -9639,10 +9905,12 @@ device:
         "GT-B5722": 
         "GT-B5722C": 
         "GT-B6520": 
-        "GT-B7300": 
+        "gt-b6520": 
+        "gt-b7300": 
         "GT-B7300C": 
         "GT-B7300Orange": 
         "GT-B7320": 
+        "gt-b7320l": 
         "GT-B7320L": 
         "GT-B7330": 
         "GT-B7330B": 
@@ -9669,15 +9937,15 @@ device:
         "GT-C3212i": 
         "GT-C3222": 
         "GT-C3222W": 
-        "GT-C3260": 
+        "gt-c3262": 
         "GT-C3262": 
         "GT-C3300": 
-        "GT-C3300K": 
-        "GT-C3300K-ORANGE": 
         "GT-C3300i": 
+        "GT-C3300K": 
+        "gt-c3300k-orange": 
         "GT-C3303": 
-        "GT-C3303K": 
         "GT-C3303i": 
+        "GT-C3303K": 
         "GT-C3310": 
         "GT-C3310R": 
         "GT-C3312": 
@@ -9705,6 +9973,7 @@ device:
         "GT-C3750-Bouygues": 
         "GT-C3752": 
         "GT-C3780": 
+        "gt-c3782": 
         "GT-C3782": 
         "GT-C3782-ORANGE": 
         "GT-C5010": 
@@ -9730,21 +9999,21 @@ device:
         "GT-E2120-ORANGE": 
         "GT-E2120B": 
         "GT-E2120C": 
-        "GT-E2120L": 
         "GT-E2120i": 
+        "GT-E2120L": 
         "GT-E2121": 
         "GT-E2121B": 
         "GT-E2121L": 
         "GT-E2121N": 
         "GT-E2130": 
         "GT-E2152": 
-        "GT-E2152L": 
         "GT-E2152i": 
+        "GT-E2152L": 
         "GT-E2200": 
         "GT-E2202": 
         "GT-E2220": 
         "GT-E2222": 
-        "GT-E2222L": 
+        "gt-e2222l": 
         "GT-E2230": 
         "GT-E2230L": 
         "GT-E2230M": 
@@ -9801,8 +10070,13 @@ device:
         "GT-I7105": 
         "GT-I7500": 
         "GT-I7510": 
+        "GT-i8000": 
         "GT-I8000": 
+        "GT-i8000H": 
+        "GT-i8000Orange": 
+        "GT-i8000T": 
         "GT-I8000U": 
+        "GT-i8000V": 
         "GT-I8150": 
         "GT-I8150B": 
         "GT-I8150T": 
@@ -9829,6 +10103,7 @@ device:
         "GT-I8320-Vodafone": 
         "GT-I8330-Vodafone": 
         "GT-I8350": 
+        "GT-i8350": 
         "GT-I8350T": 
         "GT-I8370": 
         "GT-I8510C": 
@@ -9840,6 +10115,7 @@ device:
         "GT-I8552": 
         "GT-I8552B": 
         "GT-I8700": 
+        "GT-i8700": 
         "GT-I8710": 
         "GT-I8730": 
         "GT-I8730-ORANGE": 
@@ -9865,8 +10141,8 @@ device:
         "GT-I9070P-ORANGE": 
         "GT-I9080L": 
         "GT-I9082": 
-        "GT-I9082L": 
         "GT-I9082i": 
+        "GT-I9082L": 
         "GT-I9088": 
         "GT-I9100": 
         "GT-I9100-Mms": 
@@ -9904,13 +10180,14 @@ device:
         "GT-I9268": 
         "GT-I9295": 
         "GT-I9300": 
+        "GT-i9300": 
         "GT-I9300 Dark-Mini": 
         "GT-I9300-ORANGE": 
         "GT-I9300.": 
         "GT-I93000": 
         "GT-I9300=": 
-        "GT-I9300T": 
         "GT-I9300de_DE": 
+        "GT-I9300T": 
         "GT-I9305": 
         "GT-I9305-ORANGE": 
         "GT-I9305N": 
@@ -9935,7 +10212,7 @@ device:
         "GT-M2510": 
         "GT-M2513": 
         "GT-M2520": 
-        "GT-M3310": 
+        "gt-m3310": 
         "GT-M3710": 
         "GT-M5650": 
         "GT-M5650U": 
@@ -10041,6 +10318,7 @@ device:
         "GT-S3353": 
         "GT-S3353C": 
         "GT-S3370": 
+        "gt-s3370": 
         "GT-S3370B": 
         "GT-S3370C": 
         "GT-S3370L": 
@@ -10059,11 +10337,12 @@ device:
         "GT-S3650H": 
         "GT-S3650W": 
         "GT-S3653": 
+        "gt-s3653": 
         "GT-S3653W": 
         "GT-S3770": 
+        "gt-s3770": 
         "GT-S3770K": 
         "GT-S3770L": 
-        "GT-S3770M": 
         "GT-S3770Y": 
         "GT-S3800W": 
         "GT-S3802": 
@@ -10156,15 +10435,16 @@ device:
         "GT-S5560": 
         "GT-S5560-Bouygues": 
         "GT-S5560C": 
+        "gt-s5560i": 
         "GT-S5560i": 
         "GT-S5560i-BOUYGUES": 
         "GT-S5570": 
         "GT-S5570-ORANGE": 
         "GT-S5570B": 
-        "GT-S5570I": 
-        "GT-S5570L": 
         "GT-S5570de_DE": 
         "GT-S5570i": 
+        "GT-S5570I": 
+        "GT-S5570L": 
         "GT-S5578": 
         "GT-S5600": 
         "GT-S5600-Bouygues": 
@@ -10176,14 +10456,15 @@ device:
         "GT-S5610": 
         "GT-S5610-ORANGE": 
         "GT-S5610K": 
+        "gt-s5620": 
         "GT-S5620": 
         "GT-S5620-ORANGE": 
         "GT-S5620-Vodafone": 
         "GT-S5620B": 
         "GT-S5620L": 
         "GT-S5628": 
-        "GT-S5628I": 
         "GT-S5628i": 
+        "GT-S5628I": 
         "GT-S5630C": 
         "GT-S5660": 
         "GT-S5660-Mms": 
@@ -10215,11 +10496,11 @@ device:
         "GT-S5830D": 
         "GT-S5830D-parrot": 
         "GT-S5830G": 
+        "GT-S5830i": 
         "GT-S5830L": 
         "GT-S5830M": 
         "GT-S5830T": 
         "GT-S5830V": 
-        "GT-S5830i": 
         "GT-S5831i": 
         "GT-S5838": 
         "GT-S5839i": 
@@ -10305,8 +10586,8 @@ device:
         "GT-S7560M": 
         "GT-S7560M-parrot": 
         "GT-S7562": 
-        "GT-S7562L": 
         "GT-S7562i": 
+        "GT-S7562L": 
         "GT-S7566": 
         "GT-S7568": 
         "GT-S7572": 
@@ -10338,26 +10619,6 @@ device:
         "GT-S8600-ORANGE": 
         "GT-S9110": 
         "GT-S9300": 
-        "GT-i8000": 
-        "GT-i8000H": 
-        "GT-i8000Orange": 
-        "GT-i8000T": 
-        "GT-i8000V": 
-        "GT-i8350": 
-        "GT-i8700": 
-        "GT-i9300": 
-        Galaxy: 
-        Galaxy Ace: 
-        Galaxy Mini Plus 4G: 
-        Galaxy Nexus: 
-        Galaxy Note II: 
-        Galaxy S II: 
-        Galaxy S III: 
-        Galaxy S2: 
-        Galaxy S3: 
-        Galaxy S4: 
-        Galaxy SIII: 
-        Galaxy with MCR 1.2: 
         Haden: 
         HbbTV: 
         "Hljchm's Wp": 
@@ -10368,6 +10629,7 @@ device:
         I8510M Profile: 
         I8910: 
         "I8910-ORANGE": 
+        i9100: 
         I917: 
         I9300: 
         "Intercept SPH-M910": 
@@ -10384,16 +10646,15 @@ device:
         M7603: 
         M8800L: 
         Monument: 
-        "NOURLCMP-NOMIME": 
-        NetFront: 
         Nexus S: 
-        Nexus S 4G: 
         Nexus s: 
+        Nexus S 4G: 
+        "NOURLCMP-NOMIME": 
         OMNIA 7: 
+        Omnia W: 
         OMNIA7: 
         OMNIA7 By MWP_HS: 
         "OMNIA7-H3": 
-        Omnia W: 
         PLSM520: 
         "RL-A760": 
         S3: 
@@ -10407,7 +10668,7 @@ device:
         S3600i: 
         S4 aka MITO t510: 
         S5050: 
-        S5200: 
+        s5200: 
         "S5200-Orange": 
         S5320: 
         S5610: 
@@ -10429,9 +10690,12 @@ device:
         S8300T: 
         S9402: 
         SAMSUNG: 
+        Samsung Galaxy S III: 
         "SAMSUNG-GT-S5250": 
         "SAMSUNG-GT-S5330": 
+        "SAMSUNG-GT-S7230": 
         "SAMSUNG-GT-S8500": 
+        "SAMSUNG-SGH-I927": 
         "SAMSUNG-SMART-TV": 
         "SC-01C": 
         "SC-01D": 
@@ -10467,7 +10731,10 @@ device:
         "SCH-I200": 
         "SCH-I200 4G": 
         "SCH-I200PP": 
+        "SCH-i220": 
         "SCH-I220": 
+        "SCH-i220a": 
+        "SCH-i225": 
         "SCH-I400": 
         "SCH-I405": 
         "SCH-I405 4G": 
@@ -10475,6 +10742,7 @@ device:
         "SCH-I415": 
         "SCH-I415 4G": 
         "SCH-I500": 
+        "SCH-i509": 
         "SCH-I509": 
         "SCH-I510": 
         "SCH-I510 4G": 
@@ -10484,34 +10752,49 @@ device:
         "SCH-I545": 
         "SCH-I545 4G": 
         "SCH-I5455": 
+        "SCH-i559": 
         "SCH-I559": 
+        "SCH-i569": 
+        "SCH-i579": 
         "SCH-I579": 
         "SCH-I589": 
+        "SCH-i589": 
         "SCH-I605": 
         "SCH-I605 4G": 
         "SCH-I619": 
         "SCH-I659": 
         "SCH-I699": 
+        "SCH-i705": 
         "SCH-I705": 
+        "SCH-i705 4G": 
         "SCH-I705 4G": 
         "SCH-I739": 
         "SCH-I760": 
         "SCH-I779": 
         "SCH-I800": 
+        "SCH-i809": 
         "SCH-I815": 
+        "SCH-i815": 
         "SCH-I815 4G": 
         "SCH-I829": 
         "SCH-I869": 
         "SCH-I879": 
+        "SCH-i889": 
+        "SCH-i899": 
         "SCH-I905": 
         "SCH-I905 4G": 
         "SCH-I909": 
+        "SCH-i909": 
         "SCH-I915": 
+        "SCH-i915": 
         "SCH-I915 4G": 
+        "SCH-i9152": 
+        "SCH-i919": 
         "SCH-I919U": 
         "SCH-I920": 
         "SCH-I925": 
         "SCH-I925U": 
+        "SCH-i929": 
         "SCH-I929": 
         "SCH-I930": 
         "SCH-I939": 
@@ -10534,8 +10817,8 @@ device:
         "SCH-R730": 
         "SCH-R740C": 
         "SCH-R760": 
-        "SCH-R760X": 
         "SCH-R760ro": 
+        "SCH-R760X": 
         "SCH-R820": 
         "SCH-R830": 
         "SCH-R830C": 
@@ -10563,29 +10846,9 @@ device:
         "SCH-U350": 
         "SCH-U460": 
         "SCH-W169": 
-        "SCH-W259": 
         "SCH-W899": 
         "SCH-W999": 
         "SCH-X859": 
-        "SCH-i220": 
-        "SCH-i220a": 
-        "SCH-i225": 
-        "SCH-i509": 
-        "SCH-i559": 
-        "SCH-i569": 
-        "SCH-i579": 
-        "SCH-i589": 
-        "SCH-i705": 
-        "SCH-i705 4G": 
-        "SCH-i809": 
-        "SCH-i815": 
-        "SCH-i889": 
-        "SCH-i899": 
-        "SCH-i909": 
-        "SCH-i915": 
-        "SCH-i9152": 
-        "SCH-i919": 
-        "SCH-i929": 
         SCL21: 
         "SEC-SGHD900": 
         "SGH-897": 
@@ -10668,10 +10931,11 @@ device:
         "SGH-B200": 
         "SGH-B220": 
         "SGH-B270": 
-        "SGH-B270I": 
         "SGH-B270i": 
+        "SGH-B270I": 
         "SGH-B300": 
         "SGH-B310": 
+        "SGH-B320": 
         "SGH-B460": 
         "SGH-B500": 
         "SGH-B510": 
@@ -10778,10 +11042,10 @@ device:
         "SGH-E250": 
         "SGH-E250-ORANGE": 
         "SGH-E250-VODA": 
-        "SGH-E250L": 
-        "SGH-E250V": 
         "SGH-E250i": 
         "SGH-E250i-ORANGE": 
+        "SGH-E250L": 
+        "SGH-E250V": 
         "SGH-E251": 
         "SGH-E251C": 
         "SGH-E251L": 
@@ -10902,24 +11166,24 @@ device:
         "SGH-F480": 
         "SGH-F480-ORANGE": 
         "SGH-F480-Vodafone": 
+        "SGH-F480i": 
         "SGH-F480I": 
         "SGH-F480I-Bouygues": 
         "SGH-F480I-ORANGE": 
         "SGH-F480I-Vodafone": 
         "SGH-F480L": 
         "SGH-F480T": 
-        "SGH-F480i": 
         "SGH-F488": 
         "SGH-F488E": 
         "SGH-F488I": 
         "SGH-F490": 
         "SGH-F490-ORANGE": 
-        "SGH-F490-VODAFONE": 
         "SGH-F490-Vodafone": 
+        "SGH-F490-VODAFONE": 
         "SGH-F500": 
         "SGH-F700": 
-        "SGH-F700-VODAFONE": 
         "SGH-F700-Vodafone": 
+        "SGH-F700-VODAFONE": 
         "SGH-G400": 
         "SGH-G400L": 
         "SGH-G600": 
@@ -10929,27 +11193,37 @@ device:
         "SGH-G810": 
         "SGH-G818E": 
         "SGH-I200": 
+        "SGH-i200": 
         "SGH-I200-ORANGE": 
+        "SGH-i200-ORANGE": 
         "SGH-I300": 
         "SGH-I308": 
         "SGH-I310": 
         "SGH-I317": 
+        "SGH-i317": 
         "SGH-I317M": 
         "SGH-I317M Note II": 
         "SGH-I320": 
         "SGH-I320N": 
         "SGH-I337": 
+        "SGH-i337": 
         "SGH-I337M": 
         "SGH-I400": 
         "SGH-I407": 
         "SGH-I437": 
         "SGH-I437P": 
         "SGH-I437Z": 
+        "SGH-i450": 
+        "SGH-i450V": 
+        "SGH-i455": 
         "SGH-I458": 
+        "SGH-i458B": 
         "SGH-I467": 
         "SGH-I467M": 
         "SGH-I497": 
+        "SGH-i520": 
         "SGH-I520": 
+        "SGH-i520V": 
         "SGH-I527": 
         "SGH-I527M": 
         "SGH-I535": 
@@ -10958,45 +11232,70 @@ device:
         "SGH-I545": 
         "SGH-I547": 
         "SGH-I547C": 
+        "SGH-i550": 
+        "SGH-i550V": 
         "SGH-I560": 
+        "SGH-i560": 
         "SGH-I560V": 
+        "SGH-i560V": 
         "SGH-I577": 
         "SGH-I600": 
+        "SGH-i600": 
+        "SGH-i600ORANGE": 
         "SGH-I600ORANGE": 
+        "SGH-i600TIM": 
+        "SGH-i600V": 
+        "SGH-i601": 
         "SGH-I601": 
         "SGH-I607": 
         "SGH-I608": 
+        "SGH-i608": 
         "SGH-I616": 
         "SGH-I617": 
         "SGH-I620": 
+        "SGH-i620v": 
         "SGH-I620V": 
         "SGH-I627": 
+        "sgh-i637": 
         "SGH-I637": 
         "SGH-I640V": 
+        "SGH-i640V": 
+        "SGH-i667": 
+        "SGH-i677": 
         "SGH-I688": 
+        "SGH-i710": 
         "SGH-I710": 
         "SGH-I717": 
         "SGH-I717-2": 
         "SGH-I717D": 
         "SGH-I717M": 
         "SGH-I717R": 
+        "SGH-i718": 
         "SGH-I718": 
+        "SGH-i718plus": 
         "SGH-I727": 
         "SGH-I727-2": 
         "SGH-I727R": 
+        "SGH-i728": 
         "SGH-I728": 
         "SGH-I740": 
+        "SGH-i740": 
         "SGH-I747": 
+        "SGH-i747M": 
         "SGH-I747M": 
-        "SGH-I747M 4G": 
         "SGH-I747m": 
+        "SGH-I747M 4G": 
         "SGH-I750": 
         "SGH-I757M": 
         "SGH-I777": 
         "SGH-I777-2": 
         "SGH-I777-4": 
         "SGH-I780": 
+        "SGH-i780": 
+        "SGH-i780ORANGE": 
         "SGH-I780ORANGE": 
+        "SGH-i780SFR": 
+        "SGH-i780TIM": 
         "SGH-I807": 
         "SGH-I827": 
         "SGH-I827D": 
@@ -11005,16 +11304,28 @@ device:
         "SGH-I858": 
         "SGH-I896": 
         "SGH-I897": 
+        "SGH-i900": 
+        "SGH-i900-1": 
         "SGH-I9000": 
+        "SGH-i9000": 
         "SGH-I9000B": 
         "SGH-I9003": 
+        "SGH-i900Orange": 
         "SGH-I900V": 
+        "SGH-i900V": 
         "SGH-I907": 
+        "SGH-i907": 
         "SGH-I908": 
+        "SGH-i908": 
+        "SGH-i908E": 
         "SGH-I908E": 
+        "SGH-i917": 
         "SGH-I917": 
+        "SGH-i917R": 
+        "SGH-i927": 
         "SGH-I927": 
         "SGH-I927R": 
+        "SGH-i937": 
         "SGH-I957": 
         "SGH-I957D": 
         "SGH-I957M": 
@@ -11037,10 +11348,10 @@ device:
         "SGH-J630": 
         "SGH-J700": 
         "SGH-J700-ORANGE": 
-        "SGH-J700L": 
-        "SGH-J700V": 
         "SGH-J700i": 
         "SGH-J700iMIDP": 
+        "SGH-J700L": 
+        "SGH-J700V": 
         "SGH-J706": 
         "SGH-J708": 
         "SGH-J708i": 
@@ -11265,6 +11576,7 @@ device:
         "SGH-T839": 
         "SGH-T849": 
         "SGH-T859": 
+        "SGH-t869": 
         "SGH-T869": 
         "SGH-T879": 
         "SGH-T889": 
@@ -11277,6 +11589,7 @@ device:
         "SGH-T959P": 
         "SGH-T959V": 
         "SGH-T959W": 
+        "SGH-t989": 
         "SGH-T989": 
         "SGH-T989D": 
         "SGH-T999": 
@@ -11288,16 +11601,16 @@ device:
         "SGH-U600": 
         "SGH-U608": 
         "SGH-U700": 
-        "SGH-U700-VODAFONE": 
         "SGH-U700-Vodafone": 
+        "SGH-U700-VODAFONE": 
         "SGH-U700V": 
         "SGH-U708": 
         "SGH-U708E": 
         "SGH-U800": 
         "SGH-U800E": 
         "SGH-U900": 
-        "SGH-U900-VODAFONE": 
         "SGH-U900-Vodafone": 
+        "SGH-U900-VODAFONE": 
         "SGH-U900L": 
         "SGH-U900T": 
         "SGH-U900V": 
@@ -11404,8 +11717,8 @@ device:
         "SGH-Z630": 
         "SGH-Z710": 
         "SGH-Z720": 
-        "SGH-Z720-VODAFONE": 
         "SGH-Z720-Vodafone": 
+        "SGH-Z720-VODAFONE": 
         "SGH-Z720M": 
         "SGH-Z720M-VODAFONE": 
         "SGH-Z720M-Vodafone": 
@@ -11414,62 +11727,14 @@ device:
         "SGH-ZV10": 
         "SGH-ZV30": 
         "SGH-ZV40": 
-        "SGH-ZV40-VODAFONE": 
         "SGH-ZV40-Vodafone": 
+        "SGH-ZV40-VODAFONE": 
         "SGH-ZV50": 
         "SGH-ZV50-Vodafone": 
         "SGH-ZV60": 
-        "SGH-ZV60-VODAFONE": 
         "SGH-ZV60-Vodafone": 
+        "SGH-ZV60-VODAFONE": 
         "SGH-ZX20": 
-        "SGH-i200": 
-        "SGH-i200-ORANGE": 
-        "SGH-i317": 
-        "SGH-i337": 
-        "SGH-i450": 
-        "SGH-i450V": 
-        "SGH-i455": 
-        "SGH-i458B": 
-        "SGH-i520": 
-        "SGH-i520V": 
-        "SGH-i550": 
-        "SGH-i550V": 
-        "SGH-i560": 
-        "SGH-i560V": 
-        "SGH-i600": 
-        "SGH-i600ORANGE": 
-        "SGH-i600TIM": 
-        "SGH-i600V": 
-        "SGH-i601": 
-        "SGH-i608": 
-        "SGH-i620v": 
-        "SGH-i640V": 
-        "SGH-i667": 
-        "SGH-i677": 
-        "SGH-i710": 
-        "SGH-i718": 
-        "SGH-i718plus": 
-        "SGH-i728": 
-        "SGH-i740": 
-        "SGH-i747M": 
-        "SGH-i780": 
-        "SGH-i780ORANGE": 
-        "SGH-i780SFR": 
-        "SGH-i780TIM": 
-        "SGH-i900": 
-        "SGH-i900-1": 
-        "SGH-i9000": 
-        "SGH-i900Orange": 
-        "SGH-i900V": 
-        "SGH-i907": 
-        "SGH-i908": 
-        "SGH-i908E": 
-        "SGH-i917": 
-        "SGH-i917R": 
-        "SGH-i927": 
-        "SGH-i937": 
-        "SGH-t869": 
-        "SGH-t989": 
         SGHC230C: 
         SGHC260: 
         SGHD800: 
@@ -11485,9 +11750,9 @@ device:
         "SHV-E110s": 
         "SHV-E120": 
         "SHV-E120K": 
+        "SHV-E120l": 
         "SHV-E120L": 
         "SHV-E120S": 
-        "SHV-E120l": 
         "SHV-E140K": 
         "SHV-E140L": 
         "SHV-E140S": 
@@ -11522,22 +11787,22 @@ device:
         "SHV-E330S": 
         "SHV-E370K": 
         "SHW-M100S": 
-        "SHW-M110S": 
         "SHW-M110s": 
+        "SHW-M110S": 
         "SHW-M130K": 
         "SHW-M130L": 
         "SHW-M180K": 
+        "SHW-M180k": 
         "SHW-M180L": 
         "SHW-M180S": 
         "SHW-M180W": 
-        "SHW-M180k": 
         "SHW-M190S": 
         "SHW-M220L": 
         "SHW-M240S": 
         "SHW-M250K": 
+        "SHW-M250k": 
         "SHW-M250L": 
         "SHW-M250S": 
-        "SHW-M250k": 
         "SHW-M280S": 
         "SHW-M290K": 
         "SHW-M290S": 
@@ -11597,6 +11862,8 @@ device:
         "SM-T310X": 
         "SM-T311": 
         "SM-T315": 
+        SmartTV2012: 
+        SmartTV2013: 
         "SMG-917R": 
         "SPH-A500": 
         "SPH-A620": 
@@ -11686,11 +11953,9 @@ device:
         SPHM800: 
         SPHM810: 
         SPHZ400: 
-        Samsung Galaxy S III: 
-        SmartTV2012: 
-        SmartTV2013: 
         Taylor: 
         VS910 4G: 
+        w259: 
         "YP-G1": 
         "YP-G50": 
         "YP-G70": 
@@ -11700,8 +11965,6 @@ device:
         "YP-GI1": 
         "YP-GP1": 
         "YP-GS1": 
-        d: 
-        i9100: 
     Sega:
       model:
         Dreamcast: 
@@ -11776,8 +12039,8 @@ device:
         A21a: 
         A25: 
         A31: 
-        A31C: 
         A31a: 
+        A31C: 
         A50: 
         A52: 
         A55: 
@@ -11844,8 +12107,8 @@ device:
         M50I: 
         M55: 
         M55C: 
-        M55Z: 
         M55e: 
+        M55Z: 
         M56: 
         M65: 
         M65I: 
@@ -11879,8 +12142,9 @@ device:
         S6V: 
         S75: 
         SF65: 
-        SF65V2: 
         SF65v2: 
+        SF65V2: 
+        Siemens: 
         SK65: 
         SK6R: 
         SL45: 
@@ -11900,7 +12164,6 @@ device:
         SX1: 
         SX66: 
         SXG75: 
-        Siemens: 
         WoR: 
         Z60: 
     Simvalley:
@@ -11926,6 +12189,11 @@ device:
         "SPX-6": 
         SPX_8: 
         "SX7-PEARL.GmbH": 
+    SKtelesys:
+      model:
+        "SK-M88": 
+        "SK-S100": 
+        "SK-S150": 
     Skytex:
       model:
         IMAGINE 10: 
@@ -11937,6 +12205,13 @@ device:
         SP712: 
         SP715A: 
         SP723: 
+    smart:
+      model:
+        VX10: 
+        ZAPPIX HD+: 
+    Smartbitt:
+      model:
+        WF7C: 
     SmartQ:
       model:
         R10: 
@@ -11950,9 +12225,6 @@ device:
         V5: 
         V5II: 
         V7: 
-    Smartbitt:
-      model:
-        WF7C: 
     Sony:
       model:
         C1504: 
@@ -12005,8 +12277,8 @@ device:
         LT30at: 
         LT30p: 
         "LT30p-o": 
-        MT27i: 
         Mint: 
+        MT27i: 
         "NW-Z1000Series": 
         PalmOS atom: 
         PalmOS grnd: 
@@ -12045,6 +12317,7 @@ device:
         ST26iv: 
         ST27i: 
         SW2: 
+        tablet p: 
         Tablet P: 
         Tablet S: 
         X8: 
@@ -12052,6 +12325,8 @@ device:
         Xperia E: 
         Xperia E dual: 
         Xperia Go: 
+        Xperia hallon: 
+        Xperia ion: 
         Xperia J: 
         Xperia Miro: 
         Xperia Neo V: 
@@ -12066,9 +12341,6 @@ device:
         Xperia Z: 
         Xperia Z Ultra: 
         Xperia Z1: 
-        Xperia hallon: 
-        Xperia ion: 
-        tablet p: 
     SonyEricsson:
       model:
         290i: 
@@ -12110,6 +12382,7 @@ device:
         CK15a: 
         CK15i: 
         D750i: 
+        digivice: 
         E10a: 
         E10i: 
         "E10i-o": 
@@ -12159,6 +12432,7 @@ device:
         G900: 
         "GT-I9000": 
         Hallon: 
+        HTC Desirev: 
         IS11S: 
         IS12S: 
         J105a: 
@@ -12214,6 +12488,7 @@ device:
         K600c: 
         K600i: 
         K608i: 
+        k608i: 
         K610a: 
         K610c: 
         K610i: 
@@ -12229,6 +12504,7 @@ device:
         K700v: 
         K750c: 
         K750i: 
+        k750i: 
         K758c: 
         K770i: 
         K770iv: 
@@ -12238,6 +12514,7 @@ device:
         K790i: 
         K800a: 
         K800c: 
+        k800i: 
         K800i: 
         K800ii: 
         K800iv: 
@@ -12251,6 +12528,7 @@ device:
         K858c: 
         K8J50i: 
         K999: 
+        LeNnaLiiZA: 
         LT1002: 
         LT15a: 
         LT15at: 
@@ -12259,6 +12537,7 @@ device:
         "LT15i-o": 
         LT15iv: 
         LT18: 
+        lt18: 
         LT18a: 
         LT18i: 
         "LT18i-o": 
@@ -12280,7 +12559,6 @@ device:
         LT7033: 
         LT7052: 
         LT8088: 
-        LeNnaLiiZA: 
         M1a: 
         M1i: 
         M600c: 
@@ -12342,6 +12620,7 @@ device:
         R800i: 
         R800iv: 
         R800x: 
+        rachael: 
         S302: 
         S302c: 
         S312: 
@@ -12352,6 +12631,7 @@ device:
         S700c: 
         S700i: 
         S710a: 
+        sakamoto: 
         SK17a: 
         SK17i: 
         "SK17i-o": 
@@ -12441,10 +12721,10 @@ device:
         U100i: 
         U10a: 
         U10i: 
-        U1UCBrowser: 
         U1a: 
         U1i: 
         U1iv: 
+        U1UCBrowser: 
         U20a: 
         U20i: 
         U20iBuild: 
@@ -12469,8 +12749,10 @@ device:
         W100i: 
         W150: 
         W150a: 
+        w150i: 
         W150i: 
         W20: 
+        w200: 
         W200a: 
         W200av: 
         W200c: 
@@ -12481,8 +12763,10 @@ device:
         W205a: 
         W20a: 
         W20i: 
+        w300: 
         W300c: 
         W300i: 
+        w300i: 
         W302: 
         W302c: 
         W350a: 
@@ -12502,6 +12786,7 @@ device:
         W580: 
         W580c: 
         W580i: 
+        w580i: 
         W595: 
         W595a: 
         W595av: 
@@ -12531,10 +12816,12 @@ device:
         W750i: 
         W760a: 
         W760c: 
+        w760i: 
         W760i: 
         W800c: 
         W800i: 
         W810c: 
+        w810i: 
         W810i: 
         W810iv: 
         W830a: 
@@ -12569,6 +12856,7 @@ device:
         "WT19i-o": 
         WT19iv: 
         X10: 
+        x10: 
         X10a: 
         X10i: 
         "X10i-o": 
@@ -12624,6 +12912,7 @@ device:
         Xperia Mini: 
         Xperia Mini Pro: 
         Xperia Neo: 
+        Xperia neo L: 
         Xperia Neo L: 
         Xperia Neo V: 
         Xperia Play: 
@@ -12633,7 +12922,6 @@ device:
         Xperia X10: 
         Xperia X10 Mini: 
         Xperia X8: 
-        Xperia neo L: 
         Z1010: 
         Z200: 
         Z250i: 
@@ -12670,21 +12958,6 @@ device:
         Z800: 
         Z800c: 
         Z800i: 
-        digivice: 
-        k608i: 
-        k750i: 
-        k800i: 
-        lt18: 
-        rachael: 
-        sakamoto: 
-        w150i: 
-        w200: 
-        w300: 
-        w300i: 
-        w580i: 
-        w760i: 
-        w810i: 
-        x10: 
     Spice:
       model:
         Mi1010: 
@@ -12724,6 +12997,79 @@ device:
         Desktop: 
         Feature Phone: 
         Smartphone: 
+    sprd:
+      model:
+        "9300": 
+        A760: 
+        A88: 
+        A9500: 
+        AAA: 
+        "Byond-B54": 
+        C3100: 
+        C6200: 
+        E07: 
+        "epade-A300": 
+        G500: 
+        "Galaxy-I9200": 
+        "Galaxy-S4": 
+        "GT-9500": 
+        "GT-A7100": 
+        "GT-A9500": 
+        "GT-I9082": 
+        "GT-I9300": 
+        "GT-N9300": 
+        "GT-T9500": 
+        I8750: 
+        I9300: 
+        I950: 
+        I9500: 
+        "iNote-mini": 
+        L008: 
+        M2: 
+        M6A: 
+        Mi2: 
+        MINI: 
+        MP100: 
+        "N-58": 
+        N7000: 
+        N800: 
+        "note-III": 
+        NOTE2: 
+        NP_9300: 
+        Q101: 
+        Q9: 
+        "Royalatar-W102": 
+        S3: 
+        S3802i: 
+        S5+: 
+        S5830: 
+        S7100: 
+        S9082: 
+        S930: 
+        "SPHS-on-Hsdroid": 
+        TSM_T3: 
+        yuanpeng: 
+        "Z3Z6Z7-T": 
+    Sprint:
+      model:
+        APA7373KT: 
+        APC715CKT: 
+        ATP515CKIT: 
+        E4100: 
+        LN240: 
+        M370: 
+        M380: 
+        M550: 
+    ST:
+      model:
+        FLTk3D: 
+    SUMSUNG:
+      model:
+        OMNIA 7: 
+    Tagi:
+      model:
+        MID140: 
+        MID950: 
     TCL:
       model:
         A860: 
@@ -12751,30 +13097,10 @@ device:
         S820: 
         S900: 
         S950: 
-    THOM:
-      model:
-        LF1V373: 
-    TOSHIBA:
-      model:
-        DTV_RL838: 
-        DTV_RL933: 
-        DTV_RL938: 
-        DTV_TL838: 
-        DTV_TL933: 
-        DTV_TL938: 
-        DTV_VL963: 
-        RL858: 
-    TRIDENT:
-      model:
-        HBBTV: 
-    Tagi:
-      model:
-        MID140: 
-        MID950: 
     TechniSat:
       model:
-        DIGIT ISIO S: 
         DigiCorder ISIO S: 
+        DIGIT ISIO S: 
         Digit ISIO S: 
         MultyVision ISIO: 
     TechnoTrend Goerler/Kathrein:
@@ -12871,15 +13197,18 @@ device:
         W8: 
         W8s: 
         W9: 
+    THOM:
+      model:
+        LF1V373: 
     Tmobile:
       model:
-        +myTouch+: 
         Espresso: 
         G1: 
+        HTC_G2: 
         MyTouch 3G: 
+        myTouch 4g: 
         Opal: 
         Vivacity: 
-        myTouch 4g: 
     Tomtec:
       model:
         ATP7483: 
@@ -12892,11 +13221,21 @@ device:
         A9: 
         A9PLUS: 
         K1: 
+        t1982: 
         T1982: 
         T1992: 
         T83: 
         TOOKY K1: 
-        t1982: 
+    TOSHIBA:
+      model:
+        DTV_RL838: 
+        DTV_RL933: 
+        DTV_RL938: 
+        DTV_TL838: 
+        DTV_TL933: 
+        DTV_TL938: 
+        DTV_VL963: 
+        RL858: 
     Toshiba:
       model:
         AT02: 
@@ -12920,9 +13259,9 @@ device:
         IS12T: 
         "T-01C": 
         "T-01D": 
+        Thrive: 
         THRiVE: 
         TSUNAGI: 
-        Thrive: 
     Touchmate:
       model:
         "MID-750": 
@@ -12962,17 +13301,23 @@ device:
         3G Turbo: 
         3G_Basic_2: 
         3G_Turbo: 
+        A10 basic: 
         A10 Basic 2+: 
         A10 Basic2: 
         A10 Pocket: 
-        A10 basic: 
+        A10_Pocket: 
+        A10_Pocket2: 
         A10C: 
         A10C 2: 
         A10G 3G: 
         A10G DUO: 
         A10G Duo: 
-        A10_Pocket: 
-        A10_Pocket2: 
+    TRIDENT:
+      model:
+        HBBTV: 
+    tv2n:
+      model:
+        videoweb: 
     Umeox:
       model:
         A502: 
@@ -12981,14 +13326,19 @@ device:
         X1: 
         X2: 
         X5: 
-    VESTEL:
-      model:
-        MB70: 
     Versus:
       model:
+        TouchPad 10.1DC: 
         TOUCHPAD 7: 
+        TouchPad 7: 
+        TouchPad 7DC: 
         TOUCHPAD 9: 
+        TouchPad 9: 
         TOUCHPAD 9.7: 
+        Touchpad 9.7: 
+        TouchPad 9DC: 
+        Touchpad10: 
+        TouchPad10: 
         TOUCHPAD7: 
         TOUCHPAD9: 
         TOUCHPAD9 A: 
@@ -12997,17 +13347,12 @@ device:
         TOUCHTAB 7DC V: 
         TOUCHTAB 8DC: 
         TOUCHTAB 9: 
-        TouchPad 10.1DC: 
-        TouchPad 7: 
-        TouchPad 7DC: 
-        TouchPad 9: 
-        TouchPad 9DC: 
-        TouchPad10: 
-        Touchpad 9.7: 
-        Touchpad10: 
     Vertu:
       model:
         Ti: 
+    VESTEL:
+      model:
+        MB70: 
     Videocon:
       model:
         A15: 
@@ -13021,32 +13366,59 @@ device:
         A51: 
         V7400: 
         V7500: 
+        v7500: 
         VT71: 
         VT75C: 
-        v7500: 
     Viewsonic:
       model:
         GTablet: 
         "GTablet-TnT-Lite": 
         V350: 
-        VSD220: 
-        VSD241: 
-        ViewPad 10S: 
         ViewPad 10e: 
+        ViewPad 10S: 
         ViewPad 10s: 
         ViewPad 4: 
         ViewPad 7D: 
         ViewPad4: 
         ViewPad7: 
-        ViewPad7X: 
         ViewPad7e: 
         ViewPad7x: 
+        ViewPad7X: 
         ViewPad97A: 
         ViewPad97a: 
         ViewPad97a K1: 
         ViewPad97a Pro: 
         ViewPad_10e: 
         ViewPhone3: 
+        VSD220: 
+        VSD241: 
+    vivo:
+      model:
+        E1: 
+        E1t: 
+        E3: 
+        S3: 
+        S3+: 
+        S6: 
+        S6T: 
+        S7: 
+        S7i(t): 
+        S7t: 
+        S7w: 
+        S9: 
+        V1: 
+        V2: 
+        X1: 
+        X1S: 
+        X1St: 
+        X3t: 
+        X510t: 
+        Xplay: 
+        Y1: 
+        Y11: 
+        Y11i T: 
+        Y11t: 
+        Y19t: 
     Vodafone:
       model:
         "845": 
@@ -13067,9 +13439,6 @@ device:
         "Primo-N1": 
         "Primo-X2": 
         Primo_R1: 
-    WeTab:
-      model:
-        WeTab: 
     Wellcom:
       model:
         A800: 
@@ -13078,17 +13447,20 @@ device:
         A89: 
         "A89-Plus": 
         A99: 
+    WeTab:
+      model:
+        WeTab: 
     Wiko:
       model:
         CINK: 
         CINK FIVE: 
         CINK KING: 
+        Cink King: 
+        Cink Peax: 
         CINK PEAX: 
         CINK PEAX 2: 
         CINK SLIM: 
         CINK+: 
-        Cink King: 
-        Cink Peax: 
         DARKFULL: 
         DARKNIGHT: 
         DARKSIDE: 
@@ -13161,8 +13533,8 @@ device:
         e2001_v89: 
         e2001v21: 
         e2006_v89: 
-        iPhone5: 
         iphone: 
+        iPhone5: 
         v89_cxq_AH: 
         v89_gq2002: 
         v89_gq2008: 
@@ -13201,10 +13573,10 @@ device:
         Q700: 
         Q700i: 
         Q800: 
+        q800: 
         X1000: 
         X500: 
         X900: 
-        q800: 
     Xoro:
       model:
         PAD 716: 
@@ -13296,6 +13668,36 @@ device:
         M900HZ: 
         M908HC: 
         M912HC: 
+    ZiiLabs:
+      model:
+        EGG: 
+        ZiiO10: 
+        ZiiO10+: 
+        ZiiO7: 
+    Zopo:
+      model:
+        ZP100: 
+        ZP200: 
+        ZP200+: 
+        ZP300: 
+        ZP300+: 
+        ZP500: 
+        ZP500+: 
+        ZP500S: 
+        ZP800H: 
+        ZP810: 
+        ZP810H DUAL SIM: 
+        ZP900: 
+        ZP900H: 
+        ZP900s: 
+        ZP900S: 
+        ZP910: 
+        ZP950: 
+        ZP950+: 
+        ZP950H: 
+        ZP950H DUAL SIM: 
+        ZP980: 
+        ZP990: 
     ZTE:
       model:
         003Z: 
@@ -13307,23 +13709,23 @@ device:
         Atlas W: 
         Avea InTouch 2: 
         Avea inTouch 2: 
+        BASE lutea: 
         BASE Lutea 2: 
         BASE Tab: 
         BASE Tab 7.1: 
-        BASE lutea: 
-        BLADE III: 
         Blade: 
         Blade 2: 
         Blade 70: 
         Blade G: 
+        BLADE III: 
         Blade III: 
         Blade III Pro: 
         Blade III_IL: 
         Blade Q: 
         Blade S: 
         Blade2: 
-        BladeII: 
         Blade_N880: 
+        BladeII: 
         C N600: 
         C N600+: 
         C N700: 
@@ -13342,16 +13744,16 @@ device:
         HOTROD: 
         JOE: 
         KIS: 
-        KIS PLUS: 
         Kis: 
         Kis Lite: 
+        KIS PLUS: 
         Kis Pro: 
-        LIBRA: 
-        LINK: 
         Libra: 
+        LIBRA: 
         Light Pro: 
         Light Tab 2: 
         Light Tab 2W: 
+        LINK: 
         "MegaFon SP-W1": 
         Mimosa: 
         Mimosa X: 
@@ -13374,9 +13776,9 @@ device:
         N860: 
         N861: 
         N880E: 
+        N880e_Dawoer_Fulllock: 
         N880F: 
         N880G: 
-        N880e_Dawoer_Fulllock: 
         N909: 
         N910: 
         N9100: 
@@ -13395,9 +13797,9 @@ device:
         Orange San Francisco: 
         R22: 
         RACER: 
-        RACERII: 
         Racer: 
         RacerII: 
+        RACERII: 
         San Francisco: 
         San Francisco II: 
         Skate: 
@@ -13408,6 +13810,7 @@ device:
         SmartTab2: 
         SmartTab7: 
         Soft Stone: 
+        soft stone: 
         T U880: 
         T U960s: 
         T12: 
@@ -13422,12 +13825,14 @@ device:
         T_U880: 
         T_U960s: 
         Tania: 
+        tmn smart a7: 
         Tmn Smart A7: 
         Tureis: 
         U790: 
         U795: 
         U795+: 
         U807: 
+        u880: 
         U880E: 
         U880s: 
         U880s2: 
@@ -13437,7 +13842,6 @@ device:
         U960s2: 
         U960s3: 
         U970: 
-        USCCN859: 
         U_V760: 
         U_V852: 
         U_V856: 
@@ -13456,6 +13860,7 @@ device:
         V790: 
         V791: 
         V793: 
+        v793: 
         V795: 
         V807: 
         V809: 
@@ -13487,6 +13892,7 @@ device:
         V965W: 
         V967S: 
         V970: 
+        v970: 
         "V970-orange": 
         V970M: 
         V970M Grand: 
@@ -13513,350 +13919,9 @@ device:
         Z990G: 
         Z992: 
         Z993: 
-        soft stone: 
-        tmn smart a7: 
-        u880: 
-        v793: 
-        v970: 
-    ZiiLabs:
-      model:
-        EGG: 
-        ZiiO10: 
-        ZiiO10+: 
-        ZiiO7: 
-    Zopo:
-      model:
-        ZP100: 
-        ZP200: 
-        ZP200+: 
-        ZP300: 
-        ZP300+: 
-        ZP500: 
-        ZP500+: 
-        ZP500S: 
-        ZP800H: 
-        ZP810: 
-        ZP810H DUAL SIM: 
-        ZP900: 
-        ZP900H: 
-        ZP900S: 
-        ZP900s: 
-        ZP910: 
-        ZP950: 
-        ZP950+: 
-        ZP950H: 
-        ZP950H DUAL SIM: 
-        ZP980: 
-        ZP990: 
     Zync:
       model:
         Cloud Z5: 
         Cloud_Z5: 
         z1000: 
-    "aG(?k":
-      model:
-        MB70: 
-    bq:
-      model:
-        Aquaris: 
-        Aquaris 3.5: 
-        Aquaris 5: 
-        Aquaris 5 HD: 
-        Aquaris 5.7: 
-        Curie: 
-        Curie 2: 
-        Curie 2 3G: 
-        DaVinci: 
-        Darwin: 
-        Edison: 
-        Edison 2: 
-        Edison 2 3G: 
-        Edison 2 Quad Core 3G: 
-        Edison 3G: 
-        Elcano: 
-        Livingstone 2: 
-        Maxwell Lite: 
-        Maxwell Plus: 
-        Verne Plus: 
-        Verne Plus 3G: 
-        Voltaire: 
-        edison: 
-    hitech:
-      model:
-        AMAZE S100: 
-        AMAZE S200: 
-    "i-mate":
-      model:
-        "6150": 
-        "8150": 
-        "8502": 
-        "9502": 
-        JAMA: 
-        JAMAQ: 
-        JAMin: 
-        JAQ: 
-        JAQ3: 
-        JASJAM: 
-        JASJAR: 
-        K: 
-        PDAL: 
-    iBall:
-      model:
-        3G 7316: 
-        Andi 107: 
-        Andi 2: 
-        Andi 3.5: 
-        Andi 3.5KKe: 
-        Andi 3.5i: 
-        Andi 3.5r: 
-        Andi 3e: 
-        Andi 3n: 
-        Andi 4.3J: 
-        Andi 4.3J+: 
-        Andi 4.3a: 
-        Andi 4.5d quadro: 
-        Andi 4.5h: 
-        Andi 4.5q: 
-        Andi 4d: 
-        Andi 4v: 
-        I6012: 
-        Slide 3G 7307: 
-        Slide 3G 7316: 
-        Slide 3G 7334: 
-        Slide 3G7271: 
-        Slide I7011: 
-        Slide i6516: 
-        Slide i7011: 
-        Slide i7119: 
-        Slide_3G7271: 
-        Slide_3G_7334: 
-        Slide_i6516: 
-        Slide_i7011: 
-        i6012: 
-    iOCEAN:
-      model:
-        X7: 
-        x7: 
-    imobile:
-      model:
-        "697": 
-        3G 8500: 
-        "I-Note": 
-        "I-STYLE 1 I": 
-        "I-STYLE 4i": 
-        "I-STYLE 6": 
-        "I-STYLE 7.2": 
-        "I-STYLE 7A": 
-        "I-STYLE 8.1": 
-        "I-STYLE Q4": 
-        "I-STYLE Q6": 
-        "I-note S": 
-        "I-note WiFi 1.1": 
-        "I-note WiFi 9": 
-        "I-style 7.1": 
-        "I-style Q1i": 
-        "I-style Q3i": 
-        I691: 
-        I698: 
-        IE 6010: 
-        IQ 1: 
-        IQ 2: 
-        IQ 2A: 
-        IQ 3: 
-        IQ 4: 
-        IQ 5: 
-        IQ 5.1: 
-        IQ 5.1A: 
-        IQ 5.3: 
-        IQ 5A: 
-        IQ 6: 
-        IQ 6.1: 
-        IQ 6A: 
-        IQ 9: 
-        IQ 9.2: 
-        IQ X: 
-        IQ X2: 
-        IQ X3: 
-        IQ XA: 
-        "IQ1-1": 
-        "IQ1-1A": 
-        IQ5.1 Pro: 
-        IQ5.1A Pro: 
-        IQ_2: 
-        "i-NOTE WIFI 2": 
-        "i-STYLE 1": 
-        "i-STYLE 1 i": 
-        "i-STYLE 2": 
-        "i-STYLE 2i": 
-        "i-STYLE 4": 
-        "i-STYLE 4i": 
-        "i-STYLE 5": 
-        "i-STYLE 5i": 
-        "i-STYLE 6": 
-        "i-STYLE 6A": 
-        "i-STYLE 7": 
-        "i-STYLE 7.2": 
-        "i-STYLE 7.3": 
-        "i-STYLE 7.3A": 
-        "i-STYLE 7.5": 
-        "i-STYLE 7A": 
-        "i-STYLE 8.1": 
-        "i-STYLE 8.2": 
-        "i-STYLE 8.2A": 
-        "i-STYLE Q 5": 
-        "i-STYLE Q 5A": 
-        "i-STYLE Q2": 
-        "i-STYLE Q2 DUO": 
-        "i-STYLE Q4": 
-        "i-STYLE Q4A": 
-        "i-STYLE Q6": 
-        "i-STYLE Q6A": 
-        "i-STYLE2.1": 
-        "i-STYLE_7.3A": 
-        "i-note 2": 
-        "i-note 3": 
-        "i-note S": 
-        "i-note WIFI3": 
-        "i-note WiFi": 
-        "i-note WiFi 1.1": 
-        "i-note WiFi 7": 
-        "i-note WiFi 9": 
-        "i-style 3": 
-        "i-style 3i": 
-        "i-style 4": 
-        "i-style 7.1": 
-        "i-style 8": 
-        "i-style Q1": 
-        "i-style Q1i": 
-        "i-style Q2": 
-        "i-style Q3": 
-        "i-style Q3i": 
-        i651: 
-        i680: 
-        i691: 
-        i692: 
-        i693: 
-        i695: 
-        i698: 
-        i810: 
-        i858: 
-        i858 Plus: 
-        iQ 2A: 
-    inverto:
-      model:
-        "IDL-6640N Volksbox Essential": 
-        "IDL-6650N Volksbox": 
-        "IDL-6651N Volksbox Web Edition": 
-    ionik:
-      model:
-        "TP10.1-1500DC Dark grey metal": 
-        "TP10.1-1500DC kb": 
-        "TP10.1-1500DC-metal": 
-        "TP7-1000": 
-        "TP7-1000-metal": 
-        "TP7-1000DC": 
-        "TP7-1000DC light": 
-        "TP7-1200 BT": 
-        "TP7-1200QC": 
-        "TP7-1500DC-metal": 
-        "TP7.85-1200QC-3G": 
-        "TP8-1000": 
-        "TP8-1200-metal": 
-        "TP8-1500DC": 
-        "TP9.7-1200": 
-        "TP9.7-1200QC Retina": 
-        "TP9.7-1500 DC": 
-        "TP9.7-1500DC": 
-        "TP9.7-1500DC Retina": 
-        "TP97.1-500DC": 
-    nokia:
-      model:
-        lumia 900: 
-    smart:
-      model:
-        VX10: 
-        ZAPPIX HD+: 
-    sprd:
-      model:
-        "9300": 
-        A760: 
-        A88: 
-        A9500: 
-        AAA: 
-        "Byond-B54": 
-        C3100: 
-        C6200: 
-        E07: 
-        G500: 
-        "GT-9500": 
-        "GT-A7100": 
-        "GT-A9500": 
-        "GT-I9082": 
-        "GT-I9300": 
-        "GT-N9300": 
-        "GT-T9500": 
-        "Galaxy-I9200": 
-        "Galaxy-S4": 
-        I8750: 
-        I9300: 
-        I950: 
-        I9500: 
-        L008: 
-        M2: 
-        M6A: 
-        MINI: 
-        MP100: 
-        Mi2: 
-        "N-58": 
-        N7000: 
-        N800: 
-        NOTE2: 
-        NP_9300: 
-        Q101: 
-        Q9: 
-        "Royalatar-W102": 
-        S3: 
-        S3802i: 
-        S5+: 
-        S5830: 
-        S7100: 
-        S9082: 
-        S930: 
-        "SPHS-on-Hsdroid": 
-        TSM_T3: 
-        "Z3Z6Z7-T": 
-        "epade-A300": 
-        "iNote-mini": 
-        "note-III": 
-        yuanpeng: 
-    tv2n:
-      model:
-        videoweb: 
-    vivo:
-      model:
-        E1: 
-        E1t: 
-        E3: 
-        S3: 
-        S3+: 
-        S6: 
-        S6T: 
-        S7: 
-        S7i(t): 
-        S7t: 
-        S7w: 
-        S9: 
-        V1: 
-        V2: 
-        X1: 
-        X1S: 
-        X1St: 
-        X3t: 
-        X510t: 
-        Xplay: 
-        Y1: 
-        Y11: 
-        Y11i T: 
-        Y11t: 
-        Y19t: 
 

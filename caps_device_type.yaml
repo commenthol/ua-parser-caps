@@ -759,6 +759,80 @@ device:
             capabilities:
               device:
                 type: 'tablet'
+    'Cellular':
+      model:
+        ADR6275US:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire
+          capabilities:
+            info:
+              brand: HTC
+              model: Desire
+        ADR6325US:
+          extends:
+            - device:
+                brand: HTC
+                model: Merge
+          capabilities:
+            info:
+              brand: HTC
+              model: Merge
+        ALCATEL-one-touch-988:
+          extends:
+            - device:
+                brand: Alcatel
+                model: 'One Touch 988'
+          capabilities:
+            info:
+              brand: Alcatel
+              model: 'One Touch 988'
+        HTC-PC93100:
+          extends:
+            - device:
+                brand: HTC
+                model: Arrive
+          capabilities:
+            info:
+              brand: HTC
+              model: Arrive
+        HTC6175:
+          extends:
+            - device:
+                brand: HTC
+                model: Ozone
+          capabilities:
+            info:
+              brand: HTC
+              model: Ozone
+        HTC6850:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro
+          capabilities:
+            info:
+              brand: HTC
+              model: Touch Pro
+        HTC6875:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro2
+          capabilities:
+            info:
+              brand: HTC
+              model: Touch Pro2
+        N859:
+          extends:
+            - device:
+                brand: ZTE
+                model: Tania
+          capabilities:
+            info:
+              brand: ZTE
+              model: Tania
     'ChangJia':
       capabilities:
         device:
@@ -1488,6 +1562,25 @@ device:
             capabilities:
               device:
                 type: 'tv'
+        'C9660':
+          capabilities:
+            info:
+              marketing_name: yotaphone
+              href:
+                '1': http://yotaphone.com/#/en/techspecs/
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+            screen2:
+              size: 4.3
+              width: 360
+              height: 640
+              colors: 16
         'D7018':
           capabilities:
             device:
@@ -1916,6 +2009,85 @@ device:
             capabilities:
               device:
                 type: 'tablet'
+        '001HT':
+          extends:
+            - device:
+                brand: HTC
+                model: Desire HD
+
+        A6277:
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: Hero
+        ADR6200:
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: Eris
+        ADR6300	:
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: Incredible
+        ADR6350:
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: Incredible 2
+        'ADR6400L 4G':
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: ThunderBolt 4G
+        ADR6425LVW:
+          capabilities:
+            extends:
+              - device:
+                  brand: HTC
+                  model: Rezound 4G
+        'Arrive':
+          capabilities:
+            device:
+              type: 'smartphone'
+              os: Windows Phone
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+        'Evo Shift 4G':
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+        'Evo Design 4G':
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+        'Evo View 4G':
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7
+              width: 1024
+              height: 600
         'HTL21':
           capabilities:
             device:
@@ -1932,6 +2104,36 @@ device:
               size: 4.7
               width: 720
               height: 1280 
+        'Ozone':
+          capabilities:
+            device:
+              type: 'smartphone'
+              os: Windows Mobile
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 65k
+        'Touch Pro':
+          capabilities:
+            device:
+              type: 'smartphone'
+              os: Windows Mobile
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65k
+        'Touch Pro2':
+          capabilities:
+            device:
+              type: 'smartphone'
+              os: Windows Mobile
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+              colors: 65k
     'Huawei':
       capabilities:
         info:
@@ -1960,6 +2162,46 @@ device:
             capabilities:
               device:
                 type: 'tablet'
+        C8500:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+              colors: 262k
+        C8600:
+          capabilities:
+            device: 
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 262k
+        C8650:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 262k
+        C8660:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+              colors: 262k
         'G700-U10':
           capabilities:
             device:
@@ -2746,6 +2988,12 @@ device:
                 capabilities:
                   device:
                     type: 'phone'
+      model:
+        C5120:
+        C5121:
+        C5155:
+        C5170:
+        C5215:
     'Lava':
       capabilities:
         info:
@@ -4141,7 +4389,7 @@ device:
                         type: 'tablet'
       model:
         regexes:
-          - regex: '^(Galaxy Note II|GT-I9205|GT-N[79]|SM-N|SCH-R9)'
+          - regex: '^(Galaxy Note II|GT-I9082|GT-I9205|GT-N[79]|SM-N|SCH-R9)'
             capabilities:
               device:
                 type: 'phablet'
@@ -11561,6 +11809,21 @@ device:
               width: 320
               height: 480
               colors: 16M
+        NEW_Galaxy_Note_3_Neo:
+          capabilities:
+            info:
+              date: "2014-02-01"
+              marketing_name: Galaxy Note 3 Neo
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+            bearer:
+              lte: true
+              nfc: true
     'Siemens':
       capabilities:
         device:
@@ -12821,6 +13084,35 @@ device:
             capabilities:
               device:
                 type: 'phablet'
+    'Sprint':
+      model:
+        APA7373KT:
+          extends:
+            - device:
+                brand: HTC
+                model: 'Evo Shift 4G'
+          capabilities:
+            info:
+              brand: HTC
+              model: 'Evo Shift 4G'
+        APC715CKT:
+          extends:
+            - device:
+                brand: HTC
+                model: 'Evo Design 4G'
+          capabilities:
+            info:
+              brand: HTC
+              model: 'Evo Design 4G'
+        ATP515CKIT:
+          extends:
+            - device:
+                brand: HTC
+                model: 'Evo View 4G'
+          capabilities:
+            info:
+              brand: HTC
+              model: 'Evo View 4G'
     'Tagi':
       capabilities:
         info:
@@ -15711,6 +16003,8 @@ device:
 
         'Tania':
           capabilities:
+            device:
+              type: smartphone
             screen:
               size: 4.3
               width: 480
@@ -16131,7 +16425,6 @@ device:
               size: 4.5
               width: 540
               height: 960
-
     'Zync':
       capabilities:
         info:

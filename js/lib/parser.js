@@ -170,6 +170,26 @@ M.parser = function (tree) {
 	};
 
 	/**
+	 * collect information of missing leaves in the caps tree(s)
+	 * 
+	 * @param {Object} item - item selected
+	 * @param {string} type - (os|ua|device)
+	 * @param {string} mode - (family|major|minor|brand|model)
+	 * @param {string} name - name of object which is missing 
+	 */
+	var notFound = function(item, type, mode, name) {
+		if (item === null) {
+			if (!self.cap._notFound) {
+				self.cap._notFound = {};
+			}
+			if (!self.cap._notFound[type]) {
+				self.cap._notFound[type] = {};
+			}
+			self.cap._notFound[type][mode] = name;
+		}
+	}
+
+	/**
 	 * get capabilty per os or ua family
 	 * stores the result in `self.cap`
 	 *
@@ -178,31 +198,29 @@ M.parser = function (tree) {
 	 * @param {Object} selector : selector to start search from
 	 */
 	var osuaCaps = function (obj, type, selector) {
-		var family, major, minor;
+		var 
+			i,
+			mode, item, sel,
+			modes = [ 'family', 'major', 'minor' ];
 
 		type = type || 'os';
 		selector = selector || tree;
+		sel = select(selector, [ type ]);
 
 		//~ console.log('>>obj', obj);
-		if (obj && obj.family) {
-			family = select(selector, [ type, "family" ]);
-			getCap(family, type, obj.family);
-			family = select(family, [ obj.family ]);
-			getCap(family, type);
-			uaOverwrite(family);
-			if (obj.major) {
-				major = select(family, [ "major" ]);
-				getCap(major, type, obj.major);
-				major = select(major, [ obj.major ]);
-				getCap(major, type);
-				uaOverwrite(major);
-				if (obj.minor) {
-					minor = select(major, [ "minor" ]);
-					getCap(minor, type, obj.minor);
-					minor = select(minor, [ obj.minor ]);
-					getCap(minor, type);
-					uaOverwrite(minor);
-				}
+		for (i=0; i<modes.length; i++) {
+			mode = modes[i];
+			if (sel && obj && obj[mode]) {
+				item = select(sel, [ mode ]);
+				getCap(item, type, obj[mode]);
+				item = select(item, [ obj[mode] ]);
+				notFound(item, type, mode, obj[mode]);
+				getCap(item, type);
+				uaOverwrite(item);
+				sel = item;
+			}
+			else {
+				break;
 			}
 		}
 	};
@@ -235,12 +253,14 @@ M.parser = function (tree) {
 			brand = select(selector, [ "device", "brand" ]);
 			getCap(brand, type, obj.brand);
 			brand = selectNormalizedDevice(brand, obj.brand);
+			notFound(brand, 'device', 'brand', obj.brand);
 			getCap(brand, type);
 			deviceOverwrite(brand);
 			if (obj.model) {
 				model = select(brand, [ "model" ]);
 				getCap(model, type, obj.model);
 				model = selectNormalizedDevice(model, obj.model);
+				notFound(model, 'device', 'model', obj.model);
 				getCap(model, type);
 				deviceOverwrite(model);
 			}
@@ -298,7 +318,6 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		osuaCaps(self.uaparsed.os, 'os');
-		return self.cap;
 	};
 
 	/**
@@ -310,7 +329,6 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		osuaCaps(self.uaparsed.ua, 'ua');
-		return self.cap;
 	};
 
 	/**
@@ -322,7 +340,6 @@ M.parser = function (tree) {
 		init(uaparsed);
 		defaultCaps();
 		deviceCaps(self.uaparsed.device);
-		return self.cap;
 	};
 
 	/**

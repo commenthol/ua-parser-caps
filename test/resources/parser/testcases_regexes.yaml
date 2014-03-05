@@ -132,6 +132,9 @@
       attr_os: "osfamily5_regexNode" 
       attr_ua: "default"
       attr_dev: "default"
+    _notFound:
+      os:
+        family: osfamily6
 
 - test: "get capabilities on os.family, os.major with node regex major6"
   setup:
@@ -157,6 +160,9 @@
       attr_os: "osfamily4_major5_regexNode" 
       attr_ua: "default"
       attr_dev: "default"
+    _notFound:
+      os:
+        major: major6
 
 - test: "get capabilities on os.family, os.major, os.minor with node regex on minor"
   setup:
@@ -182,6 +188,9 @@
       attr_os: "osfamily4_major1_minor5_regexNode" 
       attr_ua: "default"
       attr_dev: "default"
+    _notFound:
+      os:
+        minor: minor6
 
 - test: "get capabilities on os.family, os.major, os.minor with node regex on family, major, minor"
   setup:
@@ -207,6 +216,9 @@
       attr_os: "osfamily5_major5_minor5_regexNode" 
       attr_ua: "default"
       attr_dev: "default"
+    _notFound:
+      os:
+        family: osfamily6
 
 - test: "get capabilities on ua.family with ua-string regex UA1"
   setup:
@@ -279,10 +291,10 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_ua: "uafamily4_major1_regexUA_UA1.1" 
       attr_os: "default"
+      attr_ua: "uafamily4_major1_regexUA_UA1.1" 
       attr_dev: "default"
-      
+
 - test: "get capabilities on ua.family, ua.major, ua.minor with ua-string regex UA1.1"
   setup:
     files:
@@ -329,9 +341,12 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "uafamily5_regexNode" 
-      attr_dev: "default"
+      attr_os: default
+      attr_ua: uafamily5_regexNode
+      attr_dev: default
+    _notFound:
+      ua:
+        family: uafamily6
 
 - test: "get capabilities on ua.family, ua.major with node regex on major"
   setup:
@@ -354,9 +369,12 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "uafamily4_major5_regexNode" 
-      attr_dev: "default"
+      attr_os: default
+      attr_ua: uafamily4_major5_regexNode
+      attr_dev: default
+    _notFound:
+      ua:
+        major: major6
 
 - test: "get capabilities on ua.family, ua.major, ua.minor with node regex on minor"
   setup:
@@ -379,9 +397,12 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "uafamily4_major1_minor5_regexNode" 
-      attr_dev: "default"
+      attr_os: default
+      attr_ua: uafamily4_major1_minor5_regexNode
+      attr_dev: default
+    _notFound:
+      ua:
+        minor: minor6
 
 
 - test: "get capabilities on ua.family, ua.major, ua.minor with node regex on family, major, minor"
@@ -405,9 +426,12 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "uafamily5_major5_minor5_regexNode" 
-      attr_dev: "default"
+      attr_os: default
+      attr_ua: uafamily5_major5_minor5_regexNode
+      attr_dev: default
+    _notFound:
+      ua:
+        family: uafamily6
 
 - test: "get capabilities on dev.family with ua-string regex DEV1"
   setup:
@@ -580,9 +604,12 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "default" 
-      attr_dev: "devbrand5_regexNode"
+      attr_os: default
+      attr_ua: default
+      attr_dev: devbrand5_regexNode
+    _notFound:
+      device:
+        brand: devbrand6
 
 - test: "get capabilities on dev.brand, dev.model with node regex on brand, model"
   setup:
@@ -605,9 +632,13 @@
   resultmsg: "shall return"
   result:
     group:
-      attr_os: "default"
-      attr_ua: "default" 
-      attr_dev: "devbrand5_model5_regexNode"
+      attr_os: default
+      attr_ua: default
+      attr_dev: devbrand5_model5_regexNode
+    _notFound:
+      device:
+        brand: devbrand6
+        model: model6
 
 - test: "get capabilities on ua.family using regex UA1 with merged files"
   setup:

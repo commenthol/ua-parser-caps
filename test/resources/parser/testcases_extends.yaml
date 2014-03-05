@@ -130,3 +130,6 @@
   result:
     group:
       attr: 'uafamily12' 
+    _notFound:
+      ua:
+        family: uafamily12_not_exists
