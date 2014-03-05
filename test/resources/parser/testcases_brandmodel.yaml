@@ -52,7 +52,11 @@
   resultmsg: "shall return"
   result:
     group:
-      attr: "uafamily1_major1_devbrand2_model1"
+      attr: uafamily1_major1_devbrand2_model1
+    _notFound:
+      device:
+        brand: DEVBRAND2
+        model: MODEL1
 
 - test: "get capabilities using uafamily1 with ' ' in brand model overwrite"
   setup:
@@ -76,6 +80,10 @@
   result:
     group:
       attr: "uafamily1_major1_devbrand2_model2 #"
+    _notFound:
+      device:
+        brand: DEVBRAND2
+        model: MODEL 2
 
 - test: "get capabilities using uafamily1 with _ in brand model overwrite"
   setup:
@@ -99,6 +107,10 @@
   result:
     group:
       attr: "uafamily1_major1_devbrand2_model2_#"
+    _notFound:
+      device:
+        brand: DEVBRAND2
+        model: MODEL_2
 
 - test: "get capabilities using uafamily1 with lowercase model overwrite"
   setup:
@@ -122,3 +134,7 @@
   result:
     group:
       attr: "uafamily1_major1_devbrand2_model2 #"
+    _notFound:
+      device:
+        brand: DEVBRAND2
+        model: model 2

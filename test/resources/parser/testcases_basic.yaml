@@ -260,6 +260,9 @@
   result:
     group:
       attr: "default"
+    _notFound:
+      os:
+        family: osfamily2  
 
 - test: "get capabilities on os.family, unknown os.major"
   setup:
@@ -283,7 +286,10 @@
   result:
     group:
       attr: "osfamily1"
-
+    _notFound:
+      os:
+        major: major2
+    
 - test: "get capabilities on os.family, os.major, unknown os.minor"
   setup:
     files:
@@ -306,6 +312,9 @@
   result:
     group:
       attr: "osfamily1_major1"
+    _notFound:
+      os:
+        minor: minor2      
 
 - test: "get capabilities on unknown ua.family"
   setup:
@@ -329,6 +338,9 @@
   result:
     group:
       attr: "osfamily1_major1_minor1"
+    _notFound:
+      ua:
+        family: uafamily2
 
 - test: "get capabilities on ua.family, unknown ua.major"
   setup:
@@ -352,6 +364,9 @@
   result:
     group:
       attr: "uafamily1"
+    _notFound:
+      ua:
+        major: major2
 
 - test: "get capabilities on ua.family, ua.major, unknown ua.minor"
   setup:
@@ -375,7 +390,10 @@
   result:
     group:
       attr: "uafamily1_major1"
-
+    _notFound:
+      ua:
+        minor: minor2
+    
 - test: "get capabilities on unknown device.family"
   setup:
     files:
@@ -416,11 +434,15 @@
       device:
         family: "devfamily1"
         brand: "devbrand2"
-        model:
+        model: "devmodel2"
   resultmsg: "shall return"
   result:
     group:
       attr: "devfamily1"
+    _notFound:
+      device:
+        brand: devbrand2
+        model: devmodel2
 
 - test: "get capabilities on device.family, device.brand, unknown device.model"
   setup:
@@ -444,5 +466,8 @@
   result:
     group:
       attr: "devbrand1"
+    _notFound:
+      device:
+        model: model2      
 
 
