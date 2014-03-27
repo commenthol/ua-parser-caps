@@ -1,19 +1,19 @@
-# 
+#
 # ua-parser capabilities files for device type
-# 
+#
 # Copyright (c) 2013 commenthol
 #
-# This data is available for use under a CC BY 4.0 license 
-# (http://creativecommons.org/licenses/by/4.0/). 
+# This data is available for use under a CC BY 4.0 license
+# (http://creativecommons.org/licenses/by/4.0/).
 # For attribution mention https://github.com/commenthol/ua-parser-caps
 
 # ----
-# This capabilities file includes data to obtain a device-type 
+# This capabilities file includes data to obtain a device-type
 # classification based on a User-Agent String.
-# 
+#
 
 # ----
-# device.type attributes 
+# device.type attributes
 #
 # tv         - large screen use (includes video game consoles for tv sets)
 # desktop    - desktop/ laptop use
@@ -24,7 +24,7 @@
 # player     - multimedia player (screen smaller < 7') e.g. iPod
 # console    - handheld game console
 # phone      - mobile phones which are not considered smartphones
-# watch      - smartwatch 
+# watch      - smartwatch
 # glass      - data-glasses (e.g. Google Glass)
 # camera     - camera (e.g. Samsung EK-GC100)
 # whitegoods - whitegoods e.g. freezers...
@@ -36,7 +36,7 @@
 # screen capability attributes
 # size       - diagonal screen size in inch
 # width      - width in pixels (prefered use - e.g. tablet landscape, smartphone portrait)
-# height     - height in pixels 
+# height     - height in pixels
 # size_dist  - size equivalent; specify screen size in inch per distance in cm, e.g. 25'/ 100cm
 #
 
@@ -469,13 +469,13 @@ device:
               type: 'tablet'
       overwrites:
         - os:
-            family: 
+            family:
               'Windows Phone':
                 capabilities:
                   device:
                     type: 'smartphone'
         - os:
-            family: 
+            family:
               'Windows CE':
                 capabilities:
                   device:
@@ -513,7 +513,7 @@ device:
           capabilities:
             device:
               type: 'smartphone'
-        'P565':            
+        'P565':
           capabilities:
             device:
               type: 'smartphone'
@@ -606,7 +606,7 @@ device:
             1: '??'
         device:
           type: 'phone'
-    'Blackberry':
+    'BlackBerry':
       capabilities:
         info:
           href:
@@ -1265,7 +1265,7 @@ device:
             screen:
               size: 7.0
               width: 800
-              height: 480 
+              height: 480
             device:
               type: 'tablet'
         'AT1G':
@@ -1273,7 +1273,7 @@ device:
             screen:
               size: 7.0
               width: 800
-              height: 480 
+              height: 480
             device:
               type: 'tablet'
         'AT1G*':
@@ -1281,7 +1281,7 @@ device:
             screen:
               size: 7.0
               width: 800
-              height: 480 
+              height: 480
             device:
               type: 'tablet'
         'AT8':
@@ -1289,7 +1289,7 @@ device:
             screen:
               size: 8.0
               width: 1024
-              height: 768 
+              height: 768
             device:
               type: 'tablet'
     'Fly':
@@ -1320,7 +1320,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -1339,7 +1339,7 @@ device:
             screen:
               size: 4.3
               width: 720
-              height: 1184 
+              height: 1184
         'M532':
           capabilities:
             device:
@@ -1603,7 +1603,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -1698,7 +1698,7 @@ device:
               size:
               size_dist: '25"/ 64cm'
               width: 640
-              height: 360 
+              height: 360
     'HP':
       capabilities:
         info:
@@ -1760,7 +1760,7 @@ device:
         'SN14T71':
           capabilities:
             info:
-              href: 
+              href:
                 1: 'http://www.hannspree.eu/products/tablet-pc/pad/10-14/sn14t71'
             device:
               type: 'bigtablet'
@@ -2000,76 +2000,499 @@ device:
                       device:
                         type: 'tablet'
       model:
-        regexes:
-          - regex: '^(Butterfly|One[ _]max)'
-            capabilities:
-              device:
-                type: 'phablet'
-          - regex: '^Flyer'
-            capabilities:
-              device:
-                type: 'tablet'
-        '001HT':
+        "2125":
+          capabilities:
+            info:
+              marketing_name: Faraday
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 65K
+        "3100":
+          capabilities:
+            info:
+              marketing_name: StarTrek
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Strk-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        "6175":
+          capabilities:
+            info:
+              marketing_name: Ozone
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 65K
+        "6850":
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Raphael-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        "6875":
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro2
+        "6900":
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro
+        "8100":
+          extends:
+            - device:
+                brand: HTC
+                model: Wizard
+        "8500":
+          capabilities:
+            info:
+              marketing_name: Hermes
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.2
+              width: 240
+              height: 320
+              colors: 65K
+        "8900":
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/ATT/Pilgrim-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        "9060":
+        "9066":
+        "9090":
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 65K
+        "9292":
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://device.sprintpcs.com/HTC/APA9292KT/1226511.rdf"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        "9500":
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size:
+              width: 240
+              height: 320
+              colors: 4096
+        "0002":
+        001HT:
           extends:
             - device:
                 brand: HTC
                 model: Desire HD
-
-        A6277:
+        606w:
           capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: Hero
-        ADR6200:
-          capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: Eris
-        ADR6300	:
-          capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: Incredible
-        ADR6350:
-          capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: Incredible 2
-        'ADR6400L 4G':
-          capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: ThunderBolt 4G
-        ADR6425LVW:
-          capabilities:
-            extends:
-              - device:
-                  brand: HTC
-                  model: Rezound 4G
-        'Arrive':
-          capabilities:
-            device:
-              type: 'smartphone'
-              os: Windows Phone
-            screen:
-              size: 3.6
-              width: 480
-              height: 800
-        'Evo Shift 4G':
-          capabilities:
+            info:
+              marketing_name: Desire 606w
+              href:
+                "1": "http://www.htc.com/cn/smartphones/htc-desire-606w/"
             device:
               type: smartphone
               os: Android
             screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+        608t:
+          capabilities:
+            info:
+              marketing_name: Desire 608t
+              href:
+                "1": "http://www.htc.com/cn/smartphones/htc-desire-608t/"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+        609d:
+          capabilities:
+            info:
+              marketing_name: Desire 609d
+              href:
+                "1": "http://www.htc.com/cn/smartphones/htc-desire-609d/"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+        6435LRA:
+          extends:
+            - device:
+                brand: HTC
+                model: 6435LVW
+        6435LVW:
+          capabilities:
+            info:
+              marketing_name: Droid DNA
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
+        6435LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: 6435LVW
+        6500LVW:
+          capabilities:
+            info:
+              marketing_name: One
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 1080
+              height: 1920
+              colors: 16M
+        6500LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: 6500LVW
+        6600LVW:
+          extends:
+            - device:
+                brand: HTC
+                model: One max
+        6600LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: One max
+        6990LVW:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+        6990LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: 6990LVW
+        7 HTC MOZART:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        7 Mondrian T8788:
+          extends:
+            - device:
+                brand: HTC
+                model: Mondrian
+        7 Mozart:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        7 Mozart T8698:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        7 Pro:
+          capabilities:
+            info:
+              marketing_name: 7 Pro
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
               size: 3.6
               width: 480
               height: 800
-        'Evo Design 4G':
+              colors: 262K
+        7 Pro T7576:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Pro
+        7 Schubert T9292:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        7 Surround:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround
+        7 Trophy:
+        7 Trophy T8:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Trophy
+        7 Trophy T8686:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Trophy
+        801a:
+          capabilities:
+            info:
+              marketing_name: One
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 1920
+              height: 1080
+              colors: 16M
+        801e:
+          extends:
+            - device:
+                brand: HTC
+                model: 801a
+        802d:
+          capabilities:
+            info:
+              marketing_name: One M7
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 1080
+              height: 1920
+              colors: 16M
+        802t:
+          extends:
+            - device:
+                brand: HTC
+                model: 802d
+        802w:
+          extends:
+            - device:
+                brand: HTC
+                model: 802d
+        8900B:
+          extends:
+            - device:
+                brand: HTC
+                model: 8900
+        A310e:
+          extends:
+            - device:
+                brand: HTC
+                model: Explorer
+        A315c:
+          extends:
+            - device:
+                brand: HTC
+                model: Bee
+        A320a:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire C
+        A320e:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire C
+        A3233:
+          extends:
+            - device:
+                brand: HTC
+                model: Tattoo
+        A3333:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire
+        A3335:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire
+        A3366:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire
+        A510a:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        A510b:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        A510c:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        A510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        A620b:
+          extends:
+            - device:
+                brand: HTC
+                model: A620b
+        A620d:
+          extends:
+            - device:
+                brand: HTC
+                model: A620b
+        A620e:
+          extends:
+            - device:
+                brand: HTC
+                model: A620b
+        A620m:
+          extends:
+            - device:
+                brand: HTC
+                model: A620b
+        A620t:
+          extends:
+            - device:
+                brand: HTC
+                model: A620b
+        A6363:
+          extends:
+            - device:
+                brand: HTC
+                model: Legend
+        A6366:
+          extends:
+            - device:
+                brand: HTC
+                model: Aria
+        A6380:
+          extends:
+            - device:
+                brand: HTC
+                model: Liberty
+        A7275:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire Z
+        A810e:
+          extends:
+            - device:
+                brand: HTC
+                model: ChaCha
+        A8180:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire
+        A8181:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire
+        A9188:
+          capabilities:
+            info:
+              marketing_name: Tianxi
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.2
+              width: 480
+              height: 800
+              colors: 16M
+        A9188_TD:
+          extends:
+            - device:
+                brand: HTC
+                model: A9188
+        A9191:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire HD
+        A9192:
+          extends:
+            - device:
+                brand: HTC
+                model: Inspire 4G
+        Accord:
+          extends:
+            - device:
+                brand: HTC
+                model: Windows Phone 8X
+        Acquire:
           capabilities:
             device:
               type: smartphone
@@ -2079,7 +2502,1048 @@ device:
               width: 540
               height: 960
               colors: 16M
-        'Evo View 4G':
+        ADR6200:
+          extends:
+            - device:
+                brand: HTC
+                model: Eris
+        ADR6225:
+          extends:
+            - device:
+                brand: HTC
+                model: Bee
+        ADR6230:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        ADR6275:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire
+        ADR6285:
+          capabilities:
+            info:
+              marketing_name: Hero S
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+        ADR6290:
+          extends:
+            - device:
+                brand: HTC
+                model: One V
+        ADR6300:
+          extends:
+            - device:
+                brand: HTC
+                model: Incredible
+        ADR6325:
+          extends:
+            - device:
+                brand: HTC
+                model: Lexikon
+        ADR6325VW:
+          extends:
+            - device:
+                brand: HTC
+                model: Lexikon
+        ADR6330VW:
+          extends:
+            - device:
+                brand: HTC
+                model: Rhyme
+        ADR6400L:
+          extends:
+            - device:
+                brand: HTC
+                model: ThunderBolt
+        ADR6410LRA:
+          extends:
+            - device:
+                brand: HTC
+                model: ADR6410LVW
+        ADR6410LVW:
+          extends:
+            - device:
+                brand: HTC
+                model: Droid Incredible 4G
+        ADR6410LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: ADR6410LVW
+        ADR6410OM:
+          extends:
+            - device:
+                brand: HTC
+                model: ADR6410LVW
+        ADR6425LVW:
+          extends:
+            - device:
+                brand: HTC
+                model: Rezound
+        ADR6425LVW 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: ADR6425LVW
+        Amaze:
+          extends:
+            - device:
+                brand: HTC
+                model: Amaze 4G
+        Amaze 4G:
+          capabilities:
+            info:
+              marketing_name: Amaze
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        APA7373KT:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Shift 4G
+        APA9292KT:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 4G
+        APC715CKT:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        Aria:
+          capabilities:
+            info:
+              marketing_name: Aria
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        Artist:
+        bahamas:
+          capabilities:
+            info:
+              date: 2009
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        Bee:
+          capabilities:
+            info:
+              marketing_name: Bee
+              date: 2011
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+              colors: 262K
+        bliss:
+        BlueAngel:
+          capabilities:
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 65K
+        Bravo:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire
+        Bravo C:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire C
+        Butterfly:
+          capabilities:
+            info:
+              date: 2012
+              marketing_name: Butterfly
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              wifi: 802.11 a/b/g/n/ac
+              bluetooth: 4
+        Butterfly s:
+          capabilities:
+            info:
+              date: "2013-06-19"
+              marketing_name: Butterfly S
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              wifi: 802.11 a/b/g/n/ac
+              bluetooth: 4
+        Buzz:
+          capabilities:
+            info:
+              marketing_name: Buzz
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/Buzz/ua-profile.xml"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+              colors: 16M
+        C510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Salsa
+        C51qc:
+        C525c:
+          extends:
+            - device:
+                brand: HTC
+                model: One SV
+        C525u:
+          extends:
+            - device:
+                brand: HTC
+                model: One SV
+        "C525u-orange-LS":
+          extends:
+            - device:
+                brand: HTC
+                model: C525u
+        C620d:
+          extends:
+            - device:
+                brand: HTC
+                model: Windows Phone 8X
+        C620e:
+          extends:
+            - device:
+                brand: HTC
+                model: C620e
+        C620t:
+          extends:
+            - device:
+                brand: HTC
+                model: C620e
+        C625a:
+          extends:
+            - device:
+                brand: HTC
+                model: C620e
+        C625b:
+          extends:
+            - device:
+                brand: HTC
+                model: C620e
+        C715c:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        ChaCha:
+          capabilities:
+            info:
+              marketing_name: ChaCha
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 2.6
+              width: 480
+              height: 320
+              colors: 262K
+        ChaChaCha:
+          extends:
+            - device:
+                brand: HTC
+                model: ChaCha
+        CLEOPATRA:
+          capabilities:
+            info:
+              marketing_name: Cleopatra
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 65K
+        Click:
+          extends:
+            - device:
+                brand: HTC
+                model: Tattoo
+        DASH:
+          extends:
+            - device:
+                brand: HTC
+                model: Snap
+        Desire:
+          capabilities:
+            info:
+              marketing_name: Desire
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+        Desire 200:
+          capabilities:
+            info:
+              marketing_name: Desire 200
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        Desire 300:
+          capabilities:
+            info:
+              marketing_name: Desire 300
+              date: "2013-09-03"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire 310:
+          capabilities:
+            info:
+              marketing_name: Desire 310
+              date: "2014-03-06"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire 400 dual sim:
+          capabilities:
+            info:
+              date: "2013-12-01"
+              marketing_name: Desire 400
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+        Desire 500:
+          capabilities:
+            info:
+              marketing_name: Desire 500
+              date: "2013-07-23"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire 500 dual sim:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire 500
+        Desire 501:
+          capabilities:
+            info:
+              date: "2013-11-01"
+              marketing_name: Desire 501
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+              nfc: true
+        Desire 600 dual sim:
+          capabilities:
+            info:
+              marketing_name: Desire 600
+              date: "2013-05-24"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+              nfc: true
+        Desire 601:
+          capabilities:
+            info:
+              marketing_name: Desire 601
+              date: "2013-09-03"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,1900,2100"
+              lte: "800,900,1800,2600"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+        Desire 610:
+          capabilities:
+            info:
+              marketing_name: Desire 610
+              date: "2014-02-24"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,1900,2100"
+              hspa+: 42Mbps
+              lte: "800,900,1800,2600"
+              bluetooth: 4
+              nfc: optional
+              wifi: 802.11 b/g/n
+        Desire 700:
+          capabilities:
+            info:
+              date: "2013-11-15"
+              marketing_name: Desire 700
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 540
+              height: 960
+            bearer:
+              cdma: "800,1900"
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+        Desire 816:
+          capabilities:
+            info:
+              date: "2014-02-24"
+              marketing_name: Desire 816
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              lte: "800,900,1800,2600"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire C:
+          capabilities:
+            info:
+              date: "2012-05-15"
+              marketing_name: Desire C
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+        Desire cdma:
+          capabilities:
+            info:
+              marketing_name: Desire CDMA
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Desire HD:
+          capabilities:
+            info:
+              marketing_name: Desire HD
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        Desire L:
+          capabilities:
+            info:
+              marketing_name: Desire L
+              date: "2013-04-23"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire P:
+          capabilities:
+            info:
+              marketing_name: Desire P
+              date: "2013-04-02"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire Q:
+          capabilities:
+            info:
+              marketing_name: Desire Q
+              date: "2013-04-08"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire S:
+          capabilities:
+            info:
+              marketing_name: Desire S
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        Desire Saga:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire S
+        Desire SV:
+          capabilities:
+            info:
+              marketing_name: Desire SV
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        Desire U:
+          capabilities:
+            info:
+              marketing_name: Desire U
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Desire V:
+          capabilities:
+            info:
+              date: "2012-07-01"
+              marketing_name: Desire V
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+        Desire VC:
+          capabilities:
+            info:
+              marketing_name: Desire VC
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Desire X:
+          capabilities:
+            info:
+              marketing_name: Desire X
+              date: "2012-08-31"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        Desire XC:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire X
+        Desire XS:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire X
+        Desire Z:
+          capabilities:
+            info:
+              marketing_name: Desire Z
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/DesireZ/ua-profile.xml"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        DesireHD:
+          capabilities:
+            info:
+              marketing_name: Desire HD
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        DesireHDA9191:
+          extends:
+            - device:
+                brand: HTC
+                model: DesireHD
+        DesireS:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire S
+        Diamond:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Diamond
+        Dream:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 65K
+        Dream G1:
+          extends:
+            - device:
+                brand: HTC
+                model: Dream
+        Dream SparksMod:
+          extends:
+            - device:
+                brand: HTC
+                model: Dream
+        Droid DNA:
+          capabilities:
+            info:
+              date: 2012
+              marketing_name: Droid DNA
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+            bearer:
+              cdma: "800,1900"
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+        Droid Incredible:
+          capabilities:
+            info:
+              marketing_name: Droid Incredible
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+        Droid Incredible 4G:
+          capabilities:
+            info:
+              marketing_name: Droid Incredible 4G
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              cdma: "800,1900"
+              lte: "700"
+        Elf:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/tme/elf-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Eris:
+          capabilities:
+            info:
+              marketing_name: Droid Eris
+              uaprof:
+                "1": "http://uaprof.vtext.com/adr62k/adr62k.xml"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        Espresso:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/Espresso/ua-profile.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.4
+              width: 320
+              height: 480
+              colors: 262K
+        Eternity:
+          extends:
+            - device:
+                brand: HTC
+                model: Titan
+        EVO:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 3D
+        Evo 3D:
+          capabilities:
+            info:
+              marketing_name: EVO 3D
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        EVO 3D gsm:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 3D
+        Evo 4G:
+          capabilities:
+            info:
+              marketing_name: Evo 4G
+              date: "2010-06-04"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 65K
+        Evo 4G+:
+          capabilities:
+            info:
+              marketing_name: Evo 4G LTE
+              date: "2012-06-02"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              lte: "true"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+              nfc: true
+        EVO 4GS:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 4G
+        EVO Design:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        Evo Design 4G:
+          capabilities:
+            info:
+              marketing_name: Evo Design 4G
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+        Evo Hd2:
+        EVO lte:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 3D
+        Evo Shift 4G:
+          capabilities:
+            info:
+              marketing_name: Evo Shift 4G
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+              colors: 262K
+        Evo View 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Flyer
+        "EVO-4G":
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 4G
+        EVO3D:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 3D
+        EVODesign4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        EVOV4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        Excalibur:
+          capabilities:
+            info:
+              marketing_name: Excalibur
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Excal-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 65K
+        Explorer:
+          capabilities:
+            info:
+              marketing_name: Explorer
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        F5151:
+          capabilities:
+            info:
+              marketing_name: Freestyle
+            device:
+              type: phone
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        first:
+          capabilities:
+            info:
+              marketing_name: First
+              date: "2013-04-04"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "700,850,1700/2100,1900"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+              nfc: true
+        Flyer:
           capabilities:
             device:
               type: tablet
@@ -2088,52 +3552,2557 @@ device:
               size: 7
               width: 1024
               height: 600
-        'HTL21':
+        Flyer by:
+          extends:
+            - device:
+                brand: HTC
+                model: Flyer
+        Flyer P510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Flyer
+        Flyer P512:
+          extends:
+            - device:
+                brand: HTC
+                model: Flyer
+        G1:
+          extends:
+            - device:
+                brand: HTC
+                model: Dream G1
+        G2:
           capabilities:
+            info:
             device:
-              type: 'smartphone'
+              os: Android
+              type: smartphone
             screen:
-              size: 5.0
-              width: 1080
-              height: 1920 
-        'HTX21':
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        G20:
+          extends:
+            - device:
+                brand: HTC
+                model: G2
+        G20 FOR SPRINT:
+          extends:
+            - device:
+                brand: HTC
+                model: G2
+        G21:
+          extends:
+            - device:
+                brand: HTC
+                model: G2
+        Gemini:
           capabilities:
             device:
-              type: 'smartphone'
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 65K
+        Glacier:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 262K
+        Gold:
+          extends:
+            - device:
+                brand: HTC
+                model: One
+        Gratia:
+          extends:
+            - device:
+                brand: HTC
+                model: Liberty
+        H1000C:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire C
+        H2000C:
+          extends:
+            - device:
+                brand: HTC
+                model: One V
+        H3000C:
+          extends:
+            - device:
+                brand: HTC
+                model: One SV
+        HD:
+        HD Mini:
+          capabilities:
+            info:
+              marketing_name: HD Mini
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/HTC_HD_mini_T5555-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 65K
+        HD2 LEO:
+          extends:
+            - device:
+                brand: HTC
+                model: HD2
+        HD2:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/HTC_HD2_T8585-1.0.xml"
+                "2": "http://www.htcmms.com.tw/tmo/HTC_HD2-1.0.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 65K
+        HD2x:
+          extends:
+            - device:
+                brand: HTC
+                model: HD2
+        HD2 T8585:
+          extends:
+            - device:
+                brand: HTC
+                model: HD2
+        HD7:
+          capabilities:
+            info:
+              marketing_name: HD7
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        HD7 Infinity:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        HD7 T9292:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        HD7S:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        Herald:
+          capabilities:
+            info:
+              marketing_name: Herald
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Herald-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Hermes:
+          capabilities:
+            info:
+              marketing_name: Hermes
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/hermes-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Hero:
+          capabilities:
+            info:
+              marketing_name: Hero
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/TMO/Hero/ua-profile.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 65K
+        Hero cdma:
+          extends:
+            - device:
+                brand: HTC
+                model: Hero
+        Hero200:
+          capabilities:
+            info:
+              marketing_name: Hero 200
+              uaprof:
+                "1": "http://device.sprintpcs.com/HTC/APA6277KT/1006512.rdf"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 65K
+        Holiday:
+          capabilities:
+            info:
+              marketing_name: Holiday
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+        "HT-02A":
+          extends:
+            - device:
+                brand: HTC
+                model: Diamond
+        "HT-03A":
+          extends:
+            - device:
+                brand: HTC
+                model: Magic
+        europe:
+        HTL21:
+          capabilities:
+            info:
+              marketing_name: J Butterfly
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 1920
+              height: 1080
+              colors: ""
+        HURRICANE:
+          capabilities:
+            info:
+              marketing_name: Hurricane
+            device:
+              type: phone
+            screen:
+              size:
+              width: 240
+              height: 320
+              colors: 65K
+        Incredible:
+          capabilities:
+            info:
+              marketing_name: Incredible
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        Incredible 2:
+          capabilities:
+            info:
+              marketing_name: Incredible 2
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Incredible C:
+          extends:
+            - device:
+                brand: HTC
+                model: Incredible
+        Incredible S:
+          capabilities:
+            info:
+              marketing_name: Incredible S
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Inspire:
+        Inspire 3D:
+        Inspire 4G:
+          capabilities:
+            info:
+              marketing_name: Inspire 4G
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        Inspire HD:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: ""
+        ISW11HT:
+          capabilities:
+            info:
+              marketing_name: EVO WiMAX
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 854
+              colors: 65K
+        ISW12HT:
+          capabilities:
+            info:
+              marketing_name: EVO 3D
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        ISW13HT:
+          capabilities:
+            info:
+              marketing_name: J
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        J Butterfly:
+          capabilities:
+            info:
+              date: 2012
+              marketing_name: J Butterfly
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 1920
+              height: 1080
+              colors: 16M
+            bearer:
+              cdma: "800"
+              gsm: "850,900,1800,1900"
+              umts: "2100"
+        Jade:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/jade-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+        Jetstream:
+          capabilities:
+            info:
+              marketing_name: Jetstream
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 10.1
+              width: 800
+              height: 1280
+              colors: 16M
+        jewel:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Juno-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size:
+              width: 320
+              height: 240
+              colors: 65K
+        K2:
+        Kaiser:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Kaiser-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Kaiser Kaiser:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        Kaiser Vogue:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        Kingdom:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 540
+              height: 960
+              colors: 16M
+        Legend:
+          capabilities:
+            info:
+              marketing_name: Legend
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/Legend/ua-profile.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 16M
+        Leo:
+        LEO:
+        Lexikon:
+          capabilities:
+            info:
+              marketing_name: Lexikon
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+        Lexikon C:
+        Liberty:
+          capabilities:
+            info:
+              marketing_name: Liberty
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        Liberty S:
+          extends:
+            - device:
+                brand: HTC
+                model: Liberty
+        Magic Dream:
+          extends:
+            - device:
+                brand: HTC
+                model: Magic
+        Magic G1:
+          extends:
+            - device:
+                brand: HTC
+                model: Magic
+        Magic MR:
+          extends:
+            - device:
+                brand: HTC
+                model: Magic
+        Magic:
+          capabilities:
+            info:
+              marketing_name: Magic
+              uaprof:
+                "1": "http://www.google.com/oha/rdf/ua-profile-kila.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 65K
+        MAGICIAN:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Maple:
+        Marshall:
+        Marvel:
+        MAX 4G:
+          capabilities:
+            info:
+              marketing_name: Max 4G
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.8
+              width: 480
+              height: 640
+              colors: 65K
+        Mazaa:
+          capabilities:
+            info:
+              marketing_name: 7 Mazaa
+              uaprof:
+                "1": "http://www.htcmms.com.tw/voda/Spark-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 3.8
+              width: 400
+              height: 800
+              colors: 16M
+        Mecha:
+          extends:
+            - device:
+                brand: HTC
+                model: ThunderBolt
+        Mega:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Mega-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Mercury:
+          capabilities:
+            info:
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Merge:
+          extends:
+            - device:
+                brand: HTC
+                model: Lexikon
+        Mersad 7 Mozart T8698:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        Mersad 7 Pro T7576:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Pro T7576
+        Mersad 7 Trophy T8686:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Trophy T8686
+        Mersad HTC Surround T8788:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround T8788
+        metropcs us:
+        Mondrian:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround
+        Mozart:
+          capabilities:
+            info:
+              marketing_name: 7 Mozart
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/mozart-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        Mozart T8698:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        MSM7x30:
+        MSM8x55:
+        MWP6885:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Pro
+        Mwp6985:
+          capabilities:
+            info:
+              marketing_name: 7 Trophy
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+        My Touch:
+        myTouch 3G:
+        myTouch 3G Slide:
+        mytouch 4g:
+        myTouch 4G:
+        MyTouch 4G:
+        MyTouch 4g:
+        Mytouch 4g:
+        myTouch 4g:
+        myTouch 4G Slide:
+          capabilities:
+            info:
+              marketing_name: "T-Mobile myTouch 4G Slide"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        myTouch4G:
+        Nexus One:
+          capabilities:
+            date: "2010-01-05"
+            marketing_name: Nexus One
+          device:
+            type: smartphone
+            os: Android
+          screen:
+            size: 3.7
+            width: 480
+            height: 800
+            colors: 16M
+        NexusHD2:
+        Omega:
+          extends:
+            - device:
+                brand: HTC
+                model: Radar
+        One:
+          capabilities:
+            info:
+              marketing_name: One
+              date: "2013-02-19"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 1080
+              height: 1920
+            bearer:
+              cdma: "800,1900"
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "800,1800,2600"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n/ac
+              nfc: true
+        One ANDROID:
+          extends:
+            - device:
+                brand: HTC
+                model: One
+        One dual:
+          extends:
+            - device:
+                brand: HTC
+                model: One
+        One M7:
+          extends:
+            - device:
+                brand: HTC
+                model: One
+        One max:
+          capabilities:
+            info:
+              marketing_name: One Max
+              date: "2013-10-14"
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.9
+              width: 1080
+              height: 1920
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,1900,2100"
+              lte: "800,900,1800,2600"
+              nfc: true
+        One max M8:
+          capabilities:
+            info:
+              todo: useragent
+              marketing_name: One Max M8
+              date: "2014-03-26"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "800,900,1800,2600"
+              nfc: true
+        One mini:
+          capabilities:
+            info:
+              marketing_name: One mini
+              date: "2013-07-18"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,1900,2100"
+              lte: "800,1800,2600"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+        One S:
+          capabilities:
+            info:
+              marketing_name: One S
+              date: "2012-02-01"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+        One SC:
+          extends:
+            - device:
+                brand: HTC
+                model: One S
+        One SU:
+          extends:
+            - device:
+                brand: HTC
+                model: One S
+        One SV:
+          capabilities:
+            info:
+              date: 2012
+              marketing_name: One SV
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              cdma: "800,1700/2100,1900"
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "700,800,1700/2100,1800,1900,2600"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+              nfc: true
+        One V:
+          capabilities:
+            info:
+              marketing_name: One V
+              date: "2012-02-27"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              umts: "850,900,2100"
+              gsm: "850,900,1800,1900"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+        One VX:
+          capabilities:
+            info:
+              date: 2012
+              marketing_name: One VX
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,1900,2100"
+              lte: "700,1700/2100"
+        One X:
+          capabilities:
+            info:
+              marketing_name: One X
+              date: "2012-02-01"
+            device:
+              type: smartphone
+              os: Android
             screen:
               size: 4.7
               width: 720
-              height: 1280 
-        'Ozone':
+              height: 1280
+              colors: 16M
+            bearer:
+              umts: "850,900,1900,2100"
+              gsm: "850,900,1800,1900"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+              nfc: optional
+        One XL:
           capabilities:
+            info:
+              marketing_name: One XL
             device:
-              type: 'smartphone'
-              os: Windows Mobile
+              type: smartphone
+              os: Android
             screen:
-              size: 2.4
-              width: 320
-              height: 240
-              colors: 65k
-        'Touch Pro':
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+        One Xplus:
           capabilities:
+            info:
+              date: 2012-10-01T00:00:00.000Z
+              marketing_name: One X+
             device:
-              type: 'smartphone'
-              os: Windows Mobile
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "1700/2100,2100"
+        One xs:
+          extends:
+            - device:
+                brand: HTC
+                model: One X
+        OneX:
+          extends:
+            - device:
+                brand: HTC
+                model: One X
+        OneXplus:
+          extends:
+            - device:
+                brand: HTC
+                model: One Xplus
+        OPAL100:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Viva
+        OP902:
+          extends:
+            - devive:
+                brand: HTC
+                model: Desire 610
+        P3300:
+          capabilities:
+            info:
+              marketing_name: O2 Orbit
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/artemis-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3301:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Artemis-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3350:
+          capabilities:
+            info:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3400:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Gene-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3400i:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Gene-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3450:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/elf-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3451:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/elf-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3452:
+          capabilities:
+            info:
+              marketing_name: "Touch, O2 XDA Nova"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3470:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Pharos-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3490:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/diamond-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
             screen:
               size: 2.8
               width: 480
               height: 640
-              colors: 65k
-        'Touch Pro2':
+              colors: 65K
+        P3600:
+          capabilities:
+            info:
+              marketing_name: Trinity
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Trinity-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3600i:
+          extends:
+            - device:
+                brand: HTC
+                model: P3600
+        P3650:
+          extends:
+            - device:
+                brand: HTC
+                model: Polaris
+        P3650t:
+          extends:
+            - device:
+                brand: HTC
+                model: Polaris
+        P3651:
           capabilities:
             device:
-              type: 'smartphone'
-              os: Windows Mobile
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P3700:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Diamond
+        P3701:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Diamond
+        P3702:
+          capabilities:
+            info:
+              marketing_name: Victor
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/victor-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        P4300:
+        P4350:
+        P4351:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        P4500:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        P4550:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        P4600:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/att/P4600-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        P510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Flyer
+        P515E:
+        P5310:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/NeonC_BM-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 65K
+        P5500:
+          capabilities:
+            info:
+              marketing_name: Touch Dual
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Nike-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 65K
+        P5520:
+          capabilities:
+            info:
+              marketing_name: Touch Dual
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Nike-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 65K
+        P5530:
+          capabilities:
+            info:
+              marketing_name: Neon
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/neon-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 65K
+        P6300:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Panda-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 64K
+        P6500:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/sedna-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 240
+              height: 320
+              colors: 65K
+        P715:
+          extends:
+            - device:
+                brand: HTC
+                model: Jetstream
+        P715a:
+          extends:
+            - device:
+                brand: HTC
+                model: Jetstream
+        Panache:
+          capabilities:
+            info:
+              marketing_name: "T-Mobile myTouch 4G"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+        Passion:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        PC40100:
+        PC40200:
+        PC93100:
+          capabilities:
+            info:
+              marketing_name: "7 Pro, Arrive"
+            device:
+              os: Windows Phone
+              type: smartphone
             screen:
               size: 3.6
               width: 480
               height: 800
-              colors: 65k
+              colors: 262K
+        pcdadr6350:
+          capabilities: {}
+        PD67100:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        PG09410:
+          extends:
+            - device:
+                brand: HTC
+                model: Jetstream
+        PG86100:
+          extends:
+            - device:
+                brand: HTC
+                model: EVO 3D
+        PH06130:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 2.6
+              width: 480
+              height: 320
+              colors: 262K
+        PH39100:
+          capabilities:
+            info:
+              marketing_name: Vivid
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 262K
+        PH44100:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo Design 4G
+        PI39100:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+        PI86100:
+          capabilities:
+            info:
+              marketing_name: Titan II
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+        Pico:
+        pico HTC:
+        PLS7373ADR:
+          capabilities:
+            info:
+              marketing_name: Evo Shift
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+              colors: 262K
+        PM23300:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: ""
+        PM36100:
+          extends:
+            - device:
+                brand: HTC
+                model: One VX
+        PM63100:
+          extends:
+            - device:
+                brand: HTC
+                model: One Xplus
+        PN071:
+        "PN071-orange-LS":
+        PN07120:
+          extends:
+            - device:
+                brand: HTC
+                model: One
+        PO582:
+        "PO582-orange-LS":
+        Polaris:
+          capabilities:
+            info:
+              marketing_name: Polaris
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Polaris-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 64K
+        PPC6800:
+        PPC6850:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        primou:
+        Prophet:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Puccinilte:
+        PURE:
+          capabilities:
+            info:
+              marketing_name: Pure
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 480
+              height: 800
+              colors: 65K
+        Pyramid:
+        pyramid HTC:
+        QSD8x50:
+        Radar:
+          capabilities:
+            info:
+              marketing_name: Radar
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+        Radar 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Radar
+        Radar C110e:
+          extends:
+            - device:
+                brand: HTC
+                model: Radar
+        Raider:
+          capabilities:
+            info:
+              marketing_name: Raider
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 262K
+        Raider 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Raider
+        Raphael:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro
+        Rezound:
+          capabilities:
+            info:
+              marketing_name: Rezound
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+        Rezound 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: Rezound
+        Rhyme:
+          capabilities:
+            info:
+              marketing_name: Rhyme
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        RIO_U:
+        Ruby:
+          extends:
+            - device:
+                brand: HTC
+                model: Amaze 4G
+        RubyUIX:
+          extends:
+            - device:
+                brand: HTC
+                model: Amaze 4G
+        Runnymede:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XL
+        S310:
+          capabilities:
+            info:
+              marketing_name: Oxygen
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Oxygen-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2
+              width: 176
+              height: 220
+              colors: 65K
+        S410:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/strk-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.7
+              width: 240
+              height: 320
+              colors: 16M
+        S411:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/strk-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.2
+              width: 240
+              height: 320
+        S510b:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire S
+        S510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire S
+        S610d:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.8
+              width: 480
+              height: 800
+        S620:
+          extends:
+            - device:
+                brand: HTC
+                model: Excalibur
+        S621:
+          extends:
+            - device:
+                brand: HTC
+                model: Excalibur
+        S630:
+          extends:
+            - device:
+                brand: HTC
+                model: Excalibur
+        S710:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 65K
+        S710d:
+          extends:
+            - device:
+                brand: HTC
+                model: Incredible
+        S710e:
+          extends:
+            - device:
+                brand: HTC
+                model: Incredible S
+        S720e:
+          extends:
+            - device:
+                brand: HTC
+                model: One X
+        S720t:
+          capabilities:
+            info:
+              marketing_name: One XT
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+        S720t 16GB:
+          extends:
+            - device:
+                brand: HTC
+                model: S720t
+        S730:
+          capabilities:
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 65K
+        S740:
+          capabilities:
+            info:
+              marketing_name: Rose
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/rose-1.0.xml"
+                "2": "http://www.htcmms.com.tw/gen/HTC_S740-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 65K
+        S910m:
+        Saga:
+        saga:
+        saga HTC:
+        Salsa:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.4
+              width: 320
+              height: 480
+              colors: 16M
+        Sapphire:
+          extends:
+            - device:
+                brand: HTC
+                model: Magic
+        Schubert:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        Schubert T9292:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        Sensation:
+          capabilities:
+            info:
+              marketing_name: Sensation
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Sensation 4G:
+          capabilities:
+            info:
+              marketing_name: Sensation 4G
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Sensation XE:
+          capabilities:
+            info:
+              marketing_name: Sensation XE
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Sensation XL:
+          capabilities:
+            info:
+              marketing_name: Sensation XL
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+        SensationXE:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XE
+        SensationXL Beats:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XL
+        Shooter U:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 3D
+        ShooterU:
+          extends:
+            - device:
+                brand: HTC
+                model: Shooter U
+        Smart:
+          capabilities:
+            info:
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/HTC_Smart_F3188-1.0.xml"
+            device:
+              type: phone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 256K
+        Snap:
+        Spark:
+        ST6356:
+          extends:
+            - device:
+                brand: HTC
+                model: PURE
+        ST7377:
+          capabilities:
+            info:
+              marketing_name: Tilt 2
+              uaprof:
+                "1": "http://www.htcmms.com.tw/att/ST7377-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.6
+              width: 480
+              height: 800
+              colors: 16M
+        Status:
+          extends:
+            - device:
+                brand: HTC
+                model: ChaCha
+        supersonic:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 4G
+        Surround:
+          capabilities:
+            info:
+              marketing_name: Surround
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+        Surround T8788:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround
+        SurroundT8788:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround
+        T120C:
+          extends:
+            - device:
+                brand: HTC
+                model: One V
+        T320a:
+          extends:
+            - device:
+                brand: HTC
+                model: One V
+        T320e:
+          extends:
+            - device:
+                brand: HTC
+                model: One V
+        T327t:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire U
+        T328d:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire VC
+        T328e:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire X
+        T328t:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire VT
+        T328w:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire V
+        T329d:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire XC
+        T329t:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire XC
+        T329w:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire XC
+        T528d:
+          extends:
+            - device:
+                brand: HTC
+                model: One SC
+        T528t:
+          extends:
+            - device:
+                brand: HTC
+                model: One SV
+        T528w:
+          extends:
+            - device:
+                brand: HTC
+                model: One SU
+        T5353:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Diamond2
+        T5555:
+          extends:
+            - device:
+                brand: HTC
+                model: HD Mini
+        T7272:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro
+        T7373:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro2
+        T7380:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro2
+        T7575:
+          extends:
+            - device:
+                brand: HTC
+                model: 7 Pro
+        T8290:
+          extends:
+            - device:
+                brand: HTC
+                model: MAX 4G
+        T8697:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        T8698:
+        T8788:
+          extends:
+            - device:
+                brand: HTC
+                model: Surround
+        T9199 For Vodafone:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 65K
+        T9199T:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 65K
+        T9295:
+          extends:
+            - device:
+                brand: HTC
+                model: HD7
+        T9296:
+          capabilities:
+            info:
+              marketing_name: HD7
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        T9299:
+          extends:
+            - device:
+                brand: HTC
+                model: Inspire 4G
+        "T9299 For AT&T":
+          extends:
+            - device:
+                brand: HTC
+                model: T9299
+        T9299+:
+          extends:
+            - device:
+                brand: HTC
+                model: T9299
+        "T9299+ For AT&T":
+          extends:
+            - device:
+                brand: HTC
+                model: T9299
+        Tattoo:
+          capabilities:
+            info:
+              marketing_name: Tattoo
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/Tattoo/ua-profile.xml"
+                "2": "http://www.htcmms.com.tw/Android/Common/HTC_TATTOO_A3288/ua-profile.xml"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        TD2:
+        ThunderBolt:
+          capabilities:
+            info:
+              marketing_name: ThunderBolt
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        ThunderBolt 4G:
+          extends:
+            - device:
+                brand: HTC
+                model: ThunderBolt
+        Titan:
+          capabilities:
+            info:
+              marketing_name: Titan
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+        TITAN X310e:
+          extends:
+            - device:
+                brand: HTC
+                model: Titan
+        Torphy T8686:
+        Touch:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch 3G
+        Touch 3G:
+          capabilities:
+            info:
+              marketing_name: Touch 3G
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/HTC_Touch_3G_T3232-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Touch Cruise:
+          capabilities:
+            info:
+              marketing_name: Touch Cruise
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 64K
+        Touch Diamond:
+          capabilities:
+            info:
+              marketing_name: Touch Diamond
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/diamond-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        Touch Diamond2:
+          capabilities:
+            info:
+              marketing_name: Touch Diamond 2
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Xda_Diamond_2-1.0.xml"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.2
+              width: 480
+              height: 800
+              colors: 65K
+        TOUCH DUAL:
+        Touch HD:
+          capabilities:
+            info:
+              marketing_name: Touch HD
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 65K
+        Touch HD2:
+        Touch Pro:
+          capabilities:
+            info:
+              marketing_name: Touch Pro
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.8
+              width: 480
+              height: 640
+              colors: 65K
+        Touch Pro2:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Pro
+        Touch Viva:
+          capabilities:
+            info:
+              marketing_name: Touch Viva
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/HTC_Touch_Viva_T2223-1.0.xml"
+            device:
+              os: Windows Phone
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        Touch2:
+          capabilities:
+            info:
+              marketing_name: Touch 2
+              uaprof:
+                "1": "http://www.htcmms.com.tw/voda/HTC_Touch2-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        TouchDiamond2:
+          extends:
+            - device:
+                brand: HTC
+                model: Touch Diamond2
+        TouchDual:
+        Trinity:
+        Trophy:
+        Trophy T8686:
+        TyTN:
+        TyTN II:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        TYTN MOZILLA:
+        TYTNII:
+          extends:
+            - device:
+                brand: HTC
+                model: Kaiser
+        Ultimate:
+        Universal:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 3.6
+              width: 640
+              height: 480
+              colors: 65K
+        v1510:
+        v3600:
+        V9:
+        V1:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire 310
+        VDA V:
+        Velocity 4G:
+          capabilities:
+            info:
+              marketing_name: Velocity 4G
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+        verizon wwe:
+        vfpioneer:
+        Ville:
+        virgin mobile:
+        Vision:
+          extends:
+            - device:
+                brand: HTC
+                model: Desire Z
+        vision HTC:
+          extends:
+            - device:
+                brand: HTC
+                model: Vision
+        Vivid:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size:
+              width: 176
+              height: 220
+              colors: 65K
+        Vivo:
+          extends:
+            - device:
+                brand: HTC
+                model: Incredible 2
+        VLE:
+        VLE U:
+        vodafone de:
+        Vogue:
+        VPACompactIV:
+        Weather:
+        Wildfire:
+          capabilities:
+            info:
+              marketing_name: Wildfire
+              uaprof:
+                "1":
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+              colors: 16M
+        Wildfire S:
+          capabilities:
+            info:
+              marketing_name: Wildfire S
+              uaprof:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 320
+              height: 480
+              colors: 262K
+        Windows:
+        Windows Phone:
+        Windows Phone 8 / HTC Mozart:
+          extends:
+            - device:
+                brand: HTC
+                model: Mozart
+        Windows Phone 8S:
+          capabilities:
+            info:
+              marketing_name: Windows Phone 8S
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              cdma: "800,1900"
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+        Windows Phone 8S by HTC:
+          extends:
+            - device:
+                brand: HTC
+                model: Windows Phone 8S
+        Windows Phone 8X:
+          capabilities:
+            info:
+              marketing_name: Windows Phone 8X
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              cdma: "800,1900"
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1700/2100,1900,2100"
+              lte: "700,1700/2100"
+        Windows Phone 8X by HTC:
+          extends:
+            - device:
+                brand: HTC
+                model: Windows Phone 8X
+        Windows Phone 8Xby HTC:
+        WindowsPhone8Xby:
+          extends:
+            - device:
+                brand: HTC
+                model: Windows Phone 8X
+        Wizard:
+          capabilities:
+            info:
+              marketing_name: Wizard
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/wizard-2.0.xml"
+            device:
+              type: smartphone
+              os: Windows CE
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 65K
+        X06HT:
+          capabilities:
+            info:
+              marketing_name: Desire
+              uaprof:
+                "1": "http://www.htcmms.com.tw/Android/Common/Bravo/HTC_Desire.xml"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+        X310e:
+          extends:
+            - device:
+                brand: HTC
+                model: Titan
+        X315e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XL
+        X515a:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        X515C:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        X515d:
+        x515e:
+        X515E:
+          extends:
+            - device:
+                brand: HTC
+                model: Evo 4G+
+        X515e:
+        X515E 4GS:
+          extends:
+            - device:
+                brand: HTC
+                model: X515E
+        X515m:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        X710a:
+          extends:
+            - device:
+                brand: HTC
+                model: Raider
+        x710d:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+        X7500:
+          capabilities:
+            info:
+              marketing_name: Athena
+              uaprof:
+                "1": "http://www.htcmms.com.tw/gen/Athena-1.0.xml"
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 5
+              width: 640
+              height: 480
+              colors: 256K
+        X7510:
+          capabilities:
+            device:
+              os: Windows CE
+              type: smartphone
+            screen:
+              size: 5
+              width: 640
+              height: 480
+              colors: 262K
+        X920e:
+        Xperia:
+        Xplorer:
+        XV:
+        Z520e:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Z560e:
+          capabilities:
+            info:
+              marketing_name: One S
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Z710a:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        Z710e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XE
+        Z710t:
+        Z715e:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
     'Huawei':
       capabilities:
         info:
@@ -2143,7 +6112,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -2174,7 +6143,7 @@ device:
               colors: 262k
         C8600:
           capabilities:
-            device: 
+            device:
               type: smartphone
               os: Android
             screen:
@@ -2220,11 +6189,11 @@ device:
               size: 6.1
               width: 720
               height: 1280
-        'Telpad Dual S':      
+        'Telpad Dual S':
           capabilities:
             device:
               type: 'tablet'
-        'U8651S':      
+        'U8651S':
           capabilities:
             device:
               type: 'smartphone'
@@ -2284,7 +6253,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -2298,7 +6267,7 @@ device:
               note: 'TODO unknown useragent'
             device:
               type: 'phablet'
-            screen: 
+            screen:
               size: 5.5
               width: 720
               height: 1280
@@ -2862,7 +6831,7 @@ device:
             screen:
               size: 3.7
               width: 540
-              height: 960 
+              height: 960
         'INFOBAR A02':
           extends:
             - device:
@@ -3107,7 +7076,7 @@ device:
             screen:
               size: 5.5
               width: 1080
-              height: 1920 
+              height: 1920
         'K900_ROW':
           extends:
             - device:
@@ -3120,7 +7089,7 @@ device:
             screen:
               size: 5.3
               width: 720
-              height: 1280 
+              height: 1280
         'S930':
           capabilities:
             device:
@@ -3128,7 +7097,7 @@ device:
             screen:
               size: 6.0
               width: 720
-              height: 1280               
+              height: 1280
     'Lexibook':
       capabilities:
         info:
@@ -3156,7 +7125,7 @@ device:
               type: 'tv'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -3246,6 +7215,25 @@ device:
               size: 5.2
               width: 1080
               height: 1920
+        'D620':
+          capabilities:
+            info:
+              marketing_name: G2 Mini
+              date: '2014-03-26'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              bluetooth: 4.0
+              wifi: 802.11 b/g/n
+              nfc: true
         'D800':
           extends:
             - device:
@@ -3315,7 +7303,7 @@ device:
           capabilities:
             info:
               marketing_name: 'G Flex'
-              href: 
+              href:
                 1: 'http://www.mylgphones.com/lg-d958-spotted-in-user-agent-profile.html'
             device:
               type: 'phablet'
@@ -3414,7 +7402,7 @@ device:
             - device:
                 brand: 'LG'
                 model: 'G Pad'
-        
+
         'V507L':
           extends:
             - device:
@@ -3425,7 +7413,7 @@ device:
             - device:
                 brand: 'LG'
                 model: 'G Pad'
-        Nexus 4: 
+        Nexus 4:
           capabilities:
             info:
               marketing_name: 'Nexus 4'
@@ -3436,7 +7424,7 @@ device:
               size: 4.7
               width: 768
               height: 1280
-        Nexus 5: 
+        Nexus 5:
           capabilities:
             info:
               marketing_name: 'Nexus 5'
@@ -3528,7 +7516,7 @@ device:
           type: 'smartphone'
       overwrites:
         - ua:
-            family: 
+            family:
               'HbbTV':
                 capabilities:
                   device:
@@ -3555,7 +7543,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -3678,7 +7666,7 @@ device:
         device:
           type: 'tablet'
       model:
-        'XINO Z46 X4': 
+        'XINO Z46 X4':
           capabilities:
             info:
               note: 'TODO useragent missing'
@@ -3722,7 +7710,7 @@ device:
                       device:
                         type: 'tablet'
       model:
-        regexes: 
+        regexes:
           - regex: '^(MZ|Xoom)'
             capabilities:
               device:
@@ -3818,7 +7806,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Other':
                 capabilities:
                   device:
@@ -3835,7 +7823,7 @@ device:
             screen:
               size: 6.0
               width: 720
-              height: 1280 
+              height: 1280
         'Lumia 1520':
           capabilities:
             device:
@@ -3876,7 +7864,7 @@ device:
             screen:
               size: 13.3
               width: 1280
-              height: 800 
+              height: 800
     'Olivetti':
       capabilities:
         info:
@@ -4012,7 +8000,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -4464,12 +8452,12 @@ device:
                 model: GT-B5722
         Behold II:
           extends:
-            - device: 
+            - device:
                 brand: Samsung
                 model: SGH-T939
         Behold2:
           extends:
-            - device: 
+            - device:
                 brand: Samsung
                 model: SGH-T939
         C250:
@@ -4909,12 +8897,12 @@ device:
                 model: SGH-I917
         GALAXY S II WiMAX:
           extends:
-            - device: 
+            - device:
                 brand: Samsung
                 model: GT-I9100
         GALAXY S2GT-I9100:
           extends:
-            - device: 
+            - device:
                 brand: Samsung
                 model: GT-I9100
         GT-B2100i:
@@ -11809,6 +15797,49 @@ device:
               width: 320
               height: 480
               colors: 16M
+        SM-T325:
+          capabilities:
+            info:
+              marketing_name: Galaxy Tab Pro 8.4
+              date: '2014-03-26'
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 8.4
+              width: 2560
+              height: 1600
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: 800,850,900,1800,2100,2600
+              wifi: 802.11 a/b/g/n/ac
+              bluetooth: 4
+        SM-G900F:
+          capabilities:
+            info:
+              marketing_name: Galaxy S5
+              date: '2014-03-26'
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.1
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              lte: 800,850,900,1800,2100,2600
+              wifi: 802.11 a/b/g/n/ac
+              bluetooth: 4
+              nfc: true
+              hsdpa: 42Mbps
+              hsupa: 5.7Mbps
+              lteul: 50Mbps
+              ltedl: 150Mbps
         NEW_Galaxy_Note_3_Neo:
           capabilities:
             info:
@@ -11848,7 +15879,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -11939,7 +15970,7 @@ device:
                 capabilities:
                   device:
                     type: 'tv'
-      model: 
+      model:
         regexes:
           - regex: 'Tablet'
             capabilities:
@@ -11955,122 +15986,122 @@ device:
                 type: 'phone'
         C1504:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia E
         C1505:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia E
         "C1505-o":
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: C1505
         C1505v:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: C1505
         C1604:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia E dual
         C1605:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia E dual
         C1904:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia M
         C1905:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia M
         C2005:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia M dual
         C2104:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia L
         C2105:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia L
         C2305:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia C
         C5302:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia SP
         C5303:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia SP
         C5306:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia SP
         C5502:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia ZR
         C5503:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia ZR
         C6502:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia ZL
         C6503:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia ZL
         C6506:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia ZL
         C6602:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z
         C6603:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z
         C6606:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z
         C6616:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z
         C6750:
@@ -12078,32 +16109,32 @@ device:
             todo: TODO unknown device
         C6802:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z Ultra
         C6833:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z Ultra
         C6902:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z1
         C6903:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z1
         C6906:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z1
         C6943:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z1
         C8500:
@@ -12124,34 +16155,34 @@ device:
         C9660:
           capabilities:
             todo: TODO unknown device. Yota Phone?
-        D2004: 
-          extends: 
-            - device: 
+        D2004:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia E1
-        D2005: 
-          extends: 
-            - device: 
+        D2005:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia E1
-        D2303: 
-          extends: 
-            - device: 
+        D2303:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia E2
-        D5303: 
-          extends: 
-            - device: 
+        D5303:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia T2 Ultra
-        D5306: 
-          extends: 
-            - device: 
+        D5306:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia T2 Ultra
-        D5503: 
-          extends: 
-            - device: 
+        D5503:
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia Z1 mini
         D5800:
@@ -12177,25 +16208,25 @@ device:
           capabilities:
             device:
               type: tv
-        L36h: 
+        L36h:
           capabilities:
             todo: not a Sony
         L39h:
           capabilities:
             todo: not a Sony
         LT22i:
-          extends: 
-            - device: 
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia P
         "LT22i-o":
-          extends: 
-            - device: 
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia P
         LT25i:
-          extends: 
-            - device: 
+          extends:
+            - device:
                 brand: Sony
                 model: Xperia V
         LT26i:
@@ -12220,63 +16251,63 @@ device:
                 model: Xperia Acro S
         LT28h:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Ion
         LT28i:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Ion
         LT29i:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia TX
         LT30a:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia T
         LT30at:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia T
         LT30p:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia T
         "LT30p-o":
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: LT30p
-        MN2SW: 
-          capabilities: 
-            info: 
-              href: 
+        MN2SW:
+          capabilities:
+            info:
+              href:
                 "1": "http://www.sonymobile.com/global-en/products/accessories/smartwatch/"
-            device: 
+            device:
               type: watch
-            screen: 
+            screen:
               size: 1.42
               width: 128
               height: 128
         MT27i:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Sola
         "NW-Z1000Series":
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Walkman NW-Z1000
-            device: 
+            device:
               type: player
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 800
               height: 480
@@ -12285,147 +16316,147 @@ device:
         PalmOS grnd:
         PalmOS luke:
         PalmOS prmr:
-        PlayStation 3: 
-          capabilities: 
-            device: 
+        PlayStation 3:
+          capabilities:
+            device:
               type: tv
-        PlayStation Portable: 
-          capabilities: 
-            device: 
+        PlayStation Portable:
+          capabilities:
+            device:
               type: console
-        PlayStation Vita: 
-          capabilities: 
-            device: 
+        PlayStation Vita:
+          capabilities:
+            device:
               type: console
-            screen: 
+            screen:
               size: 4.7
               width: 960
               height: 544
               colors: 16M
         SGP311:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet Z
         SGP312:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet Z
         SGP321:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet Z
         SGP351:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet Z
         SGPT12:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet S
         SGPT13:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet S
-        SGPT211: 
+        SGPT211:
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet P
         "SO-01E":
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Xperia AX
               href:
                 "1": "http://www.sonymobile.co.jp/xperia/docomo/so-01e/"
-            device: 
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
         "SO-02E":
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Z
         "SO-03E":
           extends:
-            - device: 
+            - device:
                 brand: Sony
                 model: Xperia Tablet Z
         "SO-04D":
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Sony Xperia GX
               href:
                 "1": "http://www.sonymobile.co.jp/xperia/docomo/so-04d/"
-            device: 
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.6
               width: 720
               height: 1280
               colors: 16M
         "SO-04E":
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Sony Xperia A
               href:
                 "1": "http://www.sonymobile.co.jp/xperia/docomo/so-04e/"
-            device: 
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.5
               width: 720
               height: 1280
               colors: 16M
         "SO-05D":
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Sony Xperia SX
               href:
                 "1": "http://www.sonymobile.co.jp/xperia/docomo/so-05d/"
-            device: 
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.7
               width: 540
               height: 960
               colors: 16M
         SOL21:
-          capabilities: 
-            info: 
+          capabilities:
+            info:
               marketing_name: Xperia VL
-              href: 
+              href:
                 "1": "http://www.sonymobile.co.jp/xperia/au/sol21/"
-            device: 
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
-        SOL22: 
-          capabilities: 
-            info: 
+        SOL22:
+          capabilities:
+            info:
               marketing_name: Xperia UL
-              href: 
+              href:
                 "1": "http://www.sonymobile.co.jp/xperia/au/sol22/"
-            device: 
+            device:
               type: smartphone
-            screen: 
+            screen:
               size: 5
               width: 1080
               height: 1776
@@ -12435,14 +16466,14 @@ device:
             - device:
                 brand: Sony
                 model: Xperia Z1
-        ST21A2__: 
-          capabilities: 
-            info: 
+        ST21A2__:
+          capabilities:
+            info:
               marketing_name: Sony Xperia Tipo Dual
-            device: 
+            device:
               type: tablet
               __platform: Android
-            screen: 
+            screen:
               size: 3.2
               width: 320
               height: 480
@@ -12527,241 +16558,241 @@ device:
             - device:
                 brand: Sony
                 model: Xperia Go
-        SW2: 
-          capabilities: 
-            info: 
-              href: 
+        SW2:
+          capabilities:
+            info:
+              href:
                 "1": "http://www.sonymobile.com/gb/products/accessories/smartwatch-2-sw2/"
-            device: 
+            device:
               type: watch
-            screen: 
+            screen:
               size: 1.6
               width: 220
               height: 176
-        Tablet P: 
+        Tablet P:
           extends:
             - device:
                 brand: Sony
                 model: Xperia Tablet P
-        Tablet S: 
+        Tablet S:
           extends:
             - device:
                 brand: Sony
                 model: Xperia Tablet S
-        Xperia C: 
-          capabilities: 
-            device: 
+        Xperia C:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 5
               width: 540
               height: 960
               colors: 16M
-        Xperia E: 
-          capabilities: 
-            device: 
+        Xperia E:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.5
               width: 320
               height: 480
               colors: 16M
-        Xperia E dual: 
-          capabilities: 
-            device: 
+        Xperia E dual:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.5
               width: 320
               height: 480
               colors: 16M
-        Xperia E1: 
-          capabilities: 
-            device: 
+        Xperia E1:
+          capabilities:
+            device:
               type: smartphone
-            screen: 
+            screen:
               size: 4
               width: 480
               height: 800
               colors: 16M
-        Xperia E2: 
-          capabilities: 
-            device: 
+        Xperia E2:
+          capabilities:
+            device:
               type: smartphone
-            screen: 
+            screen:
               size: 4
               width: 480
               height: 800
               colors: 16M
-        Xperia Go: 
-          capabilities: 
-            device: 
+        Xperia Go:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.5
               width: 320
               height: 480
               colors: 16M
         Xperia Ion:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.55
               width: 720
               height: 1280
               colors: 16M
-        Xperia J: 
-          capabilities: 
-            device: 
+        Xperia J:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.55
               width: 720
               height: 1280
               colors: 16M
-        Xperia L: 
-          capabilities: 
-            device: 
+        Xperia L:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 480
               height: 854
               colors: 16M
-        Xperia M: 
-          capabilities: 
-            device: 
+        Xperia M:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4
               width: 854
               height: 480
               colors: 16M
-        Xperia M dual: 
-          capabilities: 
-            device: 
+        Xperia M dual:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4
               width: 480
               height: 854
               colors: 16M
-        Xperia Miro: 
-          capabilities: 
-            device: 
+        Xperia Miro:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.5
               width: 320
               height: 480
               colors: 16M
-        Xperia P: 
-          capabilities: 
-            device: 
+        Xperia P:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4
               width: 540
               height: 960
               colors: 16M
         Xperia S:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
         Xperia SL:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
         Xperia SP:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.6
               width: 720
               height: 1280
               colors: 16M
         Xperia Sola:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.7
               width: 480
               height: 854
               colors: 16M
         Xperia T:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.55
               width: 720
               height: 1280
               colors: 16M
-        Xperia T2 Ultra: 
-          capabilities: 
-            device: 
+        Xperia T2 Ultra:
+          capabilities:
+            device:
               type: phablet
               os: Android
-            screen: 
+            screen:
               size: 6
               width: 720
               height: 1080
               colors: 16M
-        Xperia Tablet S: 
-          capabilities: 
-            device: 
+        Xperia Tablet S:
+          capabilities:
+            device:
               type: tablet
               os: Android
-            screen: 
+            screen:
               size: 9.4
               width: 800
               height: 1280
               colors: 16M
-        Xperia Tablet Z: 
-          capabilities: 
-            device: 
+        Xperia Tablet Z:
+          capabilities:
+            device:
               type: tablet
               os: Android
-            screen: 
+            screen:
               size: 10.1
               width: 1920
               height: 1200
               colors: 16M
         Xperia Tipo:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.2
               width: 320
               height: 480
@@ -12772,91 +16803,91 @@ device:
                 brand: Sony
                 model: Xperia Tipo
         Xperia U:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 3.5
               width: 480
               height: 854
               colors: 16M
         Xperia V:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
         Xperia TX:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.55
               width: 720
               height: 1280
               colors: 16M
-        Xperia Z: 
-          capabilities: 
-            device: 
+        Xperia Z:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 5
               width: 1080
               height: 1920
               colors: 16M
-        Xperia Z Ultra: 
-          capabilities: 
-            device: 
+        Xperia Z Ultra:
+          capabilities:
+            device:
               type: phablet
               os: Android
-            screen: 
+            screen:
               size: 6.4
               width: 1080
               height: 1920
               colors: 16M
-        Xperia Z1: 
-          capabilities: 
-            device: 
+        Xperia Z1:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 5
               width: 1080
               height: 1920
               colors: 16M
-        Xperia Z1 mini: 
-          capabilities: 
-            device: 
+        Xperia Z1 mini:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.3
               width: 720
               height: 1280
               colors: 16M
         Xperia ZL:
-          capabilities: 
-            device: 
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 5
               width: 1080
               height: 1920
               colors: 16M
-        Xperia ZR: 
-          capabilities: 
-            device: 
+        Xperia ZR:
+          capabilities:
+            device:
               type: smartphone
               os: Android
-            screen: 
+            screen:
               size: 4.55
               width: 720
               height: 1280
@@ -12870,7 +16901,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -12904,7 +16935,7 @@ device:
             - device:
                 brand: SonyEricsson
                 model: Xperia Acro HD
-        Xperia A888 Duo: 
+        Xperia A888 Duo:
           capabilities:
             info:
               marketing_name: Xperia Duo
@@ -12914,7 +16945,7 @@ device:
               size: 4.5
               width: 540
               height: 960
-        Xperia Acro: 
+        Xperia Acro:
           capabilities:
             device:
               type: smartphone
@@ -12922,7 +16953,7 @@ device:
               size: 4.2
               width: 480
               height: 854
-        Xperia Acro HD: 
+        Xperia Acro HD:
           capabilities:
             device:
               type: smartphone
@@ -12930,7 +16961,7 @@ device:
               size: 4.3
               width: 720
               height: 1280
-        Xperia Acro S: 
+        Xperia Acro S:
           capabilities:
             device:
               type: smartphone
@@ -12938,7 +16969,7 @@ device:
               size: 4.3
               width: 720
               height: 1280
-        Xperia Active: 
+        Xperia Active:
           capabilities:
             device:
               type: smartphone
@@ -12946,7 +16977,7 @@ device:
               size: 3.0
               width: 320
               height: 480
-        Xperia Arc: 
+        Xperia Arc:
           capabilities:
             device:
               type: smartphone
@@ -12954,7 +16985,7 @@ device:
               size: 4.2
               width: 480
               height: 854
-        Xperia Arc S: 
+        Xperia Arc S:
           capabilities:
             device:
               type: smartphone
@@ -12962,7 +16993,7 @@ device:
               size: 4.2
               width: 480
               height: 854
-        Xperia Live with Walkman: 
+        Xperia Live with Walkman:
           capabilities:
             device:
               type: smartphone
@@ -12970,7 +17001,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-        Xperia Mini: 
+        Xperia Mini:
           capabilities:
             device:
               type: smartphone
@@ -12978,7 +17009,7 @@ device:
               size: 3.0
               width: 320
               height: 480
-        Xperia Mini Pro: 
+        Xperia Mini Pro:
           capabilities:
             device:
               type: smartphone
@@ -12986,7 +17017,7 @@ device:
               size: 3.0
               width: 320
               height: 480
-        Xperia Neo: 
+        Xperia Neo:
           capabilities:
             device:
               type: smartphone
@@ -12994,12 +17025,12 @@ device:
               size: 3.7
               width: 480
               height: 854
-        Xperia Neo L: 
+        Xperia Neo L:
           extends:
             - device:
                 brand: SonyEricsson
                 model: 'Xperia Neo'
-        Xperia Neo V: 
+        Xperia Neo V:
           extends:
             - device:
                 brand: SonyEricsson
@@ -13012,7 +17043,7 @@ device:
               size: 4.0
               width: 480
               height: 854
-        Xperia Pro: 
+        Xperia Pro:
           capabilities:
             device:
               type: smartphone
@@ -13020,7 +17051,7 @@ device:
               size: 3.7
               width: 480
               height: 854
-        Xperia Ray: 
+        Xperia Ray:
           capabilities:
             device:
               type: smartphone
@@ -13036,7 +17067,7 @@ device:
               size: 3.0
               width: 480
               height: 800
-        Xperia X8: 
+        Xperia X8:
           capabilities:
             device:
               type: smartphone
@@ -13044,7 +17075,7 @@ device:
               size: 3.0
               width: 320
               height: 480
-        Xperia X10: 
+        Xperia X10:
           capabilities:
             device:
               type: smartphone
@@ -13052,7 +17083,7 @@ device:
               size: 4.0
               width: 480
               height: 854
-        Xperia X10 Mini: 
+        Xperia X10 Mini:
           capabilities:
             device:
               type: smartphone
@@ -13734,7 +17765,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':
@@ -13790,7 +17821,7 @@ device:
               width: 320
               height: 480
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'E1t':
           extends:
             - device:
@@ -13803,7 +17834,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'E5':
           capabilities:
             screen:
@@ -13819,7 +17850,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S3':
           capabilities:
             screen:
@@ -13827,7 +17858,7 @@ device:
               width: 320
               height: 480
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S3+':
           extends:
             - device:
@@ -13840,7 +17871,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S6T':
           extends:
             - device:
@@ -13853,7 +17884,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S7i(t)':
           extends:
             - device:
@@ -13876,7 +17907,7 @@ device:
               width: 540
               height: 960
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S11t':
           capabilities:
             screen:
@@ -13884,7 +17915,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'S12':
           capabilities:
             screen:
@@ -13892,7 +17923,7 @@ device:
               width: 480
               height: 800
             device:
-              type: 'smartphone'        
+              type: 'smartphone'
         'V1':
           capabilities:
             screen:
@@ -15430,7 +19461,7 @@ device:
           type: 'smartphone'
       overwrites:
         - os:
-            family: 
+            family:
               'Android':
                 major:
                   '3':

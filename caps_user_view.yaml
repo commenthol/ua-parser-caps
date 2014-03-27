@@ -397,6 +397,12 @@ device:
       capabilities:
         user:
           view: 'tv'
+    HTC:
+      model:
+        P510e:
+          capabilities:
+            user:
+              view: tablet
     'LG':
       regexes:
         - regex: 'NetCast'
