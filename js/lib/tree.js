@@ -11,6 +11,7 @@
  * Module dependencies
  */
 var jsSelect = require('js-select');
+var async    = require('async');
 var extend   = require('./util/extend').extend;
 var merge    = require('./util/extend').merge;
 var capsFile = require('./util/file.js');
@@ -50,8 +51,47 @@ Tree.prototype.loadSync = function (files) {
 		self.add(tree);
 	});
 	
-	this.convert();
+	self.convert();
 };
+
+/**
+ * load one or more capabilities files asynchronously and join them to one single 
+ * capabilities tree.
+ *
+ * @param {Array|String} files : filename(s) of the capability files to load
+ * @param
+ */
+Tree.prototype.load = function (files, cb) {
+	
+	var self = this;
+
+	files = files || [];
+
+  if (typeof(files) === 'string') {
+    files = [ files ];
+  }
+	
+	async.eachSeries(files, function (file, callback){
+		capsFile.load(file, function(err, tree){
+			if (err) {
+				callback(err);
+			}
+			else {
+				self.add(tree);
+				callback();
+			}
+		});
+	}, function(err){
+		if (err) {
+			// TODO
+		}
+		else {
+			self.convert();
+		}
+		cb(err);
+	});
+};
+
 
 /**
  * add an new tree

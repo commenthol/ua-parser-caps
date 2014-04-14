@@ -4297,6 +4297,26 @@ device:
             - device:
                 brand: HTC
                 model: One
+        One M8:
+          capabilities:
+            info:
+              todo: useragent
+              marketing_name: One M8
+              date: "2014-03-26"
+              uaprof:
+                1: http://www.htcmms.com.tw/Android/O2/fL0fd1AcEY/ua-profile.xml
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "800,900,1800,2600"
+              nfc: true
         One max:
           capabilities:
             info:
@@ -4312,24 +4332,6 @@ device:
             bearer:
               gsm: "850,900,1800,1900"
               umts: "900,1900,2100"
-              lte: "800,900,1800,2600"
-              nfc: true
-        One max M8:
-          capabilities:
-            info:
-              todo: useragent
-              marketing_name: One Max M8
-              date: "2014-03-26"
-            device:
-              type: smartphone
-              os: Android
-            screen:
-              size: 5
-              width: 1080
-              height: 1920
-            bearer:
-              gsm: "850,900,1800,1900"
-              umts: "850,900,1900,2100"
               lte: "800,900,1800,2600"
               nfc: true
         One mini:
@@ -6201,6 +6203,25 @@ device:
           capabilities:
             device:
               type: 'smartphone'
+        Y530-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend Y530
+              uaprof: http://wap1.huawei.com/uaprof/HuaweiY530-U00-Normal.xml
+              date: '2014-01-27'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 400
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              bluetooth: 4
+              wifi: 802.11 b/g/n
     'Hyundai':
       capabilities:
         info:
@@ -7816,14 +7837,39 @@ device:
                   device:
                     type: 'phone'
       model:
+        220:
+          capabilities:
+            info:
+              marketing_name: River
+              uaprof: http://nds1.nds.nokia.com/uaprof/Nokia220r100.xml
+              date: '2014-03-27'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 262k
+            bearer:
+              gsm: 900,1800
+              bluetooth: 2.1
         'Lumia 1320':
           capabilities:
             device:
               type: 'phablet'
+              os: Windows Phone
             screen:
               size: 6.0
               width: 720
               height: 1280
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              lte: "800,1800,2600"
+              bluetooth: 3
+              nfc: true   
+              wifi: 802.11 b/g/n
         'Lumia 1520':
           capabilities:
             device:
@@ -15797,6 +15843,25 @@ device:
               width: 320
               height: 480
               colors: 16M
+        SM-N7505:
+          capabilities:
+            info:
+              marketing_name: Galaxy Note 3 Neo
+              date: '2014-03-27'
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              wifi: 802.11 a/b/g/n
+              bluetooth: 4
+              nfc: true
         SM-T325:
           capabilities:
             info:
@@ -16188,6 +16253,11 @@ device:
         D5800:
           capabilities:
             todo: unknown device
+        D6503:
+          extends:
+            - device:
+                brand: Sony
+                model: Xperia Z2
         DTV115:
           capabilities:
             device:
@@ -16353,6 +16423,11 @@ device:
             - device:
                 brand: Sony
                 model: Xperia Tablet Z
+        SGP521:
+          extends:
+            - device:
+                brand: Sony
+                model: Xperia Z2 Tablet
         SGPT12:
           extends:
             - device:
@@ -16581,6 +16656,8 @@ device:
                 model: Xperia Tablet S
         Xperia C:
           capabilities:
+            info:
+              marketing_name: Xperia C
             device:
               type: smartphone
               os: Android
@@ -16591,6 +16668,8 @@ device:
               colors: 16M
         Xperia E:
           capabilities:
+            info:
+              marketing_name: Xperia E
             device:
               type: smartphone
               os: Android
@@ -16601,6 +16680,8 @@ device:
               colors: 16M
         Xperia E dual:
           capabilities:
+            info:
+              marketing_name: Xperia E dual
             device:
               type: smartphone
               os: Android
@@ -16611,8 +16692,11 @@ device:
               colors: 16M
         Xperia E1:
           capabilities:
+            info:
+              marketing_name: Xperia E1
             device:
               type: smartphone
+              os: Android
             screen:
               size: 4
               width: 480
@@ -16620,6 +16704,8 @@ device:
               colors: 16M
         Xperia E2:
           capabilities:
+            info:
+              marketing_name: Xperia E2
             device:
               type: smartphone
             screen:
@@ -16629,6 +16715,8 @@ device:
               colors: 16M
         Xperia Go:
           capabilities:
+            info:
+              marketing_name: Xperia Go
             device:
               type: smartphone
               os: Android
@@ -16639,6 +16727,8 @@ device:
               colors: 16M
         Xperia Ion:
           capabilities:
+            info:
+              marketing_name: Xperia Ion
             device:
               type: smartphone
               os: Android
@@ -16649,6 +16739,8 @@ device:
               colors: 16M
         Xperia J:
           capabilities:
+            info:
+              marketing_name: Xperia J
             device:
               type: smartphone
               os: Android
@@ -16659,6 +16751,8 @@ device:
               colors: 16M
         Xperia L:
           capabilities:
+            info:
+              marketing_name: Xperia L
             device:
               type: smartphone
               os: Android
@@ -16669,6 +16763,8 @@ device:
               colors: 16M
         Xperia M:
           capabilities:
+            info:
+              marketing_name: Xperia M
             device:
               type: smartphone
               os: Android
@@ -16679,6 +16775,8 @@ device:
               colors: 16M
         Xperia M dual:
           capabilities:
+            info:
+              marketing_name: Xperia  M dual
             device:
               type: smartphone
               os: Android
@@ -16687,8 +16785,22 @@ device:
               width: 480
               height: 854
               colors: 16M
+        Xperia M2:
+          capabilities:
+            info:
+              marketing_name: Xperia M2
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 854
+              height: 480
+              colors: 16M
         Xperia Miro:
           capabilities:
+            info:
+              marketing_name: Xperia Miro
             device:
               type: smartphone
               os: Android
@@ -16759,6 +16871,10 @@ device:
               colors: 16M
         Xperia T2 Ultra:
           capabilities:
+            info: 
+              marketing_name: Xperia T2 Ultra
+              uaprof: http://uaprof.sonymobile.com/D5503R1411.xml
+              date: '2013-12-20'
             device:
               type: phablet
               os: Android
@@ -16767,6 +16883,14 @@ device:
               width: 720
               height: 1080
               colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              lte: "800,850,900,1800,2100,2600"
+              ltetdd: "1900,2300,2500,2600"
+              bluetooth: 4
+              wifi: 802.11 a/b/g/n
+              nfc: true
         Xperia Tablet S:
           capabilities:
             device:
@@ -16872,6 +16996,48 @@ device:
               width: 720
               height: 1280
               colors: 16M
+        Xperia Z2:
+          capabilities:
+            info:
+              marketing_name: Xperia Z2
+              uaprof:
+              date: "2014-03-27"
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.2
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              wifi: 802.11a/b/g/n
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              bluetooth: 4
+              nfc: true
+        Xperia Z2 Tablet:
+          capabilities:
+            info:
+              marketing_name: Xperia Z2 Tablet
+              uaprof:
+              date: "2014-03-27"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 10.1
+              width: 1920
+              height: 1200
+              colors: 16M
+            bearer:
+              wifi: 802.11a/b/g/n
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              hspap: true
+              lte: "800,900,1800,2600"
+              bluetooth: 4
+              nfc: true
         Xperia ZL:
           capabilities:
             device:
