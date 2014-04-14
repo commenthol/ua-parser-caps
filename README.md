@@ -39,11 +39,11 @@ var uaparsed = uaparser.parse(userAgent);
 
 var capabilities = capsparser.parse(uaparsed);
 console.log(capabilities);
-````
+```
 
 outputs:
 
-````json
+```json
 { device: { type: 'phablet' },
   user: { view: 'mobile' },
   info: 
@@ -52,7 +52,30 @@ outputs:
         '2': 'http://www.lg.com/us/',
         '3': 'https://support.google.com/googleplay/answer/1727131?hl=en#L' } },
   screen: { size: 5.5, width: 1080, height: 1920 } }
-````
+```
+See [sample.js](./js/test/sample.js).
+
+**Asynchronous Loading**
+
+```js
+var userAgent = "Mozilla/5.0 (Linux; Android 4.3.1; LG-E980 Build/JLS36I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.59 Mobile Safari/537.36";
+
+var uaparser = require('ua-parser')();
+var capsparser = require('../index')(function(err,parser){
+  /// async loading completed
+  if (!err) {
+    capsparser = parser;
+
+    var uaparsed = uaparser.parse(userAgent);
+    console.log(uaparsed);
+
+    var capabilities = capsparser.parse(uaparsed);
+    console.log(capabilities);
+  }
+});
+```
+See [sampleAsync.js](./js/test/sampleAsync.js).
+
 
 ## Specification
 
