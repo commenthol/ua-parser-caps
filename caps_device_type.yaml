@@ -1247,6 +1247,122 @@ device:
               size: 4.5
               width: 540
               height: 960
+    'Explay':
+      capabilities:
+        info:
+          href:
+            1: "http://explay.ru/"
+        device:
+          type: smartphone
+      model:
+        regexes:
+          - regex: '(informer|surfer|squad)'
+            capabilities:
+              device:
+                type: 'tablet'
+        A320:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 240
+              height: 400
+              colors: 262k
+        A350:
+          capabilities:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 262k
+        Advance:
+          capabilities:
+            info:
+              date: "2012-01-01"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        Infinity:
+          capabilities:
+            info:
+              date: "2012-09-01"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16m
+        Informer 701:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7
+              width: 800
+              height: 480
+              colors: 16m
+        Informer 702:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+              colors: 16m
+        Informer 703:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7
+              width: 800
+              height: 480
+              colors: 16m
+        Informer 705:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7
+              width: 800
+              height: 480
+              colors: 16m
+        Informer 801:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 8
+              width: 1024
+              height: 768
+              colors: 16m
+        surfer 8.01:
+          capabilities:
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 8
+              width: 1024
+              height: 768
+              colors: 16m
     'Evercoss':
       capabilities:
         info:
@@ -1562,6 +1678,19 @@ device:
             capabilities:
               device:
                 type: 'tv'
+        A400:
+          capabilities:
+            info:
+              brand: Explay
+              href:
+                1: "http://noah-mobile.blogspot.de/2013/12/explay-introduced-two-new-budget.html"
+            device:
+              type:
+              os: Android
+            screen:
+              size: 4
+              width: 480
+              height: 800
         'C9660':
           capabilities:
             info:
@@ -1587,6 +1716,73 @@ device:
               type: tablet
             screen:
               size: 7.0
+        'JK100 v2.0':
+          capabilities:
+            info:
+              brand: Jeka
+              href:
+                1: 'http://allo.ua/ru/products/internet-planshety/jeka-jk-100-10-1-8gb-black.html'
+            device:
+              type: tablet
+            screen:
+              size: 10.1
+              width: 1024
+              height: 600
+        JK700:
+          capabilities:
+            info:
+              brand: Jeka
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 800
+              height: 480
+        JK701:
+          capabilities:
+            info:
+              brand: Jeka
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 800
+              height: 480
+        JK808:
+          capabilities:
+            info:
+              brand: Blackview
+              href:
+                1: "http://www.aliexpress.com/store/product/In-stock-New-arrive-JK808-Smart-phone-Android-4-2-MTK6589-Quad-Core-4-7-Inch/708989_1093680641.html"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+        JK809:
+          capabilities:
+            info:
+              brand: Blackview
+              href: 
+                1: "http://www.banggood.com/Blackview-JK809-6_0-Inch-8G-ROM-Andriod-4_2-MTK6589T-Smart-Phone-Black-p-87406.html"
+            device:
+              type: phablet
+            screen:
+              size: 6
+              width: 720
+              height: 1280
+        JK8000:
+          capabilities:
+            info:
+              brand: Blackview
+            device:
+              type: phablet
+            screen:
+              size: 5.3
+              width: 540
+              height: 960
     'Generic_Inettv':
       capabilities:
         info:
@@ -6531,6 +6727,57 @@ device:
             1: 'http://impression.ua/planshetnye-kompyutery'
         device:
           type: 'tablet'
+      model:
+        ImPAD 1311:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+        ImPAD 3113:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 9
+              width: 800
+              height: 480
+        ImPAD 4313:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 7.85
+              width: 1024
+              height: 768
+        ImPAD 6213M:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600          
+        ImPAD 6213M_v2:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+              colors: 16M
+        ImPAD 9702: 
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 9.7
+              width: 1024
+              height: 768
+              colors: 16M
     'Infinix':
       capabilities:
         info:
