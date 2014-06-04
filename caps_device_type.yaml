@@ -139,10 +139,70 @@ device:
           type: 'tablet'
       model:
         regexes:
-          - regex: '^(Z1[123]0|E320[^/]*|S500|Liquid[^;/]*)'
+          - regex: '^(Z1[1235]0|E320[^/]*|S500|Liquid[^;/]*)'
             capabilities:
               device:
                 type: 'smartphone'
+        S510:
+          capabilities:
+            info:
+              marketing_name: Liquid S1
+              href:
+                1: 'http://mm.acer.com/ac/en/MM/content/model/HM.HCJST.001'
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: true
+              umts: true
+              lte: false
+              wifi: true
+              bluetooth: 4.0
+        Z130:
+          capabilities:
+            info:
+              marketing_name: Liquid Z3
+              href:
+                1: 'http://mm.acer.com/ac/en/MM/content/model-datasheet/HM.HCSST.002'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 16M
+            bearer:
+              gsm: true
+              umts: true
+              lte: false
+              wifi: true
+              bluetooth: 4.0
+        Z150:
+          capabilities:
+            info:
+              marketing_name: Liquid Z5
+              href:
+                1: 'http://mm.acer.com/ac/en/MM/content/model-reviews/HM.HDHST.001'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4.0
     'Advent':
       capabilities:
         info:
@@ -234,6 +294,38 @@ device:
             capabilities:
               device:
                 type: 'tablet'
+      One Touch 4012A:
+        capabilities:
+          info:
+            marketing_name: Fire E
+            date: '2014-06-04'
+            href:
+              1: 'http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_fire.html'
+          device:
+            type: smartphone
+            os: FirefoxOS
+          screen:
+            size: 3.5
+            width: 320
+            height: 480
+            colors: 262k
+          bearer:
+            gsm: 850,900,1800,1900
+            umts: 850,1900,2100
+            hspa_dl_rate: 7.2
+            hspa_ul_rate: 5.76
+            lte: false
+            wifi: 802.11 b/g/n
+            bluetooth: 3
+            nfc: false
+      One Touch 4012X:
+        extends:
+          - device:
+              brand: Alcatel
+              model: One Touch 4012A
+        capabilities:
+          bearer:
+            umts: 900,2100
     'Allfine':
       capabilities:
         info:
@@ -2196,6 +2288,16 @@ device:
                       device:
                         type: 'tablet'
       model:
+        "0P8B2":
+          extends:
+            - device:
+                brand: HTC
+                model: One mini 2
+        "0P9O2":
+          extends:
+            - device:
+                brand: HTC
+                model: Desire 610
         "2125":
           capabilities:
             info:
@@ -3183,7 +3285,7 @@ device:
             bearer:
               gsm: "850,900,1800,1900"
               umts: "900,1900,2100"
-              hspa+: 42Mbps
+              hspa_dl_rate: 42Mbps
               lte: "800,900,1800,2600"
               bluetooth: 4
               nfc: optional
@@ -4478,6 +4580,11 @@ device:
               bluetooth: 4
               wifi: 802.11 a/b/g/n/ac
               nfc: true
+        One 801e:
+          extends:
+            - device:
+                brand: HTC
+                model: One M7
         One ANDROID:
           extends:
             - device:
@@ -4496,7 +4603,6 @@ device:
         One M8:
           capabilities:
             info:
-              todo: useragent
               marketing_name: One M8
               date: "2014-03-26"
               uaprof:
@@ -4549,6 +4655,36 @@ device:
               lte: "800,1800,2600"
               bluetooth: 4
               wifi: 802.11 a/b/g/n
+        One mini 2:
+          capabilities:
+            info:
+              marketing_name: One mini 2
+              date: "2014-05-07"
+              href:
+                1: "http://www.htc.com/de/smartphones/htc-one-mini-2/"
+              uaprof:
+                1: "http://www.htcmms.com.tw/Android/Common/UlrIAz8JY9/ua-profile.xml"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+              devicePixelRatio: 2
+            viewport:
+              width: 360
+              height: 512
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              lte: 1800,2600,900,800
+              nfc: true
+        One mini 601e:
+          extends:
+            - device:
+                brand: HTC
+                model: One mini
         One S:
           capabilities:
             info:
@@ -4685,6 +4821,11 @@ device:
             - device:
                 brand: HTC
                 model: One X
+        OneSV:
+          extends:
+            - device:
+                brand: HTC
+                model: One SV
         OneX:
           extends:
             - device:
@@ -5495,6 +5636,11 @@ device:
               width: 540
               height: 960
               colors: 16M
+        Sensation Z710e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation
         Sensation 4G:
           capabilities:
             info:
@@ -5519,6 +5665,16 @@ device:
               width: 540
               height: 960
               colors: 16M
+        Sensation XE with Beats Audio:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XE
+        Sensation XE with Beats Audio Z715e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XE
         Sensation XL:
           capabilities:
             info:
@@ -5531,12 +5687,32 @@ device:
               width: 480
               height: 800
               colors: 16M
+        Sensation XL with Beats Audio X315e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XL
         SensationXE:
           extends:
             - device:
                 brand: HTC
                 model: Sensation XE
+        SensationXE Beats:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XES
+        SensationXE Beats Z715e:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XES
         SensationXL Beats:
+          extends:
+            - device:
+                brand: HTC
+                model: Sensation XL
+        SensationXL Beats X315e:
           extends:
             - device:
                 brand: HTC
@@ -6060,6 +6236,11 @@ device:
               width: 240
               height: 320
               colors: 16M
+        Wildfire A3333:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire
         Wildfire S:
           capabilities:
             info:
@@ -6073,6 +6254,26 @@ device:
               width: 320
               height: 480
               colors: 262K
+        Wildfire S A510b:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        Wildfire S A510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        WildfireS:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
+        WildfireS A510e:
+          extends:
+            - device:
+                brand: HTC
+                model: Wildfire S
         Windows:
         Windows Phone:
         Windows Phone 8 / HTC Mozart:
@@ -6329,6 +6530,57 @@ device:
             capabilities:
               device:
                 type: 'tablet'
+        4Afrika:
+        A199:
+        Ascend G300:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8815
+        Ascend G330:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8825-1
+        Ascend G510:
+          extends:
+            - device:
+                brand: Huawei
+                model: G510-0100
+        Ascend Y201PRO:
+          capabilities:
+            info:
+              marketing_name: Ascend Y201 Pro
+              href:
+                1: "http://www.huaweidevices.de/ascend-y201-pro?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 262k
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        Ascend Y300:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y300-0000
+          capabilities:
+            bearer:
+              umts: 900,2100
+        HUAWEI Ascend G525:
+          extends:
+            - device:
+                brand: Huawei
+                model: G525-U00
         C8500:
           capabilities:
             device:
@@ -6369,36 +6621,1424 @@ device:
               width: 240
               height: 320
               colors: 262k
-        'G700-U10':
+        C8813D:
+        C8950D:
+        CM990:
+        D2-0082:
           capabilities:
+            info:
+              marketing_name: Ascend D2
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/d2-2010-en.htm"
             device:
-              type: 'phablet'
-        'IdeosS7':
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: 850/900/1800/1900
+              umts: 850/900/2100
+              lte: false
+              wifi: 802.11 a/b/g/n
+              bluetooth: 4.0
+              nfc: false
+        dtab01:
+        G300:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8815
+        G350-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend G350
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g350-u20-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 a/b/g/n
+              bluetooth: 2.1
+              nfc: false
+        G510-0010:
+          extends:
+            - device:
+                brand: Huawei
+                model: G510-0100
+        G510-0100:
+          capabilities:
+            info:
+              marketing_name: Ascend G510
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g510-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 a/b/g/n
+              bluetooth: 2.1
+              nfc: false
+        G510-0200:
+          extends:
+            - device:
+                brand: Huawei
+                model: G510-0100
+        G510-0251:
+          extends:
+            - device:
+                brand: Huawei
+                model: G510-0100
+        G520-0000:
+          capabilities:
+            info:
+              marketing_name: Ascend G520
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: false
+              td_scdma: 2100
+              wifi: 802.11 b/g/n
+              bluetooth: 3.1
+              nfc: false
+        G520-5000:
+          extends:
+            - device:
+                brand: Huawei
+                model: G520-0000
+        G525-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend G525
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g525-u00-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.0
+              nfc: false
+        G526-L11:
+          capabilities:
+            info:
+              marketing_name: Ascend G526
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g526-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: 1800,2600,800
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G526-L22:
+          extends:
+            - device:
+                brand: Huawei
+                model: G526-L11
+          capabilities:
+            bearer:
+              umts: 850,900,2100
+              lte: 1800,2600
+        G526-L33:
+          extends:
+            - device:
+                brand: Huawei
+                model: G526-L11
+          capabilities:
+            bearer:
+              gsm: 850,1800,1900
+              umts: 850,1900,2100
+              lte: 1700,2600
+        G600:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8950-1
+        G610-T00:
+          extends:
+            - device:
+                brand: Huawei
+                model: G610-U00
+        G610-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend G610
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g610-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 11
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: true
+              nfc: false
+        G610-U15:
+          extends:
+            - device:
+                brand: Huawei
+                model: G610-U00
+        G610-U20:
+          extends:
+            - device:
+                brand: Huawei
+                model: G610-U00
+        G610-U30:
+          extends:
+            - device:
+                brand: Huawei
+                model: G610-U00
+        G630-U20:
+          capabilities:
+            info:
+              marketing_name: Ascend G630
+              href:
+                1: "http://www.huaweidevices.de/ascend-g630?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 42
+              hspa_ul_rate: 5.76
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G6609:
+        G6-L11:
+          extends:
+            - device:
+                brand: Huawei
+                model: G6-U10
+          capabilities:
+            info:
+              marketing_name: Ascend G6 4G
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g6-l11-en.htm"
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: 800,1700,1800,1900,2100,2600
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: true
+        G6-U00:
+          extends:
+            - device:
+                brand: Huawei
+                model: G6-U10
+        G6-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend G6
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g6-u10-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G700-T00:
+          extends:
+            - device:
+                brand: Huawei
+                model: G700-U10
+        G700-U00:
+          extends:
+            - device:
+                brand: Huawei
+                model: G700-U10
+        G700-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend G700
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g700-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G700-U20:
+          extends:
+            - device:
+                brand: Huawei
+                model: G700-U10
+        G716-L070_LTE:
+        G7300:
+        G730-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend G730
+              href:
+                1: "http://www.huaweidevices.de/ascend-g730?show=specs"
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.5
+              width: 540
+              height: 960
+              color: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 5.76
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G730-U10:
+          extends:
+            - device:
+                brand: Huawei
+                model: G730-U00
+        G740-L00:
+          capabilities:
+            info:
+              marketing_name: Ascend G740
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/g740-l00-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 2100
+              lte: 1800,2600,800
+              wifi: 802.11b/g/n
+              bluetooth: 4.0
+              nfc: false
+        G750-T00:
+        G730-U10:
+          extends:
+            - device:
+                brand: Huawei
+                model: G750-U10
+        G750-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend G750
+              href:
+                1: "http://www.huaweidevices.de/ascend-g750?show=specs"
+            device:
+              type: phablet
+              os: Android
+              dualsim: true
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+              color: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 5.76
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        H30-T00:
+        H30-T10:
+        H30-U10:
+        H866C:
+        H868C:
+        HN3-U00:
+        HN3-U01:
+        Ideos:
+          capabilities:
+            info:
+              marketing_name: Ideos
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 256k
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 7.2
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+        IdeosS7:
           capabilities:
             device:
               type: 'tablet'
-        'Mate':
+        IdeosS7 Slim:
+          extends:
+            - device:
+                brand: Huawei
+                model: IdeosS7
+        IdeosX5:
           capabilities:
             info:
-              note: 'TODO useragent missing'
+              marketing_name: Ideos X5
+              href:
+                1: "http://www.huaweidevices.de/ideos-x5?show=specs"
             device:
-              type: 'phablet'
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors:
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+        M835:
+        M860:
+        M865:
+        M865C:
+        M886:
+        M920:
+        M931:
+        MediaPad:
+          capabilities:
+            info:
+              marketing_name: MediaPad 7 Youth
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/mediapad7youth.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7.0
+              width: 1280
+              height: 800
+              colors: 256k
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        MediaPad 10 FHD:
+          capabilities:
+            info:
+              marketing_name: MediaPad 10 FHD
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/s10-101u-en.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 10.1
+              width: 1920
+              height: 1200
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              wifi: 802.11 b/g/n
+              bluetooth: false
+              nfc: false
+        MediaPad 10 LINK:
+          capabilities:
+            info:
+              marketing_name: MediaPad 10 LINK
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/s10-201u-en.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 10.1
+              width: 1280
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: false
+              umts: false
+              lte: true
+              lte_dl_rate: 150
+              lte_ul_rate: 50
+              wifi: 802.11 b/g/n
+              bluetooth: false
+              nfc: false
+        MediaPad 7 Lite:
+          capabilities:
+            info:
+              marketing_name: MediaPad 7 Lite
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/s7-931u-en.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        MediaPad 7 Vogue:
+          capabilities:
+            info:
+              marketing_name: MediaPad 7 Vogue
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/s7-601u-en.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11b/g/n
+              bluetooth: 3.0
+        MediaPad 7 Youth:
+          capabilities:
+            info:
+              marketing_name: MediaPad 7 Youth
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/mediapad7youth.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7.0
+              width: 1024
+              height: 600
+              colors: 16M
+            bearer:
+              gsm: true
+              umts: true
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: false
+              nfc: false
+        MediaPad M1 8.0:
+          capabilities:
+            info:
+              marketing_name: MediaPad M1
+              date: "2014-06-04"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 8.0
+              width: 1280
+              height: 800
+              colors: 16M
+            bearer:
+              lte: true
+        MediaPad X1 7.0:
+          capabilities:
+            info:
+              marketing_name: MediaPad X1
+              href:
+                1: "http://consumer.huawei.com/en/tablets/tech-specs/7d-501l-en.htm"
+            device:
+              type: tablet
+              os: Android
+            screen:
+              size: 7.0
+              width: 1920
+              height: 1200
+              colors: 16M
+            bearer:
+              lte: true
+              wifi: 802.11a/b/g/n
+              bluetooth: 4.0
+        MT1-U06:
+          capabilities:
+            info:
+              marketing_name: Ascend Mate
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/mt1-u06-en.htm"
+            device:
+              type: phablet
+              os: Android
             screen:
               size: 6.1
               width: 720
               height: 1280
-        'Telpad Dual S':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1700,1900,2100
+              lte: false
+              wifi: 802.11 a/b/g/n
+              bluetooth: 4.0
+              nfc: false
+        MT2-L00:
+          capabilities:
+            info:
+              marketing_name: Ascend Mate2 4G
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/mt2-l03-en.htm"
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 6.1
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: B1,B2,B5,B8
+              lte: false
+              lte_tdd: B41
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        MT2-L02:
+          extends:
+            - device:
+                brand: Huawei
+                model: MT2-L00
+          capabilities:
+            bearer:
+              umts: false
+              td_scdma: B34/B39
+              lte_tdd: B38/B39/B40/B41
+        MT2-L03:
+          extends:
+            - device:
+                brand: Huawei
+                model: MT2-L00
+          capabilities:
+            bearer:
+              umts: B1/B2/B4/B5
+              td_scdma: false
+              lte_tdd: false
+              lte: B2/B4/B5/B17
+        MT2-L05:
+          extends:
+            - device:
+                brand: Huawei
+                model: MT2-L02
+        P2-6011:
+          capabilities:
+            info:
+              marketing_name: Ascend P2
+              date:
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/p2-6011-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1700,1900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        P6s:
+        P6S-U06:
+        P6-U00:
+          extends:
+            - device:
+                brand: Huawei
+                model: P6-U06
+        P6-U06:
+          capabilities:
+            info:
+              marketing_name: Ascend P6
+              date: "2013-06-30"
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/p6-u06-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850/900/1800/1900
+              umts: 850/900/1700/1900/2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        P7-L10:
+          capabilities:
+            info:
+              marketing_name: Ascend P7
+              date: "2014-06-04"
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/ascend-p7.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 2100,1900,850,900
+              lte: 2100,1800,2600,900,800
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: true
+        P7Mini:
+          capabilities:
+            info:
+              marketing_name: Ascend P7 Mini
+              date: "2014-06-04"
+              href:
+                1: ""
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: true
+              lte: true
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        T9510E:
+        Telpad Dual S:
           capabilities:
             device:
               type: 'tablet'
-        'U8651S':
+        U7510:
+        U7519:
+        U8150:
+          extends:
+            - device:
+                brand: Huawei
+                model: Ideos
+        U8180:
+        U8185:
+        U8186:
+        U8350:
+        U8500:
+        U8510:
+          capabilities:
+            info:
+              marketing_name: Ideos X3
+              href:
+                1: "http://www.huaweidevices.de/ideos-x3?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.2
+              width: 480
+              height: 800
+              colors: 262k
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 7.2
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+        U8510 w/ M.E.R.:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8510
+        U8520:
+        U8600:
+        U8650:
+          capabilities:
+            info:
+              marketing_name: Sonic
+              href:
+                1: "http://www.huaweidevices.de/sonic?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 262k
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+        U8650-1:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8650
+        U8651:
+        U8651S:
           capabilities:
             device:
               type: 'smartphone'
-        'Y300':
+        U8655-1:
+        U8661:
+        U8665:
+        U8666-1:
+        U8666E:
+        U8666E-51:
+        U8666N:
+        U8667:
+        U8680:
+        U8686:
+        U8730:
+        U8800:
+          extends:
+            - device:
+                brand: Huawei
+                model: IdeosX5
+        U8800-51:
+          extends:
+            - device:
+                brand: Huawei
+                model: IdeosX5
+        U8800Pro:
+          extends:
+            - device:
+                brand: Huawei
+                model: IdeosX5
+        U8800 Pro:
+          extends:
+            - device:
+                brand: Huawei
+                model: IdeosX5
+        U8812D:
+        U8815:
           capabilities:
+            info:
+              marketing_name: Ascend G300
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/u8815-en.htm"
             device:
-              type: 'smartphone'
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 262k
+            bearer:
+              gsm: 850,900,1800,1900
+              edge_dl_rate: 0.2368
+              edge_ul_rate: 0.1184
+              umts: 900,2100
+              hspa_dl_rate: 7.2
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        U8815N:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8815
+        U8816:
+        U8825-1:
+          capabilities:
+            info:
+              marketing_name: Ascend G330
+              href:
+                1: "http://consumer.huawei.com/en/support/manuals/detail/index.htm?id=13838"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 262k
+            bearer:
+              gsm: 850,900,1800,1900
+              edge_dl_rate: 0.2368
+              edge_ul_rate: 0.1184
+              umts: 900,2100
+              hspa_dl_rate: 7.2
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        U8825D:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8825-1
+        U8836D:
+        U8850:
+          capabilities:
+            info:
+              marketing_name: Vision
+              href:
+                1: "http://www.huaweidevices.de/vision?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 262k
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 14.4
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        U8860:
+          capabilities:
+            info:
+              marketing_name: Honor
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/u8860-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        U8950-1:
+          capabilities:
+            info:
+              marketing_name: Ascend G600
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/u8950-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 11
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        U8950-51:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8950-1
+        U8950D:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8950-1
+        U8950N-1:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8950-1
+        U8950N-51:
+          extends:
+            - device:
+                brand: Huawei
+                model: U8950-1
+        U9200:
+          capabilities:
+            info:
+              marketing_name: Ascend P1
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/u9200-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        U9200-92:
+          extends:
+            - device:
+                brand: Huawei
+                model: U9200
+        U9202L-1:
+        U9500:
+          capabilities:
+            info:
+              marketing_name: Ascend D1
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/u9500-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: true
+              umts: true
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        U9500E:
+          extends:
+            - device:
+                brand: Huawei
+                model: U9500
+        U9501L:
+        U9508:
+          capabilities:
+            info:
+              marketing_name: Ascend G615
+              href:
+                1: "http://www.huaweidevices.de/ascend-g615?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850/900/1800/1900
+              umts: 850/900/1700/1900/2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 5.76
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        U9510:
+          extends:
+            - device:
+                brand: Huawei
+                model: U9500
+        U9510E:
+          capabilities:
+            info:
+              marketing_name: Ascend D1 quad XL
+        U9700L:
+        W1-C00:
+          extends:
+            - device:
+                brand: Huawei
+                model: W1-U00
+        W1-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend W1
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/w1-u00-en.htm"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+              nfc: false
+        W1-U34:
+          extends:
+            - device:
+                brand: Huawei
+                model: W1-U00
+        W2-T01:
+          extends:
+            - device:
+                brand: Huawei
+                model: W2-U00
+        W2-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend W2
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/w2-u00-en.htm"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 3.0
+              nfc: false
+        Y210-0100:
+          capabilities:
+            info:
+              marketing_name: Ascend Y210
+              href:
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+            bearer:
+              gsm: 900,1800,1900
+              umts: 900,1900,2100
+              wifi: 802.11 b/g/n
+              bluetooth: 2.1
+        Y210-0151:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y210-0100
+        Y210-0200:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y210-0100
+        Y210-2010:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y210-0100
+        Y220-U05:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y220-U10
+        Y220-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend Y220
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/y220-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11b/g/n
+              bluetooth: 3.0
+              nfc: false
+        Y300-0000:
+          capabilities:
+            info:
+              marketing_name: Ascend Y300
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/y300-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: false
+              lte: false
+              wifi: 802.11b/g/n
+              bluetooth: 2.1
+              nfc: false
+        Y300-0100:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y300-0000
+          capabilities:
+            bearer:
+              umts: 900,2100
+        Y300-0151:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y300-0000
+          capabilities:
+            bearer:
+              umts: 850,1900,2100
+        Y301A2:
+          capabilities:
+            info:
+              marketing_name: Vitria
+              href:
+                1: "http://consumer.huawei.com/us/mobile-phones/tech-specs/y301-a2-us.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,1700,1900,2100
+              lte: 1700,2100
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        Y320-U01:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y320-U10
+        Y320-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend Y320
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/y320-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11b/g/n
+              bluetooth: 3.0
+              nfc: false
+        Y320-U151:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y320-U10
+        Y320-U30:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y320-U10
+        Y320-U351:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y320-U10
+        Y321-C00:
+          capabilities:
+            info:
+              marketing_name: Ascend Y321
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 900,1800,1900
+              umts: false
+              cdma: 800,2000
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        Y330-U01:
+          capabilities:
+            info:
+              marketing_name: Ascend Y330
+              href:
+                1: "http://www.huaweidevices.de/ascend-y330?show=specs"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850/900/1800/1900
+              umts: 900/2100
+              hspa_dl_rate: 21
+              hspa_ul_rate: 5.76
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        Y511-T00:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y511-U10
+        Y511-U10:
+          capabilities:
+            info:
+              marketing_name: Ascend Y511
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/y511-en.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11 b/g/n
+              bluetooth: 4.0
+              nfc: false
+        Y511-U251:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y511-U10
+        Y511-U30:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y511-U10
         Y530-U00:
           capabilities:
             info:
@@ -6414,10 +8054,41 @@ device:
               height: 854
               colors: 16M
             bearer:
-              gsm: "850,900,1800,1900"
-              umts: "900,2100"
+              gsm: 850,900,1800,1900
+              umts: 900,2100
               bluetooth: 4
               wifi: 802.11 b/g/n
+        Y530-U00C150B177:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y530-U00
+        Y530-U00C150B179:
+          extends:
+            - device:
+                brand: Huawei
+                model: Y530-U00
+        Y600-U00:
+          capabilities:
+            info:
+              marketing_name: Ascend Y600
+              href:
+                1: "http://consumer.huawei.com/en/mobile-phones/tech-specs/ascendy600.htm"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: 802.11b/g/n
+              bluetooth: 3.0
+              nfc: false
     'Hyundai':
       capabilities:
         info:
@@ -7483,6 +9154,29 @@ device:
               size: 5.2
               width: 1080
               height: 1920
+        'G3':
+          capabilities:
+            info:
+              marketing_name: G3
+              date: '2014-06-03'
+              uaprof:
+                1: 'http://gsm.lge.com/html/gsm/D855-M3-D1.xml'
+              href:
+                1: 'http://www.lg.com/uk/mobile-phones/lg-D855'
+            device:
+              type: phablet
+              os: Android
+            screen:
+              size: 5.5
+              width: 1440
+              height: 2560
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              bluetooth: 4.0
+              wifi: 802.11 b/g/n
+              nfc: true
         'D620':
           capabilities:
             info:
@@ -7499,8 +9193,9 @@ device:
             bearer:
               gsm: 850,900,1800,1900
               umts: 850,900,1900,2100
+              lte: 800,900,1800,2100,2600
               bluetooth: 4.0
-              wifi: 802.11 b/g/n
+              wifi: 802.11 a/b/g/n/ac
               nfc: true
         'D800':
           extends:
@@ -7542,6 +9237,21 @@ device:
             - device:
                 brand: 'LG'
                 model: 'G2'
+        'D850':
+          extends:
+            - device:
+                brand: 'LG'
+                model: 'G3'
+        'D851':
+          extends:
+            - device:
+                brand: 'LG'
+                model: 'G3'
+        'D855':
+          extends:
+            - device:
+                brand: 'LG'
+                model: 'G3'
         'F320K':
           extends:
             - device:
@@ -7567,6 +9277,11 @@ device:
             - device:
                 brand: 'LG'
                 model: 'G2'
+        'VS985':
+          extends:
+            - device:
+                brand: 'LG'
+                model: 'G3'
         'G Flex':
           capabilities:
             info:
@@ -8083,13 +9798,68 @@ device:
                 capabilities:
                   device:
                     type: 'phone'
+              'Nokia Series 30 Plus':
+                capabilities:
+                  device:
+                    type: 'phone'
       model:
-        220:
+        205:
           capabilities:
             info:
-              marketing_name: River
-              uaprof: http://nds1.nds.nokia.com/uaprof/Nokia220r100.xml
-              date: '2014-03-27'
+              marketing_name: Asha 205
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha205/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia205r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            keyboard:
+              type: qwerty
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 64k
+              touch: false
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 2.1
+              wifi: false
+        206:
+          capabilities:
+            info:
+              marketing_name: Asha 206
+              href:
+                1: "http://www.nokia.com/global/products/phone/206/specifications"
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia206r100.xml'
+              date: '2008-01-01'
+            device:
+              type: phone
+              os: Series40
+            keyboard:
+              type: t9
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 64k
+              touch: false
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 2.1
+              wifi: false
+        210:
+          capabilities:
+            info:
+              marketing_name: Asha 210
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha210/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia210r100.xml'
+              date: '2014-05-07'
             device:
               type: phone
               os: Series40
@@ -8097,14 +9867,717 @@ device:
               size: 2.4
               width: 240
               height: 320
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 2.1
+              wifi: 802.11 b/g
+        220:
+          capabilities:
+            info:
+              marketing_name: River
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia220r100.xml'
+              date: '2014-03-27'
+            device:
+              type: phone
+              os: Series30Plus
+            keyboard:
+              type: t9
+            screen:
+              size: 2.4
+              width: 240
+              height: 320
+              colors: 262k
+              touch: false
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 2.1
+        225:
+          capabilities:
+            info:
+              marketing_name: 225
+              href:
+                1: 'http://www.nokia.com/global/products/phone/225/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia225r100.xml'
+              date: '2014-03-27'
+            device:
+              type: phone
+              os: Series30Plus
+            keyboard:
+              type: t9
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 262k
+              touch: false
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+        302:
+          capabilities:
+            info:
+              marketing_name: Asha 302
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha302/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia302r100.xml'
+              date: '2008-01-01'
+            device:
+              type: phone
+              os: Series40
+            keyboard:
+              type: qwerty
+            screen:
+              size: 2.4
+              width: 320
+              height: 240
+              colors: 64k
+              touch: false
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              bluetooth: 2.1
+              wifi: 802.11 b/g/n
+        303:
+          capabilities:
+            info:
+              marketing_name: Asha 303
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha303/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia303r100.xml'
+              date: '2008-01-01'
+            device:
+              type: phone
+              os: Series40
+            keyboard:
+              type: qwerty
+            screen:
+              size: 2.6
+              width: 240
+              height: 320
+              colors: 64k
+              touch: true
+            bearer:
+              gsm: "900,1800"
+              umts: "900,1900"
+              bluetooth: 2.1
+              wifi: 802.11 b/g/n
+        305:
+          capabilities:
+            info:
+              marketing_name: Asha 305
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha305/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia305r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 2.1
+              wifi: false
+        306:
+          capabilities:
+            info:
+              marketing_name: Asha 306
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha306/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia306r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+              wifi: 802.11 b/g
+        308:
+          capabilities:
+            info:
+              marketing_name: Asha 308 Dual Sim
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha308/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia308r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+              wifi: false
+        309:
+          capabilities:
+            info:
+              marketing_name: Asha 309
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha309/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia309r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+              wifi: 802.11 b/g
+        310:
+          capabilities:
+            info:
+              marketing_name: Asha 310
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha310/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia310r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+              wifi: 802.11 b/g
+        311:
+          capabilities:
+            info:
+              marketing_name: Asha 311
+              href:
+                1: 'http://www.nokia.com/global/products/phone/asha311/specifications/'
+              uaprof:
+                1: 'http://nds1.nds.nokia.com/uaprof/Nokia311r100.xml'
+              date: '2014-05-07'
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 400
+              colors: 64k
+            bearer:
+              gsm: "900,1800"
+              bluetooth: 3
+              wifi: 802.11 b/g/n
+        501:
+          capabilities:
+            info:
+              marketing_name: Asha 501
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha501/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia501r100.xml
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 320
               colors: 262k
             bearer:
-              gsm: 900,1800
-              bluetooth: 2.1
-        'Lumia 1320':
+              gsm: "900,1800"
+              umts: false
+              lte: false
+              bluetooth: 3
+              nfc: false
+              wifi: 802.11 b/g/n
+        501s:
+          extends:
+            - device:
+                bramd: Nokia
+                model: 503
           capabilities:
+            info:
+              marketing_name: Asha 501 Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha501-dual-sim/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia501sr100.xml
+        503:
+          capabilities:
+            info:
+              marketing_name: Asha 503
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha503/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia503r100.xml
             device:
-              type: 'phablet'
+              type: phone
+              os: Series40
+            screen:
+              size: 3
+              width: 240
+              height: 320
+              colors: 262k
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 3
+              nfc: false
+              wifi: 802.11 b/g/n
+        503s:
+          extends:
+            - device:
+                bramd: Nokia
+                model: 503
+          capabilities:
+            info:
+              marketing_name: Asha 503 Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha503-dual-sim/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia503sr100.xml
+        Asha230SingleSIM:
+          capabilities:
+            info:
+              marketing_name: Asha 230
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha230/specifications/"
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 262k
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: false
+              lte: false
+              bluetooth: 3
+              nfc: false
+              wifi: false
+        Asha230DualSIM:
+          extends:
+            - device:
+                brand: Nokia
+                model: Asha230SingleSIM
+          capabilities:
+            info:
+              marketing_name: Asha 230
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha230-dual-sim/specifications/"
+        Asha500SingleSIM:
+          capabilities:
+            info:
+              marketing_name: Asha 500
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha500/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia500r100.xml
+            device:
+              type: phone
+              os: Series40
+            screen:
+              size: 2.8
+              width: 240
+              height: 320
+              colors: 262k
+            bearer:
+              gsm: "900,1800"
+              umts: false
+              lte: false
+              bluetooth: 3
+              nfc: false
+              wifi: 802.11 b/g/n
+        Asha500DualSIM:
+          extends:
+            - device:
+                brand: Nokia
+                model: Asha500SingleSIM
+          capabilities:
+            info:
+              marketing_name: Asha 500 Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/asha500-dual-sim/specifications/"
+              uaprof:
+                1: http://nds1.nds.nokia.com/uaprof/Nokia500sr100.xml
+        'id313-3':
+          extends:
+            - device:
+                brand: Nokia
+                model: Lumia 630
+        Lumia 510:
+          capabilities:
+            info:
+              marketing_name: Lumia 510
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia510/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 2.1
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 520:
+          capabilities:
+            info:
+              marketing_name: Lumia 520
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia520/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 1
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 525:
+          capabilities:
+            info:
+              marketing_name: Lumia 525
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia525/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 4
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 610:
+          capabilities:
+            info:
+              marketing_name: Lumia 610
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia610/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: false
+              bluetooth: 2.1
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 620:
+          capabilities:
+            info:
+              marketing_name: Lumia 620
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia620/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.8
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: false
+              bluetooth: 1
+              nfc: true
+              wifi: 802.11 a/b/g/n
+        Lumia 625:
+          capabilities:
+            info:
+              marketing_name: Lumia 625
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia625/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              lte: "2,7,20"
+              bluetooth: 2
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 630:
+          capabilities:
+            info:
+              marketing_name: Lumia 630
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia630/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+              devicePixelRatio: 1.34
+            viewport:
+              width: 320
+              height: 485
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 4
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 635:
+          capabilities:
+            info:
+              marketing_name: Lumia 635
+              date: "2014-06-04"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia635/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              edge_dl_rate: 0.296
+              edge_ul_rate: 0.2368
+              umts: 850,1700,1900,2100
+              hsdpa_rate: 42.2
+              hsupa_rate: 5.76
+              lte: 1700,2600
+              lte_dl_rate: 100
+              lte_ul_rate: 50
+              bluetooth: 4
+              nfc: false
+              wifi: 802.11 b/g/n
+        Lumia 800:
+          capabilities:
+            info:
+              marketing_name: Lumia 800
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia800/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,1900,2100"
+              lte: false
+              bluetooth: 2.1
+              nfc: false
+              wifi: 802.11 a/b/g/n
+        Lumia 820:
+          capabilities:
+            info:
+              marketing_name: Lumia 820
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia820/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "1,3,7,8,20"
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n
+        Lumia 909:
+          extends:
+            - device:
+                brand: Nokia
+                model: Lumia 1020
+        Lumia 920:
+          capabilities:
+            info:
+              marketing_name: Lumia 920
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia920/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.5
+              width: 768
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "1,3,7,8,20"
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n
+        Lumia 925:
+          capabilities:
+            info:
+              marketing_name: Lumia 925
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia925/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.5
+              width: 768
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "1,3,7,8,20"
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n
+        Lumia 930:
+          capabilities:
+            info:
+              marketing_name: Lumia 930
+              date: "2014-06-04"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia930/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 850,900,1900,2100
+              lte: 2100,1800,2600,900,800
+              lte_dl_rate: 150
+              lte_ul_rate: 50
+              hsdpa_rate: 42.2
+              hsupa_rate: 5.76
+              edge_dl_rate: 0.2368
+              edge_ul_rate: 0.2368
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n/ac
+        Lumia 1020:
+          capabilities:
+            info:
+              marketing_name: Lumia 1020
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia1020/specifications/"
+            device:
+              type: smartphone
+              os: Windows Phone
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,2100"
+              lte: "1,3,7,8,20"
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n
+        Lumia 1320:
+          capabilities:
+            info:
+              marketing_name: Lumia 1320
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia1320/specifications/"
+            device:
+              type: phablet
               os: Windows Phone
             screen:
               size: 6.0
@@ -8114,17 +10587,98 @@ device:
               gsm: "850,900,1800,1900"
               umts: "850,900,2100"
               lte: "800,1800,2600"
-              bluetooth: 3
-              nfc: true   
+              bluetooth: 4
+              nfc: true
               wifi: 802.11 b/g/n
-        'Lumia 1520':
+        Lumia 1520:
           capabilities:
+            info:
+              marketing_name: Lumia 1520
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/lumia1520/specifications/"
             device:
-              type: 'phablet'
+              type: phablet
+              os: Windows Phone
             screen:
               size: 6.0
               width: 1080
               height: 1920
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "1,3,7,8,20"
+              bluetooth: 4
+              nfc: true
+              wifi: 802.11 a/b/g/n/ac
+        X:
+          capabilities:
+            info:
+              marketing_name: X Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/nokia-x/specifications/"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 2
+              nfc: false
+              wifi: 802.11 b/g/n
+        Xplus:
+          capabilities:
+            info:
+              marketing_name: X+ Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/nokia-x-plus/specifications/"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 2
+              nfc: false
+              wifi: 802.11 b/g/n
+
+
+        XL:
+          capabilities:
+            info:
+              marketing_name: X+ Dual Sim
+              date: "2014-05-07"
+              href:
+                1: "http://www.nokia.com/global/products/phone/nokia-xl/specifications//"
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "900,2100"
+              lte: false
+              bluetooth: 2
+              nfc: false
+              wifi: 802.11 b/g/n
     'Nook':
       capabilities:
         info:
@@ -16090,6 +18644,28 @@ device:
               width: 320
               height: 480
               colors: 16M
+        SM-C115:
+          capabilities:
+            info:
+              marketing_name: Galaxy K zoom
+              date: '2014-06-03'
+              href:
+                1: 'http://www.samsung.com/sg/consumer/mobile-devices/smartphone/android-os/SM-C1150ZWAEUR-spec'
+            device:
+              type: camera
+              os: Android
+            screen:
+              size: 4.8
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: "850,900,1800,1900"
+              umts: "850,900,1900,2100"
+              lte: "2100,1900,1800,850,2600,900,800"
+              wifi: "802.11 a/b/g/n"
+              bluetooth: 4
+              nfc: true
         SM-N7505:
           capabilities:
             info:
@@ -16128,6 +18704,7 @@ device:
               lte: 800,850,900,1800,2100,2600
               wifi: 802.11 a/b/g/n/ac
               bluetooth: 4
+              nfc: false
         SM-G900F:
           capabilities:
             info:
@@ -16152,21 +18729,6 @@ device:
               hsupa: 5.7Mbps
               lteul: 50Mbps
               ltedl: 150Mbps
-        NEW_Galaxy_Note_3_Neo:
-          capabilities:
-            info:
-              date: "2014-02-01"
-              marketing_name: Galaxy Note 3 Neo
-            device:
-              type: phablet
-              os: Android
-            screen:
-              size: 5.5
-              width: 720
-              height: 1280
-            bearer:
-              lte: true
-              nfc: true
     'Siemens':
       capabilities:
         device:
@@ -16481,7 +19043,32 @@ device:
           extends:
             - device:
                 brand: Sony
-                model: Xperia E2
+                model: Xperia M2
+          capabilities:
+            bearer:
+              umts: 850,900,2100
+              gsm: 850,900,1800,1900
+              lte: 2100,1800,850,2600,900,800
+        D2305:
+          extends:
+            - device:
+                brand: Sony
+                model: Xperia M2
+          capabilities:
+            bearer:
+              umts: 900,850,2100
+              gsm: 850,900,1800,1900
+              lte: false
+        D2306:
+          extends:
+            - device:
+                brand: Sony
+                model: Xperia M2
+          capabilities:
+            bearer:
+              umts: 850,1700,1900,2100
+              gsm: 850,900,1800,1900
+              lte: 1700,2600,700
         D5303:
           extends:
             - device:
@@ -17036,14 +19623,24 @@ device:
           capabilities:
             info:
               marketing_name: Xperia M2
+              date: '2014-03-27'
             device:
               type: smartphone
               os: Android
             screen:
-              size: 4
-              width: 854
-              height: 480
+              size: 4.8
+              width: 540
+              height: 960
               colors: 16M
+            bearer:
+              hspap: true
+              edge: true
+              umts: 900,850,2100
+              gsm: 850,900,1800,1900
+              lte: 2100,1800,850,2600,900,800
+              wifi: 802.11 a/b/g/n
+              bluetooth: 4.0
+              nfc: true
         Xperia Miro:
           capabilities:
             info:
@@ -17118,7 +19715,7 @@ device:
               colors: 16M
         Xperia T2 Ultra:
           capabilities:
-            info: 
+            info:
               marketing_name: Xperia T2 Ultra
               uaprof: http://uaprof.sonymobile.com/D5503R1411.xml
               date: '2013-12-20'
@@ -18577,8 +21174,48 @@ device:
         device:
           type: 'smartphone'
       model:
-        'CINK':
-        'CINK FIVE':
+        BARRY:
+          capabilities:
+            info:
+              marketing_name: BARRY
+              href:
+                1: 'http://de.wikomobile.com/m132-Smartphones-BARRY'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 480
+              height: 854
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              bluetooth: 4
+              wifi: true
+              nfc: false
+        BLOOM:
+          capabilities:
+            info:
+              marketing_name: BLOOM
+              href:
+                1: 'http://de.wikomobile.com/m211-Smartphones-BLOOM'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              bluetooth: 4
+              wifi: true
+              nfc: false
+        CINK:
+        CINK FIVE:
           capabilities:
             device:
               type: 'smartphone'
@@ -18586,7 +21223,7 @@ device:
               size: 5.0
               width: 720
               height: 1280
-        'CINK KING':
+        CINK KING:
           capabilities:
             device:
               type: 'smartphone'
@@ -18594,7 +21231,7 @@ device:
               size: 5.0
               width: 480
               height: 854
-        'CINK PEAX':
+        CINK PEAX:
           capabilities:
             device:
               type: 'smartphone'
@@ -18602,15 +21239,27 @@ device:
               size: 4.5
               width: 540
               height: 960
-        'CINK PEAX 2':
+        CINK PEAX 2:
           capabilities:
+            info:
+              marketing_name: CINK PEAX 2
+              href:
+                1: 'http://de.wikomobile.com/m75-Smartphones-CINK-PEAX-2'
             device:
-              type: 'smartphone'
+              type: smartphone
+              os: Android
             screen:
               size: 4.5
               width: 540
               height: 960
-        'CINK SLIM':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              bluetooth: 4
+              wifi: 802.11 b/g/n
+              nfc: false
+        CINK SLIM:
           capabilities:
             device:
               type: 'smartphone'
@@ -18618,7 +21267,7 @@ device:
               size: 4.0
               width: 480
               height: 800
-        'CINK+':
+        CINK+:
           capabilities:
             device:
               type: 'smartphone'
@@ -18626,39 +21275,129 @@ device:
               size: 3.5
               width: 320
               height: 480
-        'DARKFULL':
+        DARKFULL:
           capabilities:
+            info:
+              marketing_name: DARKFULL
+              href:
+                1: 'http://de.wikomobile.com/m109-Smartphones-DARKFULL'
             device:
               type: 'smartphone'
+              os: Android
+              dualsim: true
             screen:
               size: 5.0
               width: 1080
               height: 1920
-        'DARKMOON':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4
+        DARKMOON:
           capabilities:
+            info:
+              marketing_name: DARKMOON
+              href:
+                1: 'http://de.wikomobile.com/m110-Smartphones-DARKMOON'
             device:
-              type: 'smartphone'
+              type: smartphone
+              os: Android
+              dualsim: true
             screen:
               size: 4.7
               width: 720
               height: 1280
-        'DARKNIGHT':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4
+        DARKNIGHT:
           capabilities:
+            info:
+              marketing_name: DARKNIGHT
+              href:
+                1: 'http://de.wikomobile.com/m111-Smartphones-DARKNIGHT'
             device:
-              type: 'smartphone'
+              type: smartphone
+              os: Android
             screen:
               size: 5.0
               width: 720
               height: 1280
-        'DARKSIDE':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4
+        DARKSIDE:
           capabilities:
+            info:
+              marketing_name: DARKSIDE
+              href:
+                1: 'http://de.wikomobile.com/m71-Smartphones-DARKSIDE'
             device:
               type: 'phablet'
             screen:
               size: 5.7
               width: 720
               height: 1280
-        'OZZY':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4
+        FIZZ:
+          capabilities:
+            info:
+              marketing_name: FIZZ
+              href:
+                1: 'http://de.wikomobile.com/m237-Smartphones-FIZZ'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.0
+              width: 480
+              height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              bluetooth: 4
+              wifi: true
+              nfc: false
+        HIGHWAY:
+          capabilities:
+            info:
+              marketing_name: HIGHWAY
+              href:
+                1: 'http://de.wikomobile.com/m146-Smartphones-HIGHWAY'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 5.0
+              width: 1080
+              height: 1920
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              bluetooth: 4
+              wifi: true
+              nfc: false
+        OZZY:
           capabilities:
             device:
               type: 'smartphone'
@@ -18666,22 +21405,87 @@ device:
               size: 3.5
               width: 320
               height: 480
-        'STAIRWAY':
+        RAINBOW:
           capabilities:
+            info:
+              marketing_name: RAINBOW
+              href:
+                1: 'http://de.wikomobile.com/m200-Smartphones-RAINBOW'
             device:
-              type: 'phablet'
+              type: smartphone
+              os: Android
             screen:
               size: 5.0
               width: 720
               height: 1280
-        'SUBLIM':
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              bluetooth: 4
+              wifi: true
+              nfc: false
+        STAIRWAY:
           capabilities:
+            info:
+              href:
+                1: 'http://de.wikomobile.com/m76-Smartphones-STAIRWAY'
             device:
-              type: 'smartphone'
+              type: phablet
+              os: Android
+            screen:
+              size: 5.0
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: false
+              wifi: true
+              bluetooth: 4
+        SUBLIM:
+          capabilities:
+            info:
+              marketing_name: SUBLIM
+              href:
+                1: 'http://de.wikomobile.com/m79-Smartphones-SUBLIM'
+            device:
+              type: smartphone
+              os: Android
             screen:
               size: 4.0
               width: 480
               height: 800
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,2100
+              lte: false
+              wifi: true
+              bluetooth: 2.1
+        WAX:
+          capabilities:
+            info:
+              marketing_name: WAX
+              href:
+                1: 'http://de.wikomobile.com/m206-Smartphones-WAX'
+            device:
+              type: smartphone
+              os: Android
+            screen:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+            bearer:
+              gsm: 850,900,1800,1900
+              umts: 900,1900,2100
+              lte: 800,1800,2600
+              bluetooth: 4
+              wifi: true
+              nfc: false
     'Wolfgang':
       capabilities:
         info:

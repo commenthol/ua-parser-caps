@@ -337,10 +337,20 @@ os:
       capabilities:
         user:
           view: 'tablet'
+      regexes:
+        - regex: 'WPDesktop'
+          capabilities:
+            user:
+              view: 'desktop'
     Windows RT 8.1:
       capabilities:
         user:
           view: 'tablet'
+      regexes:
+        - regex: 'WPDesktop'
+          capabilities:
+            user:
+              view: 'desktop'
     Windows Vista:
       capabilities:
         user:
@@ -400,9 +410,11 @@ device:
     HTC:
       model:
         P510e:
-          capabilities:
-            user:
-              view: tablet
+          regexes:
+            - regex_not: 'Mobile'
+              capabilities:
+                user:
+                  view: tablet
     'LG':
       regexes:
         - regex: 'NetCast'
@@ -413,6 +425,15 @@ device:
       capabilities:
         user:
           view: 'mobile'
+      regexes:
+        - regex: 'XBLWP7'
+          capabilities:
+            user:
+              view: 'desktop'
+        - regex: 'WPDesktop'
+          capabilities:
+            user:
+              view: 'desktop'
     'Motorola':
       regexes:
         - regex: '\bMIDP\b'

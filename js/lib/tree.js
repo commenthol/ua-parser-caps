@@ -202,8 +202,8 @@ var convertRegexes = M.convertRegexes = function (tree) {
 					if (regexes[i][j].regex && typeof(regexes[i][j].regex) === 'string') {
 						regexes[i][j].regex = new RegExp(regexes[i][j].regex, 'i');
 					}
-					else if (regexes[i][j].regexNot && typeof(regexes[i][j].regexNot) === 'string') {
-						regexes[i][j].regexNot = new RegExp(regexes[i][j].regexNot, 'i');
+					else if (regexes[i][j].regex_not && typeof(regexes[i][j].regex_not) === 'string') {
+						regexes[i][j].regex_not = new RegExp(regexes[i][j].regex_not, 'i');
 					}
 				}
 			}

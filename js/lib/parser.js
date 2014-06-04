@@ -98,7 +98,7 @@ M.parser = function (tree) {
 
 						if (tmp.capabilities &&
 							((tmp.regex    &&   tmp.regex.test(string)) ||
-								(tmp.regexNot && ! tmp.regexNot.test(string)))
+								(tmp.regex_not && ! tmp.regex_not.test(string)))
 						){
 							self.cap = merge(self.cap, tmp.capabilities);
 
