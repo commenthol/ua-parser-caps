@@ -1,6 +1,6 @@
 {
   "name": "ua-parser-caps",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "capabilities for ua-parser",
   "main": "js/index.js",
   "author": "Commenthol",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "mocha": ">=0.17.0",
-    "ua-parser": "git://github.com/commenthol/ua-parser.git#co-0.5"
+    "ua-parser": "git://github.com/commenthol/ua-parser.git#co-0.1.6"
   },
   "scripts": {
     "test": "node ./js/test/run.test.js"
