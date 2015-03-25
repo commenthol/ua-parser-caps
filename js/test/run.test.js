@@ -5,7 +5,7 @@ var Mocha = require('mocha'),
 	path = require('path');
 
 var mocha = new Mocha({
-	ui: 'tdd',
+	ui: 'bdd',
 	reporter: 'dot',
 });
 

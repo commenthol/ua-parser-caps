@@ -1429,7 +1429,7 @@ device:
               size: 10.1
               width: 1280
               height: 800
-              colors: 265k
+              colors: 262k
             bearer:
               bluetooth: 2.1
               wifi: 802.11 b/g/n
@@ -1449,7 +1449,7 @@ device:
               size: 10.1
               width: 1280
               height: 800
-              colors: 265k
+              colors: 262k
         A510:
           capabilities:
             info:
@@ -1463,7 +1463,7 @@ device:
               size: 10.1
               width: 1280
               height: 800
-              colors: 265k
+              colors: 262k
             camera:
               back: 5
               front: 1
@@ -1750,7 +1750,7 @@ device:
               size: 3.5
               width: 480
               height: 800
-              colors: 265k
+              colors: 262k
             camera:
               back: 5
             cpu:
@@ -1774,7 +1774,7 @@ device:
               size: 3.6
               width: 480
               height: 800
-              colors: 265k
+              colors: 262k
             cpu:
               speed: 800
             bearer:
@@ -6055,7 +6055,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         "3100":
           capabilities:
             info:
@@ -6069,7 +6069,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         "6175":
           capabilities:
             info:
@@ -6081,7 +6081,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         "6850":
           capabilities:
             info:
@@ -6094,7 +6094,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         "6875":
           extends:
             - device:
@@ -6121,7 +6121,7 @@ device:
               size: 2.2
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         "8900":
           capabilities:
             info:
@@ -6134,7 +6134,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         "9060":
         "9066":
         "9090":
@@ -6146,7 +6146,7 @@ device:
               size: 3.5
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         "9292":
           capabilities:
             info:
@@ -6169,7 +6169,7 @@ device:
               size:
               width: 240
               height: 320
-              colors: 4096
+              colors: 4k
         "0002":
         001HT:
           extends:
@@ -6718,7 +6718,7 @@ device:
               size: 3.5
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Bravo:
           extends:
             - device:
@@ -6858,7 +6858,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Click:
           extends:
             - device:
@@ -7318,7 +7318,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-              colors: 64k
+              colors: 65k
         Dream G1:
           extends:
             - device:
@@ -7384,7 +7384,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Eris:
           capabilities:
             info:
@@ -7451,7 +7451,7 @@ device:
               size: 4.3
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         Evo 4G+:
           capabilities:
             info:
@@ -7548,7 +7548,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         Explorer:
           capabilities:
             info:
@@ -7656,7 +7656,7 @@ device:
               size: 3.5
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Glacier:
           capabilities:
             device:
@@ -7706,7 +7706,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-              colors: 64k
+              colors: 65k
         HD2 LEO:
           extends:
             - device:
@@ -7725,7 +7725,7 @@ device:
               size: 4.3
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         HD2x:
           extends:
             - device:
@@ -7776,7 +7776,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Hermes:
           capabilities:
             info:
@@ -7790,7 +7790,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Hero:
           capabilities:
             info:
@@ -7804,7 +7804,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-              colors: 64k
+              colors: 65k
         Hero cdma:
           extends:
             - device:
@@ -7823,7 +7823,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-              colors: 64k
+              colors: 65k
         Holiday:
           capabilities:
             info:
@@ -7858,7 +7858,6 @@ device:
               size: 5
               width: 1920
               height: 1080
-              colors: ""
         HURRICANE:
           capabilities:
             info:
@@ -7869,7 +7868,7 @@ device:
               size:
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Incredible:
           capabilities:
             info:
@@ -7934,7 +7933,6 @@ device:
               size: 4.3
               width: 480
               height: 800
-              colors: ""
         ISW11HT:
           capabilities:
             info:
@@ -7946,7 +7944,7 @@ device:
               size: 4.3
               width: 480
               height: 854
-              colors: 64k
+              colors: 65k
         ISW12HT:
           capabilities:
             info:
@@ -8024,7 +8022,7 @@ device:
               size:
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         K2:
         Kaiser:
           capabilities:
@@ -8038,7 +8036,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Kaiser Kaiser:
           extends:
             - device:
@@ -8133,7 +8131,7 @@ device:
               size: 3.2
               width: 320
               height: 480
-              colors: 64k
+              colors: 65k
         MAGICIAN:
           capabilities:
             device:
@@ -8143,7 +8141,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Maple:
         Marshall:
         Marvel:
@@ -8158,7 +8156,7 @@ device:
               size: 3.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         Mazaa:
           capabilities:
             info:
@@ -8190,7 +8188,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Mercury:
           capabilities:
             info:
@@ -8201,7 +8199,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Merge:
           extends:
             - device:
@@ -8626,7 +8624,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3301:
           capabilities:
             info:
@@ -8639,7 +8637,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3350:
           capabilities:
             info:
@@ -8650,7 +8648,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3400:
           capabilities:
             info:
@@ -8663,7 +8661,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3400i:
           capabilities:
             info:
@@ -8676,7 +8674,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3450:
           capabilities:
             info:
@@ -8689,7 +8687,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3451:
           capabilities:
             info:
@@ -8702,7 +8700,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3452:
           capabilities:
             info:
@@ -8714,7 +8712,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3470:
           capabilities:
             info:
@@ -8727,7 +8725,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3490:
           capabilities:
             info:
@@ -8740,7 +8738,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         P3600:
           capabilities:
             info:
@@ -8754,7 +8752,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3600i:
           extends:
             - device:
@@ -8779,7 +8777,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P3700:
           extends:
             - device:
@@ -8803,7 +8801,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         P4300:
         P4350:
         P4351:
@@ -8815,7 +8813,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P4500:
           extends:
             - device:
@@ -8838,7 +8836,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         P510e:
           extends:
             - device:
@@ -8857,7 +8855,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P5500:
           capabilities:
             info:
@@ -8871,7 +8869,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P5520:
           capabilities:
             info:
@@ -8885,7 +8883,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P5530:
           capabilities:
             info:
@@ -8899,7 +8897,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P6300:
           capabilities:
             info:
@@ -8912,7 +8910,7 @@ device:
               size: 3.5
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P6500:
           capabilities:
             info:
@@ -8925,7 +8923,7 @@ device:
               size: 3.5
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         P715:
           extends:
             - device:
@@ -9061,7 +9059,6 @@ device:
               size: 4.3
               width: 720
               height: 1280
-              colors: ""
         PM36100:
           extends:
             - device:
@@ -9094,7 +9091,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         PPC6800:
         PPC6850:
           capabilities:
@@ -9105,7 +9102,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         primou:
         Prophet:
           capabilities:
@@ -9116,7 +9113,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Puccinilte:
         PURE:
           capabilities:
@@ -9129,7 +9126,7 @@ device:
               size: 3.2
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         Pyramid:
         pyramid HTC:
         QSD8x50:
@@ -9235,7 +9232,7 @@ device:
               size: 2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         S410:
           capabilities:
             info:
@@ -9304,7 +9301,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         S710d:
           extends:
             - device:
@@ -9346,7 +9343,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         S740:
           capabilities:
             info:
@@ -9361,7 +9358,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         S910m:
         Saga:
         saga:
@@ -9684,7 +9681,7 @@ device:
               size: 4.3
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         T9199T:
           capabilities:
             device:
@@ -9694,7 +9691,7 @@ device:
               size: 4.3
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         T9295:
           extends:
             - device:
@@ -9746,7 +9743,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         TD2:
         ThunderBolt:
           capabilities:
@@ -9801,7 +9798,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Touch Cruise:
           capabilities:
             info:
@@ -9813,7 +9810,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Touch Diamond:
           capabilities:
             info:
@@ -9827,7 +9824,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         Touch Diamond2:
           capabilities:
             info:
@@ -9841,7 +9838,7 @@ device:
               size: 3.2
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         TOUCH DUAL:
         Touch HD:
           capabilities:
@@ -9854,7 +9851,7 @@ device:
               size: 3.8
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         Touch HD2:
         Touch Pro:
           capabilities:
@@ -9867,7 +9864,7 @@ device:
               size: 2.8
               width: 480
               height: 640
-              colors: 64k
+              colors: 65k
         Touch Pro2:
           extends:
             - device:
@@ -9886,7 +9883,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         Touch2:
           capabilities:
             info:
@@ -9900,7 +9897,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         TouchDiamond2:
           extends:
             - device:
@@ -9932,7 +9929,7 @@ device:
               size: 3.6
               width: 640
               height: 480
-              colors: 64k
+              colors: 65k
         v1510:
         v3600:
         V9:
@@ -9977,7 +9974,7 @@ device:
               size:
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         Vivo:
           extends:
             - device:
@@ -10110,7 +10107,7 @@ device:
               size: 2.8
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         X06HT:
           capabilities:
             info:
@@ -10839,7 +10836,6 @@ device:
               size: 3.8
               width: 480
               height: 800
-              colors:
             bearer:
               gsm: 850,900,1800,1900
               umts: 900,2100
@@ -12991,7 +12987,7 @@ device:
               size: 5.0
               width: 720
               height: 1280
-              colors: 65M
+              colors: 65k
               devicePixelRatio: 2
             bearer:
               gsm: 850,900,1800,1900
@@ -13860,7 +13856,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
               touch: false
             bearer:
               gsm: "900,1800"
@@ -13885,7 +13881,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
               touch: false
             bearer:
               gsm: "900,1800"
@@ -13939,7 +13935,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 2.1
@@ -14036,7 +14032,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
               touch: false
             bearer:
               gsm: "850,900,1800,1900"
@@ -14062,7 +14058,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
               touch: true
             bearer:
               gsm: "900,1800"
@@ -14087,7 +14083,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 2.1
@@ -14109,7 +14105,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 3
@@ -14132,7 +14128,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 3
@@ -14154,7 +14150,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 3
@@ -14175,7 +14171,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 3
@@ -14197,7 +14193,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
             bearer:
               gsm: "900,1800"
               bluetooth: 3
@@ -15023,7 +15019,7 @@ device:
               size: 2.0
               width: 240
               height: 320
-              colors: 265k
+              colors: 262k
         "6267":
           capabilities:
             info:
@@ -15329,7 +15325,7 @@ device:
               size: 2.0
               width: 240
               height: 320
-              colors: 265k
+              colors: 262k
         "7373":
           capabilities:
             info:
@@ -16654,7 +16650,7 @@ device:
               size: 2.0
               width: 240
               height: 320
-              colors: 265k
+              colors: 262k
         C2-06:
           capabilities:
             info:
@@ -16668,7 +16664,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 265k
+              colors: 262k
         C3-00:
           capabilities:
             info:
@@ -16792,8 +16788,8 @@ device:
                 "6": "http://nds1.nds.nokia.com/uaprof/NC7-00r310.xml"
                 "7": "http://nds1.nds.nokia.com/uaprof/NN8-00r300-3G.xml"
             device:
-              os: Other
-              type: Symbian^3 Belle
+              os: Symbian^3 Belle
+              type: smartphone
             screen:
               size: 3.5
               width: 360
@@ -19678,7 +19674,7 @@ device:
               size: 1.2
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         C3010:
           capabilities:
             info:
@@ -19690,7 +19686,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         C3050:
           capabilities:
             info:
@@ -19702,7 +19698,7 @@ device:
               size: 2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         C3050-ORANGE:
           extends:
             - device:
@@ -19719,7 +19715,7 @@ device:
               size: 2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         C3110:
           capabilities:
             info:
@@ -19731,7 +19727,7 @@ device:
               size: 2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         C3200:
           extends:
             - device:
@@ -19765,7 +19761,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         C5212:
           capabilities:
             info:
@@ -19813,7 +19809,7 @@ device:
               size: 2.6
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         C6625:
           capabilities:
             info:
@@ -19826,7 +19822,7 @@ device:
               size: 2.6
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         D900E:
           capabilities:
             info:
@@ -19855,7 +19851,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         E1310B:
           extends:
             - device:
@@ -19899,7 +19895,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         E1360B:
           extends:
             - device:
@@ -19935,7 +19931,7 @@ device:
               size: 1.6
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         E2100:
           capabilities:
             info:
@@ -19982,7 +19978,7 @@ device:
               size: 1.5
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         E2210:
           capabilities:
             info:
@@ -20040,7 +20036,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         E2510:
           capabilities:
             info:
@@ -20053,7 +20049,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         E2510-ORANGE:
           extends:
             - device:
@@ -20324,7 +20320,7 @@ device:
               size: 2
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-B3310-ORANGE:
           extends:
             - device:
@@ -20531,7 +20527,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         GT-B7300:
           capabilities:
             info:
@@ -20546,7 +20542,7 @@ device:
               size: 3
               width: 240
               height: 400
-              colors: 64k
+              colors: 65k
         GT-B7300C:
           extends:
             - device:
@@ -20571,7 +20567,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         GT-B7320L:
           capabilities:
             info:
@@ -20586,7 +20582,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         GT-B7330:
           capabilities:
             info:
@@ -20603,7 +20599,7 @@ device:
               size: 2.6
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         GT-B7330B:
           extends:
             - device:
@@ -20617,7 +20613,7 @@ device:
               size: 2.62
               width: 320
               height: 320
-              colors: 64k
+              colors: 65k
         GT-B7330D:
           extends:
             - device:
@@ -20657,7 +20653,7 @@ device:
               size: 2.6
               width: 320
               height: 320
-              colors: 64k
+              colors: 65k
         GT-B7350Orange:
           extends:
             - device:
@@ -20704,7 +20700,7 @@ device:
               size: 3.5
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         GT-B7620:
           capabilities:
             info:
@@ -20719,7 +20715,7 @@ device:
               size: 3.5
               width: 480
               height: 800
-              colors: 64k
+              colors: 65k
         GT-B7722:
           capabilities:
             info:
@@ -20764,7 +20760,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-C3011:
           capabilities:
             info:
@@ -20777,7 +20773,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-C3060:
           capabilities:
             info:
@@ -20790,7 +20786,7 @@ device:
               size: 2.2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         GT-C3110:
           capabilities:
             info:
@@ -20804,7 +20800,7 @@ device:
               size: 2
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         GT-C3110C:
           extends:
             - device:
@@ -20836,7 +20832,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-C3212i:
           capabilities:
             info:
@@ -20850,7 +20846,7 @@ device:
               size: 2.2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-C3222:
           capabilities:
             info:
@@ -20864,7 +20860,7 @@ device:
               size: 2.2
               width: 220
               height: 176
-              colors: 64k
+              colors: 65k
         GT-C3222W:
           extends:
             - device:
@@ -20883,7 +20879,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3262:
           capabilities:
             info:
@@ -20897,7 +20893,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3300:
           capabilities:
             info:
@@ -20911,7 +20907,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3300I:
           extends:
             - device:
@@ -21177,7 +21173,7 @@ device:
               size: 2.2
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3590:
           capabilities:
             info:
@@ -21190,7 +21186,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3595:
           capabilities:
             device:
@@ -21208,7 +21204,7 @@ device:
               size: 2.2
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-C3630C:
           extends:
             - device:
@@ -21291,7 +21287,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-C5010B:
           extends:
             - device:
@@ -21440,7 +21436,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E1282T:
           extends:
             - device:
@@ -21458,7 +21454,7 @@ device:
               size: 1.6
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         GT-E1500:
           capabilities:
             info:
@@ -21472,7 +21468,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2120:
           capabilities:
             info:
@@ -21485,7 +21481,7 @@ device:
               size: 1.5
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         GT-E2120-ORANGE:
           extends:
             - device:
@@ -21530,7 +21526,7 @@ device:
               size: 1.5
               width: 128
               height: 128
-              colors: 64k
+              colors: 65k
         GT-E2121B:
           extends:
             - device:
@@ -21562,7 +21558,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2152:
           capabilities:
             info:
@@ -21656,7 +21652,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2230L:
           extends:
             - device:
@@ -21683,7 +21679,7 @@ device:
               size: 1.8
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2250:
           capabilities:
             info:
@@ -21742,7 +21738,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2370:
           capabilities:
             info:
@@ -21769,7 +21765,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E2550:
           capabilities:
             info:
@@ -21807,7 +21803,7 @@ device:
               size: 2.4
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-E2652:
           extends:
             - device:
@@ -21826,7 +21822,7 @@ device:
               size: 2.6
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-E3210:
           capabilities:
             info:
@@ -21868,7 +21864,7 @@ device:
               size: 2
               width: 128
               height: 160
-              colors: 64k
+              colors: 65k
         GT-E3300L:
           extends:
             - device:
@@ -24577,7 +24573,7 @@ device:
               size: 1.9
               width: 176
               height: 220
-              colors: 64k
+              colors: 65k
         GT-S3030C:
           extends:
             - device:
@@ -24894,7 +24890,7 @@ device:
               size: 3
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-S3802:
           extends:
             - device:
@@ -25227,7 +25223,7 @@ device:
               size: 2.4
               width: 320
               height: 240
-              colors: 64k
+              colors: 65k
         GT-S5270K:
           extends:
             - device:
@@ -25273,7 +25269,7 @@ device:
               size: 3
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-S5292:
           capabilities:
             info:
@@ -25620,7 +25616,7 @@ device:
               size: 2.1
               width: 240
               height: 320
-              colors: 64k
+              colors: 65k
         GT-S5510T:
           extends:
             - device:

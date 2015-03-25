@@ -11,9 +11,9 @@
  * Module dependencies
  */
 var jsSelect = require('js-select');
-var extend   = require('./util/extend').extend;
-var merge    = require('./util/extend').merge;
-var select   = require('./util/select').select;
+var extend   = require('mergee').extend;
+var merge    = require('mergee').merge;
+var select   = require('mergee').select;
 
 var M = module.exports;
 
@@ -171,14 +171,14 @@ M.parser = function (tree) {
 
 	/**
 	 * collect information of missing leaves in the caps tree(s)
-	 * 
+	 *
 	 * @param {Object} item - item selected
 	 * @param {string} type - (os|ua|device)
 	 * @param {string} mode - (family|major|minor|brand|model)
-	 * @param {string} name - name of object which is missing 
+	 * @param {string} name - name of object which is missing
 	 */
 	var notFound = function(item, type, mode, name) {
-		if (item === null) {
+		if (item == null) {
 			if (!self.cap._notFound) {
 				self.cap._notFound = {};
 			}
@@ -198,7 +198,7 @@ M.parser = function (tree) {
 	 * @param {Object} selector : selector to start search from
 	 */
 	var osuaCaps = function (obj, type, selector) {
-		var 
+		var
 			i,
 			mode, item, sel,
 			modes = [ 'family', 'major', 'minor' ];
@@ -311,7 +311,7 @@ M.parser = function (tree) {
 
 	/**
 	 * parse capabilities on "os" only
-	 * 
+	 *
 	 * @param {Object} uaparsed : ua-parser parsed user-agent string
 	 */
 	var parseOs = F.parseOs = function (uaparsed) {
@@ -322,7 +322,7 @@ M.parser = function (tree) {
 
 	/**
 	 * parse capabilities on "ua" only
-	 * 
+	 *
 	 * @param {Object} uaparsed : ua-parser parsed user-agent string
 	 */
 	var parseUa = F.parseUa = function (uaparsed) {
@@ -333,7 +333,7 @@ M.parser = function (tree) {
 
 	/**
 	 * parse capabilities on "device" only
-	 * 
+	 *
 	 * @param {Object} uaparsed : ua-parser parsed user-agent string
 	 */
 	var parseDevice = F.parseDevice = function (uaparsed) {
@@ -344,7 +344,7 @@ M.parser = function (tree) {
 
 	/**
 	 * parse capabilities for "os", "ua", "device"
-	 * 
+	 *
 	 * @param {Object} uaparsed : ua-parser parsed user-agent string
 	 */
 	F.parse = function (uaparsed) {
@@ -389,7 +389,7 @@ function selectNormalizedDevice (selector, attr) {
 	var obj;
 
 	obj = select(selector, [ attr ]);
-	if (obj === null) {
+	if (obj == null) {
 		obj = select(selector, [ normalizeDevice(attr) ]);
 	}
 

@@ -1,11 +1,9 @@
 /**
- * Regenerates the test cases 
+ * Regenerates the test cases
  *
  * Copyright (c) 2013 Commenthol
  * Released under the MIT License
  */
-
-/*globals suite,test*/
 
 "use strict";
 
@@ -14,7 +12,7 @@ var fs = require('fs');
 var path = require('path');
 var jsyaml = require('js-yaml');
 var capsParser = require('../index');
-var extend = require('../lib/util/extend').extend;
+var extend = require('mergee').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/",

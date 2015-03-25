@@ -1,7 +1,7 @@
 /**
  * run some performance tests
  */
- 
+
 var fs = require('fs'),
 	uaParserCap;
 
@@ -15,7 +15,7 @@ te = +new Date();
 
 console.log("Loading Parser in %d ms", (te-ts));
 
-uas = JSON.parse(fs.readFileSync(__dirname + '/../../test_resources/test_capabilities.json', 'utf8'));
+uas = JSON.parse(fs.readFileSync(__dirname + '/../../test/resources/test_capabilities.json', 'utf8'));
 
 ts = +new Date();
 for(i=0; i<n; i++) {

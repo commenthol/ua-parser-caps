@@ -7,14 +7,14 @@
 
 /**
  * Configuration file for ua-parser-caps
- * 
+ *
  * @property {Array} files
  */
 var config = {
-  files: [ 
-    __dirname + "/../caps_device_type.yaml", 
+  files: [
+    __dirname + "/../caps_device_type.yaml",
     __dirname + "/../caps_user_view.yaml",
-    __dirname + "/../caps_ie_compatibility.yaml" 
+    __dirname + "/../caps_ie_compatibility.yaml"
   ]
 };
 

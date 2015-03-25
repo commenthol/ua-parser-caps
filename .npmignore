@@ -1,4 +1,6 @@
-.npmignore
-.travis.yml
-publish.sh
-
+/node_modules
+/coverage
+/doc
+.*
+*.log
+*.tgz

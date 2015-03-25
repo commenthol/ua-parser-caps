@@ -15,7 +15,7 @@ var fs = require('fs');
 var path = require('path');
 var jsyaml = require('js-yaml');
 var capsparserM = require('../index');
-var extend = require('../lib/util/extend').extend;
+var extend = require('mergee').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/parser/";
@@ -40,7 +40,7 @@ function batch(file) {
 			return path.normalize(resourcesDir + file);
 		});
 
-		test('- ' + tc.test, function() {
+		it('- ' + tc.test, function() {
 			var capsparser = capsparserM(tc.setup.files);
 			_debug && capsparser.printTree();
 			var result = capsparser.parse(tc.setup.uaparsed);
@@ -50,22 +50,22 @@ function batch(file) {
 	});
 }
 
-suite('capability parser tests basic', function() {
+describe('capability parser tests basic', function() {
 	batch("testcases_basic.yaml");
 });
 
-suite('capability parser tests regexes', function() {
+describe('capability parser tests regexes', function() {
 	batch("testcases_regexes.yaml");
 });
 
-suite('capability parser tests extends', function() {
+describe('capability parser tests extends', function() {
 	batch("testcases_extends.yaml");
 });
 
-suite('capability parser tests filemerge', function() {
+describe('capability parser tests filemerge', function() {
 	batch("testcases_filemerge.yaml");
 });
 
-suite('capability parser tests brand-model', function() {
+describe('capability parser tests brand-model', function() {
 	batch("testcases_brandmodel.yaml");
 });

@@ -5,7 +5,7 @@
  * Released under the MIT License
  */
 
-/*globals suite,test*/
+/*globals describe,it*/
 
 "use strict";
 
@@ -19,15 +19,15 @@ var resourcesDir = __dirname + "/../../../../test/resources/parser/";
 // exclude broken tests
 var broken_suite = function(){};
 
-suite('capsfile tests', function() {
+describe('capsfile tests', function() {
 
-	suite('loading one file', function() {
+	describe('loading one file', function() {
 		var result = file.loadSync(resourcesDir + 'capstest_file1.yaml');
 
-		test('shall contain os capabilities', function() {
+		it('shall contain os capabilities', function() {
 			assert.notEqual(result.os, null);
 		});
-		test('shall contain os capability osfamily1', function() {
+		it('shall contain os capability osfamily1', function() {
 			var nodes = select(result, '.os .osfamily1 .attr').nodes();
 			assert.deepEqual(nodes, ['osfamily1', 'osfamily1_major1', 'osfamily1_major1_minor1']);
 		});
