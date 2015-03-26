@@ -10,9 +10,7 @@
 // module dependencies
 var fs = require('fs');
 var path = require('path');
-var jsyaml = require('js-yaml');
 var capsParser = require('../index');
-var extend = require('mergee').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/",

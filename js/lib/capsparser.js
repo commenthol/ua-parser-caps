@@ -27,7 +27,7 @@ var
  * if `options` is a Array or a String then the it is assumed that files are contained herein.
  * if `options` is a Function then async loading with the default config is assumed.
  */
-var M = module.exports = function (options, cb) {
+module.exports = function (options, cb) {
 	var tree;
 	var capsparser;
 

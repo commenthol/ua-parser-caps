@@ -14,7 +14,8 @@
   },
   "devDependencies": {
     "mocha": ">=0.17.0",
-    "ua-parser2": "latest"
+    "ua-parser2": "latest",
+    "streamss": ">=0.2.4"
   },
   "scripts": {
     "test": "node ./js/test/run.test.js",

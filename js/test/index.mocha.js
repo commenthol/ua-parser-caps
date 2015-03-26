@@ -5,7 +5,7 @@
  * Released under the MIT License
  */
 
-/*globals suite,test*/
+/* globals describe,it */
 
 "use strict";
 
@@ -15,7 +15,6 @@ var fs = require('fs');
 var path = require('path');
 var jsyaml = require('js-yaml');
 var capsparserM = require('../index');
-var extend = require('mergee').extend;
 
 // directory of test resources
 var resourcesDir = __dirname + "/../../test/resources/parser/";

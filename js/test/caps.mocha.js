@@ -7,53 +7,77 @@
  * Released under the MIT License
  */
 
-/*globals describe,it*/
+'use strict';
 
-"use strict";
+/* global describe, it */
 
 // module dependencies
 var assert = require('assert');
 var fs = require('fs');
 var path = require('path');
-var jsyaml = require('js-yaml');
+var	splitLine = require('streamss').SplitLine;
+var jsonArray = require('streamss').JsonArray;
+var through = require('streamss').Through;
 var capsParser = require('../index');
-var extend = require('mergee').extend;
 
-// directory of test resources
-var resourcesDir = __dirname + "/../../test/resources/",
-	capsDir = __dirname + "/../../",
-	testcasesFile = 'test_capabilities.json',
-	content = fs.readFileSync(resourcesDir + testcasesFile, 'utf8'),
-	testcases = JSON.parse(content);
+// test config
+var config = {
+	testcases: __dirname + "/../../test/resources/test_capabilities.json",
+	caps: {
+		dir: __dirname + "/../../",
+		files: [
+			'caps_device_type.yaml',
+			'caps_user_view.yaml',
+			'caps_ie_compatibility.yaml'
+		],
+	}
+};
 
-// capability files under test
-var capsFiles = [
-	'caps_device_type.yaml',
-	'caps_user_view.yaml',
-	'caps_ie_compatibility.yaml'
-];
-
-capsFiles = capsFiles.map(function(file) {
-	return path.normalize(capsDir + file);
+config.caps.files = config.caps.files.map(function(file) {
+	return path.normalize(config.caps.dir + file);
 });
 
-describe('device type tests', function() {
-	var capsparser = capsParser(capsFiles);
+var capsparser = capsParser(config.caps.files);
 
-	testcases.forEach(function(tc) {
-		describe(tc.string, function() {
+function msg(name, actual, expected, string) {
+	string = (string ? string + '\n' : '' );
+	return string + name +
+		"\n     is: " + JSON.stringify(actual) +
+		"\n should: " + JSON.stringify(expected);
+}
+
+function test(tc, encoding, done) {
+
+	describe('', function(){
+		it(tc.string, function(){
+
 			var capabilities = capsparser.parse(tc);
-			it('- device type', function() {
-				assert.equal(capabilities.device.type, tc.capabilities.device.type);
-			});
-			it('- user view', function() {
-				assert.equal(capabilities.user.view, tc.capabilities.user.view);
-			});
-			it('- ie compatibility mode', function() {
-				if (tc.capabilities.browser && tc.capabilities.browser.ie_compatibility_mode) {
-					assert.deepEqual(capabilities.browser, tc.capabilities.browser);
-				}
-			});
+
+			// device type
+			assert.equal(capabilities.device.type, tc.capabilities.device.type);
+			// user view
+			assert.equal(capabilities.user.view, tc.capabilities.user.view);
+			// compatibility mode
+			if (tc.capabilities.browser && tc.capabilities.browser.ie_compatibility_mode) {
+				assert.deepEqual(capabilities.browser, tc.capabilities.browser);
+			}
 		});
 	});
+
+	done();
+}
+
+describe('device type tests', function(){
+	this.timeout(50000);
+
+	it('exec', function(testDone){
+		fs.createReadStream(config.testcases)
+			.pipe(splitLine({chomp: true}))
+			.pipe(jsonArray.parse())
+			.pipe(through.obj(test, function(){
+					testDone();
+				})
+			);
+	});
 });
+

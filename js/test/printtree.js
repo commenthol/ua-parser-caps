@@ -7,7 +7,6 @@
 
 var fs = require('fs');
 var jsyaml = require('js-yaml');
-var uaparser = require('ua-parser2');
 var capsparser = require('../index')();
 
 var tree;

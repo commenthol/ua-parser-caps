@@ -12,16 +12,9 @@
  */
 var jsSelect = require('js-select');
 var async    = require('async');
-var extend   = require('mergee').extend;
 var merge    = require('mergee').merge;
 var capsFile = require('./util/file.js');
 var parser   = require('./parser.js');
-
-var __merge = function() {
-	var args = [].slice.call(arguments);
-	args.unshift({ ignoreNull: true });
-	return mergeExt.apply(null, args);
-}
 
 /**
  * tree object constructor

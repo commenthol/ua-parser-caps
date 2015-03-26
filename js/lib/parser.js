@@ -10,7 +10,6 @@
 /**
  * Module dependencies
  */
-var jsSelect = require('js-select');
 var extend   = require('mergee').extend;
 var merge    = require('mergee').merge;
 var select   = require('mergee').select;
@@ -129,8 +128,8 @@ M.parser = function (tree) {
 	 * @param {Object} item : item containing `extends`
 	 */
 	F.flattenExtend = function (item) {
-		var i, j, k,
-			tmp, arr;
+		var i,
+			tmp;
 
 		init();
 		self.cap = {};
@@ -178,7 +177,7 @@ M.parser = function (tree) {
 	 * @param {string} name - name of object which is missing
 	 */
 	var notFound = function(item, type, mode, name) {
-		if (item == null) {
+		if (item == null) { // jshint ignore:line
 			if (!self.cap._notFound) {
 				self.cap._notFound = {};
 			}
@@ -187,7 +186,7 @@ M.parser = function (tree) {
 			}
 			self.cap._notFound[type][mode] = name;
 		}
-	}
+	};
 
 	/**
 	 * get capabilty per os or ua family
@@ -389,7 +388,7 @@ function selectNormalizedDevice (selector, attr) {
 	var obj;
 
 	obj = select(selector, [ attr ]);
-	if (obj == null) {
+	if (obj == null) { // jshint ignore:line
 		obj = select(selector, [ normalizeDevice(attr) ]);
 	}
 
