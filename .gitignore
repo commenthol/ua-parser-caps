@@ -2,9 +2,5 @@
 /coverage
 /doc
 /tmp
-*.sh
 *.log
 *.tgz
-*.yaml.*
-t.*
-x.*
