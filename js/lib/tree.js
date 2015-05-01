@@ -12,7 +12,7 @@
  */
 var jsSelect = require('js-select');
 var async    = require('async');
-var merge    = require('mergee').merge;
+var merge    = require('mergee').mergeExt;
 var capsFile = require('./util/file.js');
 var parser   = require('./parser.js');
 
@@ -98,7 +98,7 @@ Tree.prototype.add = function (tree) {
 	if (! this.isConverted) {
 		if (Tree.isTree(tree)) {
 			Tree.flattenExtends(tree);
-			this.tree = merge(this.tree, Tree.moveIntoArray(tree));
+			this.tree = merge({ ignoreNull: true }, this.tree, Tree.moveIntoArray(tree));
 		}
 	}
 };

@@ -68,7 +68,7 @@ os:
       capabilities:
         device:
           type: tv
-    iOs:
+    iOS:
       regexes:
         - regex: Mobile
           capabilities:

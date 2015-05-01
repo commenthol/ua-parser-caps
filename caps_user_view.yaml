@@ -1,25 +1,25 @@
-# 
+#
 # ua-parser capabilities files for user view prefererence
-# 
+#
 # Copyright (c) 2013 commenthol
 #
-# This data is available for use under a CC BY 4.0 license 
-# (http://creativecommons.org/licenses/by/4.0/). 
+# This data is available for use under a CC BY 4.0 license
+# (http://creativecommons.org/licenses/by/4.0/).
 # For attribution mention https://github.com/commenthol/ua-parser-caps
-# 
+#
 
 # ----
-# This capabilities file includes data to obtain a default user view 
+# This capabilities file includes data to obtain a default user view
 # preference classification based on a User-Agent String.
-# Motivation: In most modern mobile browsers the user can change the the 
+# Motivation: In most modern mobile browsers the user can change the the
 # User-Agent such to signal their preference of the default use case.
-# On choosing 'desktop' they prefer to obtain a bigscreen view over 
-# the a possible default 'mobile' view. 
+# On choosing 'desktop' they prefer to obtain a bigscreen view over
+# the a possible default 'mobile' view.
 # The capabilities provided here try to take this into account.
 #
 
 # ----
-# user.view attributes 
+# user.view attributes
 #
 # tv      - large screen use
 # desktop - desktop/ laptop use
@@ -130,15 +130,6 @@ os:
       capabilities:
         user:
           view: 'tv'
-    iOs:
-      capabilities:
-        user:
-          view: 'tablet'
-      regexes:
-        - regex: 'Mobile'
-          capabilities:
-            user:
-              view: 'mobile'
     Kindle:
       capabilities:
         user:
@@ -439,7 +430,7 @@ device:
         - regex: '\bMIDP\b'
           capabilities:
             user:
-              view: 'mobile'        
+              view: 'mobile'
     'Samsung':
       regexes:
         - regex: '\bMIDP\b'
@@ -452,4 +443,4 @@ device:
           capabilities:
             user:
               view: 'tv'
-          
+

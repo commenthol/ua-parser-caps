@@ -1,7 +1,7 @@
 {
   "name": "ua-parser-caps",
   "description": "capabilities for ua-parser",
-  "version": "0.1.8-0",
+  "version": "0.1.8",
   "main": "js/index.js",
   "engines": {
     "node": ">=0.8.0"
@@ -10,7 +10,7 @@
     "async": ">=0.7.0",
     "js-select": ">=0.6.0",
     "js-yaml": "~2.1.3",
-    "mergee": ">=0.1.0"
+    "mergee": ">=0.2.2"
   },
   "devDependencies": {
     "mocha": ">=0.17.0",
