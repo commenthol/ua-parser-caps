@@ -10,6 +10,7 @@
 /**
  * Module dependencies
  */
+var path = require('path');
 var jsSelect = require('js-select');
 var async    = require('async');
 var merge    = require('mergee').merge;
@@ -41,6 +42,11 @@ Tree.prototype.loadSync = function (files) {
 		files = [ files ];
 	}
 
+	if (files.length === 1 && !this._fastload(files[0])) {
+		// tree is fast loaded
+		return;
+	}
+
 	files.forEach(function (file){
 		var tree;
 
@@ -67,6 +73,11 @@ Tree.prototype.load = function (files, cb) {
 		files = [ files ];
 	}
 
+	if (files.length === 1 && !this._fastload(files[0])) {
+		// tree is fast loaded
+		return cb();
+	}
+
 	async.eachSeries(files, function (file, callback){
 		capsFile.load(file, function(err, tree){
 			if (err) {
@@ -88,6 +99,22 @@ Tree.prototype.load = function (files, cb) {
 	});
 };
 
+/**
+ * fast load capabilities as node module
+ * @param {String} file - the module name to require
+ * @return {Error}
+ */
+Tree.prototype._fastload = function(file) {
+	if (path.extname(file) === '.js') {
+		try {
+			this.tree = require(file);
+			return;
+		} catch(e) {
+			return e;
+		}
+	}
+	return new Error('bad extension');
+};
 
 /**
  * add an new tree

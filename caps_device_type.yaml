@@ -1,7 +1,6 @@
 #
 # ua-parser capabilities files for device type
 #
-# @version 0.1.8
 # @copyright (c) 2013-2015 commenthol
 #
 # This data is available for use under a CC BY 4.0 license
@@ -41,6 +40,8 @@
 # height     - height in pixels
 # size_dist  - size equivalent; specify screen size in inch per distance in cm, e.g. 25'/ 100cm
 #
+
+version: 0.1.9-1
 
 # defaults for all
 default:
@@ -5485,7 +5486,7 @@ device:
           capabilities:
             info:
               note: compatibility with uaparser
-        "Kindle Fire HDX 8.9\\2 4G":
+        "Kindle Fire HDX 8.9\" 4G":
           extends:
             - device:
                 brand: Amazon
