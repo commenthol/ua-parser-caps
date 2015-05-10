@@ -10,6 +10,9 @@
 // module dependencies
 var fs = require('fs');
 var path = require('path');
+var	splitLine = require('streamss').SplitLine;
+var jsonArray = require('streamss').JsonArray;
+var through = require('streamss').Through;
 var capsParser = require('../index');
 
 // directory of test resources
