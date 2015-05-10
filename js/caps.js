@@ -1,5 +1,6 @@
 var m = module.exports = {
 	version: "0.1.9-1",
+	"ua-parser2": "^0.1.19",
 	default: {
 		capabilities: {
 			device: {

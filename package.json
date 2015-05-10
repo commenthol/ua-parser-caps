@@ -1,6 +1,6 @@
 {
   "name": "ua-parser-caps",
-  "description": "capabilities for ua-parser",
+  "description": "capabilities for ua-parser2",
   "version": "0.1.9-1",
   "main": "js/index.js",
   "engines": {
