@@ -1,5 +1,5 @@
 var m = module.exports = {
-	version: "0.1.9-1",
+	version: "0.1.11-1",
 	"ua-parser2": "^0.1.19",
 	default: {
 		capabilities: {
@@ -6266,6 +6266,79 @@ var m = module.exports = {
 							}
 						}]
 					],
+					"7040N": {
+						capabilities: {
+							info: {
+								date: "2015-02",
+								marketing_name: "Alcatel One Touch Fierce 2 7040N"
+							},
+							device: {
+								os: "Android",
+								type: null
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					"7040R": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.alcatelonetouch.com/global-en/products/smartphones.html"
+								},
+								date: "2015-02",
+								marketing_name: "Alcatel One Touch Fierce 2 7040R"
+							},
+							device: {
+								type: null,
+								os: "Android"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					"7040T": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.alcatelonetouch.com/global-en/products/smartphones.html"
+								},
+								date: "2015-02",
+								marketing_name: "Alcatel One Touch Fierce 2 7040T"
+							},
+							device: {
+								type: null,
+								os: "Android"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					"7045Y": {
+						capabilities: {
+							info: {
+								marketing_name: "Alcatel OneTouch Pop S7"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
 					BH4R: {
 						capabilities: {
 							info: {
@@ -10538,6 +10611,54 @@ var m = module.exports = {
 							}
 						}
 					},
+					A4DUO: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A4You: {
+						capabilities: {
+							info: {
+								date: "2014-09",
+								href: {
+									"1": "http://allview.ro/a4-you.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A5_Quad: {
+						capabilities: {
+							info: {
+								date: "2014-01"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.3,
+								width: 480,
+								height: 800
+							}
+						}
+					},
 					A5Smiley: {
 						capabilities: {
 							info: {
@@ -11047,6 +11168,26 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					AFTB: {
+						capabilities: {
+							info: {
+								marketing_name: "Fire TV"
+							},
+							device: {
+								type: "tv"
+							}
+						}
+					},
+					AFTM: {
+						capabilities: {
+							info: {
+								marketing_name: "Fire TV Stick"
+							},
+							device: {
+								type: "tv"
+							}
+						}
+					},
 					"Fire HD 6 (4th Gen)": {
 						capabilities: {
 							info: {
@@ -11530,7 +11671,7 @@ var m = module.exports = {
 							}
 						}
 					},
-					"Kindle Fire HDX 8.9\" WiFi": {
+					"Kindle Fire HDX 8.9\" 4G": {
 						capabilities: {
 							info: {
 								href: {
@@ -11538,7 +11679,7 @@ var m = module.exports = {
 									"2": "http://amazonsilk.wordpress.com/useful-bits/silk-user-agent/"
 								},
 								date: "2013-11",
-								markeing_name: "Kindle Fire HDX 8.9\" (3rd Gen)",
+								markeing_name: "Kindle Fire HDX 8.9\" (3rd Gen) Wan",
 								note: "compatibility with uaparser"
 							},
 							device: {
@@ -11553,7 +11694,7 @@ var m = module.exports = {
 							}
 						}
 					},
-					"Kindle Fire HDX 8.9\" 4G": {
+					"Kindle Fire HDX 8.9\" WiFi": {
 						capabilities: {
 							info: {
 								href: {
@@ -11561,7 +11702,7 @@ var m = module.exports = {
 									"2": "http://amazonsilk.wordpress.com/useful-bits/silk-user-agent/"
 								},
 								date: "2013-11",
-								markeing_name: "Kindle Fire HDX 8.9\" (3rd Gen) Wan",
+								markeing_name: "Kindle Fire HDX 8.9\" (3rd Gen)",
 								note: "compatibility with uaparser"
 							},
 							device: {
@@ -11653,6 +11794,24 @@ var m = module.exports = {
 					},
 					device: {
 						type: "tablet"
+					}
+				},
+				model: {
+					U702: {
+						capabilities: {
+							info: {
+								date: "2013-04"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
 					}
 				}
 			},
@@ -14855,6 +15014,40 @@ var m = module.exports = {
 					}
 				}],
 				model: {
+					A500CG: {
+						capabilities: {
+							info: {
+								date: "2014-01",
+								marketing_name: "Asus Zenfone 5 A500CG"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					AST21: {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								marketing_name: "Asus Memo Pad 8 AST21"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 8,
+								width: 1920,
+								height: 1080
+							}
+						}
+					},
 					eeepc: {
 						capabilities: {
 							info: {
@@ -16560,6 +16753,109 @@ var m = module.exports = {
 					}
 				}
 			},
+			Azumi: {
+				model: {
+					A35S: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480,
+								color: "262k"
+							}
+						}
+					},
+					A45S: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 480,
+								height: 854,
+								color: "262k"
+							}
+						}
+					},
+					A50: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://azumi-mobile.com/Equipos/Detalle/15#"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								color: "16M"
+							}
+						}
+					},
+					A50c: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://azumi-mobile.com/Equipos/Detalle/15#"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								color: "16M"
+							}
+						}
+					},
+					"A50c+": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://azumi-mobile.com/Equipos/Detalle/37#"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								color: "16M"
+							}
+						}
+					},
+					KL35: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 128,
+								height: 160,
+								color: "65k"
+							}
+						}
+					}
+				}
+			},
 			Bak: {
 				capabilities: {
 					info: {
@@ -16569,6 +16865,50 @@ var m = module.exports = {
 					},
 					device: {
 						type: "tablet"
+					}
+				}
+			},
+			Bangho: {
+				model: {
+					"AERO J0101": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "www.bangho.com.ar/linea_producto/bangho-aero"
+								}
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"AERO J0202": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "www.bangho.com.ar/linea_producto/bangho-aero"
+								}
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					Aero1021: {
+						capabilities: {
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
 					}
 				}
 			},
@@ -18180,6 +18520,57 @@ var m = module.exports = {
 						type: "smartphone"
 					}
 				},
+				AX620: {
+					capabilities: {
+						info: {
+							date: "2013-09"
+						},
+						device: {
+							os: "Android",
+							type: "smartphone"
+						},
+						screen: {
+							size: 3.5,
+							width: 320,
+							height: 480
+						}
+					}
+				},
+				AX690: {
+					capabilities: {
+						info: {
+							date: "2013-09"
+						},
+						device: {
+							os: "Android",
+							type: "smartphone"
+						},
+						screen: {
+							size: 4.5,
+							width: 480,
+							height: 854
+						}
+					}
+				},
+				AX745: {
+					capabilities: {
+						info: {
+							date: "2013-09",
+							href: {
+								"1": "http://bmobile.eu.com/product/ax745/"
+							}
+						},
+						device: {
+							os: "Android",
+							type: "smartphone"
+						},
+						screen: {
+							size: 4.5,
+							width: 540,
+							height: 960
+						}
+					}
+				},
 				model: {
 					AX505: {
 						capabilities: {
@@ -19224,6 +19615,23 @@ var m = module.exports = {
 							}
 						}
 					},
+					A354C: {
+						capabilities: {
+							info: {
+								date: "2014-10",
+								marketing_name: "Celkon Campus One A354C"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
 					A35K: {
 						capabilities: {
 							info: {
@@ -20020,6 +20428,41 @@ var m = module.exports = {
 								width: 540,
 								height: 960,
 								colors: "16M"
+							}
+						}
+					},
+					"801E": {
+						capabilities: {
+							info: {
+								marketing_name: "Coolpad Quatro II 4G 801 E"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					"801EM": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "??"
+								},
+								marketing_name: "Coolpad Quatro II 4G 801 E"
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
 							}
 						}
 					},
@@ -22738,6 +23181,212 @@ var m = module.exports = {
 							}
 						}]
 					],
+					A10Q: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A26B: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					A26C: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://evercoss.com/android/"
+								}
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					A28B: {
+						capabilities: {
+							info: {
+								date: "2014-02"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A28M: {
+						capabilities: {
+							info: {
+								date: "2014-02"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					A28S: {
+						capabilities: {
+							info: {
+								date: "2014-08"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.2,
+								width: 240,
+								height: 320
+							}
+						}
+					},
+					A33A: {
+						capabilities: {
+							info: {
+								date: "2015-01"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A5C: {
+						capabilities: {
+							info: {
+								date: "2014-04"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A5S: {
+						capabilities: {
+							info: {
+								date: "2014-03"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					A65A: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854
+							}
+						}
+					},
+					A66A: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					A66B: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.7,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					A7E: {
+						capabilities: {
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					A80A: {
+						capabilities: {
+							info: {
+								marketing_name: "Evercoss Elevate Y2 A80A"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
 					AT1: {
 						capabilities: {
 							device: {
@@ -22747,6 +23396,44 @@ var m = module.exports = {
 								size: 7,
 								width: 800,
 								height: 480
+							}
+						}
+					},
+					"AT1A*": {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								href: {
+									"1": "http://evercoss.com/at1a/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
+					AT1C: {
+						capabilities: {
+							info: {
+								date: "2014-04",
+								href: {
+									"1": "http://evercoss.com/at1c/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
 							}
 						}
 					},
@@ -22764,7 +23451,14 @@ var m = module.exports = {
 					},
 					"AT1G*": {
 						capabilities: {
+							info: {
+								date: "2013-11",
+								href: {
+									"1": "http://evercoss.com/at1g/"
+								}
+							},
 							device: {
+								os: "Android",
 								type: "tablet"
 							},
 							screen: {
@@ -23822,6 +24516,86 @@ var m = module.exports = {
 					}
 				}],
 				model: {
+					"101F": {
+						capabilities: {
+							info: {
+								date: "2012-07",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							size: {
+								size: 4.3,
+								width: 540,
+								height: 960,
+								colors: "16M"
+							}
+						}
+					},
+					"201F": {
+						capabilities: {
+							info: {
+								date: "2013-02",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							size: {
+								size: 4.7,
+								width: 720,
+								height: 1280,
+								colors: "16M"
+							}
+						}
+					},
+					"202F": {
+						capabilities: {
+							info: {
+								date: "2013-06",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							size: {
+								size: 5,
+								width: 1080,
+								height: 1920,
+								colors: "16M"
+							}
+						}
+					},
+					"301F": {
+						capabilities: {
+							info: {
+								date: "2013-12",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							size: {
+								size: 5,
+								width: 1080,
+								height: 1920,
+								colors: "16M"
+							}
+						}
+					},
 					"F-01D": {
 						capabilities: {
 							device: {
@@ -24071,6 +24845,176 @@ var m = module.exports = {
 							}
 						}]
 					],
+					"351D": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					"400 D": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"400Q": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10",
+								href: {
+									"1": "http://www.utok.com/seria-400/utok-401d-white"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"401D": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10",
+								href: {
+									"1": "http://www.utok.com/seria-400/utok-401d-white"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"500D": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10",
+								href: {
+									"1": "http://www.utok.com/seria-500/utok-500d"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854
+							}
+						}
+					},
+					"701D": {
+						capabilities: {
+							info: {
+								brand: "Utok",
+								date: "2014-10",
+								href: {
+									"1": "http://www.utok.com/700-series/utok-701d-ultra8"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 800,
+								height: 480
+							}
+						}
+					},
+					"7DTB25": {
+						capabilities: {
+							info: {
+								brand: "Hipstreet"
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"831C": {
+						capabilities: {
+							info: {
+								brand: "HTC"
+							}
+						}
+					},
+					A1040: {
+						capabilities: {
+							info: {
+								brand: "Azpen"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 10.1,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
+					A1X: {
+						capabilities: {
+							info: {
+								brand: "Dragon Touch",
+								date: "2015-02"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 10.1
+							}
+						}
+					},
 					A400: {
 						capabilities: {
 							info: {
@@ -24150,6 +25094,57 @@ var m = module.exports = {
 							}
 						}
 					},
+					A727: {
+						capabilities: {
+							info: {
+								brand: "Azpen",
+								date: "2014-03"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					A7iS: {
+						capabilities: {
+							info: {
+								brand: "Reeder",
+								date: null,
+								marketing_name: "Reeder A7iS"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"ACCENT EAGLE7 3G": {
+						capabilities: {
+							info: {
+								brand: "Accent",
+								date: "2014-12",
+								href: {
+									"1": "http://www.accent.ma/tablettes-tablettes-wifi/eagle7"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
 					"ADVANCE 4.5": {
 						capabilities: {
 							info: {
@@ -24167,6 +25162,475 @@ var m = module.exports = {
 								width: 480,
 								height: 854,
 								colors: "16M"
+							}
+						}
+					},
+					AF9190: {
+						capabilities: {
+							info: {
+								brand: "Asiafone",
+								href: {
+									"1": "http://www.asiafonemobile.com/product.php?id_product=77"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					AF9888: {
+						capabilities: {
+							info: {
+								brand: "Asiafone",
+								href: {
+									"1": "http://www.asiafonemobile.com/product.php?id_product=101"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					AX123: {
+						capabilities: {
+							info: {
+								brand: "iRulu",
+								href: {
+									"1": "http://www.irulu.com/sa-ax123_132.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 10.1,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
+					AX701: {
+						capabilities: {
+							info: {
+								brand: "iRulu"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"Agora 4G": {
+						capabilities: {
+							info: {
+								brand: "Kogan",
+								date: "2013-10"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"Agora 4G+": {
+						capabilities: {
+							info: {
+								brand: "Kogan",
+								date: "2014-12",
+								href: {
+									"1": "https://www.kogan.com/au/buy/kogan-agora-4g-plus-smartphone-black/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"Agora HD+": {
+						capabilities: {
+							info: {
+								brand: "Kogan",
+								date: "2013-11"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					AIKUN_AT723C: {
+						capabilities: {
+							info: {
+								brand: "Aikun",
+								date: "2014-12"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"Alpha 3G S407": {
+						capabilities: {
+							info: {
+								brand: "Jfone",
+								date: "2014-03"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					AM402: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					AM403: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					AM451: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5
+							}
+						}
+					},
+					AM503: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					AM505: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					AM506: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					AM513: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					AM516: {
+						capabilities: {
+							info: {
+								brand: "Amgoo",
+								href: {
+									"1": "http://www.amgoo.com/smart-phones/am516-entry-level-3g-smart-phone"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					AM517: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					AM522: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					AM525: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					AM526: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					AM531: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5
+							}
+						}
+					},
+					AM66: {
+						capabilities: {
+							info: {
+								brand: "Amgoo"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					"Android TV": {
+						capabilities: {
+							device: {
+								type: "tv"
+							}
+						}
+					},
+					AO5510: {
+						capabilities: {
+							info: {
+								brand: "Yu",
+								date: "2015-01",
+								marketing_name: "Yu Yureka"
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					Apollo: {
+						capabilities: {
+							info: {
+								brand: "RCA",
+								date: "2015-01",
+								href: {
+									"1": "http://www.rcatablets.com/tablets/8-apollo"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 8,
+								width: 1024,
+								height: 768
+							}
+						}
+					},
+					ARGOM_E400: {
+						capabilities: {
+							info: {
+								brand: "Argom",
+								date: "2015-01",
+								href: {
+									"1": "http://mobile.argomtech.com/index.php/default/serie-e400"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"ASIADROID AF90": {
+						capabilities: {
+							info: {
+								brand: "Asiafone",
+								date: "2014-12"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					Astro5: {
+						capabilities: {
+							info: {
+								brand: "Maxwest",
+								date: "2014-11"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854
+							}
+						}
+					},
+					AT723C: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "https://support.google.com/googleplay/answer/1727131?hl=en"
+								},
+								brand: "Aikun",
+								date: "2014-12"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
 							}
 						}
 					},
@@ -24190,6 +25654,275 @@ var m = module.exports = {
 								width: 480,
 								height: 800,
 								colors: "16M"
+							}
+						}
+					},
+					Aura_TELPAD_TM7_tablet: {
+						capabilities: {
+							info: {
+								brand: "Aura"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7
+							}
+						}
+					},
+					"AURUS III": {
+						capabilities: {
+							info: {
+								brand: "Idea",
+								date: "2013-05"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					AW880: {
+						capabilities: {
+							info: {
+								brand: "BePhone"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.6,
+								width: 480,
+								height: 854,
+								colors: "16M"
+							}
+						}
+					},
+					AxeII: {
+						capabilities: {
+							info: {
+								brand: "Plum",
+								date: "2014-06"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					B8401: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-07",
+								href: {
+									"1": "http://www.bitel.com.pe/phone-device/smartphones.html?tab=brand&brand=bitel"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: null,
+								height: null
+							}
+						}
+					},
+					B8403: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-08"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5
+							}
+						}
+					},
+					B8405: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-08",
+								href: {
+									"1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8405.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					B8406: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-08",
+								href: {
+									"1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8406.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					B8407: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-08",
+								href: {
+									"1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8407.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					B8502: {
+						capabilities: {
+							info: {
+								brand: "Bitel",
+								date: "2014-08",
+								href: {
+									"1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8502.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 854
+							}
+						}
+					},
+					B916C: {
+						capabilities: {
+							info: {
+								brand: "G-Plus",
+								date: "2014-05"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					B916E: {
+						capabilities: {
+							info: {
+								brand: "G-Plus",
+								date: "2014-05"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					Bang: {
+						capabilities: {
+							info: {
+								brand: "Sendtel"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					"BLAZE 2.0": {
+						capabilities: {
+							info: {
+								brand: "Cherrymobile",
+								href: {
+									"1": "http://www.cherrymobile.com.ph/products/smart-social/blaze-20"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.7,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"BO-LFSPBS5QC": {
+						capabilities: {
+							info: {
+								brand: "Bogo",
+								marketing_name: "LifeStyle 5BS-QC",
+								href: {
+									"1": "http://www.bogomobility.com/smartphones/lifestyle-5bs-qc/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 800
 							}
 						}
 					},
@@ -26358,6 +28091,105 @@ var m = module.exports = {
 							}
 						}
 					},
+					"Onyx 300": {
+						capabilities: {
+							info: {
+								brand: "Tecmobile"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.2
+							}
+						}
+					},
+					"OWN S3010": {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.2
+							}
+						}
+					},
+					"OWN S4010": {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					"OWN S5010": {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.7
+							}
+						}
+					},
+					"OWN S5030": {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					OWN_S4025: {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.5
+							}
+						}
+					},
 					P4i: {
 						capabilities: {
 							info: {
@@ -26475,6 +28307,40 @@ var m = module.exports = {
 								width: 720,
 								height: 1280,
 								colors: "16M"
+							}
+						}
+					},
+					S3030: {
+						capabilities: {
+							info: {
+								brand: "Ownmobile",
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
+							}
+						}
+					},
+					S3030D: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://chile.ownmobile.com/"
+								},
+								brand: "Ownmobile"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4
 							}
 						}
 					},
@@ -26926,6 +28792,23 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					"A5(GOL)": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.gfivemobile.com/en"
+								}
+							},
+							device: {
+								type: "phablet"
+							},
+							screen: {
+								size: 5.3,
+								width: 480,
+								height: 800
+							}
+						}
+					},
 					A56: {
 						capabilities: {
 							device: {
@@ -27536,6 +29419,131 @@ var m = module.exports = {
 						capabilities: {
 							device: {
 								type: "phablet"
+							}
+						}
+					},
+					P4: {
+						capabilities: {
+							info: {
+								date: "2014-06",
+								marketing_name: "Gionee Pioneer P4"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 480,
+								height: 854,
+								colors: "16M"
+							}
+						}
+					},
+					Pioneer_P1: {
+						capabilities: {
+							info: {
+								date: "2013-01",
+								marketing_name: "Gionee Pioneer P1"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480,
+								colors: "16M"
+							}
+						}
+					},
+					Pioneer_P2: {
+						capabilities: {
+							info: {
+								date: "2013-05",
+								marketing_name: "Gionee Pioneer P2"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					Pioneer_P2S: {
+						capabilities: {
+							info: {
+								date: "2013-05",
+								marketing_name: "Gionee Pioneer P2"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					Pioneer_P3: {
+						capabilities: {
+							info: {
+								marketing_name: "Gionee Pioneer P3"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.3,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					"S5.1": {
+						capabilities: {
+							info: {
+								date: "2014-11",
+								marketing_name: "Gionee Elife S5.1"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.8,
+								width: 720,
+								height: 1280,
+								colors: "16M"
+							}
+						}
+					},
+					"S5.5": {
+						capabilities: {
+							info: {
+								date: "2014-11",
+								marketing_name: "Gionee Elife S5.5"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 1080,
+								height: 1920,
+								colors: "16M"
 							}
 						}
 					}
@@ -28419,6 +30427,23 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					AD683G: {
+						capabilities: {
+							info: {
+								date: "2014-04"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
 					"HS-EG906": {
 						capabilities: {
 							info: {
@@ -50711,6 +52736,90 @@ var m = module.exports = {
 					}
 				}],
 				model: {
+					"3G 7271-HD70": {
+						capabilities: {
+							info: {
+								date: "2014-04"
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
+					"3G Q7271-IPS20": {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								href: {
+									"1": "http://www.iball.co.in/product/3G-Q7271-IPS20/740"
+								}
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
+					},
+					"7236 2G": {
+						capabilities: {
+							info: {
+								date: "2014-01",
+								href: {
+									"1": "http://www.iball.co.in/product/7236-2G/603"
+								}
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 800,
+								height: 480
+							}
+						}
+					},
+					"7236 3G17": {
+						capabilities: {
+							info: {
+								date: "2014-03",
+								href: {
+									"1": "http://www.iball.co.in/Product/3G17/649"
+								}
+							},
+							device: {
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 800,
+								height: 480
+							}
+						}
+					},
+					"Andi Uddaan": {
+						capabilities: {
+							info: {
+								date: "2013-12"
+							},
+							device: {
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
 					"Andi5.5": {
 						capabilities: {
 							info: {
@@ -51815,6 +53924,23 @@ var m = module.exports = {
 							}
 						}
 					},
+					"Auqa Xtreme": {
+						capabilities: {
+							info: {
+								date: "2014-12",
+								marketing_name: "Intex Aqua Xtreme"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
 					"IT-M709MR": {
 						capabilities: {
 							info: {
@@ -51934,7 +54060,7 @@ var m = module.exports = {
 					}
 				}
 			},
-			Jiayu: {
+			JiaYu: {
 				capabilities: {
 					info: {
 						href: {
@@ -51944,19 +54070,20 @@ var m = module.exports = {
 					device: {
 						type: "smartphone"
 					}
-				}
-			},
-			JiaYu: {
+				},
 				model: {
 					G2: {
 						capabilities: {
 							info: {
+								href: {
+									"1": "http://www.ejiayu.com/en/Product.html"
+								},
 								date: "2012-11",
 								marketing_name: "JiaYu JY-G2"
 							},
 							device: {
-								os: "Android",
-								type: "smartphone"
+								type: "smartphone",
+								os: "Android"
 							},
 							screen: {
 								size: 4,
@@ -52361,6 +54488,39 @@ var m = module.exports = {
 							}
 						}
 					},
+					"A5 Turbo": {
+						capabilities: {
+							info: {
+								date: "2014-09"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
+					"A51 Lite": {
+						capabilities: {
+							info: {
+								date: "2013-09"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480,
+								colors: "262k"
+							}
+						}
+					},
 					A6: {
 						capabilities: {
 							info: {
@@ -52382,6 +54542,37 @@ var m = module.exports = {
 							}
 						}
 					},
+					"A6 Turbo": {
+						capabilities: {
+							info: {
+								date: "2014-09"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								colors: "16M"
+							}
+						}
+					},
+					"A7*": {
+						capabilities: {
+							info: {
+								date: "2013-09"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 480,
+								height: 854
+							}
+						}
+					},
 					A93: {
 						capabilities: {
 							info: {
@@ -52396,6 +54587,42 @@ var m = module.exports = {
 								size: 4,
 								width: 480,
 								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					"A99*": {
+						capabilities: {
+							info: {
+								date: "2013-10"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 4,
+								width: 800,
+								height: 480,
+								colors: "16M"
+							}
+						}
+					},
+					A99i: {
+						capabilities: {
+							info: {
+								date: "2014-01"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 4,
+								width: 800,
+								height: 480,
 								colors: "16M"
 							}
 						}
@@ -52714,6 +54941,24 @@ var m = module.exports = {
 					device: {
 						type: "tablet"
 					}
+				},
+				model: {
+					"arc 7": {
+						capabilities: {
+							info: {
+								date: "2013-07"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 7,
+								width: 1024,
+								height: 600
+							}
+						}
+					}
 				}
 			},
 			Ktouch: {
@@ -52785,6 +55030,72 @@ var m = module.exports = {
 					}
 				}],
 				model: {
+					"101K": {
+						capabilities: {
+							info: {
+								date: "2011-12",
+								marketing_name: "Kycera 101K Honey Bee"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.5,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"201K": {
+						capabilities: {
+							info: {
+								marketing_name: "Kycera 201K Honey Bee"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 3.7,
+								width: 480,
+								height: 800
+							}
+						}
+					},
+					"202K": {
+						capabilities: {
+							info: {
+								marketing_name: "Kycera 202K Digno R"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.3,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"302KC": {
+						capabilities: {
+							info: {
+								date: "2014-09",
+								marketing_name: "Kycera DIGNO T 302KC"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 540,
+								height: 960
+							}
+						}
+					},
 					C5120: {
 						capabilities: {
 							info: {
@@ -53049,6 +55360,26 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					"504Q+": {
+						capabilities: {
+							info: {
+								date: "2014-07",
+								marketing_name: "Lava Iris 504Q+",
+								href: {
+									"1": "http://www.lavamobiles.com/smartphones/iris-504qplus"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
 					"Iris 250": {
 						capabilities: {
 							info: {
@@ -53526,6 +55857,28 @@ var m = module.exports = {
 								size: 3.5,
 								width: 320,
 								height: 480,
+								colors: "16M"
+							}
+						}
+					},
+					A3000: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://support.lenovo.com/en_GB/downloads/default.page",
+									"2": "http://shop.lenovo.com/sa/en/smartphones"
+								},
+								date: "2013-05",
+								marketing_name: "Lenovo IdeaTab A3000"
+							},
+							device: {
+								type: "tablet",
+								os: "Android"
+							},
+							screen: {
+								size: 7,
+								width: 600,
+								height: 1024,
 								colors: "16M"
 							}
 						}
@@ -56270,6 +58623,63 @@ var m = module.exports = {
 								width: 720,
 								height: 1280,
 								colors: "16M"
+							}
+						}
+					},
+					"AS870 4G": {
+						capabilities: {
+							info: {
+								date: "2013-02",
+								marketing_name: "LG Optimus F5",
+								href: {
+									"1": "http://www.lg.com/us/cell-phones/lg-AS870-optimus-f5"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.3,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					AS876: {
+						capabilities: {
+							info: {
+								date: "2014-05",
+								marketing_name: "LG F90 AS876 LTE"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.7,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					AS985: {
+						capabilities: {
+							info: {
+								date: "2014-07",
+								marketing_name: "LG G3 ACG (AS985)",
+								href: {
+									"1": "http://www.lg.com/us/cell-phones/lg-AS985-g3/technical-specifications"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.5,
+								width: 1440,
+								height: 2560
 							}
 						}
 					},
@@ -65012,7 +67422,7 @@ var m = module.exports = {
 							}
 						}
 					},
-					p705: {
+					P705: {
 						capabilities: {
 							info: {
 								href: {
@@ -68158,6 +70568,24 @@ var m = module.exports = {
 							}
 						}]
 					],
+					A068: {
+						capabilities: {
+							info: {
+								date: "2014-02",
+								marketing_name: "Micromax Bolt A068"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								colors: "16M"
+							}
+						}
+					},
 					A069: {
 						capabilities: {
 							info: {
@@ -72798,6 +75226,23 @@ var m = module.exports = {
 							}
 						}]
 					],
+					"A818i Duo": {
+						capabilities: {
+							info: {
+								date: "2013-04"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone",
+								sim: "dual"
+							},
+							screen: {
+								size: 3.5,
+								width: 320,
+								height: 480
+							}
+						}
+					},
 					"A848i Duo": {
 						capabilities: {
 							info: {
@@ -72830,6 +75275,23 @@ var m = module.exports = {
 								size: 4.5,
 								width: 540,
 								height: 960,
+								colors: "16M"
+							}
+						}
+					},
+					A919i: {
+						capabilities: {
+							info: {
+								date: "2013-05"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280,
 								colors: "16M"
 							}
 						}
@@ -73247,6 +75709,24 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					"101N": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://mb.softbank.jp/en/products/nec/101n.html"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800
+							}
+						}
+					},
 					"NE-201A1A": {
 						capabilities: {
 							info: {
@@ -88058,7 +90538,7 @@ var m = module.exports = {
 					}
 				}
 			},
-			QMobile: {
+			Qmobile: {
 				capabilities: {
 					info: {
 						href: {
@@ -88069,20 +90549,6 @@ var m = module.exports = {
 						type: "smartphone"
 					}
 				},
-				model: {
-					regexes: [
-						[{
-							regex: /A11Note/i,
-							capabilities: {
-								device: {
-									type: "phablet"
-								}
-							}
-						}]
-					]
-				}
-			},
-			Qmobile: {
 				model: {
 					A11Note: {
 						capabilities: {
@@ -88289,6 +90755,23 @@ var m = module.exports = {
 							}
 						}
 					},
+					A8i: {
+						capabilities: {
+							info: {
+								date: "2012-11"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
 					A900: {
 						capabilities: {
 							info: {
@@ -88304,6 +90787,39 @@ var m = module.exports = {
 							},
 							screen: {
 								size: 4.7,
+								width: 720,
+								height: 1280,
+								colors: "16M"
+							}
+						}
+					},
+					A900i: {
+						capabilities: {
+							info: {
+								date: "2014-10"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.7,
+								width: 540,
+								height: 960
+							}
+						}
+					},
+					A950: {
+						capabilities: {
+							info: {
+								date: "2013-07"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.65,
 								width: 720,
 								height: 1280,
 								colors: "16M"
@@ -124259,6 +126775,100 @@ var m = module.exports = {
 					}
 				}],
 				model: {
+					"304SH": {
+						capabilities: {
+							info: {
+								date: {},
+								marketing_name: "Sharp AQUOS Xx 304SH",
+								href: {
+									"1": "http://www.softbank.jp/en/mobile/product/smartphone/304sh/"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.2,
+								width: 1080,
+								height: 1920
+							}
+						}
+					},
+					"305SH": {
+						capabilities: {
+							info: {
+								date: {},
+								marketing_name: "Sharp AQUOS Crystal 305SH",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/SoftBank_305SH"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"306SH": {
+						capabilities: {
+							info: {
+								date: {},
+								marketing_name: "Sharp AQUOS Crystal 306SH",
+								href: {
+									"1": "https://ja.wikipedia.org/wiki/AQUOS_Crystal"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"401SH": {
+						capabilities: {
+							info: {
+								date: "2014-11",
+								marketing_name: "Sharp Aquos Hybrid 4G LTE 401SH"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					"402SH": {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								marketing_name: "Sharp AQUOS Crystal X 402SH"
+							},
+							device: {
+								os: "Android",
+								type: "phablet"
+							},
+							screen: {
+								size: 5.5,
+								width: 1080,
+								height: 1920
+							}
+						}
+					},
 					"SH-10D": {
 						capabilities: {
 							info: {
@@ -124918,6 +127528,29 @@ var m = module.exports = {
 							}
 						}]
 					],
+					"401SO": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.sonymobile.com/global-en/products/phones/",
+									"2": "http://www.sonymobile.co.jp/index.html",
+									"3": "http://www.sony.jp/tablet/"
+								},
+								date: "2014-09",
+								marketing_name: "Sony Xperia Z3"
+							},
+							device: {
+								type: "phablet",
+								os: "Android"
+							},
+							screen: {
+								size: 5.2,
+								width: 1080,
+								height: 1920,
+								colors: "16M"
+							}
+						}
+					},
 					C1504: {
 						capabilities: {
 							info: {
@@ -136189,6 +138822,19 @@ var m = module.exports = {
 					}
 				}
 			},
+			Tomtec: {
+				capabilities: {
+					info: {
+						href: {
+							"1": "http://www.tom-tec.eu/pages/tablets.php"
+						}
+					},
+					device: {
+						type: "tablet"
+					}
+				},
+				model: {}
+			},
 			TomTec: {
 				model: {
 					ATP7683: {
@@ -136210,19 +138856,6 @@ var m = module.exports = {
 						}
 					}
 				}
-			},
-			Tomtec: {
-				capabilities: {
-					info: {
-						href: {
-							"1": "http://www.tom-tec.eu/pages/tablets.php"
-						}
-					},
-					device: {
-						type: "tablet"
-					}
-				},
-				model: {}
 			},
 			Tooky: {
 				capabilities: {
@@ -137054,7 +139687,39 @@ var m = module.exports = {
 								}
 							}
 						}]
-					]
+					],
+					A55HD: {
+						capabilities: {
+							info: {
+								date: "2013-06"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
+							}
+						}
+					},
+					A55qHD: {
+						capabilities: {
+							info: {
+								date: "2013-06"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 540,
+								height: 960
+							}
+						}
+					}
 				}
 			},
 			Viewsonic: {
@@ -139379,6 +142044,24 @@ var m = module.exports = {
 					}
 				},
 				model: {
+					"8x-1000": {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								marketing_name: "Xolo Hive 8X-1000"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280,
+								colors: "16M"
+							}
+						}
+					},
 					A1000: {
 						capabilities: {
 							device: {
@@ -139388,6 +142071,45 @@ var m = module.exports = {
 								size: 5,
 								width: 720,
 								height: 1280
+							}
+						}
+					},
+					A1000s: {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								marketing_name: "Xolo A1000s"
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								colors: "16M"
+							}
+						}
+					},
+					A1000s_Lite: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.xolo.in/"
+								},
+								date: "2014-08",
+								marketing_name: "Xolo A1000s Lite"
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 5,
+								width: 480,
+								height: 854,
+								colors: "16M"
 							}
 						}
 					},
@@ -139403,49 +142125,150 @@ var m = module.exports = {
 							}
 						}
 					},
+					"A500 Club": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.xolo.in/a500-club"
+								},
+								date: "2013-08",
+								marketing_name: "Xolo A500 Club"
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
 					A500L: {
 						capabilities: {
 							info: {
 								href: {
-									"1": "http://www.xolo.in/"
-								}
+									"1": "http://www.xolo.in/A500L"
+								},
+								date: "2013-08",
+								marketing_name: "Xolo A500L"
 							},
 							device: {
-								type: "smartphone"
+								type: "smartphone",
+								os: "Android"
 							},
 							screen: {
 								size: 4,
 								width: 480,
-								height: 800
+								height: 800,
+								colors: "16M"
 							}
 						}
 					},
-					A500S: {
+					A500s: {
 						capabilities: {
 							info: {
+								date: "2013-08",
+								marketing_name: "Xolo A500s",
 								href: {
-									"1": "http://www.xolo.in/"
+									"1": "http://www.xolo.in/a500"
 								}
 							},
 							device: {
+								os: "Android",
 								type: "smartphone"
 							},
 							screen: {
 								size: 4,
 								width: 480,
-								height: 800
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					"A500s Lite": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.xolo.in/a500"
+								},
+								date: "2013-08",
+								marketing_name: "Xolo A500s Lite"
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					A500s_IPS: {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.xolo.in/a500"
+								},
+								date: "2013-08",
+								marketing_name: "Xolo A500s IPS"
+							},
+							device: {
+								type: "smartphone",
+								os: "Android"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
+							}
+						}
+					},
+					"A550s IPS": {
+						capabilities: {
+							info: {
+								date: "2014-08",
+								marketing_name: "Xolo A550s IPS",
+								href: {
+									"1": "http://www.xolo.in/A550s-IPS"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4,
+								width: 480,
+								height: 800,
+								colors: "16M"
 							}
 						}
 					},
 					A600: {
 						capabilities: {
+							info: {
+								date: "2013-10",
+								marketing_name: "Xolo A600",
+								href: {
+									"1": "http://www.xolo.in/a600"
+								}
+							},
 							device: {
+								os: "Android",
 								type: "smartphone"
 							},
 							screen: {
 								size: 4.5,
 								width: 540,
-								height: 960
+								height: 960,
+								colors: "16M"
 							}
 						}
 					},
@@ -141890,6 +144713,56 @@ var m = module.exports = {
 								bluetooth: 2.1,
 								wifi: "802.1 b/g/n",
 								nfc: false
+							}
+						}
+					},
+					"Avea inTouch 3": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch3"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 4.5
+							}
+						}
+					},
+					"Avea inTouch 3 Large": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch3Large"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5
+							}
+						}
+					},
+					"Avea inTouch 4": {
+						capabilities: {
+							info: {
+								href: {
+									"1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch4"
+								}
+							},
+							device: {
+								os: "Android",
+								type: "smartphone"
+							},
+							screen: {
+								size: 5,
+								width: 720,
+								height: 1280
 							}
 						}
 					},
@@ -145259,6 +148132,10 @@ m.device.brand.Airis.model.tm530 = m.device.brand.Airis.model.TM530;
 m.device.brand.Airis.model.tm55q = m.device.brand.Airis.model.TM55Q;
 m.device.brand.Airis.model.tm570 = m.device.brand.Airis.model.TM570;
 m.device.brand.Airis.model.tm60d = m.device.brand.Airis.model.TM60D;
+m.device.brand.Alcatel.model["7040n"] = m.device.brand.Alcatel.model["7040N"];
+m.device.brand.Alcatel.model["7040r"] = m.device.brand.Alcatel.model["7040R"];
+m.device.brand.Alcatel.model["7040t"] = m.device.brand.Alcatel.model["7040T"];
+m.device.brand.Alcatel.model["7045y"] = m.device.brand.Alcatel.model["7045Y"];
 m.device.brand.Alcatel.model.bh4r = m.device.brand.Alcatel.model.BH4R;
 m.device.brand.Alcatel.model.i213 = m.device.brand.Alcatel.model.I213;
 m.device.brand.Alcatel.model["one touch 303"] = m.device.brand.Alcatel.model["One Touch 303"];
@@ -145418,6 +148295,9 @@ m.device.brand.Alcatel.model.th4 = m.device.brand.Alcatel.model.TH4;
 m.device.brand.Alcatel.model["vodafone smart ii"] = m.device.brand.Alcatel.model["Vodafone Smart II"];
 m.device.brand.Allview.model["3conect"] = m.device.brand.Allview.model["3CONECT"];
 m.device.brand.Allview.model.a4all = m.device.brand.Allview.model.A4ALL;
+m.device.brand.Allview.model.a4duo = m.device.brand.Allview.model.A4DUO;
+m.device.brand.Allview.model.a4you = m.device.brand.Allview.model.A4You;
+m.device.brand.Allview.model["a5 quad"] = m.device.brand.Allview.model.A5_Quad;
 m.device.brand.Allview.model.a5smiley = m.device.brand.Allview.model.A5Smiley;
 m.device.brand.Allview.model["a6 quad"] = m.device.brand.Allview.model["A6 Quad"];
 m.device.brand.Allview.model["ax2 frenzy"] = m.device.brand.Allview.model.AX2_Frenzy;
@@ -145445,6 +148325,8 @@ m.device.brand.Allwinner.model["a13-mid"] = m.device.brand.Allwinner.model["A13-
 m.device.brand.Allwinner.model.allwinner = m.device.brand.Allwinner.model.Allwinner;
 m.device.brand.Allwinner.model.q8h = m.device.brand.Allwinner.model.Q8H;
 m.device.brand.Amaway.model.a651 = m.device.brand.Amaway.model.A651;
+m.device.brand.Amazon.model.aftb = m.device.brand.Amazon.model.AFTB;
+m.device.brand.Amazon.model.aftm = m.device.brand.Amazon.model.AFTM;
 m.device.brand.Amazon.model["fire hd 6 (4th gen)"] = m.device.brand.Amazon.model["Fire HD 6 (4th Gen)"];
 m.device.brand.Amazon.model["fire hd 7 (4th gen)"] = m.device.brand.Amazon.model["Fire HD 7 (4th Gen)"];
 m.device.brand.Amazon.model["fire hdx 8.9 (4th gen)"] = m.device.brand.Amazon.model["Fire HDX 8.9 (4th Gen)"];
@@ -145472,10 +148354,11 @@ m.device.brand.Amazon.model["kindle fire hdx 7\" 4g"] = m.device.brand.Amazon.mo
 m.device.brand.Amazon.model["kindle fire hdx 7\" wifi"] = m.device.brand.Amazon.model["Kindle Fire HDX 7\" WiFi"];
 m.device.brand.Amazon.model["kindle fire hdx 8.9\" (3rd gen)"] = m.device.brand.Amazon.model["Kindle Fire HDX 8.9\" (3rd Gen)"];
 m.device.brand.Amazon.model["kindle fire hdx 8.9\" (3rd gen) wan"] = m.device.brand.Amazon.model["Kindle Fire HDX 8.9\" (3rd Gen) Wan"];
-m.device.brand.Amazon.model["kindle fire hdx 8.9\" wifi"] = m.device.brand.Amazon.model["Kindle Fire HDX 8.9\" WiFi"];
 m.device.brand.Amazon.model["kindle fire hdx 8.9\" 4g"] = m.device.brand.Amazon.model["Kindle Fire HDX 8.9\" 4G"];
+m.device.brand.Amazon.model["kindle fire hdx 8.9\" wifi"] = m.device.brand.Amazon.model["Kindle Fire HDX 8.9\" WiFi"];
 m.device.brand.Amazon.model.tate = m.device.brand.Amazon.model.Tate;
 m.device.brand.Amoi.model.m8228 = m.device.brand.Amoi.model.M8228;
+m.device.brand.Aoc.model.u702 = m.device.brand.Aoc.model.U702;
 m.device.brand.Aoson.model.m30 = m.device.brand.Aoson.model.M30;
 m.device.brand.Aoson.model.m723 = m.device.brand.Aoson.model.M723;
 m.device.brand.Apple.model.appletv = m.device.brand.Apple.model.AppleTV;
@@ -145652,6 +148535,8 @@ m.device.brand.Assistant.model["ap-803"] = m.device.brand.Assistant.model["AP-80
 m.device.brand.Assistant.model["ap-804"] = m.device.brand.Assistant.model["AP-804"];
 m.device.brand.Assistant.model["ap-901"] = m.device.brand.Assistant.model["AP-901"];
 m.device.brand.Assistant.model["ap-941"] = m.device.brand.Assistant.model["AP-941"];
+m.device.brand.Asus.model.a500cg = m.device.brand.Asus.model.A500CG;
+m.device.brand.Asus.model.ast21 = m.device.brand.Asus.model.AST21;
 m.device.brand.Asus.model.galaxymini = m.device.brand.Asus.model.GalaxyMini;
 m.device.brand.Asus.model.k007 = m.device.brand.Asus.model.K007;
 m.device.brand.Asus.model.k00c = m.device.brand.Asus.model.K00C;
@@ -145730,6 +148615,15 @@ m.device.brand.Avvio.model["765s"] = m.device.brand.Avvio.model["765S"];
 m.device.brand.Avvio.model["pad10.1"] = m.device.brand.Avvio.model["PAD10.1"];
 m.device.brand.Azend.model.v700na = m.device.brand.Azend.model.V700NA;
 m.device.brand.Azend.model["v8000 usa cricket"] = m.device.brand.Azend.model.V8000_USA_Cricket;
+m.device.brand.Azumi.model.a35s = m.device.brand.Azumi.model.A35S;
+m.device.brand.Azumi.model.a45s = m.device.brand.Azumi.model.A45S;
+m.device.brand.Azumi.model.a50 = m.device.brand.Azumi.model.A50;
+m.device.brand.Azumi.model.a50c = m.device.brand.Azumi.model.A50c;
+m.device.brand.Azumi.model["a50c+"] = m.device.brand.Azumi.model["A50c+"];
+m.device.brand.Azumi.model.kl35 = m.device.brand.Azumi.model.KL35;
+m.device.brand.Bangho.model["aero j0101"] = m.device.brand.Bangho.model["AERO J0101"];
+m.device.brand.Bangho.model["aero j0202"] = m.device.brand.Bangho.model["AERO J0202"];
+m.device.brand.Bangho.model.aero1021 = m.device.brand.Bangho.model.Aero1021;
 m.device.brand.Bedove.model.hy5001 = m.device.brand.Bedove.model.HY5001;
 m.device.brand.Bedove.model.i5 = m.device.brand.Bedove.model.I5;
 m.device.brand.Bedove.model.x21 = m.device.brand.Bedove.model.X21;
@@ -145819,6 +148713,7 @@ m.device.brand.Cat.model["tablet phoenix 8.1j0"] = m.device.brand.Cat.model["Tab
 m.device.brand.Celkon.model["a 77"] = m.device.brand.Celkon.model.A_77;
 m.device.brand.Celkon.model["a 85"] = m.device.brand.Celkon.model["A 85"];
 m.device.brand.Celkon.model.a15 = m.device.brand.Celkon.model.A15;
+m.device.brand.Celkon.model.a354c = m.device.brand.Celkon.model.A354C;
 m.device.brand.Celkon.model.a35k = m.device.brand.Celkon.model.A35K;
 m.device.brand.Celkon.model["a9+"] = m.device.brand.Celkon.model["A9+"];
 m.device.brand.Celkon.model.ct1000 = m.device.brand.Celkon.model.CT1000;
@@ -145855,6 +148750,8 @@ m.device.brand.CobyKyros.model.mid1126 = m.device.brand.CobyKyros.model.MID1126;
 m.device.brand.CobyKyros.model.mid8128 = m.device.brand.CobyKyros.model.MID8128;
 m.device.brand.Coolpad.model["8297w"] = m.device.brand.Coolpad.model["8297W"];
 m.device.brand.Coolpad.model["7295c"] = m.device.brand.Coolpad.model["7295C"];
+m.device.brand.Coolpad.model["801e"] = m.device.brand.Coolpad.model["801E"];
+m.device.brand.Coolpad.model["801em"] = m.device.brand.Coolpad.model["801EM"];
 m.device.brand.Coolpad.model["9976a"] = m.device.brand.Coolpad.model["9976A"];
 m.device.brand.Cube.model["u25gt-c4"] = m.device.brand.Cube.model["U25GT-C4"];
 m.device.brand.Cube.model["u30gt 2"] = m.device.brand.Cube.model["U30GT 2"];
@@ -146003,7 +148900,23 @@ m.device.brand.Elephone.model.p3000s = m.device.brand.Elephone.model.P3000S;
 m.device.brand.Elephone.model.p6000 = m.device.brand.Elephone.model.P6000;
 m.device.brand.Elephone.model.p8 = m.device.brand.Elephone.model.P8;
 m.device.brand.Elephone.model["p8 pro"] = m.device.brand.Elephone.model["P8 Pro"];
+m.device.brand.Evercoss.model.a10q = m.device.brand.Evercoss.model.A10Q;
+m.device.brand.Evercoss.model.a26b = m.device.brand.Evercoss.model.A26B;
+m.device.brand.Evercoss.model.a26c = m.device.brand.Evercoss.model.A26C;
+m.device.brand.Evercoss.model.a28b = m.device.brand.Evercoss.model.A28B;
+m.device.brand.Evercoss.model.a28m = m.device.brand.Evercoss.model.A28M;
+m.device.brand.Evercoss.model.a28s = m.device.brand.Evercoss.model.A28S;
+m.device.brand.Evercoss.model.a33a = m.device.brand.Evercoss.model.A33A;
+m.device.brand.Evercoss.model.a5c = m.device.brand.Evercoss.model.A5C;
+m.device.brand.Evercoss.model.a5s = m.device.brand.Evercoss.model.A5S;
+m.device.brand.Evercoss.model.a65a = m.device.brand.Evercoss.model.A65A;
+m.device.brand.Evercoss.model.a66a = m.device.brand.Evercoss.model.A66A;
+m.device.brand.Evercoss.model.a66b = m.device.brand.Evercoss.model.A66B;
+m.device.brand.Evercoss.model.a7e = m.device.brand.Evercoss.model.A7E;
+m.device.brand.Evercoss.model.a80a = m.device.brand.Evercoss.model.A80A;
 m.device.brand.Evercoss.model.at1 = m.device.brand.Evercoss.model.AT1;
+m.device.brand.Evercoss.model["at1a*"] = m.device.brand.Evercoss.model["AT1A*"];
+m.device.brand.Evercoss.model.at1c = m.device.brand.Evercoss.model.AT1C;
 m.device.brand.Evercoss.model.at1g = m.device.brand.Evercoss.model.AT1G;
 m.device.brand.Evercoss.model["at1g*"] = m.device.brand.Evercoss.model["AT1G*"];
 m.device.brand.Evercoss.model.at8 = m.device.brand.Evercoss.model.AT8;
@@ -146055,6 +148968,10 @@ m.device.brand.Fly.model["iq458 quad"] = m.device.brand.Fly.model["IQ458 Quad"];
 m.device.brand.Fly.model.iq459 = m.device.brand.Fly.model.IQ459;
 m.device.brand.Fly.model["phoenix 2"] = m.device.brand.Fly.model["Phoenix 2"];
 m.device.brand.Fly.model["x2 twin"] = m.device.brand.Fly.model.X2_Twin;
+m.device.brand.Fujitsu.model["101f"] = m.device.brand.Fujitsu.model["101F"];
+m.device.brand.Fujitsu.model["201f"] = m.device.brand.Fujitsu.model["201F"];
+m.device.brand.Fujitsu.model["202f"] = m.device.brand.Fujitsu.model["202F"];
+m.device.brand.Fujitsu.model["301f"] = m.device.brand.Fujitsu.model["301F"];
 m.device.brand.Fujitsu.model["f-01d"] = m.device.brand.Fujitsu.model["F-01D"];
 m.device.brand.Fujitsu.model["f-01f"] = m.device.brand.Fujitsu.model["F-01F"];
 m.device.brand.Fujitsu.model["f-02f"] = m.device.brand.Fujitsu.model["F-02F"];
@@ -146067,12 +148984,70 @@ m.device.brand["Garmin-Asus"].model["nuvifone-m10"] = m.device.brand["Garmin-Asu
 m.device.brand.Generic.model["feature phone"] = m.device.brand.Generic.model["Feature Phone"];
 m.device.brand.Generic.model.smartphone = m.device.brand.Generic.model.Smartphone;
 m.device.brand.Generic.model.tablet = m.device.brand.Generic.model.Tablet;
+m.device.brand.Generic_Android.model["351d"] = m.device.brand.Generic_Android.model["351D"];
+m.device.brand.Generic_Android.model["400 d"] = m.device.brand.Generic_Android.model["400 D"];
+m.device.brand.Generic_Android.model["400q"] = m.device.brand.Generic_Android.model["400Q"];
+m.device.brand.Generic_Android.model["401d"] = m.device.brand.Generic_Android.model["401D"];
+m.device.brand.Generic_Android.model["500d"] = m.device.brand.Generic_Android.model["500D"];
+m.device.brand.Generic_Android.model["701d"] = m.device.brand.Generic_Android.model["701D"];
+m.device.brand.Generic_Android.model["7dtb25"] = m.device.brand.Generic_Android.model["7DTB25"];
+m.device.brand.Generic_Android.model["831c"] = m.device.brand.Generic_Android.model["831C"];
+m.device.brand.Generic_Android.model.a1040 = m.device.brand.Generic_Android.model.A1040;
+m.device.brand.Generic_Android.model.a1x = m.device.brand.Generic_Android.model.A1X;
 m.device.brand.Generic_Android.model.a400 = m.device.brand.Generic_Android.model.A400;
 m.device.brand.Generic_Android.model.a4all = m.device.brand.Generic_Android.model.A4ALL;
 m.device.brand.Generic_Android.model.a5smiley = m.device.brand.Generic_Android.model.A5Smiley;
 m.device.brand.Generic_Android.model["a6 quad"] = m.device.brand.Generic_Android.model["A6 Quad"];
+m.device.brand.Generic_Android.model.a727 = m.device.brand.Generic_Android.model.A727;
+m.device.brand.Generic_Android.model.a7is = m.device.brand.Generic_Android.model.A7iS;
+m.device.brand.Generic_Android.model["accent eagle7 3g"] = m.device.brand.Generic_Android.model["ACCENT EAGLE7 3G"];
 m.device.brand.Generic_Android.model["advance 4.5"] = m.device.brand.Generic_Android.model["ADVANCE 4.5"];
+m.device.brand.Generic_Android.model.af9190 = m.device.brand.Generic_Android.model.AF9190;
+m.device.brand.Generic_Android.model.af9888 = m.device.brand.Generic_Android.model.AF9888;
+m.device.brand.Generic_Android.model.ax123 = m.device.brand.Generic_Android.model.AX123;
+m.device.brand.Generic_Android.model.ax701 = m.device.brand.Generic_Android.model.AX701;
+m.device.brand.Generic_Android.model["agora 4g"] = m.device.brand.Generic_Android.model["Agora 4G"];
+m.device.brand.Generic_Android.model["agora 4g+"] = m.device.brand.Generic_Android.model["Agora 4G+"];
+m.device.brand.Generic_Android.model["agora hd+"] = m.device.brand.Generic_Android.model["Agora HD+"];
+m.device.brand.Generic_Android.model["aikun at723c"] = m.device.brand.Generic_Android.model.AIKUN_AT723C;
+m.device.brand.Generic_Android.model["alpha 3g s407"] = m.device.brand.Generic_Android.model["Alpha 3G S407"];
+m.device.brand.Generic_Android.model.am402 = m.device.brand.Generic_Android.model.AM402;
+m.device.brand.Generic_Android.model.am403 = m.device.brand.Generic_Android.model.AM403;
+m.device.brand.Generic_Android.model.am451 = m.device.brand.Generic_Android.model.AM451;
+m.device.brand.Generic_Android.model.am503 = m.device.brand.Generic_Android.model.AM503;
+m.device.brand.Generic_Android.model.am505 = m.device.brand.Generic_Android.model.AM505;
+m.device.brand.Generic_Android.model.am506 = m.device.brand.Generic_Android.model.AM506;
+m.device.brand.Generic_Android.model.am513 = m.device.brand.Generic_Android.model.AM513;
+m.device.brand.Generic_Android.model.am516 = m.device.brand.Generic_Android.model.AM516;
+m.device.brand.Generic_Android.model.am517 = m.device.brand.Generic_Android.model.AM517;
+m.device.brand.Generic_Android.model.am522 = m.device.brand.Generic_Android.model.AM522;
+m.device.brand.Generic_Android.model.am525 = m.device.brand.Generic_Android.model.AM525;
+m.device.brand.Generic_Android.model.am526 = m.device.brand.Generic_Android.model.AM526;
+m.device.brand.Generic_Android.model.am531 = m.device.brand.Generic_Android.model.AM531;
+m.device.brand.Generic_Android.model.am66 = m.device.brand.Generic_Android.model.AM66;
+m.device.brand.Generic_Android.model["android tv"] = m.device.brand.Generic_Android.model["Android TV"];
+m.device.brand.Generic_Android.model.ao5510 = m.device.brand.Generic_Android.model.AO5510;
+m.device.brand.Generic_Android.model.apollo = m.device.brand.Generic_Android.model.Apollo;
+m.device.brand.Generic_Android.model["argom e400"] = m.device.brand.Generic_Android.model.ARGOM_E400;
+m.device.brand.Generic_Android.model["asiadroid af90"] = m.device.brand.Generic_Android.model["ASIADROID AF90"];
+m.device.brand.Generic_Android.model.astro5 = m.device.brand.Generic_Android.model.Astro5;
+m.device.brand.Generic_Android.model.at723c = m.device.brand.Generic_Android.model.AT723C;
 m.device.brand.Generic_Android.model.atlantis = m.device.brand.Generic_Android.model.ATLANTIS;
+m.device.brand.Generic_Android.model["aura telpad tm7 tablet"] = m.device.brand.Generic_Android.model.Aura_TELPAD_TM7_tablet;
+m.device.brand.Generic_Android.model["aurus iii"] = m.device.brand.Generic_Android.model["AURUS III"];
+m.device.brand.Generic_Android.model.aw880 = m.device.brand.Generic_Android.model.AW880;
+m.device.brand.Generic_Android.model.axeii = m.device.brand.Generic_Android.model.AxeII;
+m.device.brand.Generic_Android.model.b8401 = m.device.brand.Generic_Android.model.B8401;
+m.device.brand.Generic_Android.model.b8403 = m.device.brand.Generic_Android.model.B8403;
+m.device.brand.Generic_Android.model.b8405 = m.device.brand.Generic_Android.model.B8405;
+m.device.brand.Generic_Android.model.b8406 = m.device.brand.Generic_Android.model.B8406;
+m.device.brand.Generic_Android.model.b8407 = m.device.brand.Generic_Android.model.B8407;
+m.device.brand.Generic_Android.model.b8502 = m.device.brand.Generic_Android.model.B8502;
+m.device.brand.Generic_Android.model.b916c = m.device.brand.Generic_Android.model.B916C;
+m.device.brand.Generic_Android.model.b916e = m.device.brand.Generic_Android.model.B916E;
+m.device.brand.Generic_Android.model.bang = m.device.brand.Generic_Android.model.Bang;
+m.device.brand.Generic_Android.model["blaze 2.0"] = m.device.brand.Generic_Android.model["BLAZE 2.0"];
+m.device.brand.Generic_Android.model["bo-lfspbs5qc"] = m.device.brand.Generic_Android.model["BO-LFSPBS5QC"];
 m.device.brand.Generic_Android.model["brava dm-993"] = m.device.brand.Generic_Android.model["Brava DM-993"];
 m.device.brand.Generic_Android.model.c9660 = m.device.brand.Generic_Android.model.C9660;
 m.device.brand.Generic_Android.model.d7018 = m.device.brand.Generic_Android.model.D7018;
@@ -146188,12 +149163,20 @@ m.device.brand.Generic_Android.model["ngm legend2"] = m.device.brand.Generic_And
 m.device.brand.Generic_Android.model["ngm winn"] = m.device.brand.Generic_Android.model.NGM_WINN;
 m.device.brand.Generic_Android.model["no.1 h8"] = m.device.brand.Generic_Android.model["NO.1 H8"];
 m.device.brand.Generic_Android.model["no.1 n3"] = m.device.brand.Generic_Android.model["No.1 N3"];
+m.device.brand.Generic_Android.model["onyx 300"] = m.device.brand.Generic_Android.model["Onyx 300"];
+m.device.brand.Generic_Android.model["own s3010"] = m.device.brand.Generic_Android.model["OWN S3010"];
+m.device.brand.Generic_Android.model["own s4010"] = m.device.brand.Generic_Android.model["OWN S4010"];
+m.device.brand.Generic_Android.model["own s5010"] = m.device.brand.Generic_Android.model["OWN S5010"];
+m.device.brand.Generic_Android.model["own s5030"] = m.device.brand.Generic_Android.model["OWN S5030"];
+m.device.brand.Generic_Android.model["own s4025"] = m.device.brand.Generic_Android.model.OWN_S4025;
 m.device.brand.Generic_Android.model.p4i = m.device.brand.Generic_Android.model.P4i;
 m.device.brand.Generic_Android.model.p5 = m.device.brand.Generic_Android.model.P5;
 m.device.brand.Generic_Android.model["p5 symbol"] = m.device.brand.Generic_Android.model["P5 Symbol"];
 m.device.brand.Generic_Android.model["p5 quad"] = m.device.brand.Generic_Android.model.P5_Quad;
 m.device.brand.Generic_Android.model["p6 quad"] = m.device.brand.Generic_Android.model.P6_Quad;
 m.device.brand.Generic_Android.model.p6life = m.device.brand.Generic_Android.model.P6Life;
+m.device.brand.Generic_Android.model.s3030 = m.device.brand.Generic_Android.model.S3030;
+m.device.brand.Generic_Android.model.s3030d = m.device.brand.Generic_Android.model.S3030D;
 m.device.brand.Generic_Android.model["studio 5.0 s ii"] = m.device.brand.Generic_Android.model["Studio 5.0 S II"];
 m.device.brand.Generic_Android.model["studio 5.3s"] = m.device.brand.Generic_Android.model["Studio 5.3s"];
 m.device.brand.Generic_Android.model["studio6.0hd"] = m.device.brand.Generic_Android.model["STUDIO6.0HD"];
@@ -146215,6 +149198,7 @@ m.device.brand.Generic_Android.model["x1 soul"] = m.device.brand.Generic_Android
 m.device.brand.Generic_Android.model["x1 soul xtreme"] = m.device.brand.Generic_Android.model.X1_Soul_Xtreme;
 m.device.brand.Generic_Android.model["x1 xtreme mini"] = m.device.brand.Generic_Android.model.X1_Xtreme_Mini;
 m.device.brand.Generic_Android.model["x2 soul mini"] = m.device.brand.Generic_Android.model.X2_Soul_Mini;
+m.device.brand.Gfive.model["a5(gol)"] = m.device.brand.Gfive.model["A5(GOL)"];
 m.device.brand.Gfive.model.a56 = m.device.brand.Gfive.model.A56;
 m.device.brand.Gfive.model["aurora(a79)"] = m.device.brand.Gfive.model["Aurora(A79)"];
 m.device.brand.Gfive.model["beam(a68)"] = m.device.brand.Gfive.model["Beam(A68)"];
@@ -146254,6 +149238,13 @@ m.device.brand.Gionee.model.e7 = m.device.brand.Gionee.model.E7;
 m.device.brand.Gionee.model.gn137 = m.device.brand.Gionee.model.GN137;
 m.device.brand.Gionee.model.gn858 = m.device.brand.Gionee.model.GN858;
 m.device.brand.Gionee.model["gpad g3"] = m.device.brand.Gionee.model.Gpad_G3;
+m.device.brand.Gionee.model.p4 = m.device.brand.Gionee.model.P4;
+m.device.brand.Gionee.model["pioneer p1"] = m.device.brand.Gionee.model.Pioneer_P1;
+m.device.brand.Gionee.model["pioneer p2"] = m.device.brand.Gionee.model.Pioneer_P2;
+m.device.brand.Gionee.model["pioneer p2s"] = m.device.brand.Gionee.model.Pioneer_P2S;
+m.device.brand.Gionee.model["pioneer p3"] = m.device.brand.Gionee.model.Pioneer_P3;
+m.device.brand.Gionee.model["s5.1"] = m.device.brand.Gionee.model["S5.1"];
+m.device.brand.Gionee.model["s5.5"] = m.device.brand.Gionee.model["S5.5"];
 m.device.brand.GoClever.model["fone 450q"] = m.device.brand.GoClever.model["FONE 450Q"];
 m.device.brand.GoClever.model["fone 500"] = m.device.brand.GoClever.model["FONE 500"];
 m.device.brand.GoClever.model["insignia 5"] = m.device.brand.GoClever.model["INSIGNIA 5"];
@@ -146302,6 +149293,7 @@ m.device.brand.Hero.model["h9300+"] = m.device.brand.Hero.model["H9300+"];
 m.device.brand.Hero.model.h9500 = m.device.brand.Hero.model.H9500;
 m.device.brand.Hero.model["h9500+"] = m.device.brand.Hero.model["H9500+"];
 m.device.brand.Hero.model["h9700+"] = m.device.brand.Hero.model["H9700+"];
+m.device.brand.Hisense.model.ad683g = m.device.brand.Hisense.model.AD683G;
 m.device.brand.Hisense.model["hs-eg906"] = m.device.brand.Hisense.model["HS-EG906"];
 m.device.brand.Hisense.model["hs-l691"] = m.device.brand.Hisense.model["HS-L691"];
 m.device.brand.Hisense.model["mira-2"] = m.device.brand.Hisense.model["MIRA-2"];
@@ -147166,6 +150158,11 @@ m.device.brand.Huawei.model["y635-l01"] = m.device.brand.Huawei.model["Y635-L01"
 m.device.brand.Huawei.model["z100-l09"] = m.device.brand.Huawei.model["Z100-L09"];
 m.device.brand.Hyundai.model["mb-6900"] = m.device.brand.Hyundai.model["MB-6900"];
 m.device.brand.Hyundai.model["mb-d6650"] = m.device.brand.Hyundai.model["MB-D6650"];
+m.device.brand.iBall.model["3g 7271-hd70"] = m.device.brand.iBall.model["3G 7271-HD70"];
+m.device.brand.iBall.model["3g q7271-ips20"] = m.device.brand.iBall.model["3G Q7271-IPS20"];
+m.device.brand.iBall.model["7236 2g"] = m.device.brand.iBall.model["7236 2G"];
+m.device.brand.iBall.model["7236 3g17"] = m.device.brand.iBall.model["7236 3G17"];
+m.device.brand.iBall.model["andi uddaan"] = m.device.brand.iBall.model["Andi Uddaan"];
 m.device.brand.iBall.model["andi5.5"] = m.device.brand.iBall.model["Andi5.5"];
 m.device.brand.IconBIT.model["nt-1501c"] = m.device.brand.IconBIT.model["NT-1501C"];
 m.device.brand.IMO.model.ice = m.device.brand.IMO.model.ICE;
@@ -147227,6 +150224,7 @@ m.device.brand.Infinix.model.x800 = m.device.brand.Infinix.model.X800;
 m.device.brand.InFocus.model.m310 = m.device.brand.InFocus.model.M310;
 m.device.brand.InFocus.model.m330 = m.device.brand.InFocus.model.M330;
 m.device.brand.Intex.model["aqua style pro"] = m.device.brand.Intex.model["Aqua Style Pro"];
+m.device.brand.Intex.model["auqa xtreme"] = m.device.brand.Intex.model["Auqa Xtreme"];
 m.device.brand.Intex.model["it-m709mr"] = m.device.brand.Intex.model["IT-M709MR"];
 m.device.brand.iOCEAN.model.x7 = m.device.brand.iOCEAN.model.X7;
 m.device.brand.Ivio.model.md70 = m.device.brand.Ivio.model.MD70;
@@ -147259,8 +150257,14 @@ m.device.brand.Karbonn.model.a15 = m.device.brand.Karbonn.model.A15;
 m.device.brand.Karbonn.model.a18 = m.device.brand.Karbonn.model.A18;
 m.device.brand.Karbonn.model.a19 = m.device.brand.Karbonn.model.A19;
 m.device.brand.Karbonn.model.a34 = m.device.brand.Karbonn.model.A34;
+m.device.brand.Karbonn.model["a5 turbo"] = m.device.brand.Karbonn.model["A5 Turbo"];
+m.device.brand.Karbonn.model["a51 lite"] = m.device.brand.Karbonn.model["A51 Lite"];
 m.device.brand.Karbonn.model.a6 = m.device.brand.Karbonn.model.A6;
+m.device.brand.Karbonn.model["a6 turbo"] = m.device.brand.Karbonn.model["A6 Turbo"];
+m.device.brand.Karbonn.model["a7*"] = m.device.brand.Karbonn.model["A7*"];
 m.device.brand.Karbonn.model.a93 = m.device.brand.Karbonn.model.A93;
+m.device.brand.Karbonn.model["a99*"] = m.device.brand.Karbonn.model["A99*"];
+m.device.brand.Karbonn.model.a99i = m.device.brand.Karbonn.model.A99i;
 m.device.brand.Karbonn.model.s5i = m.device.brand.Karbonn.model.S5i;
 m.device.brand.Karbonn.model["titanium hexa"] = m.device.brand.Karbonn.model["Titanium Hexa"];
 m.device.brand.Karbonn.model["titanium s1"] = m.device.brand.Karbonn.model["Titanium S1"];
@@ -147276,6 +150280,10 @@ m.device.brand.Kingcom.model["padphone 61"] = m.device.brand.Kingcom.model["Padp
 m.device.brand.Kingcom.model["padphone 71"] = m.device.brand.Kingcom.model["Padphone 71"];
 m.device.brand.Kingcom.model["padphone 72"] = m.device.brand.Kingcom.model["Padphone 72"];
 m.device.brand.Ktouch.model.t96 = m.device.brand.Ktouch.model.T96;
+m.device.brand.Kyocera.model["101k"] = m.device.brand.Kyocera.model["101K"];
+m.device.brand.Kyocera.model["201k"] = m.device.brand.Kyocera.model["201K"];
+m.device.brand.Kyocera.model["202k"] = m.device.brand.Kyocera.model["202K"];
+m.device.brand.Kyocera.model["302kc"] = m.device.brand.Kyocera.model["302KC"];
 m.device.brand.Kyocera.model.c5120 = m.device.brand.Kyocera.model.C5120;
 m.device.brand.Kyocera.model.c5170 = m.device.brand.Kyocera.model.C5170;
 m.device.brand.Kyocera.model.c6730 = m.device.brand.Kyocera.model.C6730;
@@ -147289,6 +150297,7 @@ m.device.brand.Landvo.model.l550 = m.device.brand.Landvo.model.L550;
 m.device.brand.Landvo.model.l800 = m.device.brand.Landvo.model.L800;
 m.device.brand.Landvo.model.l800s = m.device.brand.Landvo.model.L800S;
 m.device.brand.Landvo.model.l900 = m.device.brand.Landvo.model.L900;
+m.device.brand.Lava.model["504q+"] = m.device.brand.Lava.model["504Q+"];
 m.device.brand.Lava.model["iris 250"] = m.device.brand.Lava.model["Iris 250"];
 m.device.brand.Lava.model["iris 352flair"] = m.device.brand.Lava.model["Iris 352Flair"];
 m.device.brand.Lava.model["iris 401e"] = m.device.brand.Lava.model["Iris 401e"];
@@ -147311,6 +150320,7 @@ m.device.brand.Lemon.model["tab lt29"] = m.device.brand.Lemon.model["Tab LT29"];
 m.device.brand.Lenovo.model["a1 07"] = m.device.brand.Lenovo.model.A1_07;
 m.device.brand.Lenovo.model.a269 = m.device.brand.Lenovo.model.A269;
 m.device.brand.Lenovo.model.a269i = m.device.brand.Lenovo.model.A269i;
+m.device.brand.Lenovo.model.a3000 = m.device.brand.Lenovo.model.A3000;
 m.device.brand.Lenovo.model["a3000-h"] = m.device.brand.Lenovo.model["A3000-H"];
 m.device.brand.Lenovo.model.a316 = m.device.brand.Lenovo.model.A316;
 m.device.brand.Lenovo.model.a316i = m.device.brand.Lenovo.model.A316i;
@@ -147425,7 +150435,7 @@ m.device.brand.Lenovo.model["yoga tablet 2-1050f"] = m.device.brand.Lenovo.model
 m.device.brand.Lenovo.model["yoga tablet 2-1050l"] = m.device.brand.Lenovo.model["YOGA Tablet 2-1050L"];
 m.device.brand.Lenovo.model["yoga tablet 2-830f"] = m.device.brand.Lenovo.model["YOGA Tablet 2-830F"];
 m.device.brand.Lenovo.model.z2 = m.device.brand.Lenovo.model.Z2;
-m.device.brand.LG.model.P705 = m.device.brand.LG.model.p705;
+m.device.brand.LG.model.p705 = m.device.brand.LG.model.P705;
 m.device.brand.LG.model[" g flex"] = m.device.brand.LG.model["_G Flex"];
 m.device.brand.LG.model[" g pad"] = m.device.brand.LG.model["_G Pad"];
 m.device.brand.LG.model[" g pro lite"] = m.device.brand.LG.model["_G Pro Lite"];
@@ -147447,6 +150457,9 @@ m.device.brand.LG.model.a290 = m.device.brand.LG.model.A290;
 m.device.brand.LG.model.as695 = m.device.brand.LG.model.AS695;
 m.device.brand.LG.model.as730 = m.device.brand.LG.model.AS730;
 m.device.brand.LG.model.as780 = m.device.brand.LG.model.AS780;
+m.device.brand.LG.model["as870 4g"] = m.device.brand.LG.model["AS870 4G"];
+m.device.brand.LG.model.as876 = m.device.brand.LG.model.AS876;
+m.device.brand.LG.model.as985 = m.device.brand.LG.model.AS985;
 m.device.brand.LG.model.bl20 = m.device.brand.LG.model.BL20;
 m.device.brand.LG.model.bl40 = m.device.brand.LG.model.BL40;
 m.device.brand.LG.model.c195 = m.device.brand.LG.model.C195;
@@ -147896,6 +150909,7 @@ m.device.brand.Medion.model.p4013 = m.device.brand.Medion.model.P4013;
 m.device.brand.Medion.model["smartphone life e3501"] = m.device.brand.Medion.model["Smartphone LIFE E3501"];
 m.device.brand.Meizu.model.m030 = m.device.brand.Meizu.model.M030;
 m.device.brand.Meizu.model.m040 = m.device.brand.Meizu.model.M040;
+m.device.brand.Micromax.model.a068 = m.device.brand.Micromax.model.A068;
 m.device.brand.Micromax.model.a069 = m.device.brand.Micromax.model.A069;
 m.device.brand.Micromax.model.a089 = m.device.brand.Micromax.model.A089;
 m.device.brand.Micromax.model.a092 = m.device.brand.Micromax.model.A092;
@@ -148109,8 +151123,10 @@ m.device.brand.Motorola.model.xt925 = m.device.brand.Motorola.model.XT925;
 m.device.brand.Motorola.model.z3 = m.device.brand.Motorola.model.Z3;
 m.device.brand.Motorola.model.zn5 = m.device.brand.Motorola.model.ZN5;
 m.device.brand.Msi.model.primo77 = m.device.brand.Msi.model.Primo77;
+m.device.brand.MyPhone.model["a818i duo"] = m.device.brand.MyPhone.model["A818i Duo"];
 m.device.brand.MyPhone.model["a848i duo"] = m.device.brand.MyPhone.model["A848i Duo"];
 m.device.brand.MyPhone.model["a888 duo"] = m.device.brand.MyPhone.model["A888 Duo"];
+m.device.brand.MyPhone.model.a919i = m.device.brand.MyPhone.model.A919i;
 m.device.brand.MyPhone.model["c smart"] = m.device.brand.MyPhone.model.C_Smart;
 m.device.brand.MyPhone.model.cube = m.device.brand.MyPhone.model.Cube;
 m.device.brand.MyPhone.model["cube 16gb"] = m.device.brand.MyPhone.model["Cube 16GB"];
@@ -148135,6 +151151,7 @@ m.device.brand.Mytab.model["mytab mini 3g"] = m.device.brand.Mytab.model["myTAB 
 m.device.brand.Mytab.model.mytab10 = m.device.brand.Mytab.model.myTab10;
 m.device.brand.Mytab.model["mytab 7 q"] = m.device.brand.Mytab.model.myTAB_7_Q;
 m.device.brand.Nabi.model.nv7a = m.device.brand.Nabi.model.NV7A;
+m.device.brand.Nec.model["101n"] = m.device.brand.Nec.model["101N"];
 m.device.brand.Nec.model["ne-201a1a"] = m.device.brand.Nec.model["NE-201A1A"];
 m.device.brand.Newman.model.k1 = m.device.brand.Newman.model.K1;
 m.device.brand.Nextbook.model.m805 = m.device.brand.Nextbook.model.M805;
@@ -148600,7 +151617,10 @@ m.device.brand.Qmobile.model.a36 = m.device.brand.Qmobile.model.A36;
 m.device.brand.Qmobile.model["a5 classic"] = m.device.brand.Qmobile.model["A5 Classic"];
 m.device.brand.Qmobile.model.a63 = m.device.brand.Qmobile.model.A63;
 m.device.brand.Qmobile.model.a65 = m.device.brand.Qmobile.model.A65;
+m.device.brand.Qmobile.model.a8i = m.device.brand.Qmobile.model.A8i;
 m.device.brand.Qmobile.model.a900 = m.device.brand.Qmobile.model.A900;
+m.device.brand.Qmobile.model.a900i = m.device.brand.Qmobile.model.A900i;
+m.device.brand.Qmobile.model.a950 = m.device.brand.Qmobile.model.A950;
 m.device.brand.Ramos.model.k1 = m.device.brand.Ramos.model.K1;
 m.device.brand.Runbo.model.q5 = m.device.brand.Runbo.model.Q5;
 m.device.brand.Runbo.model["q5-s"] = m.device.brand.Runbo.model["Q5-S"];
@@ -150010,6 +153030,11 @@ m.device.brand.Samsung.model["yp-gi1"] = m.device.brand.Samsung.model["YP-GI1"];
 m.device.brand.Samsung.model["yp-gp1"] = m.device.brand.Samsung.model["YP-GP1"];
 m.device.brand.Samsung.model["yp-gs1"] = m.device.brand.Samsung.model["YP-GS1"];
 m.device.brand.Sega.model.dreamcast = m.device.brand.Sega.model.Dreamcast;
+m.device.brand.Sharp.model["304sh"] = m.device.brand.Sharp.model["304SH"];
+m.device.brand.Sharp.model["305sh"] = m.device.brand.Sharp.model["305SH"];
+m.device.brand.Sharp.model["306sh"] = m.device.brand.Sharp.model["306SH"];
+m.device.brand.Sharp.model["401sh"] = m.device.brand.Sharp.model["401SH"];
+m.device.brand.Sharp.model["402sh"] = m.device.brand.Sharp.model["402SH"];
 m.device.brand.Sharp.model["sh-10d"] = m.device.brand.Sharp.model["SH-10D"];
 m.device.brand.Sharp.model.sh80f = m.device.brand.Sharp.model.SH80F;
 m.device.brand.Siemens.model.cx65 = m.device.brand.Siemens.model.CX65;
@@ -150039,6 +153064,7 @@ m.device.brand.SKtelesys.model["sk-900"] = m.device.brand.SKtelesys.model["SK-90
 m.device.brand.SKtelesys.model["sk-s100"] = m.device.brand.SKtelesys.model["SK-S100"];
 m.device.brand.SKtelesys.model["sk-s150"] = m.device.brand.SKtelesys.model["SK-S150"];
 m.device.brand.SKtelesys.model["sk-t100"] = m.device.brand.SKtelesys.model["SK-T100"];
+m.device.brand.Sony.model["401so"] = m.device.brand.Sony.model["401SO"];
 m.device.brand.Sony.model.c1504 = m.device.brand.Sony.model.C1504;
 m.device.brand.Sony.model.c1505 = m.device.brand.Sony.model.C1505;
 m.device.brand.Sony.model["c1505-o"] = m.device.brand.Sony.model["C1505-o"];
@@ -150605,6 +153631,8 @@ m.device.brand.Umi.model.x2 = m.device.brand.Umi.model.X2;
 m.device.brand.Umi.model.x3 = m.device.brand.Umi.model.X3;
 m.device.brand.Umi.model.zero = m.device.brand.Umi.model.ZERO;
 m.device.brand.Vertu.model.ti = m.device.brand.Vertu.model.Ti;
+m.device.brand.Videocon.model.a55hd = m.device.brand.Videocon.model.A55HD;
+m.device.brand.Videocon.model.a55qhd = m.device.brand.Videocon.model.A55qHD;
 m.device.brand.Viewsonic.model.v350 = m.device.brand.Viewsonic.model.V350;
 m.device.brand.Viewsonic.model["viewpad 10e"] = m.device.brand.Viewsonic.model["ViewPad 10e"];
 m.device.brand.Viewsonic.model["viewpad 7d"] = m.device.brand.Viewsonic.model["ViewPad 7D"];
@@ -150736,9 +153764,15 @@ m.device.brand.XiaoMi.model["mi pad"] = m.device.brand.XiaoMi.model["MI PAD"];
 m.device.brand.XiaoMi.model["mi-one c1"] = m.device.brand.XiaoMi.model["MI-ONE C1"];
 m.device.brand.XiaoMi.model["mi-one plus"] = m.device.brand.XiaoMi.model["MI-ONE Plus"];
 m.device.brand.Xolo.model.a1000 = m.device.brand.Xolo.model.A1000;
+m.device.brand.Xolo.model.a1000s = m.device.brand.Xolo.model.A1000s;
+m.device.brand.Xolo.model["a1000s lite"] = m.device.brand.Xolo.model.A1000s_Lite;
 m.device.brand.Xolo.model.a500 = m.device.brand.Xolo.model.A500;
+m.device.brand.Xolo.model["a500 club"] = m.device.brand.Xolo.model["A500 Club"];
 m.device.brand.Xolo.model.a500l = m.device.brand.Xolo.model.A500L;
-m.device.brand.Xolo.model.a500s = m.device.brand.Xolo.model.A500S;
+m.device.brand.Xolo.model.a500s = m.device.brand.Xolo.model.A500s;
+m.device.brand.Xolo.model["a500s lite"] = m.device.brand.Xolo.model["A500s Lite"];
+m.device.brand.Xolo.model["a500s ips"] = m.device.brand.Xolo.model.A500s_IPS;
+m.device.brand.Xolo.model["a550s ips"] = m.device.brand.Xolo.model["A550s IPS"];
 m.device.brand.Xolo.model.a600 = m.device.brand.Xolo.model.A600;
 m.device.brand.Xolo.model.a700 = m.device.brand.Xolo.model.A700;
 m.device.brand.Xolo.model.a800 = m.device.brand.Xolo.model.A800;
@@ -150906,6 +153940,9 @@ m.device.brand.ZTE.model["008z"] = m.device.brand.ZTE.model["008Z"];
 m.device.brand.ZTE.model.arizona = m.device.brand.ZTE.model.ARIZONA;
 m.device.brand.ZTE.model["atlas w"] = m.device.brand.ZTE.model["ATLAS W"];
 m.device.brand.ZTE.model["avea intouch 2"] = m.device.brand.ZTE.model["Avea InTouch 2"];
+m.device.brand.ZTE.model["avea intouch 3"] = m.device.brand.ZTE.model["Avea inTouch 3"];
+m.device.brand.ZTE.model["avea intouch 3 large"] = m.device.brand.ZTE.model["Avea inTouch 3 Large"];
+m.device.brand.ZTE.model["avea intouch 4"] = m.device.brand.ZTE.model["Avea inTouch 4"];
 m.device.brand.ZTE.model["base lutea"] = m.device.brand.ZTE.model["BASE Lutea"];
 m.device.brand.ZTE.model["base lutea 2"] = m.device.brand.ZTE.model["BASE Lutea 2"];
 m.device.brand.ZTE.model["base tab"] = m.device.brand.ZTE.model["BASE Tab"];
@@ -151105,7 +154142,9 @@ m.device.brand.avus = m.device.brand.Avus;
 m.device.brand.avvio = m.device.brand.Avvio;
 m.device.brand.axioo = m.device.brand.Axioo;
 m.device.brand.azend = m.device.brand.Azend;
+m.device.brand.azumi = m.device.brand.Azumi;
 m.device.brand.bak = m.device.brand.Bak;
+m.device.brand.bangho = m.device.brand.Bangho;
 m.device.brand.bedove = m.device.brand.Bedove;
 m.device.brand.benss = m.device.brand.Benss;
 m.device.brand.bird = m.device.brand.Bird;
@@ -151280,7 +154319,7 @@ m.device.brand.tesla = m.device.brand.Tesla;
 m.device.brand.texet = m.device.brand.Texet;
 m.device.brand.thalia = m.device.brand.Thalia;
 m.device.brand.thl = m.device.brand.Thl;
-m.device.brand.tomtec = m.device.brand.Tomtec;
+m.device.brand.tomtec = m.device.brand.TomTec;
 m.device.brand.tooky = m.device.brand.Tooky;
 m.device.brand.toshiba = m.device.brand.Toshiba;
 m.device.brand.touchmate = m.device.brand.Touchmate;

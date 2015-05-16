@@ -41,7 +41,7 @@
 # size_dist  - size equivalent; specify screen size in inch per distance in cm, e.g. 25'/ 100cm
 #
 
-version: 0.1.9-1
+version: 0.1.11-1
 ua-parser2: ^0.1.19
 
 # defaults for all
@@ -2551,6 +2551,47 @@ device:
             capabilities:
               device:
                 type: tablet
+        7040N:
+          capabilities:
+            info:
+              date: 2015-02
+              marketing_name: Alcatel One Touch Fierce 2 7040N
+            device:
+              os: Android
+              type: null
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        7040R:
+          extends:
+            - device:
+                brand: Alcatel
+                model: 7040N
+          capabilities:
+            info:
+              date: 2015-02
+              marketing_name: Alcatel One Touch Fierce 2 7040R
+        7040T:
+          extends:
+            - device:
+                brand: Alcatel
+                model: 7040N
+          capabilities:
+            info:
+              date: 2015-02
+              marketing_name: Alcatel One Touch Fierce 2 7040T
+        7045Y:
+          capabilities:
+            info:
+              marketing_name: Alcatel OneTouch Pop S7
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
         BH4R:
           capabilities:
             info:
@@ -4835,6 +4876,39 @@ device:
               width: 240
               height: 320
               colors: 16M
+        A4DUO:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A4You:
+          capabilities:
+            info:
+              date: 2014-09
+              href:
+                "1": "http://allview.ro/a4-you.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A5_Quad:
+          capabilities:
+            info:
+              date: 2014-01
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
         A5Smiley:
           capabilities:
             info:
@@ -5187,6 +5261,18 @@ device:
         device:
           type: tablet
       model:
+        AFTB:
+          capabilities:
+            info:
+              marketing_name: Fire TV
+            device:
+              type: tv
+        AFTM:
+          capabilities:
+            info:
+              marketing_name: Fire TV Stick
+            device:
+              type: tv
         Fire HD 6 (4th Gen):
           capabilities:
             info:
@@ -5479,19 +5565,19 @@ device:
               width: 2560
               height: 1600
               colors: 16M
-        "Kindle Fire HDX 8.9\" WiFi":
-          extends:
-            - device:
-                brand: Amazon
-                model: "Kindle Fire HDX 8.9\" (3rd Gen)"
-          capabilities:
-            info:
-              note: compatibility with uaparser
         "Kindle Fire HDX 8.9\" 4G":
           extends:
             - device:
                 brand: Amazon
                 model: "Kindle Fire HDX 8.9\" (3rd Gen) Wan"
+          capabilities:
+            info:
+              note: compatibility with uaparser
+        "Kindle Fire HDX 8.9\" WiFi":
+          extends:
+            - device:
+                brand: Amazon
+                model: "Kindle Fire HDX 8.9\" (3rd Gen)"
           capabilities:
             info:
               note: compatibility with uaparser
@@ -5546,6 +5632,18 @@ device:
             "1": "http://latin.aoc.com/media_tablet"
         device:
           type: tablet
+      model:
+        U702:
+          capabilities:
+            info:
+              date: 2013-04
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
     Aoson:
       capabilities:
         info:
@@ -7760,6 +7858,30 @@ device:
                   device:
                     type: phone
       model:
+        A500CG:
+          capabilities:
+            info:
+              date: 2014-01
+              marketing_name: Asus Zenfone 5 A500CG
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        AST21:
+          capabilities:
+            info:
+              date: 2014-08
+              marketing_name: Asus Memo Pad 8 AST21
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 8
+              width: 1920
+              height: 1080
         eeepc:
           capabilities:
             info:
@@ -8916,6 +9038,69 @@ device:
               width: 480
               height: 800
               colors: 16M
+    Azumi:
+      model:
+        A35S:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              color: 262k
+        A45S:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              color: 262k
+        A50:
+          extends:
+            - device:
+                brand: Azumi
+                model: A50c
+        A50c:
+          capabilities:
+            info:
+              href:
+                "1": "http://azumi-mobile.com/Equipos/Detalle/15#"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+              color: 16M
+        A50c+:
+          capabilities:
+            info:
+              href:
+                "1": "http://azumi-mobile.com/Equipos/Detalle/37#"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+              color: 16M
+        KL35:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 128
+              height: 160
+              color: 65k
     Bak:
       capabilities:
         info:
@@ -8923,6 +9108,32 @@ device:
             "1": "http://www.bakinternational.com/produtos.php?cat=80"
         device:
           type: tablet
+    Bangho:
+      model:
+        AERO J0101:
+          capabilities:
+            info:
+              href:
+                "1": www.bangho.com.ar/linea_producto/bangho-aero
+            device:
+              type: tablet
+            screen:
+              size: 7
+        AERO J0202:
+          capabilities:
+            info:
+              href:
+                "1": www.bangho.com.ar/linea_producto/bangho-aero
+            device:
+              type: tablet
+            screen:
+              size: 7
+        Aero1021:
+          capabilities:
+            device:
+              type: tablet
+            screen:
+              size: 7
     Bedove:
       capabilities:
         info:
@@ -10061,6 +10272,41 @@ device:
             "1": "http://bmobile.eu.com/?categoria=smartphones-2"
         device:
           type: smartphone
+      AX620:
+        capabilities:
+          info:
+            date: 2013-09
+          device:
+            os: Android
+            type: smartphone
+          screen:
+            size: 3.5
+            width: 320
+            height: 480
+      AX690:
+        capabilities:
+          info:
+            date: 2013-09
+          device:
+            os: Android
+            type: smartphone
+          screen:
+            size: 4.5
+            width: 480
+            height: 854
+      AX745:
+        capabilities:
+          info:
+            date: 2013-09
+            href:
+              "1": "http://bmobile.eu.com/product/ax745/"
+          device:
+            os: Android
+            type: smartphone
+          screen:
+            size: 4.5
+            width: 540
+            height: 960
       model:
         AX505:
           capabilities:
@@ -10776,6 +11022,18 @@ device:
               width: 320
               height: 480
               colors: 16M
+        A354C:
+          capabilities:
+            info:
+              date: 2014-10
+              marketing_name: Celkon Campus One A354C
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
         A35K:
           capabilities:
             info:
@@ -11262,6 +11520,22 @@ device:
               width: 540
               height: 960
               colors: 16M
+        801E:
+          capabilities:
+            info:
+              marketing_name: Coolpad Quatro II 4G 801 E
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        801EM:
+          extends:
+            - device:
+                brand: Coolpad
+                model: 801E
         8297W:
           capabilities:
             info:
@@ -13119,6 +13393,140 @@ device:
             capabilities:
               device:
                 type: tablet
+        A10Q:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A26B:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 800
+        A26C:
+          extends:
+            - device:
+                brand: Evercoss
+                model: A26B
+        A28B:
+          capabilities:
+            info:
+              date: 2014-02
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A28M:
+          capabilities:
+            info:
+              date: 2014-02
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        A28S:
+          capabilities:
+            info:
+              date: 2014-08
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+              width: 240
+              height: 320
+        A33A:
+          capabilities:
+            info:
+              date: 2015-01
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A5C:
+          capabilities:
+            info:
+              date: 2014-04
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A5S:
+          capabilities:
+            info:
+              date: 2014-03
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A65A:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+        A66A:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        A66B:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+        A7E:
+          capabilities:
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        A80A:
+          capabilities:
+            info:
+              marketing_name: Evercoss Elevate Y2 A80A
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
         AT1:
           capabilities:
             device:
@@ -13127,6 +13535,32 @@ device:
               size: 7
               width: 800
               height: 480
+        "AT1A*":
+          capabilities:
+            info:
+              date: 2014-08
+              href:
+                "1": "http://evercoss.com/at1a/"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+        AT1C:
+          capabilities:
+            info:
+              date: 2014-04
+              href:
+                "1": "http://evercoss.com/at1c/"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
         AT1G:
           capabilities:
             device:
@@ -13137,7 +13571,12 @@ device:
               height: 480
         "AT1G*":
           capabilities:
+            info:
+              date: 2013-11
+              href:
+                "1": "http://evercoss.com/at1g/"
             device:
+              os: Android
               type: tablet
             screen:
               size: 7
@@ -13875,6 +14314,62 @@ device:
                       device:
                         type: tablet
       model:
+        101F:
+          capabilities:
+            info:
+              date: 2012-07
+              href:
+                "1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+            device:
+              os: Android
+              type: smartphone
+            size:
+              size: 4.3
+              width: 540
+              height: 960
+              colors: 16M
+        201F:
+          capabilities:
+            info:
+              date: 2013-02
+              href:
+                "1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+            device:
+              os: Android
+              type: smartphone
+            size:
+              size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+        202F:
+          capabilities:
+            info:
+              date: 2013-06
+              href:
+                "1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+            device:
+              os: Android
+              type: smartphone
+            size:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
+        301F:
+          capabilities:
+            info:
+              date: 2013-12
+              href:
+                "1": "https://ja.wikipedia.org/wiki/ARROWS_(携帯電話)"
+            device:
+              os: Android
+              type: smartphone
+            size:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
         F-01D:
           capabilities:
             device:
@@ -14029,6 +14524,124 @@ device:
               screen:
                 size: 7
                 colors: 16M
+        351D:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        400 D:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        400Q:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+              href:
+                "1": "http://www.utok.com/seria-400/utok-401d-white"
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        401D:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+              href:
+                "1": "http://www.utok.com/seria-400/utok-401d-white"
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        500D:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+              href:
+                "1": "http://www.utok.com/seria-500/utok-500d"
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 5
+              width: 480
+              height: 854
+        701D:
+          capabilities:
+            info:
+              brand: Utok
+              date: 2014-10
+              href:
+                "1": "http://www.utok.com/700-series/utok-701d-ultra8"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 800
+              height: 480
+        7DTB25:
+          capabilities:
+            info:
+              brand: Hipstreet
+            device:
+              type: tablet
+            screen:
+              size: 7
+        831C:
+          capabilities:
+            info:
+              brand: HTC
+        A1040:
+          capabilities:
+            info:
+              brand: Azpen
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 10.1
+              width: 1024
+              height: 600
+        A1X:
+          capabilities:
+            info:
+              brand: Dragon Touch
+              date: 2015-02
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 10.1
         A400:
           capabilities:
             info:
@@ -14087,6 +14700,41 @@ device:
               width: 480
               height: 800
               colors: 16M
+        A727:
+          capabilities:
+            info:
+              brand: Azpen
+              date: 2014-03
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+        A7iS:
+          capabilities:
+            info:
+              brand: Reeder
+              date: null
+              marketing_name: Reeder A7iS
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+        ACCENT EAGLE7 3G:
+          capabilities:
+            info:
+              brand: Accent
+              date: 2014-12
+              href:
+                "1": "http://www.accent.ma/tablettes-tablettes-wifi/eagle7"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
         ADVANCE 4.5:
           capabilities:
             info:
@@ -14102,6 +14750,312 @@ device:
               width: 480
               height: 854
               colors: 16M
+        AF9190:
+          capabilities:
+            info:
+              brand: Asiafone
+              href:
+                "1": "http://www.asiafonemobile.com/product.php?id_product=77"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        AF9888:
+          capabilities:
+            info:
+              brand: Asiafone
+              href:
+                "1": "http://www.asiafonemobile.com/product.php?id_product=101"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        AX123:
+          capabilities:
+            info:
+              brand: iRulu
+              href:
+                "1": "http://www.irulu.com/sa-ax123_132.html"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 10.1
+              width: 1024
+              height: 600
+        AX701:
+          capabilities:
+            info:
+              brand: iRulu
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+        Agora 4G:
+          capabilities:
+            info:
+              brand: Kogan
+              date: 2013-10
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        Agora 4G+:
+          capabilities:
+            info:
+              brand: Kogan
+              date: 2014-12
+              href:
+                "1": "https://www.kogan.com/au/buy/kogan-agora-4g-plus-smartphone-black/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        Agora HD+:
+          capabilities:
+            info:
+              brand: Kogan
+              date: 2013-11
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        AIKUN_AT723C:
+          capabilities:
+            info:
+              brand: Aikun
+              date: 2014-12
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+        Alpha 3G S407:
+          capabilities:
+            info:
+              brand: Jfone
+              date: 2014-03
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
+        AM402:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        AM403:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        AM451:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+        AM503:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        AM505:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        AM506:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        AM513:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        AM516:
+          capabilities:
+            info:
+              brand: Amgoo
+              href:
+                "1": "http://www.amgoo.com/smart-phones/am516-entry-level-3g-smart-phone"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        AM517:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        AM522:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        AM525:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        AM526:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        AM531:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+        AM66:
+          capabilities:
+            info:
+              brand: Amgoo
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        Android TV:
+          capabilities:
+            device:
+              type: tv
+        AO5510:
+          capabilities:
+            info:
+              brand: Yu
+              date: 2015-01
+              marketing_name: Yu Yureka
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.5
+              width: 720
+              height: 1280
+        Apollo:
+          capabilities:
+            info:
+              brand: RCA
+              date: 2015-01
+              href:
+                "1": "http://www.rcatablets.com/tablets/8-apollo"
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 8
+              width: 1024
+              height: 768
+        ARGOM_E400:
+          capabilities:
+            info:
+              brand: Argom
+              date: 2015-01
+              href:
+                "1": "http://mobile.argomtech.com/index.php/default/serie-e400"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        ASIADROID AF90:
+          capabilities:
+            info:
+              brand: Asiafone
+              date: 2014-12
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        Astro5:
+          capabilities:
+            info:
+              brand: Maxwest
+              date: 2014-11
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+        AT723C:
+          extends:
+            - device:
+                brand: Generic_Android
+                model: AIKUN_AT723C
         ATLANTIS:
           capabilities:
             info:
@@ -14119,6 +15073,193 @@ device:
               width: 480
               height: 800
               colors: 16M
+        Aura_TELPAD_TM7_tablet:
+          capabilities:
+            info:
+              brand: Aura
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+        AURUS III:
+          capabilities:
+            info:
+              brand: Idea
+              date: 2013-05
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        AW880:
+          capabilities:
+            info:
+              brand: BePhone
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.6
+              width: 480
+              height: 854
+              colors: 16M
+        AxeII:
+          capabilities:
+            info:
+              brand: Plum
+              date: 2014-06
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        B8401:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-07
+              href:
+                "1": "http://www.bitel.com.pe/phone-device/smartphones.html?tab=brand&brand=bitel"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: null
+              height: null
+        B8403:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-08
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+        B8405:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-08
+              href:
+                "1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8405.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        B8406:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-08
+              href:
+                "1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8406.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        B8407:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-08
+              href:
+                "1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8407.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        B8502:
+          capabilities:
+            info:
+              brand: Bitel
+              date: 2014-08
+              href:
+                "1": "http://www.bitel.com.pe/new-detail-service/smartphones/bitel-b8502.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 854
+        B916C:
+          capabilities:
+            info:
+              brand: G-Plus
+              date: 2014-05
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        B916E:
+          capabilities:
+            info:
+              brand: G-Plus
+              date: 2014-05
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+        Bang:
+          capabilities:
+            info:
+              brand: Sendtel
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        BLAZE 2.0:
+          capabilities:
+            info:
+              brand: Cherrymobile
+              href:
+                "1": "http://www.cherrymobile.com.ph/products/smart-social/blaze-20"
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.7
+              width: 720
+              height: 1280
+        BO-LFSPBS5QC:
+          capabilities:
+            info:
+              brand: Bogo
+              marketing_name: LifeStyle 5BS-QC
+              href:
+                "1": "http://www.bogomobility.com/smartphones/lifestyle-5bs-qc/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 800
         Brava DM-993:
           capabilities:
             info:
@@ -15598,6 +16739,70 @@ device:
               width: 720
               height: 1280
               colors: 16M
+        Onyx 300:
+          capabilities:
+            info:
+              brand: Tecmobile
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+        OWN S3010:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.2
+        OWN S4010:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        OWN S5010:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+        OWN S5030:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        OWN_S4025:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.5
         P4i:
           capabilities:
             info:
@@ -15688,6 +16893,22 @@ device:
               width: 720
               height: 1280
               colors: 16M
+        S3030:
+          capabilities:
+            info:
+              brand: Ownmobile
+              href:
+                "1": "http://chile.ownmobile.com/"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+        S3030D:
+          extends:
+            - device:
+                brand: Generic_Android
+                model: S3030
         Studio 5.0 S II:
           capabilities:
             info:
@@ -16016,6 +17237,11 @@ device:
         device:
           type: smartphone
       model:
+        A5(GOL):
+          extends:
+            - device:
+                brand: Gfive
+                model: Bravo(G95)
         A56:
           capabilities:
             device:
@@ -16422,6 +17648,96 @@ device:
           capabilities:
             device:
               type: phablet
+        P4:
+          capabilities:
+            info:
+              date: 2014-06
+              marketing_name: Gionee Pioneer P4
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
+              colors: 16M
+        Pioneer_P1:
+          capabilities:
+            info:
+              date: 2013-01
+              marketing_name: Gionee Pioneer P1
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 16M
+        Pioneer_P2:
+          capabilities:
+            info:
+              date: 2013-05
+              marketing_name: Gionee Pioneer P2
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Pioneer_P2S:
+          capabilities:
+            info:
+              date: 2013-05
+              marketing_name: Gionee Pioneer P2
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        Pioneer_P3:
+          capabilities:
+            info:
+              marketing_name: Gionee Pioneer P3
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 480
+              height: 800
+              colors: 16M
+        S5.1:
+          capabilities:
+            info:
+              date: 2014-11
+              marketing_name: Gionee Elife S5.1
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.8
+              width: 720
+              height: 1280
+              colors: 16M
+        S5.5:
+          capabilities:
+            info:
+              date: 2014-11
+              marketing_name: Gionee Elife S5.5
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 1080
+              height: 1920
+              colors: 16M
     GoClever:
       capabilities:
         info:
@@ -16993,6 +18309,18 @@ device:
         device:
           type: smartphone
       model:
+        AD683G:
+          capabilities:
+            info:
+              date: 2014-04
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
         HS-EG906:
           capabilities:
             info:
@@ -27979,6 +29307,62 @@ device:
                       device:
                         type: tablet
       model:
+        3G 7271-HD70:
+          capabilities:
+            info:
+              date: 2014-04
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+        3G Q7271-IPS20:
+          capabilities:
+            info:
+              date: 2014-08
+              href:
+                "1": "http://www.iball.co.in/product/3G-Q7271-IPS20/740"
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
+        7236 2G:
+          capabilities:
+            info:
+              date: 2014-01
+              href:
+                "1": "http://www.iball.co.in/product/7236-2G/603"
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 800
+              height: 480
+        7236 3G17:
+          capabilities:
+            info:
+              date: 2014-03
+              href:
+                "1": "http://www.iball.co.in/Product/3G17/649"
+            device:
+              type: tablet
+            screen:
+              size: 7
+              width: 800
+              height: 480
+        Andi Uddaan:
+          capabilities:
+            info:
+              date: 2013-12
+            device:
+              type: smartphone
+            screen:
+              size: 5
+              width: 540
+              height: 960
         Andi5.5:
           capabilities:
             info:
@@ -28701,6 +30085,18 @@ device:
               width: 480
               height: 854
               colors: 16M
+        Auqa Xtreme:
+          capabilities:
+            info:
+              date: 2014-12
+              marketing_name: Intex Aqua Xtreme
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
         IT-M709MR:
           capabilities:
             info:
@@ -28776,14 +30172,13 @@ device:
             "1": "http://www.jay-tech.de/jaytech/servlet/frontend/"
         device:
           type: tablet
-    Jiayu:
+    JiaYu:
       capabilities:
         info:
           href:
             "1": "http://www.ejiayu.com/en/Product.html"
         device:
           type: smartphone
-    JiaYu:
       model:
         G2:
           extends:
@@ -29064,6 +30459,29 @@ device:
               width: 480
               height: 800
               colors: 16M
+        A5 Turbo:
+          capabilities:
+            info:
+              date: 2014-09
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+        A51 Lite:
+          capabilities:
+            info:
+              date: 2013-09
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
+              colors: 262k
         A6:
           capabilities:
             info:
@@ -29079,6 +30497,27 @@ device:
               width: 480
               height: 800
               colors: 262k
+        A6 Turbo:
+          capabilities:
+            info:
+              date: 2014-09
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              colors: 16M
+        "A7*":
+          capabilities:
+            info:
+              date: 2013-09
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 480
+              height: 854
         A93:
           capabilities:
             info:
@@ -29091,6 +30530,32 @@ device:
               size: 4
               width: 480
               height: 800
+              colors: 16M
+        "A99*":
+          capabilities:
+            info:
+              date: 2013-10
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 4
+              width: 800
+              height: 480
+              colors: 16M
+        A99i:
+          capabilities:
+            info:
+              date: 2014-01
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 4
+              width: 800
+              height: 480
               colors: 16M
         S5i:
           capabilities:
@@ -29299,6 +30764,18 @@ device:
             "2": "http://www.kobo.com/devices#tablets"
         device:
           type: tablet
+      model:
+        arc 7:
+          capabilities:
+            info:
+              date: 2013-07
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 7
+              width: 1024
+              height: 600
     Ktouch:
       capabilities:
         info:
@@ -29342,6 +30819,52 @@ device:
                   device:
                     type: phone
       model:
+        101K:
+          capabilities:
+            info:
+              date: 2011-12
+              marketing_name: Kycera 101K Honey Bee
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.5
+              width: 480
+              height: 800
+        201K:
+          capabilities:
+            info:
+              marketing_name: Kycera 201K Honey Bee
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 3.7
+              width: 480
+              height: 800
+        202K:
+          capabilities:
+            info:
+              marketing_name: Kycera 202K Digno R
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 720
+              height: 1280
+        302KC:
+          capabilities:
+            info:
+              date: 2014-09
+              marketing_name: Kycera DIGNO T 302KC
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 540
+              height: 960
         C5120:
           capabilities:
             info:
@@ -29530,6 +31053,20 @@ device:
         device:
           type: smartphone
       model:
+        504Q+:
+          capabilities:
+            info:
+              date: 2014-07
+              marketing_name: Lava Iris 504Q+
+              href:
+                "1": "http://www.lavamobiles.com/smartphones/iris-504qplus"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
         Iris 250:
           capabilities:
             info:
@@ -29857,6 +31394,11 @@ device:
               width: 320
               height: 480
               colors: 16M
+        A3000:
+          extends:
+            - device:
+                brand: Lenovo
+                model: A3000-H
         A3000-H:
           capabilities:
             info:
@@ -31784,6 +33326,46 @@ device:
               width: 720
               height: 1280
               colors: 16M
+        AS870 4G:
+          capabilities:
+            info:
+              date: 2013-02
+              marketing_name: LG Optimus F5
+              href:
+                "1": "http://www.lg.com/us/cell-phones/lg-AS870-optimus-f5"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.3
+              width: 540
+              height: 960
+        AS876:
+          capabilities:
+            info:
+              date: 2014-05
+              marketing_name: LG F90 AS876 LTE
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+        AS985:
+          capabilities:
+            info:
+              date: 2014-07
+              marketing_name: LG G3 ACG (AS985)
+              href:
+                "1": "http://www.lg.com/us/cell-phones/lg-AS985-g3/technical-specifications"
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.5
+              width: 1440
+              height: 2560
         BL20:
           capabilities:
             info:
@@ -36683,17 +38265,6 @@ device:
             device:
               os: Android
               type: smartphone
-        p705:
-          extends:
-            - device:
-                brand: LG
-                model: P705
-          capabilities:
-            info:
-              date: 2014-05
-            device:
-              os: Android
-              type: smartphone
         P705:
           extends:
             - device:
@@ -36705,6 +38276,17 @@ device:
               uaprof:
                 "1": "http://gsm.lge.com/html/gsm/P705-M6-D2.xml"
                 "2": "http://gsm.lge.com/html/gsm/P705-M3-D1.xml"
+            device:
+              os: Android
+              type: smartphone
+        p705:
+          extends:
+            - device:
+                brand: LG
+                model: P705
+          capabilities:
+            info:
+              date: 2014-05
             device:
               os: Android
               type: smartphone
@@ -38380,6 +39962,19 @@ device:
             capabilities:
               device:
                 type: tablet
+        A068:
+          capabilities:
+            info:
+              date: 2014-02
+              marketing_name: Micromax Bolt A068
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+              colors: 16M
         A069:
           capabilities:
             info:
@@ -41617,6 +43212,18 @@ device:
             capabilities:
               device:
                 type: tablet
+        A818i Duo:
+          capabilities:
+            info:
+              date: 2013-04
+            device:
+              os: Android
+              type: smartphone
+              sim: dual
+            screen:
+              size: 3.5
+              width: 320
+              height: 480
         A848i Duo:
           capabilities:
             info:
@@ -41642,6 +43249,18 @@ device:
               size: 4.5
               width: 540
               height: 960
+              colors: 16M
+        A919i:
+          capabilities:
+            info:
+              date: 2013-05
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
               colors: 16M
         C_Smart:
           capabilities:
@@ -41921,6 +43540,18 @@ device:
         device:
           type: smartphone
       model:
+        101N:
+          capabilities:
+            info:
+              href:
+                "1": "http://mb.softbank.jp/en/products/nec/101n.html"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
         NE-201A1A:
           capabilities:
             info:
@@ -52170,20 +53801,13 @@ device:
             "1": "http://www.proscanvideo.com/products-search.asp?itemClass=TABLET&itemnmbr="
         device:
           type: tablet
-    QMobile:
+    Qmobile:
       capabilities:
         info:
           href:
             "1": "http://www.qmobile.com.pk/"
         device:
           type: smartphone
-      model:
-        regexes:
-          - regex: A11Note
-            capabilities:
-              device:
-                type: phablet
-    Qmobile:
       model:
         A11Note:
           capabilities:
@@ -52331,6 +53955,18 @@ device:
               width: 480
               height: 800
               colors: 262k
+        A8i:
+          capabilities:
+            info:
+              date: 2012-11
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
         A900:
           capabilities:
             info:
@@ -52343,6 +53979,29 @@ device:
               type: smartphone
             screen:
               size: 4.7
+              width: 720
+              height: 1280
+              colors: 16M
+        A900i:
+          capabilities:
+            info:
+              date: 2014-10
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.7
+              width: 540
+              height: 960
+        A950:
+          capabilities:
+            info:
+              date: 2013-07
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.65
               width: 720
               height: 1280
               colors: 16M
@@ -67612,6 +69271,72 @@ device:
                   device:
                     type: phone
       model:
+        304SH:
+          capabilities:
+            info:
+              date: {}
+              marketing_name: Sharp AQUOS Xx 304SH
+              href:
+                "1": "http://www.softbank.jp/en/mobile/product/smartphone/304sh/"
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.2
+              width: 1080
+              height: 1920
+        305SH:
+          capabilities:
+            info:
+              date: {}
+              marketing_name: Sharp AQUOS Crystal 305SH
+              href:
+                "1": "https://ja.wikipedia.org/wiki/SoftBank_305SH"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        306SH:
+          capabilities:
+            info:
+              date: {}
+              marketing_name: Sharp AQUOS Crystal 306SH
+              href:
+                "1": "https://ja.wikipedia.org/wiki/AQUOS_Crystal"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        401SH:
+          capabilities:
+            info:
+              date: 2014-11
+              marketing_name: Sharp Aquos Hybrid 4G LTE 401SH
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+              width: 720
+              height: 1280
+        402SH:
+          capabilities:
+            info:
+              date: 2014-08
+              marketing_name: Sharp AQUOS Crystal X 402SH
+            device:
+              os: Android
+              type: phablet
+            screen:
+              size: 5.5
+              width: 1080
+              height: 1920
         SH-10D:
           capabilities:
             info:
@@ -68071,6 +69796,11 @@ device:
             capabilities:
               device:
                 type: phone
+        401SO:
+          extends:
+            - device:
+                brand: Sony
+                model: Xperia Z3
         C1504:
           extends:
             - device:
@@ -74769,6 +76499,14 @@ device:
               size: 5.7
               width: 1080
               height: 1920
+    Tomtec:
+      capabilities:
+        info:
+          href:
+            "1": "http://www.tom-tec.eu/pages/tablets.php"
+        device:
+          type: tablet
+      model: {}
     TomTec:
       model:
         ATP7683:
@@ -74784,14 +76522,6 @@ device:
               width: 1024
               height: 768
               colors: 16M
-    Tomtec:
-      capabilities:
-        info:
-          href:
-            "1": "http://www.tom-tec.eu/pages/tablets.php"
-        device:
-          type: tablet
-      model: {}
     Tooky:
       capabilities:
         info:
@@ -75348,6 +77078,28 @@ device:
             capabilities:
               device:
                 type: tablet
+        A55HD:
+          capabilities:
+            info:
+              date: 2013-06
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+        A55qHD:
+          capabilities:
+            info:
+              date: 2013-06
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 540
+              height: 960
     Viewsonic:
       capabilities:
         info:
@@ -76896,6 +78648,19 @@ device:
         device:
           type: smartphone
       model:
+        8x-1000:
+          capabilities:
+            info:
+              date: 2014-08
+              marketing_name: Xolo Hive 8X-1000
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
+              colors: 16M
         A1000:
           capabilities:
             device:
@@ -76904,6 +78669,27 @@ device:
               size: 5
               width: 720
               height: 1280
+        A1000s:
+          capabilities:
+            info:
+              date: 2014-08
+              marketing_name: Xolo A1000s
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 480
+              height: 854
+              colors: 16M
+        A1000s_Lite:
+          extends:
+            - device:
+                brand: Xolo
+                model: A1000s
+          capabilities:
+            info:
+              marketing_name: Xolo A1000s Lite
         A500:
           capabilities:
             device:
@@ -76912,24 +78698,87 @@ device:
               size: 4
               width: 480
               height: 800
+        A500 Club:
+          extends:
+            - device:
+                brand: Xolo
+                model: A500s
+          capabilities:
+            info:
+              marketing_name: Xolo A500 Club
+              href:
+                "1": "http://www.xolo.in/a500-club"
         A500L:
           extends:
             - device:
                 brand: Xolo
-                model: A500
-        A500S:
+                model: A500s
+          capabilities:
+            info:
+              marketing_name: Xolo A500L
+              href:
+                "1": "http://www.xolo.in/A500L"
+        A500s:
+          capabilities:
+            info:
+              date: 2013-08
+              marketing_name: Xolo A500s
+              href:
+                "1": "http://www.xolo.in/a500"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
+        A500s Lite:
           extends:
             - device:
                 brand: Xolo
-                model: A500
+                model: A500s
+          capabilities:
+            info:
+              marketing_name: Xolo A500s Lite
+        A500s_IPS:
+          extends:
+            - device:
+                brand: Xolo
+                model: A500s
+          capabilities:
+            info:
+              marketing_name: Xolo A500s IPS
+        A550s IPS:
+          capabilities:
+            info:
+              date: 2014-08
+              marketing_name: Xolo A550s IPS
+              href:
+                "1": "http://www.xolo.in/A550s-IPS"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4
+              width: 480
+              height: 800
+              colors: 16M
         A600:
           capabilities:
+            info:
+              date: 2013-10
+              marketing_name: Xolo A600
+              href:
+                "1": "http://www.xolo.in/a600"
             device:
+              os: Android
               type: smartphone
             screen:
               size: 4.5
               width: 540
               height: 960
+              colors: 16M
         A700:
           capabilities:
             device:
@@ -78414,6 +80263,38 @@ device:
             - device:
                 brand: ZTE
                 model: Blade III
+        Avea inTouch 3:
+          capabilities:
+            info:
+              href:
+                "1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch3"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 4.5
+        Avea inTouch 3 Large:
+          capabilities:
+            info:
+              href:
+                "1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch3Large"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+        Avea inTouch 4:
+          capabilities:
+            info:
+              href:
+                "1": "http://www.avea.com.tr/web/Cihazlar/AkilliTelefonlar/AveaInTouch4"
+            device:
+              os: Android
+              type: smartphone
+            screen:
+              size: 5
+              width: 720
+              height: 1280
         BASE Lutea:
           extends:
             - device:
