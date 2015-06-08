@@ -6,3 +6,4 @@ Makefile
 .*
 *.log
 *.tgz
+/test
