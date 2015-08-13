@@ -15389,7 +15389,7 @@ device:
         501s:
           extends:
             - device:
-                bramd: Nokia
+                brand: Nokia
                 model: 501
           capabilities:
             info:
@@ -15404,7 +15404,7 @@ device:
         503s:
           extends:
             - device:
-                bramd: Nokia
+                brand: Nokia
                 model: 503
           capabilities:
             info:
