@@ -3062,7 +3062,7 @@ device:
           extends:
             - device:
                 brand: Alcatel
-                model: One Touch 6040X
+                model: One Touch 6040D
           capabilities:
             info:
               uaprof:
@@ -23771,7 +23771,7 @@ device:
           extends:
             - device:
                 brand: Samsung
-                model: GT-P5210
+                model: GT-P5100
           capabilities:
             info:
               marketing_name: Galaxy Tab 3 10.1 Wifi
