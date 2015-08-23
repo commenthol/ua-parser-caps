@@ -93,5 +93,6 @@ var M = {
 module.exports = M;
 
 if (require.main === module) {
+	M.console = true;
 	M.regenerate();
 }

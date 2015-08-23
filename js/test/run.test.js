@@ -6,7 +6,7 @@ var Mocha = require('mocha'),
 
 var mocha = new Mocha({
 	ui: 'bdd',
-	reporter: 'dot',
+	reporter: 'min',
 });
 
 var dirs = [ '/.', '/../lib/util/test' ];

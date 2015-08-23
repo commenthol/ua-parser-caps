@@ -1,30 +1,33 @@
-# 
+#
 # ua-parser capabilities files for IE compatibility mode
-# 
+#
 # Copyright (c) 2013 commenthol
 #
-# This data is available for use under a CC BY 4.0 license 
-# (http://creativecommons.org/licenses/by/4.0/). 
+# This data is available for use under a CC BY 4.0 license
+# (http://creativecommons.org/licenses/by/4.0/).
 # For attribution mention https://github.com/commenthol/ua-parser-caps
 
 # ----
 # This capabilities file includes data to obtain the Internet Explorer
 # browser version running in compatibility mode
 # classification based on a User-Agent String.
-# 
+#
 # ----
 # browser.ie_compatibility
-# 
-# mode.major   - Browser Version of IE running in compatibility mode
-# engine.major - Real Browser Engine 
-# 
 #
+# mode.major   - Browser Version of IE running in compatibility mode
+# engine.major - Real Browser Engine
+#
+#
+
+version: 0.1.11
+ua-parser2: ^0.1.19
 
 ua:
   family:
     AOL:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -32,81 +35,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Avant:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -114,81 +117,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Chrome Frame:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -196,81 +199,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Crazy Browser:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -278,81 +281,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     iRider:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -360,74 +363,74 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
@@ -441,28 +444,28 @@ ua:
                 mode:
                   major: '7'
           regexes:
-            - regex: 'Trident/4\.0'
+            - regex: 'Trident\/4\.0'
               capabilities:
                 browser:
                   ie_compatibility:
                     engine:
                       major: '8'
-            - regex: 'Trident/5\.0'
+            - regex: 'Trident\/5\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     engine:
                       major: '9'
-            - regex: 'Trident/6\.0'
+            - regex: 'Trident\/6\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     engine:
                       major: '10'
-            - regex: 'Trident/7\.0'
+            - regex: 'Trident\/7\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     engine:
                       major: '11'
         "8":
@@ -471,24 +474,24 @@ ua:
               href:
                 1: 'http://blogs.msdn.com/b/ie/archive/2009/01/09/the-internet-explorer-8-user-agent-string-updated-edition.aspx'
               note:
-                1: 'is Trident/4.0'
+                1: 'is Trident\/4.0'
           regexes:
-            - regex: 'Trident/5\.0'
+            - regex: 'Trident\/5\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '9'
-            - regex: 'Trident/6\.0'
+            - regex: 'Trident\/6\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '10'
-            - regex: 'Trident/7\.0'
+            - regex: 'Trident\/7\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '11'
         "9":
@@ -497,32 +500,32 @@ ua:
               href:
                 1: 'http://blogs.msdn.com/b/ie/archive/2010/03/23/introducing-ie9-s-user-agent-string.aspx'
               note:
-                1: 'is Trident/5.0'
+                1: 'is Trident\/5.0'
           regexes:
-            - regex: 'Trident/6\.0'
+            - regex: 'Trident\/6\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '10'
-            - regex: 'Trident/7\.0'
+            - regex: 'Trident\/7\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '11'
         "10":
           capabilities:
             info:
-              href: 
+              href:
                 1: 'http://msdn.microsoft.com/library/ms537503.aspx'
               note:
-                1: 'is Trident/6.0'
+                1: 'is Trident\/6.0'
           regexes:
-            - regex: 'Trident/7\.0'
+            - regex: 'Trident\/7\.0'
               capabilities:
                 browser:
-                  ie_compatibility: 
+                  ie_compatibility:
                     family: 'IE'
                     major: '11'
         "11":
@@ -530,10 +533,10 @@ ua:
             info:
               1: 'http://msdn.microsoft.com/library/ms537503.aspx'
             note:
-              1: 'is Trident/7.0'
+              1: 'is Trident\/7.0'
     Lunascape:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -541,81 +544,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Maxthon:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -623,81 +626,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Outlook:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -705,81 +708,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     QQ Browser:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -787,81 +790,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Sogou Explorer:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -869,81 +872,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     UC Browser:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -951,81 +954,81 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:
                   major: '11'
     Yandex Browser:
       regexes:
-        - regex: 'MSIE 7\.0;.*; Trident/4\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/4\.0'
           capabilities:
             browser:
               ie_compatibility:
@@ -1033,74 +1036,74 @@ ua:
                   major: '7'
                 engine:
                   major: '8'
-        - regex: 'MSIE 7\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '9'
-        - regex: 'MSIE 8\.0;.*; Trident/5\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/5\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '9'
-        - regex: 'MSIE 7\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '10'
-        - regex: 'MSIE 8\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '10'
-        - regex: 'MSIE 9\.0;.*; Trident/6\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/6\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '10'
-        - regex: 'MSIE 7\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 7\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '7'
                 engine:
                   major: '11'
-        - regex: 'MSIE 8\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 8\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '8'
                 engine:
                   major: '11'
-        - regex: 'MSIE 9\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 9\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '9'
                 engine:
                   major: '11'
-        - regex: 'MSIE 10\.0;.*; Trident/7\.0'
+        - regex: 'MSIE 10\.0;.*; Trident\/7\.0'
           capabilities:
             browser:
-              ie_compatibility: 
+              ie_compatibility:
                 mode:
                   major: '10'
                 engine:

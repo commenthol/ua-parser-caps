@@ -31,6 +31,10 @@ module.exports = function (options, cb) {
 	var tree;
 	var capsparser;
 
+	if (config && config.fastload) {
+		config.files = [ config.fastload ];
+	}
+
 	switch (typeof(options)) {
 		case "function":
 			cb = options;
