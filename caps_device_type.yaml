@@ -1,5 +1,5 @@
 #
-# @version 0.1.17
+# @version 0.1.10
 #
 # ua-parser capabilities files for device type
 #
@@ -31964,6 +31964,18 @@ device:
               size: 5.3
               width: 720
               height: 1280
+              colors: 16M
+        Xperia Tablet P:
+          capabilities:
+            info:
+              date: 2011-08
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 5.5
+              width: 1024
+              height: 480
               colors: 16M
         Xperia Tablet S:
           capabilities:
