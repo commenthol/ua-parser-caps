@@ -3951,7 +3951,7 @@ device:
           extends:
             - device:
                 brand: Alcatel
-                model: One Touch 6040X
+                model: One Touch 6040D
           capabilities:
             info:
               uaprof:
@@ -46366,7 +46366,7 @@ device:
         501s:
           extends:
             - device:
-                bramd: Nokia
+                brand: Nokia
                 model: 501
           capabilities:
             info:
@@ -46382,7 +46382,7 @@ device:
         503s:
           extends:
             - device:
-                bramd: Nokia
+                brand: Nokia
                 model: 503
           capabilities:
             info:
@@ -59643,7 +59643,7 @@ device:
           extends:
             - device:
                 brand: Samsung
-                model: GT-P5210
+                model: GT-P5100
           capabilities:
             info:
               marketing_name: Samsung Galaxy Tab 3 10.1 Wifi
@@ -71090,12 +71090,6 @@ device:
             - device:
                 brand: Sony
                 model: Xperia Tablet P
-          capabilities:
-            info:
-              date: 2012-07
-            device:
-              os: Android
-              type: smartphone
         Tablet S:
           extends:
             - device:
@@ -71530,6 +71524,18 @@ device:
               size: 5.3
               width: 720
               height: 1280
+              colors: 16M
+        Xperia Tablet P:
+          capabilities:
+            info:
+              date: 2011-08
+            device:
+              os: Android
+              type: tablet
+            screen:
+              size: 5.5
+              width: 1024
+              height: 480
               colors: 16M
         Xperia Tablet S:
           capabilities:

@@ -9091,14 +9091,34 @@ var m = module.exports = {
 						capabilities: {
 							info: {
 								href: {
-									"1": "http://www.alcatelonetouch.com/global-en/products/smartphones.html"
+									"1": "http://www.alcatelonetouch.com/global-en/products/smartphones/one_touch_idolx.html"
 								},
+								date: "2013-02-01",
+								marketing_name: "Alcatel Idol X",
 								uaprof: {
 									"1": "http://www-ccpp.tcl-ta.com/files/ALCATEL_ONE_TOUCH_6040X.xml"
 								}
 							},
 							device: {
-								type: "smartphone"
+								type: "smartphone",
+								os: "Android",
+								sim: "micro",
+								sim2: "micro"
+							},
+							screen: {
+								size: 5,
+								width: 1080,
+								height: 1920,
+								colors: "16M",
+								touch: 5
+							},
+							bearer: {
+								gsm: "850,900,1800,1900",
+								umts: "900,2100",
+								lte: false,
+								bluetooth: 4,
+								wifi: "802.11 b/g/n",
+								nfc: false
 							}
 						}
 					},
@@ -79674,33 +79694,68 @@ var m = module.exports = {
 					"501s": {
 						capabilities: {
 							info: {
-								date: "2013-05",
-								marketing_name: "Nokia Asha 501 Dual Sim",
 								href: {
 									"1": "http://www.nokia.com/global/products/phone/asha501-dual-sim/specifications/"
 								},
+								date: "2013-05",
+								marketing_name: "Nokia Asha 501 Dual Sim",
 								uaprof: {
 									"1": "http://nds1.nds.nokia.com/uaprof/Nokia501sr100.xml",
-									"2": "http://nds1.nds.nokia.com/uaprof/Nokia501r100.xml"
+									"2": "http://nds1.nds.nokia.com/uaprof/Nokia501r100.xml",
+									"3": "http://nds1.nds.nokia.com/uaprof/Nokia501.1r100.xml"
 								}
 							},
 							device: {
+								type: "phone",
+								os: "Series40",
 								sim2: true
+							},
+							screen: {
+								size: 3,
+								width: 240,
+								height: 320,
+								colors: "262k"
+							},
+							bearer: {
+								gsm: "900,1800",
+								umts: false,
+								lte: false,
+								bluetooth: 3,
+								wifi: "802.11 b/g/n",
+								nfc: false
 							}
 						}
 					},
 					"503s": {
 						capabilities: {
 							info: {
-								date: "2014-05-07",
-								marketing_name: "Nokia Asha 503 Dual Sim",
 								href: {
 									"1": "http://www.nokia.com/global/products/phone/asha503-dual-sim/specifications/"
 								},
+								date: "2014-05-07",
+								marketing_name: "Nokia Asha 503 Dual Sim",
 								uaprof: {
 									"1": "http://nds1.nds.nokia.com/uaprof/Nokia503sr100.xml",
 									"2": "http://nds1.nds.nokia.com/uaprof/Nokia501lr100.xml"
 								}
+							},
+							device: {
+								type: "phone",
+								os: "Series40"
+							},
+							screen: {
+								size: 3,
+								width: 240,
+								height: 320,
+								colors: "262k"
+							},
+							bearer: {
+								gsm: "850,900,1800,1900",
+								umts: "900,2100",
+								lte: false,
+								bluetooth: 3,
+								wifi: "802.11 b/g/n",
+								nfc: false
 							}
 						}
 					},
@@ -103786,13 +103841,22 @@ var m = module.exports = {
 								href: {
 									"1": "http://www.samsung.com/us/mobile/cell-phones/all-products"
 								},
+								date: "2012-05-29",
 								marketing_name: "Samsung Galaxy Tab 3 10.1 Wifi",
 								uaprof: {
-									"1": "http://wap.samsungmobile.com/uaprof/GT-P5210.xml"
+									"1": "http://wap.samsungmobile.com/uaprof/GT-P5210.xml",
+									"2": "http://wap.samsungmobile.com/uaprof/GT-P5100BO.xml"
 								}
 							},
 							device: {
-								type: "smartphone"
+								type: "tablet",
+								os: "Android"
+							},
+							screen: {
+								size: 10.1,
+								width: 1280,
+								height: 800,
+								colors: "16M"
 							}
 						}
 					},
@@ -103802,13 +103866,22 @@ var m = module.exports = {
 								href: {
 									"1": "http://www.samsung.com/us/mobile/cell-phones/all-products"
 								},
+								date: "2012-05-29",
 								marketing_name: "Samsung Galaxy Tab 3 10.1 Wifi",
 								uaprof: {
-									"1": "http://wap.samsungmobile.com/uaprof/GT-P5210.xml"
+									"1": "http://wap.samsungmobile.com/uaprof/GT-P5210.xml",
+									"2": "http://wap.samsungmobile.com/uaprof/GT-P5100BO.xml"
 								}
 							},
 							device: {
-								type: "smartphone"
+								type: "tablet",
+								os: "Android"
+							},
+							screen: {
+								size: 10.1,
+								width: 1280,
+								height: 800,
+								colors: "16M"
 							}
 						}
 					},
@@ -130231,15 +130304,18 @@ var m = module.exports = {
 									"1": "http://www.sonymobile.com/global-en/products/phones/",
 									"2": "http://www.sonymobile.co.jp/index.html",
 									"3": "http://www.sony.jp/tablet/"
-								}
+								},
+								date: "2011-08"
 							},
 							device: {
-								type: "smartphone"
+								type: "tablet",
+								os: "Android"
 							},
-							_notFound: {
-								device: {
-									model: "Xperia Tablet P"
-								}
+							screen: {
+								size: 5.5,
+								width: 1024,
+								height: 480,
+								colors: "16M"
 							}
 						}
 					},
@@ -130931,16 +131007,17 @@ var m = module.exports = {
 									"2": "http://www.sonymobile.co.jp/index.html",
 									"3": "http://www.sony.jp/tablet/"
 								},
-								date: "2012-07"
+								date: "2011-08"
 							},
 							device: {
-								type: "smartphone",
+								type: "tablet",
 								os: "Android"
 							},
-							_notFound: {
-								device: {
-									model: "Xperia Tablet P"
-								}
+							screen: {
+								size: 5.5,
+								width: 1024,
+								height: 480,
+								colors: "16M"
 							}
 						}
 					},
@@ -131643,6 +131720,23 @@ var m = module.exports = {
 								size: 5.3,
 								width: 720,
 								height: 1280,
+								colors: "16M"
+							}
+						}
+					},
+					"Xperia Tablet P": {
+						capabilities: {
+							info: {
+								date: "2011-08"
+							},
+							device: {
+								os: "Android",
+								type: "tablet"
+							},
+							screen: {
+								size: 5.5,
+								width: 1024,
+								height: 480,
 								colors: "16M"
 							}
 						}
@@ -153240,6 +153334,7 @@ m.device.brand.Sony.model["xperia t"] = m.device.brand.Sony.model["Xperia T"];
 m.device.brand.Sony.model["xperia t2 ultra"] = m.device.brand.Sony.model["Xperia T2 Ultra"];
 m.device.brand.Sony.model["xperia t2 ultra dual"] = m.device.brand.Sony.model["Xperia T2 Ultra dual"];
 m.device.brand.Sony.model["xperia t3"] = m.device.brand.Sony.model["Xperia T3"];
+m.device.brand.Sony.model["xperia tablet p"] = m.device.brand.Sony.model["Xperia Tablet P"];
 m.device.brand.Sony.model["xperia tablet s"] = m.device.brand.Sony.model["Xperia Tablet S"];
 m.device.brand.Sony.model["xperia tablet z"] = m.device.brand.Sony.model["Xperia Tablet Z"];
 m.device.brand.Sony.model["xperia tablet z lte"] = m.device.brand.Sony.model["Xperia Tablet Z LTE"];

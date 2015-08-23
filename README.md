@@ -46,7 +46,7 @@ To speed up the loading and parsing of the YAML files a preparsed js-module is g
 
 Use `js/bin/caps2js.js -c` or `make caps` to generate a new version if the YAML files have changed.
 
-npm packages always contain the latest
+npm packages always contain the latest capability files.
 
 
 ## Usage
