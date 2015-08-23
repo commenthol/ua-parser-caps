@@ -44367,6 +44367,16 @@ var m = module.exports = {
 				}
 			},
 			Huawei: {
+				regexes: [
+					[{
+						regex: /(MediaPad|SpringBoard)/i,
+						capabilities: {
+							device: {
+								type: "tablet"
+							}
+						}
+					}]
+				],
 				capabilities: {
 					info: {
 						href: {
@@ -44407,16 +44417,6 @@ var m = module.exports = {
 					}
 				}],
 				model: {
-					regexes: [
-						[{
-							regex: /(MediaPad|SpringBoard)/i,
-							capabilities: {
-								device: {
-									type: "tablet"
-								}
-							}
-						}]
-					],
 					A199: {
 						capabilities: {
 							info: {

@@ -23,7 +23,6 @@ var capsParser = require('../index');
 // test config
 var config = {
 	testcases: __dirname + "/../../test/resources/test_capabilities.json",
-	//~ testcases: __dirname + "/../../x.json",
 	caps: {
 		dir: __dirname + "/../../",
 		files: [

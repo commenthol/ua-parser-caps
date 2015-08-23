@@ -25107,6 +25107,11 @@ device:
               height: 960
               colors: 16M
     Huawei:
+      regexes:
+        - regex: "(MediaPad|SpringBoard)"
+          capabilities:
+            device:
+              type: tablet
       capabilities:
         info:
           href:
@@ -25129,11 +25134,6 @@ device:
                   device:
                     type: phone
       model:
-        regexes:
-          - regex: "(MediaPad|SpringBoard)"
-            capabilities:
-              device:
-                type: tablet
         A199:
           capabilities:
             info:
