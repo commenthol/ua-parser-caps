@@ -41,7 +41,7 @@
 # size_dist  - size equivalent; specify screen size in inch per distance in cm, e.g. 25'/ 100cm
 #
 
-version: 0.1.11-1
+version: 0.1.11
 ua-parser2: ^0.1.19
 
 # defaults for all
