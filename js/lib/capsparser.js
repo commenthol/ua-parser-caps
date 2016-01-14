@@ -14,7 +14,8 @@ var
 	Tree   = require('./tree'),
 	parser = require('./parser'),
 	config = require('../config'),
-	extend = require('mergee').extend;
+	extend = require('mergee').extend,
+	merge  = require('mergee').merge;
 
 /**
  * initialize the capsparser
@@ -45,7 +46,11 @@ module.exports = function (options, cb) {
 				options = extend(config, { files: options });
 			}
 			else {
+				if(options.withDefaults) {
+					options = merge (config, options);
+				} else {
 				options = extend(config, options);
+				}
 			}
 			break;
 		case "string":
