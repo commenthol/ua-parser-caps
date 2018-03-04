@@ -1,6 +1,6 @@
 {
   "name": "ua-parser-caps",
-  "version": "0.1.12",
+  "version": "0.2.0",
   "description": "capabilities for ua-parser2",
   "keywords": [
     "capabilities",
