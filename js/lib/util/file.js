@@ -6,12 +6,12 @@
  * Released under the MIT License
  */
 
-"use strict";
+'use strict'
 
-var fs = require('fs');
-var jsyaml = require('js-yaml');
+var fs = require('fs')
+var jsyaml = require('js-yaml')
 
-var M = module.exports;
+var M = module.exports
 
 /**
  * load one capabilities file
@@ -19,16 +19,16 @@ var M = module.exports;
  * @param {String} files : filename(s) of the capability files to load
  * @return {Object} tree
  */
-M.loadSync = function(file) {
-	var
-		content,
-		tree;
+M.loadSync = function (file) {
+  var
+    content,
+    tree
 
-	content = fs.readFileSync(file, 'utf8');
-	tree = jsyaml.safeLoad(content);
+  content = fs.readFileSync(file, 'utf8')
+  tree = jsyaml.safeLoad(content)
 
-	return tree;
-};
+  return tree
+}
 
 /**
  * asynchronously load one capabilities file
@@ -36,15 +36,14 @@ M.loadSync = function(file) {
  * @param {String} files : filename(s) of the capability files to load
  * @param {Function} cb(err, tree) : callback function; `err` contains the error object if any; `tree` is the loaded tree;
  */
-M.load = function(file, cb) {
-	fs.readFile(file, 'utf8', function(err, content){
-		var tree;
-		if (err) {
-			cb(err);
-		}
-		else {
-			tree = jsyaml.safeLoad(content);
-			cb(null, tree);
-		}
-	});
-};
+M.load = function (file, cb) {
+  fs.readFile(file, 'utf8', function (err, content) {
+    var tree
+    if (err) {
+      cb(err)
+    } else {
+      tree = jsyaml.safeLoad(content)
+      cb(null, tree)
+    }
+  })
+}

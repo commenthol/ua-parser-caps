@@ -1,30 +1,30 @@
-"use strict";
+'use strict'
 
-var Mocha = require('mocha'),
-	fs = require('fs'),
-	path = require('path');
+var Mocha = require('mocha')
+var fs = require('fs')
+var path = require('path')
 
 var mocha = new Mocha({
-	ui: 'bdd',
-	reporter: 'min',
-});
+  ui: 'bdd',
+  reporter: 'min'
+})
 
-var dirs = [ '/.', '/../lib/util/test' ];
-var fileMatch = /\.mocha\.js$/;
+var dirs = [ '.', '../lib/util/test' ]
+var fileMatch = /\.mocha\.js$/
 
-dirs.forEach(function(dir){
-	dir = __dirname + dir;
-	fs.readdirSync(dir).filter(function(file){
-		return fileMatch.test(file);
-	}).forEach(function(file){
-		mocha.addFile(
-			path.join(dir, file)
-		);
-	});
-});
+dirs.forEach(function (dir) {
+  dir = path.join(__dirname, dir)
+  fs.readdirSync(dir).filter(function (file) {
+    return fileMatch.test(file)
+  }).forEach(function (file) {
+    mocha.addFile(
+      path.join(dir, file)
+    )
+  })
+})
 
-mocha.run(function(failures){
-	process.on('exit', function () {
-		process.exit(failures);
-	});
-});
+mocha.run(function (failures) {
+  process.on('exit', function () {
+    process.exit(failures)
+  })
+})

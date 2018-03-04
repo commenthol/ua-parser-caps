@@ -5,17 +5,16 @@
  * Released under the MIT License
  */
 
-"use strict";
+'use strict'
 
 /**
  * Module dependencies
  */
-var
-	Tree   = require('./tree'),
-	parser = require('./parser'),
-	config = require('../config'),
-	extend = require('mergee').extend,
-	merge  = require('mergee').merge;
+var Tree = require('./tree')
+var parser = require('./parser')
+var config = require('../config')
+var extend = require('mergee').extend
+var merge = require('mergee').merge
 
 /**
  * initialize the capsparser
@@ -29,52 +28,50 @@ var
  * if `options` is a Function then async loading with the default config is assumed.
  */
 module.exports = function (options, cb) {
-	var tree;
-	var capsparser;
+  var tree
+  var capsparser
 
-	if (config && config.fastload) {
-		config.files = [ config.fastload ];
-	}
+  if (config && config.fastload) {
+    config.files = [ config.fastload ]
+  }
 
-	switch (typeof(options)) {
-		case "function":
-			cb = options;
-			options = config;
-			break;
-		case "object":
-			if (Array.isArray(options)) {
-				options = extend(config, { files: options });
-			}
-			else {
-				if(options.withDefaults) {
-					options = merge (config, options);
-				} else {
-				options = extend(config, options);
-				}
-			}
-			break;
-		case "string":
-			options = extend(config, { files: [ options ] });
-			break;
-		default:
-			options = config;
-			break;
-	}
+  switch (typeof (options)) {
+    case 'function':
+      cb = options
+      options = config
+      break
+    case 'object':
+      if (Array.isArray(options)) {
+        options = extend(config, { files: options })
+      } else {
+        if (options.withDefaults) {
+          options = merge(config, options)
+        } else {
+          options = extend(config, options)
+        }
+      }
+      break
+    case 'string':
+      options = extend(config, { files: [ options ] })
+      break
+    default:
+      options = config
+      break
+  }
 
-	tree = new Tree();
-	capsparser = parser.parser(tree.get());
+  tree = new Tree()
+  capsparser = parser.parser(tree.get())
 
-	if (cb && typeof(cb) === 'function') {
-		tree.load(options.files, function(err) {
-			if (!err) {
-				capsparser = parser.parser(tree.get());
-			}
-			cb(err, capsparser);
-		});
-	}
-	else {
-		tree.loadSync(options.files);
-		capsparser = parser.parser(tree.get());
-	}
-	return capsparser;
-};
+  if (cb && typeof (cb) === 'function') {
+    tree.load(options.files, function (err) {
+      if (!err) {
+        capsparser = parser.parser(tree.get())
+      }
+      cb(err, capsparser)
+    })
+  } else {
+    tree.loadSync(options.files)
+    capsparser = parser.parser(tree.get())
+  }
+  return capsparser
+}
