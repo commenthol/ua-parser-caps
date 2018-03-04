@@ -16,9 +16,7 @@ That's it. If you don't feel comfortable forking the project or modifying the YA
 
 In case that `ua-parser2` requires an update as well, please consider contributing to [ua-parser2][] as well.
 
-
 Thanks!
-
 
 [issues]: https://github.com/commenthol/ua-parser-caps/issues
 [ua-parser2]: http://github.com/commenthol/ua-parser2

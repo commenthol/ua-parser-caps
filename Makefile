@@ -2,7 +2,7 @@ VERSION  := $(shell versionn -i)
 CAPSYAML := $(wildcard caps_*.yaml)
 CAPSJS    = js/caps.js
 
-all: version caps v0.12
+all: version caps v8.
 
 caps: $(CAPSJS)
 

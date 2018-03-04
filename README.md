@@ -2,6 +2,8 @@
 
 > Adding capabilities to *ua-parser2*
 
+**NOTE: This projects data-sets (yaml files) are outdated as not beiing maintained any more...**
+
 [![NPM version](https://badge.fury.io/js/ua-parser-caps.svg)](https://www.npmjs.com/package/ua-parser-caps/)
 [![Build Status](https://secure.travis-ci.org/commenthol/ua-parser-caps.svg?branch=master)](https://travis-ci.org/commenthol/ua-parser-caps)
 

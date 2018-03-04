@@ -1,44 +1,47 @@
 {
   "name": "ua-parser-caps",
-  "description": "capabilities for ua-parser2",
   "version": "0.1.12",
+  "description": "capabilities for ua-parser2",
+  "keywords": [
+    "capabilities",
+    "device-type",
+    "ua-parser"
+  ],
+  "homepage": "https://github.com/commenthol/ua-parser-caps",
+  "bugs": {
+    "url": "https://github.com/commenthol/ua-parser-caps/issues"
+  },
+  "author": "commenthol <commenthol@gmail.com>",
+  "contributors": [],
   "main": "js/index.js",
-  "engines": {
-    "node": ">=0.8.0"
-  },
-  "dependencies": {
-    "async": ">=0.7.0",
-    "commander": "^2.8.1",
-    "js-select": ">=0.6.0",
-    "js-yaml": "~2.1.3",
-    "mergee": ">=0.2.2",
-    "serialize-to-js": ">=0.1.1"
-  },
-  "devDependencies": {
-    "mocha": ">=0.17.0",
-    "streamss": ">=0.2.4",
-    "ua-parser2": "latest"
-  },
-  "scripts": {
-    "test": "node ./js/test/run.test.js",
-    "lint": "jshint --show-non-errors js/*.js js/*/*.js",
-    "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks ./js/test/run.test.js",
-    "doc": "jsdox -o doc index.js lib/*.js",
-    "readme": "markedpp --githubid -i README.md -o README.md",
-    "clean": "rm -rf doc coverage"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/commenthol/ua-parser-caps.git"
   },
-  "keywords": [
-    "ua-parser",
-    "capabilities",
-    "device-type"
-  ],
-  "author": "commenthol <commenthol@gmail.com>",
-  "maintainers": "commenthol <commenthol@gmail.com>",
-  "contributors": [],
+  "scripts": {
+    "clean": "rm -rf coverage node_modules",
+    "cover": "istanbul cover _mocha --report lcov --report text -- -R dot --check-leaks ./js/test/run.test.js",
+    "doc": "jsdox -o doc index.js lib/*.js",
+    "lint": "standard",
+    "readme": "markedpp --githubid -i README.md -o README.md",
+    "test": "node ./js/test/run.test.js"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "commander": "^2.14.1",
+    "js-select": "0.6.0",
+    "js-yaml": "^3.10.0",
+    "mergee": ">=0.2.4",
+    "serialize-to-js": "^1.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.1",
+    "streamss": "^0.2.5",
+    "ua-parser2": ">=0.3.4"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "licenses": [
     {
       "type": "MIT",
@@ -49,8 +52,5 @@
       "url": "https://raw.github.com/commenthol/ua-parser-caps/LICENSE"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/commenthol/ua-parser-caps/issues"
-  },
-  "homepage": "https://github.com/commenthol/ua-parser-caps"
+  "maintainers": "commenthol <commenthol@gmail.com>"
 }
