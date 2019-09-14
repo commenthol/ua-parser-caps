@@ -179,7 +179,7 @@ Tree._find = function _find (opts, obj, fn) {
       obj = fn(obj)
     } else {
       for (i in obj) {
-        if (obj.hasOwnProperty(i) && !opts.test[i]) {
+        if (Object.prototype.hasOwnProperty.call(obj, i) && !opts.test[i]) {
           _find(opts, obj[i], fn)
         }
       }

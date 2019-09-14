@@ -6,7 +6,7 @@
 'use strict'
 
 var Tree = require('./tree')
-var serialize = require('serialize-to-js').serializeToModule
+var serialize = require('serialize-to-module')
 
 /**
  * serialize the merged caps tree

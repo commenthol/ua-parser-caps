@@ -4,3 +4,4 @@
 /tmp
 *.log
 *.tgz
+.nyc_output/
