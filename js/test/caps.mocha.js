@@ -15,9 +15,9 @@
 var assert = require('assert')
 var fs = require('fs')
 var path = require('path')
-var splitLine = require('streamss').SplitLine
+var SplitLine = require('streamss').SplitLine
 var jsonArray = require('streamss').JsonArray
-var through = require('streamss').Through
+var throughObj = require('streamss').throughObj
 var capsParser = require('../index')
 
 // test config
@@ -70,9 +70,9 @@ describe('device type tests', function () {
 
   it('exec', function (testDone) {
     fs.createReadStream(config.testcases)
-      .pipe(splitLine({chomp: true}))
+      .pipe(new SplitLine({chomp: true}))
       .pipe(jsonArray.parse())
-      .pipe(through.obj(test, function () {
+      .pipe(throughObj(test, function () {
         testDone()
       })
       )

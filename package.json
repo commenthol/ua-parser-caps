@@ -30,17 +30,17 @@
   },
   "dependencies": {
     "async": "^3.1.0",
-    "commander": "^3.0.1",
+    "commander": "^4.0.1",
     "js-select": "0.6.0",
     "js-yaml": "^3.13.1",
-    "mergee": "^0.2.5",
+    "mergee": "^1.0.0",
     "serialize-to-module": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
-    "mocha": "^6.2.0",
+    "eslint": "^6.7.2",
+    "mocha": "^6.2.2",
     "nyc": "^14.1.1",
-    "streamss": "^1.0.1",
+    "streamss": "^2.0.0",
     "ua-parser2": "^0.4.2"
   },
   "engines": {
